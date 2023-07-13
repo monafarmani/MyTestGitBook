@@ -1,4 +1,4 @@
-package com.example.repotest
+package com.example.mytestgitbook
 
 import org.junit.Test
 

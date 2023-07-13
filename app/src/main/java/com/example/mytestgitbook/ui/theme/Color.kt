@@ -1,4 +1,4 @@
-package com.example.repotest.ui.theme
+package com.example.mytestgitbook.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
