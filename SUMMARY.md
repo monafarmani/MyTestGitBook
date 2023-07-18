@@ -1,8 +1,10 @@
 # Table of contents
 
 * [My Test App](README.md)
-  * [. Installation](my-test-app/.-installation.md)
+  * [. Overview](my-test-app/.-overview.md)
+  * [. Getting Started](my-test-app/.-getting-started.md)
   * [. Usage](my-test-app/.-usage.md)
+  * [. API Documentation](my-test-app/.-api-documentation.md)
   * [. Configuration](my-test-app/.-configuration.md)
   * [. Troubleshooting](my-test-app/.-troubleshooting.md)
   * [. Contributing](my-test-app/.-contributing.md)
