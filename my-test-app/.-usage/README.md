@@ -42,31 +42,23 @@ class Application : Application() {
 {% endtab %}
 {% endtabs %}
 
-```
-class Application : Application() {
-
-    override fun onCreate() {
-        super.onCreate()
-
-        Gizo.initialize(
-            this,
-            GizoApp.GizoAppOptions.Builder().build()
-        )
-    }
-}
-```
-
 In the example above, we create a new instance of the Application class and call the initialize method to initialize the sdk.
 
 **Note:** For using features of the sdk you need to add required options and settings in the following steps.
 
-### <mark style="color:purple;">Step 2: Permissions settings</mark>
+### <mark style="color:purple;">Step 2: Adding model</mark>&#x20;
+
+
+
+### <mark style="color:purple;">Step 3: App Options Setting</mark>
+
+
+
+### <mark style="color:purple;">Step 4: Permissions settings</mark>
 
 The following permissions are required by the SDK:
 
 <table><thead><tr><th width="348">PERMISSIONS</th><th>WHERE TO USE</th></tr></thead><tbody><tr><td>ACCESS_COARSE_LOCATION</td><td>in gps setting.</td></tr><tr><td>ACCESS_FINE_LOCATION</td><td>in gps setting.</td></tr><tr><td>CAMERA</td><td>in capturing videos.</td></tr><tr><td>ACCESS_NETWORK_STATE</td><td>in mapbox navigation.</td></tr><tr><td>WRITE_EXTERNAL_STORAGE</td><td>in saving files in download folder.</td></tr></tbody></table>
-
-
 
 ### Permissions Required
 
