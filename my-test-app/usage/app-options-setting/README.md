@@ -16,7 +16,7 @@ layout:
     visible: true
 ---
 
-# . App Options Setting
+# App Options Setting
 
 ## Overview
 
@@ -62,5 +62,5 @@ In the example above, we initialize the sdk instance as before, and then create 
 
 
 
-<table><thead><tr><th width="336.3333333333333">Option</th><th width="137">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>debug(Boolean)</td><td>true</td><td>set to enable debugging log feature.</td></tr><tr><td>folderName(String)</td><td>"Gizo"</td><td>set to save files in a download folder with this name.</td></tr><tr><td>analysisSetting(<a href="gizoanalysissettings.md">GizoAnalysisSettings</a>)</td><td>null</td><td>set to activate analyzing model &#x26; main export of the sdk.</td></tr><tr><td>imuSetting(<a href="gizoimusetting.md">GizoImuSetting</a>)</td><td>null</td><td>set to activate some sensors such as LinearAccelerationSensor , GyroscopeSensor &#x26; GravitySensor and get call backs.</td></tr><tr><td>gpsSetting(<a href="gizogpssetting.md">GizoGpsSetting</a>)</td><td>null</td><td>set to provide location information to use in speed limit.</td></tr><tr><td>videoSetting(<a href="gizovideosetting.md">GizoVideoSetting</a>)</td><td>null</td><td>set the video export.</td></tr><tr><td>batterySetting(<a href="gizobatterysetting.md">GizoBatterySetting</a>)</td><td>null</td><td>set the required implementation when the battery is in different status.</td></tr></tbody></table>
+<table><thead><tr><th width="336.3333333333333">Option</th><th width="137">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>debug(Boolean)</td><td>true</td><td>set to enable debugging log feature.</td></tr><tr><td>folderName(String)</td><td>"Gizo"</td><td>set to save files in a download folder with this name.</td></tr><tr><td>analysisSetting(<a href="broken-reference">GizoAnalysisSettings</a>)</td><td>null</td><td>set to activate analyzing model &#x26; main export of the sdk.</td></tr><tr><td>imuSetting(<a href="gizoimusetting.md">GizoImuSetting</a>)</td><td>null</td><td>set to activate some sensors such as LinearAccelerationSensor , GyroscopeSensor &#x26; GravitySensor and get call backs.</td></tr><tr><td>gpsSetting(<a href="gizogpssetting.md">GizoGpsSetting</a>)</td><td>null</td><td>set to provide location information to use in speed limit.</td></tr><tr><td>videoSetting(<a href="gizovideosetting.md">GizoVideoSetting</a>)</td><td>null</td><td>set the video export.</td></tr><tr><td>batterySetting(<a href="gizobatterysetting.md">GizoBatterySetting</a>)</td><td>null</td><td>set the required implementation when the battery is in different status.</td></tr></tbody></table>
 

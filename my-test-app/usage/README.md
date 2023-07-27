@@ -44,7 +44,7 @@ class Application : Application() {
 
 In the example above, we create a new instance of the Application class and call the initialize method to initialize the sdk.
 
-**Note:** For using features of the sdk you need to add [Model ](model.md)and  required [App Options Setting](app-options-setting/) in the following steps.
+**Note:** For using features of the sdk you need to add [Model ](app-options-setting/gizoanalysissettings.md)and  required [App Options Setting](app-options-setting/) in the following steps.
 
 
 
