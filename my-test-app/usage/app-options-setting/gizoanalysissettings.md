@@ -36,12 +36,8 @@ Download the model from this link:&#x20;
 
 Add these lines of code in Application class to set the Gizo Analysis Settings&#x20;
 
-
-
 {% tabs %}
 {% tab title="Kotlin" %}
-
-
 ```kotlin
 class Application : Application() {
     override fun onCreate() {
@@ -77,6 +73,24 @@ class Application : Application() {
 {% endtabs %}
 
 
+
+&#x20;Here are the available options that can be set in analysisSetting in  the Application class:
+
+
+
+| Options                  | Default Value | Description |
+| ------------------------ | ------------- | ----------- |
+| allow                    |               |             |
+| modelName                |               |             |
+| loadDelegate             |               |             |
+| carHeight                |               |             |
+| collisionThreshold       |               |             |
+| saveTTcFile              |               |             |
+| ttcFileLocation          |               |             |
+| ttcDataTimerPeriod       |               |             |
+| ttcDataTimerInitialDelay |               |             |
+| saveMatrixFile           |               |             |
+| matrixFileLocation       |               |             |
 
 
 
