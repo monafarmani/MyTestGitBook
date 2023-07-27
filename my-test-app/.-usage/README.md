@@ -46,15 +46,9 @@ In the example above, we create a new instance of the Application class and call
 
 **Note:** For using features of the sdk you need to add required options and settings in the following steps.
 
-### <mark style="color:purple;">Step 2: Adding model</mark>&#x20;
 
 
-
-### <mark style="color:purple;">Step 3: App Options Setting</mark>
-
-
-
-### <mark style="color:purple;">Step 4: Permissions settings</mark>
+### <mark style="color:purple;">Step 2: Permissions settings</mark>
 
 The following permissions are required by the SDK:
 
