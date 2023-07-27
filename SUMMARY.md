@@ -4,7 +4,7 @@
   * [📋 . Overview](my-test-app/.-overview.md)
   * [🚀 . Getting Started](my-test-app/.-getting-started.md)
   * [⚙ . Usage](my-test-app/.-usage/README.md)
-    * [App Options Setting](my-test-app/.-usage/app-options-setting.md)
+    * [. App Options Setting](my-test-app/.-usage/.-app-options-setting.md)
   * [📖 . API Documentation](my-test-app/.-api-documentation.md)
   * [✏ . Change Log](my-test-app/.-change-log.md)
   * [⚙ . Configuration](my-test-app/.-configuration.md)
