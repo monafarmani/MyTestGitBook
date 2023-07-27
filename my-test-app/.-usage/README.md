@@ -24,6 +24,24 @@ layout:
 
 To initialize the SDK, you will need to create a new instance of the Application class in your app's module:
 
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+class Application : Application() {
+
+    override fun onCreate() {
+        super.onCreate()
+
+        Gizo.initialize(
+            this,
+            GizoApp.GizoAppOptions.Builder().build()
+        )
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ```
 class Application : Application() {
 
