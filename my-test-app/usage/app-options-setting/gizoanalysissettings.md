@@ -78,19 +78,7 @@ class Application : Application() {
 
 
 
-| Options                  | Default Value | Description |
-| ------------------------ | ------------- | ----------- |
-| allow                    |               |             |
-| modelName                |               |             |
-| loadDelegate             |               |             |
-| carHeight                |               |             |
-| collisionThreshold       |               |             |
-| saveTTcFile              |               |             |
-| ttcFileLocation          |               |             |
-| ttcDataTimerPeriod       |               |             |
-| ttcDataTimerInitialDelay |               |             |
-| saveMatrixFile           |               |             |
-| matrixFileLocation       |               |             |
+<table><thead><tr><th width="358.3333333333333">Options</th><th>Default Value</th><th>Description</th></tr></thead><tbody><tr><td>allow(Boolean)</td><td></td><td></td></tr><tr><td>modelName(String)</td><td></td><td></td></tr><tr><td>loadDelegate(AnalysisDelegateType)</td><td></td><td></td></tr><tr><td>carHeight(Double)</td><td></td><td></td></tr><tr><td>collisionThreshold(Float)</td><td></td><td></td></tr><tr><td>saveTTcFile(Boolean)</td><td></td><td></td></tr><tr><td>ttcFileLocation(GizoFileLocationPath)</td><td></td><td></td></tr><tr><td>ttcDataTimerPeriod(Long)</td><td></td><td></td></tr><tr><td>ttcDataTimerInitialDelay(Long)</td><td></td><td></td></tr><tr><td>saveMatrixFile(Boolean)</td><td></td><td></td></tr><tr><td>matrixFileLocation(GizoFileLocationPath)</td><td></td><td></td></tr></tbody></table>
 
 
 
