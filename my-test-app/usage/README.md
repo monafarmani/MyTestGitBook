@@ -44,6 +44,20 @@ class Application : Application() {
 
 In the example above, we create a new instance of the Application class and call the initialize method to initialize the sdk.
 
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+<application
+    android:name=".Application"
+>
+```
+{% endtab %}
+{% endtabs %}
+
+In the examole above, we add some lines of code to AndroidManifest.xml as well.
+
+
+
 **Note:** For using features of the sdk you need to add [Model ](app-options-setting/gizoanalysissettings.md)and  required [App Options Setting](app-options-setting/) in the following steps.
 
 
