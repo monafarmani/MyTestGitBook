@@ -10,7 +10,7 @@
       * [GizoGpsSetting](my-test-app/.-usage/.-app-options-setting/gizogpssetting.md)
       * [GizoVideoSetting](my-test-app/.-usage/.-app-options-setting/gizovideosetting.md)
       * [GizoBatterySetting](my-test-app/.-usage/.-app-options-setting/gizobatterysetting.md)
-    * [model](my-test-app/.-usage/model.md)
+    * [. model](my-test-app/.-usage/.-model.md)
   * [📖 . API Documentation](my-test-app/.-api-documentation.md)
   * [✏ . Change Log](my-test-app/.-change-log.md)
   * [⚙ . Configuration](my-test-app/.-configuration.md)
