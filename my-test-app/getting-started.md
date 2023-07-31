@@ -16,7 +16,12 @@ layout:
     visible: true
 ---
 
-# 🚀 . Getting Started
+# 🚀 Getting Started
+
+## Requirements
+
+* Install latest version of Android studio
+* Install [mapbox ](https://docs.mapbox.com/android/maps/guides/install/)SDK for Android and get access token&#x20;
 
 #### To use My Test library, follow these steps:
 
