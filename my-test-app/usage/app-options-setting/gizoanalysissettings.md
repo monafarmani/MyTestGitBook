@@ -59,6 +59,8 @@ class Application : Application() {
                     .saveMatrixFile(true)
                     .saveTTcFile(true)
                     .build())
+                    
+                    //
                 .imuSetting(GizoImuSetting.Builder().build())
                 .gpsSetting(GizoGpsSetting.Builder().build())
                 .videoSetting(GizoVideoSetting.Builder().build())
