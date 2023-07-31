@@ -11,6 +11,8 @@
       * [GizoGpsSetting](my-test-app/usage/app-options-setting/gizogpssetting.md)
       * [GizoVideoSetting](my-test-app/usage/app-options-setting/gizovideosetting.md)
       * [GizoBatterySetting](my-test-app/usage/app-options-setting/gizobatterysetting.md)
+    * [Features](my-test-app/usage/features.md)
+    * [Call back listeners](my-test-app/usage/call-back-listeners.md)
   * [📖 API Documentation](my-test-app/api-documentation.md)
   * [✏ Change Log](my-test-app/change-log.md)
   * [⚙ Configuration](my-test-app/configuration.md)
@@ -18,4 +20,3 @@
   * [🤝 Contributing](my-test-app/contributing.md)
   * [📃 License](my-test-app/license.md)
   * [📞 Contact](my-test-app/contact.md)
-  * [Page 1](my-test-app/page-1.md)

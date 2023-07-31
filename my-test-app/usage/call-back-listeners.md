@@ -16,6 +16,5 @@ layout:
     visible: true
 ---
 
-# 📃 License
+# Call back listeners
 
-My Test App is released under the MIT License. See the LICENSE file for details.
