@@ -111,4 +111,4 @@ class Application : Application() {
 
 **Note:** After these settings are done, a series of [callbacks ](../call-back-listeners.md)are triggered that the corresponding output can be observed.
 
-**Note:** To enable GizoAnalysisSettings, it is essential to activate GPS.&#x20;
+**Note:** To enable GizoAnalysisSettings, it is essential to activate [GPS Setting](gizogpssetting.md).&#x20;
