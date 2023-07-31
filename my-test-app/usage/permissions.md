@@ -18,7 +18,7 @@ layout:
 
 # Permissions
 
-## <mark style="color:purple;">Permissions settings</mark>
+## Permissions Settings
 
 The following permissions are required by the SDK:
 
