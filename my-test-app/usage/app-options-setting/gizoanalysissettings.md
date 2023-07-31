@@ -72,21 +72,19 @@ class Application : Application() {
 {% endtab %}
 {% endtabs %}
 
-
+```
+AnalysisDelegateType.Auto GizoFileLocationPath.CACHE
+```
 
 &#x20;Here are the available options that can be set in analysisSetting in  the Application class:
 
-
-
-<table><thead><tr><th width="358.3333333333333">Options</th><th>Default Value</th><th>Description</th></tr></thead><tbody><tr><td>allow(Boolean)</td><td></td><td></td></tr><tr><td>modelName(String)</td><td></td><td></td></tr><tr><td>loadDelegate(AnalysisDelegateType)</td><td></td><td></td></tr><tr><td>carHeight(Double)</td><td></td><td></td></tr><tr><td>collisionThreshold(Float)</td><td></td><td></td></tr><tr><td>saveTTcFile(Boolean)</td><td></td><td></td></tr><tr><td>ttcFileLocation(GizoFileLocationPath)</td><td></td><td></td></tr><tr><td>ttcDataTimerPeriod(Long)</td><td></td><td></td></tr><tr><td>ttcDataTimerInitialDelay(Long)</td><td></td><td></td></tr><tr><td>saveMatrixFile(Boolean)</td><td></td><td></td></tr><tr><td>matrixFileLocation(GizoFileLocationPath)</td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="358.3333333333333">Options</th><th width="253">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>allow(Boolean)</td><td>false</td><td></td></tr><tr><td>modelName(String)</td><td>""</td><td></td></tr><tr><td>loadDelegate(AnalysisDelegateType)</td><td>AnalysisDelegateType.Auto</td><td></td></tr><tr><td>carHeight(Double)</td><td>1.6</td><td></td></tr><tr><td>collisionThreshold(Float)</td><td>0.5f</td><td></td></tr><tr><td>saveTTcFile(Boolean)</td><td>false</td><td></td></tr><tr><td>ttcFileLocation(GizoFileLocationPath)</td><td>GizoFileLocationPath.CACHE</td><td></td></tr><tr><td>ttcDataTimerPeriod(Long)</td><td>30L</td><td></td></tr><tr><td>ttcDataTimerInitialDelay(Long)</td><td>0L</td><td></td></tr><tr><td>saveMatrixFile(Boolean)</td><td>false</td><td></td></tr><tr><td>matrixFileLocation(GizoFileLocationPath)</td><td>GizoFileLocationPath.CACHE</td><td></td></tr></tbody></table>
 
 
 
 ### <mark style="color:purple;">Step 3: Loading model</mark>
 
 Add these lines of code in Application class to load the model and receive the listener for different status of loading such as LOADING, LOADED, FAILED, NOT\_LOADED
-
-
 
 {% tabs %}
 {% tab title="Kotlin" %}
