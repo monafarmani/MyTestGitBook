@@ -18,51 +18,7 @@ layout:
 
 # ⚙ Usage
 
-## Using the SDK in your Android Application
-
-### <mark style="color:purple;">Step 1: Initialize the SDK</mark>
-
-To initialize the SDK, you will need to create a new instance of the Application class in your app's module:
-
-{% tabs %}
-{% tab title="Kotlin" %}
-```kotlin
-class Application : Application() {
-
-    override fun onCreate() {
-        super.onCreate()
-
-        Gizo.initialize(
-            this,
-            GizoApp.GizoAppOptions.Builder().build()
-        )
-    }
-}
-```
-{% endtab %}
-{% endtabs %}
-
-In the example above, we create a new instance of the Application class and call the initialize method to initialize the sdk.
-
-{% tabs %}
-{% tab title="Kotlin" %}
-```kotlin
-<application
-    android:name=".Application"
->
-```
-{% endtab %}
-{% endtabs %}
-
-In the examole above, we add some lines of code to AndroidManifest.xml as well.
-
-
-
-**Note:** For using features of the sdk you need to add [Model ](app-options-setting/gizoanalysissettings.md)and  required [App Options Setting](app-options-setting/) in the following steps.
-
-
-
-### <mark style="color:purple;">Step 2: Permissions settings</mark>
+## <mark style="color:purple;">Permissions settings</mark>
 
 The following permissions are required by the SDK:
 
