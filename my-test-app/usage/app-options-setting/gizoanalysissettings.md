@@ -96,7 +96,7 @@ class Application : Application() {
             GizoApp.GizoAppOptions.Builder().build()
         )
         
-        // add these line of code
+        // add these lines of code
 
         Gizo.app.setLoadModelObserver { status ->
             Log.d("LoadModelStatus", "status:" + status.name)
