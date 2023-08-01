@@ -77,6 +77,16 @@ val permissionRequired: Array<String>
 {% endtab %}
 {% endtabs %}
 
+* If we grant access to AnalysisSettings, we will also have access to the camera
+* If the matrix file or TTC file is downloaded, it allows to have external access too.
+* If we have access to GPS settings, permissions of ACCESS\_COARSE\_LOCATION & ACCESS\_FINE\_LOCATION will be provided.&#x20;
+* If the GPS setting file is downloaded, it allows to have external access too.
+* If the IMU setting file is downloaded, it allows to have external access too.
+* If the video  setting file is downloaded, it allows to have external access too.
+* If we need external access and the SDK version is not higher than 29, permissions WRITE\_EXTERNAL\_STORAGE & READ\_EXTERNAL\_STORAGE will be available.&#x20;
+
+
+
 ## Permissions Required
 
 The following permissions are required by the SDK:
