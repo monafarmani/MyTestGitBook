@@ -4,6 +4,7 @@
   * [📋 Overview](my-test-app/overview.md)
   * [🚀 Getting Started](my-test-app/getting-started.md)
   * [⚙ Usage](my-test-app/usage/README.md)
+    * [Gizo Analysis](my-test-app/usage/gizo-analysis.md)
     * [Permissions](my-test-app/usage/permissions.md)
     * [App Options Setting](my-test-app/usage/app-options-setting/README.md)
       * [GizoAnalysisSettings](my-test-app/usage/app-options-setting/gizoanalysissettings.md)
