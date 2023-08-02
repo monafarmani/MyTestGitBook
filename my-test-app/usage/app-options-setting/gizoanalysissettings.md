@@ -96,10 +96,15 @@ class Application : Application() {
         Gizo.initialize(
             this,
             GizoApp.GizoAppOptions.Builder().build()
+            .analysisSetting(GizoAnalysisSettings.Builder(
+                .allow(true)
+                .modelName("arti_sense.tflite")
+                .loadDelegate(GizoAnalysisSettings.AnalysisDelegateType.Auto)
+                .carHeight(1.6)
+                .saveMatrixFile(true)
+                    .saveTTcFile(true)
+                    .build())
         )
-        
-        // add these lines of code
-
         Gizo.app.setLoadModelObserver { status ->
             Log.d("LoadModelStatus", "status:" + status.name)
         }

@@ -18,7 +18,7 @@ layout:
 
 # Start the camera
 
-To start to use the sdk we need to [start the camera ](start-the-camera.md), for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in Main Activity: first we start the camera , second preview is attatched.
+To start to use the sdk we need to [start the camera ](start-the-camera.md), for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in the  Activity: first we start the camera, second preview is attached.
 
 {% tabs %}
 {% tab title="Kotlin" %}

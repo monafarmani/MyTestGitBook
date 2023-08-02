@@ -18,64 +18,99 @@ layout:
 
 # Permissions
 
-## Permissions Settings
+## <mark style="color:blue;">Permissions Settings</mark>
 
 The following permissions are required by the SDK:
 
 <table><thead><tr><th width="348">PERMISSIONS</th><th>WHERE TO USE</th></tr></thead><tbody><tr><td>ACCESS_COARSE_LOCATION</td><td>in GPS setting.</td></tr><tr><td>ACCESS_FINE_LOCATION</td><td>in GPS setting.</td></tr><tr><td>CAMERA</td><td>in capturing videos.</td></tr><tr><td>ACCESS_NETWORK_STATE</td><td>in mapbox navigation.</td></tr><tr><td>WRITE_EXTERNAL_STORAGE</td><td>in saving files in download folder.</td></tr></tbody></table>
 
-## Permissions Helper&#x20;
+## <mark style="color:blue;">Permissions Helper</mark>&#x20;
 
 So far, these permissions have been added to the manifest, but we need to add other helper permissions based on the settings we have made.
 
-To do this, these lines of code should be added in ....
+To do this, these lines of code should be added in Main Activity:
 
-
+Add these lines of code above onCreate function
 
 {% tabs %}
 {% tab title="Kotlin" %}
-
-
 ```kotlin
-val permissionRequired: Array<String>
-    get() {
-        val sdkVersion29OrAbove = Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q
-        var permissions = arrayOf<String>()
-        var needExternalAccess = false
-
-        if (options.analysisSetting.allow)
-            permissions += arrayOf(Manifest.permission.CAMERA)
-
-        if (options.analysisSetting.matrixFileLocation == GizoFileLocationPath.DOWNLOAD
-            || options.analysisSetting.ttcFileLocation == GizoFileLocationPath.DOWNLOAD
-        )
-            needExternalAccess = true
-
-        if (options.gpsSetting.allow)
-            permissions += arrayOf(
-                Manifest.permission.ACCESS_COARSE_LOCATION,
-                Manifest.permission.ACCESS_FINE_LOCATION,
-            )
-        if (options.gpsSetting.fileLocation == GizoFileLocationPath.DOWNLOAD)
-            needExternalAccess = true
-
-        if (options.imuSetting.fileLocation == GizoFileLocationPath.DOWNLOAD)
-            needExternalAccess = true
-
-        if (options.videoSetting.fileLocation == GizoFileLocationPath.DOWNLOAD)
-            needExternalAccess = true
-
-        if (needExternalAccess && sdkVersion29OrAbove.not()) {
-            permissions += arrayOf(
-                Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.READ_EXTERNAL_STORAGE,
-            )
+  private val recordingPermission: Array<String>
+        get() {
+            var basePermission = Gizo.app.permissionRequired
+            //Other permissions can be added here
+            return basePermission
         }
-        return permissions
-    }
 ```
 {% endtab %}
 {% endtabs %}
+
+Add these lines of code inside onCreate function
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+
+    setContent {
+        val context = LocalContext.current
+
+        val launcherDrivePermission = rememberLauncherForActivityResult(
+            ActivityResultContracts.RequestMultiplePermissions()
+        ) { permissionsMap ->
+            val areGranted = permissionsMap.mapNotNull {
+                it.value
+            }.reduce { acc, next -> acc && next }
+
+            if (areGranted){
+            }
+        }
+
+        LaunchedEffect(true){
+            checkAndRequestLocationPermissions(
+                context,
+                recordingPermission,
+                launcherDrivePermission
+            ) {
+            }
+        }
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+private fun checkAndRequestLocationPermissions(
+    context: Context,
+    permission: Array<String>,
+    launcher: ManagedActivityResultLauncher<Array<String>, Map<String, Boolean>>,
+    hasPermissionCallback: () -> Unit
+) {
+
+    if (
+        permission.all {
+            ContextCompat.checkSelfPermission(
+                context,
+                it
+            ) == PackageManager.PERMISSION_GRANTED
+        }
+    ) {
+        hasPermissionCallback()
+        // Use location because permissions are already granted
+    } else {
+        // Request permissions
+        launcher.launch(permission)
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## Why Permissions Helper
 
 * If we grant access to AnalysisSettings, we will also have access to the camera
 * If the matrix file or TTC file is downloaded, it allows to have external access too.
@@ -87,7 +122,7 @@ val permissionRequired: Array<String>
 
 
 
-## Permissions Required
+## Required Permissions&#x20;
 
 The following permissions are required by the SDK:
 
