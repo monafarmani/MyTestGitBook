@@ -21,9 +21,9 @@ layout:
 To use MyTestSDK in your app, follow these steps:
 
 * The SDK requires certain [permissions ](permissions.md)in order to function properly. These permissions are necessary to enable the GPS setting, capturing videos, mapbox navigation & saving files in download folder.
+* To start to use the SDK we need to [start the camera ](start-the-camera.md), for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in Main Activity: first we start the camera , second preview is attached.
 * The SDK provides several [options ](app-options-setting/)that can be configured at the app level to customize its behavior. These options can be set in the Application class of your app.
 * Model loading which was explained in [Analysis setting](app-options-setting/gizoanalysissettings.md#step-3-loading-model).
-* To start to use the sdk we need to [start the camera ](start-the-camera.md), for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in Main Activity: first we start the camera , second preview is attached.
 * Using a  [callback listener](call-back-listeners.md) which is a mechanism that allows you to register a listener object that will be notified when a specific event occurs. The listener object contains a set of callback methods that will be called by the system when the associated event occurs. These events include Analysis, IMU Sensors, GPS, Video and Battery.
 * The SDK provides some [features ](features.md)that can be used to control some trends of recording the videos.
 
