@@ -30,60 +30,52 @@ So far, these permissions have been added to the manifest, but we need to add ot
 
 To do this, these lines of code should be added in Main Activity:
 
-Add these lines of code above onCreate function
-
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-  private val recordingPermission: Array<String>
+class MainActivity : ComponentActivity() {
+
+    private val recordingPermission: Array<String>
         get() {
             var basePermission = Gizo.app.permissionRequired
             //Other permissions can be added here
             return basePermission
         }
-```
-{% endtab %}
-{% endtabs %}
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-Add these lines of code inside onCreate function
+        setContent {
+            val context = LocalContext.current
 
-{% tabs %}
-{% tab title="Kotlin" %}
-```kotlin
-override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+            val launcherDrivePermission = rememberLauncherForActivityResult(
+                ActivityResultContracts.RequestMultiplePermissions()
+            ) { permissionsMap ->
+                val areGranted = permissionsMap.mapNotNull {
+                    it.value
+                }.reduce { acc, next -> acc && next }
 
-    setContent {
-        val context = LocalContext.current
-
-        val launcherDrivePermission = rememberLauncherForActivityResult(
-            ActivityResultContracts.RequestMultiplePermissions()
-        ) { permissionsMap ->
-            val areGranted = permissionsMap.mapNotNull {
-                it.value
-            }.reduce { acc, next -> acc && next }
-
-            if (areGranted){
+                if (areGranted){
+                    setContent {
+                        Screen()
+                    }
+                }
             }
-        }
 
-        LaunchedEffect(true){
-            checkAndRequestLocationPermissions(
-                context,
-                recordingPermission,
-                launcherDrivePermission
-            ) {
+            LaunchedEffect(true){
+                checkAndRequestLocationPermissions(
+                    context,
+                    recordingPermission,
+                    launcherDrivePermission
+                ) {
+                    setContent {
+                        Screen()
+                    }
+                }
             }
         }
     }
 }
-```
-{% endtab %}
-{% endtabs %}
 
-{% tabs %}
-{% tab title="Kotlin" %}
-```kotlin
 private fun checkAndRequestLocationPermissions(
     context: Context,
     permission: Array<String>,
@@ -109,6 +101,8 @@ private fun checkAndRequestLocationPermissions(
 ```
 {% endtab %}
 {% endtabs %}
+
+
 
 ## Why Permissions Helper
 
