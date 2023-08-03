@@ -48,8 +48,6 @@ Gizo.app.gizoAnalysis.attachPreview(previewView)
 
 The video recording options in MyTestSDK allow developers to easily integrate video recording capabilities into their Android applications. This documentation provides instructions on how to utilize the start and stop recording functionality, as well as how to start and stop the camera, and lock and unlock the preview.
 
-
-
 ### <mark style="color:purple;">Start and Stop Recording</mark>
 
 To start and stop video recording using MyTestSDK , use the following code:
@@ -78,7 +76,7 @@ coroutineScope.launch {
 
 ### <mark style="color:purple;">Lock and Unlock Preview</mark>
 
-To start and stop the camera using MyTestSDK , follow these steps:
+To lock and unlock the preview using MyTestSDK , follow these steps:
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -104,3 +102,8 @@ override fun onDestroy() {
 ```
 {% endtab %}
 {% endtabs %}
+
+stopCamera is called when an activity is about to be destroyed or removed from memory.
+
+**Note**: analysis, GPS, IMU, video and battery files are saved from startCamera to stopCamera.&#x20;
+
