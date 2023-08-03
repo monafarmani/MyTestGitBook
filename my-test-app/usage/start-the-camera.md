@@ -41,3 +41,37 @@ Gizo.app.gizoAnalysis.attachPreview(previewView)
 ```
 {% endtab %}
 {% endtabs %}
+
+## Video Recording Options in MyTestSDK
+
+### <mark style="color:purple;">Overview</mark>
+
+The video recording options in MyTestSDK allow developers to easily integrate video recording capabilities into their Android applications. This documentation provides instructions on how to utilize the start and stop recording functionality, as well as how to start and stop the camera, and lock and unlock the preview.
+
+
+
+### <mark style="color:purple;">Start and Stop Recording</mark>
+
+To start and stop video recording using MyTestSDK , use the following code:
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+// Start video recording
+coroutineScope.launch {
+    gizoAnalysis.startRecording { event ->
+        when (event) {
+            is VideoRecordEvent.Finalize -> {
+                if (event.hasError()) {
+                    //Do something
+             }
+          }
+       }
+     }
+ }
+ 
+ // Stop video recording
+ gizoAnalysis.stopRecording()
+```
+{% endtab %}
+{% endtabs %}
