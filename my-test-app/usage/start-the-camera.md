@@ -28,3 +28,16 @@ To start using the SDK we need to [start the camera ](start-the-camera.md), for 
 {% endtab %}
 {% endtabs %}
 
+**onDone is called when start camera is completed.**
+
+
+
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+Gizo.app.gizoAnalysis.attachPreview(previewView)
+```
+{% endtab %}
+{% endtabs %}
