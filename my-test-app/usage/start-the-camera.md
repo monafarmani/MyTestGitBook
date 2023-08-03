@@ -75,3 +75,32 @@ coroutineScope.launch {
 ```
 {% endtab %}
 {% endtabs %}
+
+### <mark style="color:purple;">Lock and Unlock Preview</mark>
+
+To start and stop the camera using MyTestSDK , follow these steps:
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+// lock preview
+gizoAnalysis.lockPreview()
+
+// unlock preview
+gizoAnalysis.unlockPreview(previewView)
+```
+{% endtab %}
+{% endtabs %}
+
+### <mark style="color:purple;">Stop camera</mark>
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+override fun onDestroy() {
+    super.onDestroy()
+    gizoAnalysis.stopCamera()
+}
+```
+{% endtab %}
+{% endtabs %}
