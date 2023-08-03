@@ -24,46 +24,17 @@ To start using the SDK we need to [start the camera ](start-the-camera.md), for 
 {% tab title="Kotlin" %}
 ```kotlin
 class MainActivity : ComponentActivity() {
-   }
+ 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         Gizo.app.gizoAnalysis.startCamera(lifecycleOwner = this) {
 
         }
-        setContent {
-            val context = LocalContext.current
-            val isPermissionGranted = remember { mutableStateOf(false) }
-
-            val launcherDrivePermission = rememberLauncherForActivityResult(
-                ActivityResultContracts.RequestMultiplePermissions()
-            ) { permissionsMap ->
-                val areGranted = permissionsMap.mapNotNull {
-                    it.value
-                }.reduce { acc, next -> acc && next }
-
-                if (areGranted){
-                    isPermissionGranted.value = true
-                }
-            }
-
-            LaunchedEffect(true){
-                checkAndRequestLocationPermissions(
-                    context,
-                    recordingPermission,
-                    launcherDrivePermission
-                ) {
-                    isPermissionGranted.value = true
-                }
-            }
-
-            if(isPermissionGranted.value){
-                Screen(context)
-            }
-        }
     }
 }
 
+//fill the Screen function with these lines of code
 @Composable
 fun Screen(context : Context) {
     val previewView: PreviewView = remember { PreviewView(context) }

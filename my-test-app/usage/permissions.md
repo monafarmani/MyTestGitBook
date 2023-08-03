@@ -41,11 +41,13 @@ class MainActivity : ComponentActivity() {
             //Other permissions can be added here
             return basePermission
         }
+        
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
             val context = LocalContext.current
+            val isPermissionGranted = remember { mutableStateOf(false) }
 
             val launcherDrivePermission = rememberLauncherForActivityResult(
                 ActivityResultContracts.RequestMultiplePermissions()
@@ -55,9 +57,7 @@ class MainActivity : ComponentActivity() {
                 }.reduce { acc, next -> acc && next }
 
                 if (areGranted){
-                    setContent {
-                        Screen()
-                    }
+                    isPermissionGranted.value = true
                 }
             }
 
@@ -67,10 +67,12 @@ class MainActivity : ComponentActivity() {
                     recordingPermission,
                     launcherDrivePermission
                 ) {
-                    setContent {
-                        Screen()
-                    }
+                    isPermissionGranted.value = true
                 }
+            }
+
+            if(isPermissionGranted.value){
+                Screen(context)
             }
         }
     }
@@ -82,7 +84,6 @@ private fun checkAndRequestLocationPermissions(
     launcher: ManagedActivityResultLauncher<Array<String>, Map<String, Boolean>>,
     hasPermissionCallback: () -> Unit
 ) {
-
     if (
         permission.all {
             ContextCompat.checkSelfPermission(
@@ -98,6 +99,11 @@ private fun checkAndRequestLocationPermissions(
         launcher.launch(permission)
     }
 }
+
+@Composable
+fun Screen(context : Context) {
+}
+
 ```
 {% endtab %}
 {% endtabs %}
