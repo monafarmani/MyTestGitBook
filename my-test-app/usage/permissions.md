@@ -28,87 +28,17 @@ The following permissions are required by the SDK:
 
 So far, these permissions have been added to the manifest, but we need to add other helper permissions based on the settings we have made.
 
-To do this, these lines of code should be added in Main Activity:
+To do this, these lines of code should be added in an  Activity:
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-class MainActivity : ComponentActivity() {
-
-    private val recordingPermission: Array<String>
-        get() {
-            var basePermission = Gizo.app.permissionRequired
-            //Other permissions can be added here
-            return basePermission
-        }
-        
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        setContent {
-            val context = LocalContext.current
-            val isPermissionGranted = remember { mutableStateOf(false) }
-
-            val launcherDrivePermission = rememberLauncherForActivityResult(
-                ActivityResultContracts.RequestMultiplePermissions()
-            ) { permissionsMap ->
-                val areGranted = permissionsMap.mapNotNull {
-                    it.value
-                }.reduce { acc, next -> acc && next }
-
-                if (areGranted){
-                    isPermissionGranted.value = true
-                }
-            }
-
-            LaunchedEffect(true){
-                checkAndRequestLocationPermissions(
-                    context,
-                    recordingPermission,
-                    launcherDrivePermission
-                ) {
-                    isPermissionGranted.value = true
-                }
-            }
-
-            if(isPermissionGranted.value){
-                Screen(context)
-            }
-        }
-    }
-}
-
-private fun checkAndRequestLocationPermissions(
-    context: Context,
-    permission: Array<String>,
-    launcher: ManagedActivityResultLauncher<Array<String>, Map<String, Boolean>>,
-    hasPermissionCallback: () -> Unit
-) {
-    if (
-        permission.all {
-            ContextCompat.checkSelfPermission(
-                context,
-                it
-            ) == PackageManager.PERMISSION_GRANTED
-        }
-    ) {
-        hasPermissionCallback()
-        // Use location because permissions are already granted
-    } else {
-        // Request permissions
-        launcher.launch(permission)
-    }
-}
-
-@Composable
-fun Screen(context : Context) {
-}
-
+ Gizo.app.permissionRequired 
 ```
 {% endtab %}
 {% endtabs %}
 
-
+The line of code above gives us an array of strings that includes the required permissions based on setting.
 
 ## Why Permissions Helper
 
