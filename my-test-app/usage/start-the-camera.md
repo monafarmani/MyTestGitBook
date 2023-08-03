@@ -46,7 +46,7 @@ Gizo.app.gizoAnalysis.attachPreview(previewView)
 
 ### <mark style="color:purple;">Overview</mark>
 
-The video recording options in MyTestSDK allow developers to easily integrate video recording capabilities into their Android applications. This documentation provides instructions on how to utilize the start and stop recording functionality, as well as how to start and stop the camera, and lock and unlock the preview.
+The video recording options in MyTestSDK allow developers to easily integrate video recording capabilities into their Android applications. This documentation provides instructions on how to utilize the start and stop recording functionality, as well as start and stop the camera, and lock and unlock the preview.
 
 ### <mark style="color:purple;">Start and Stop Recording</mark>
 
@@ -75,6 +75,10 @@ coroutineScope.launch {
 {% endtabs %}
 
 ### <mark style="color:purple;">Lock and Unlock Preview</mark>
+
+
+
+Lock preview attaches the preview screen , while unlock preview detaches it .They are used to give developers the ability to display preview or not.
 
 To lock and unlock the preview using MyTestSDK , follow these steps:
 
