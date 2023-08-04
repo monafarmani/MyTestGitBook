@@ -22,7 +22,9 @@ layout:
 
 The GPS settings in MyTestSDK allow developers to incorporate GPS functionality into their Android applications. This documentation provides instructions on enabling GPS, accessing location , speed limit and speed.
 
-For this reason , Add these lines of code in Application class , onCreate function , inside Gizo.initialize to set the Gizo GPS Settings &#x20;
+For this reason , Add these lines of code in Application class , onCreate function , inside Gizo.initialize to set the Gizo GPS Settings.
+
+**Note**: we need to get MAPBOX\_PUBLIC\_KEY from [mapbox SDK](https://docs.mapbox.com/android/maps/guides/install/).
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -30,15 +32,14 @@ For this reason , Add these lines of code in Application class , onCreate functi
  .gpsSetting(
        GizoGpsSetting.Builder()
        .allow(true)
-       .mapBoxKey("MAPBOX_SECRET_KEY")
+       .mapBoxKey("MAPBOX_PUBLIC_KEY")
        .saveCsvFile(true)
        .build())
-
 ```
 {% endtab %}
 {% endtabs %}
 
-Note:&#x20;
+
 
 &#x20;Here are the available options that can be set in gpsSetting in  the Application class:
 
