@@ -18,52 +18,22 @@ layout:
 
 # GizoGpsSetting
 
-Add these lines of code in Application class to set the Gizo GPS Settings&#x20;
+## Overview
+
+
+
+Add these lines of code in Application class , onCreate function , inside Gizo.initialize to set the Gizo GPS Settings &#x20;
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kts
-class Application : Application() {
-    override fun onCreate() {
-        super.onCreate()
+ .gpsSetting(
+       GizoGpsSetting.Builder()
+       .allow(true)
+       .mapBoxKey("pk.eyJ1IjoibXlwbHVzIiwiYSI6ImNsYmMwbHBiNzFrcTQzcHFwaGdjb3RvcHIifQ.ysTPIV-rjUzxoBT4x_Zxww")
+       .saveCsvFile(true)
+       .build())
 
-        Gizo.initialize(
-            this,
-            GizoApp.GizoAppOptions.Builder()
-                .debug(true)
-                .folderName("GizoSample")
-                .analysisSetting(GizoAnalysisSettings.Builder()
-                    .allow(true)
-                    .modelName("arti_sense.tflite")
-                    .loadDelegate(GizoAnalysisSettings.AnalysisDelegateType.Auto)
-                    .carHeight(1.6)
-                    .saveMatrixFile(true)
-                    .saveTTcFile(true)
-                    .build())
-                    
-                    //Add these lines 
-                    
-                .gpsSetting(
-                    GizoGpsSetting.Builder()
-                        .allow(true)
-                        .mapBoxKey("pk.eyJ1IjoibXlwbHVzIiwiYSI6ImNsYmMwbHBiNzFrcTQzcHFwaGdjb3RvcHIifQ.ysTPIV-rjUzxoBT4x_Zxww")
-                        .saveCsvFile(true)
-                        .build())
-                     //   
-                        
-                .imuSetting(GizoImuSetting.Builder().build())
-                .videoSetting(GizoVideoSetting.Builder().build())
-                .batterySetting(GizoBatterySetting.Builder().build())
-                .build()
-        )
-
-        Gizo.app.setLoadModelObserver { status ->
-            Log.d("LoadModelStatus", "status:" + status.name)
-        }
-
-        Gizo.app.loadModel()
-    }
-}
 ```
 {% endtab %}
 {% endtabs %}
