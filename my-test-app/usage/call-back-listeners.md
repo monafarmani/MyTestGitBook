@@ -39,18 +39,27 @@ Add the code to Preview:
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.onAnalysisResult = { result, fps, ttc, ttcStatus, ttcDepthPtn, speed, gpsTime, ttcFrontPtn ->
+gizoAnalysis.onAnalysisResult = { result, fps, ttc, ttcStatus,
+ttcDepthPtn, speed, gpsTime, ttcFrontPtn ->
  
 }
+```
+{% endtab %}
+{% endtabs %}
 
+## Value Parameters
+
+<table><thead><tr><th width="260">Value-Parameters</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td></td></tr><tr><td>ttcStatus</td><td>It returns states <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>ttcDepthPtn</td><td></td></tr><tr><td>speed</td><td>The speed of the car you are driving in.</td></tr><tr><td>gpsTime</td><td>The current time.</td></tr><tr><td>ttcFrontPtn</td><td></td></tr></tbody></table>
+
+
+
+We can write a customized formula and calculate the ttc.
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
 gizoAnalysis.ttcCalculator { depthPtn, speed, ttc ->
     ttc
-}
-
-gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
-    Log.d("collisionThreshold", "$collisionThreshold")
-
-    ttcStatus
 }
 ```
 {% endtab %}
@@ -58,7 +67,17 @@ gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
 
 
 
-<table><thead><tr><th width="260">Value-Parameters</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td></td></tr><tr><td>ttcStatus</td><td>It returns states <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>ttcDepthPtn</td><td></td></tr><tr><td>speed</td><td>The speed of the car you are driving in.</td></tr><tr><td>gpsTime</td><td>The current time.</td></tr><tr><td>ttcFrontPtn</td><td></td></tr></tbody></table>
+We can calculate the customized ttcStatus based depthPtn, speed, and ttc.
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
+  ttcStatus
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ### <mark style="color:purple;">IMU Call back listener</mark>
 
