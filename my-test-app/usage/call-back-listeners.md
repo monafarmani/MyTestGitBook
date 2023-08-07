@@ -61,3 +61,38 @@ gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
 {% endtab %}
 {% endtabs %}
 
+
+
+### <mark style="color:purple;">IMU Call back listener</mark>
+
+Add the code to Preview:
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+gizoAnalysis.onLinearAccelerationSensor={ sensorEvent->
+    var sensorCallback = sensorEvent
+    Log.d("onLinearAccelerationSensor", "$sensorEvent")
+}
+
+gizoAnalysis.onGyroscopeSensor={ sensorEvent->
+    var sensorCallback = sensorEvent
+    Log.d("onGyroscopeSensor", "$sensorEvent")
+}
+
+gizoAnalysis.onGravitySensor={ sensorEvent->
+    var sensorCallback = sensorEvent
+    Log.d("onGravitySensor", "$sensorEvent")
+}
+
+gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEvent ->
+    var linearAccelerationCallBack = linearAccelerationEvent
+    var gyroscopeCallBack = gyroscopeEvent
+    var gravityCallBack = gravityEvent
+    Log.d("linearAccelerationEvent", "$linearAccelerationEvent")
+    Log.d("gyroscopeEvent", "$gyroscopeEvent")
+    Log.d("gravityEvent", "$gravityEvent")
+}
+```
+{% endtab %}
+{% endtabs %}
