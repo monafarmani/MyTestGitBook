@@ -32,20 +32,15 @@ private val gizoAnalysis: GizoAnalysis = Gizo.app.gizoAnalysis
 
 ### <mark style="color:purple;">Analysis Call back listener</mark>
 
+When Analysis gets activated, this call backs can be checked out,
+
 Add the code to Preview:
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
 gizoAnalysis.onAnalysisResult = { result, fps, ttc, ttcStatus, ttcDepthPtn, speed, gpsTime, ttcFrontPtn ->
-    Log.d("result", "$result")
-    Log.d("fps", "$fps")
-    Log.d("ttc", "$ttc")
-    Log.d("ttcStatus", "$ttcStatus")
-    Log.d("ttcDepthPtn", "$ttcDepthPtn")
-    Log.d("speed", "$speed")
-    Log.d("gpsTime", "$gpsTime")
-    Log.d("ttcFrontPtn", "$ttcFrontPtn")
+ 
 }
 
 gizoAnalysis.ttcCalculator { depthPtn, speed, ttc ->
@@ -62,6 +57,8 @@ gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
 {% endtabs %}
 
 
+
+<table><thead><tr><th width="260">Value-Parameters</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td></td></tr><tr><td>ttcStatus</td><td>It returns states <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>ttcDepthPtn</td><td></td></tr><tr><td>speed</td><td>The speed of the car you are driving in.</td></tr><tr><td>gpsTime</td><td>The current time.</td></tr><tr><td>ttcFrontPtn</td><td></td></tr></tbody></table>
 
 ### <mark style="color:purple;">IMU Call back listener</mark>
 
