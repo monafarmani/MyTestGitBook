@@ -20,9 +20,9 @@ layout:
 
 ## Overview
 
-In MyTestSdk library, video settings refer to the configuration and utilization of video-related features and components within an Android application. Video settings typically involve tasks such as capturing video from the device's camera, playing video files, or streaming video content.
+In MyTestSDK library, video settings refer to the configuration and utilization of video-related features and components within an Android application. Video settings typically involve tasks such as capturing video from the device's camera, playing video files, or streaming video content.
 
-To have access to video options, you need to add these lines of code in Application class , onCreate function , inside Gizo.initialize.
+To have access to video setting options, you need to add these lines of code in Application class , onCreate function , inside Gizo.initialize.
 
 {% tabs %}
 {% tab title="Kotlin" %}

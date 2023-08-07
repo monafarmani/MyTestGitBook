@@ -18,3 +18,26 @@ layout:
 
 # GizoBatterySetting
 
+## Overview
+
+&#x20;"Battery settings" on MyTestSDK library refers to the configuration and management options related to the device's battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile device
+
+To have access to battery setting options, you need to add these lines of code in Application class , onCreate function , inside Gizo.initialize.
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+.batterySetting(
+    GizoBatterySetting.Builder()
+        .checkBattery(true)
+        .build()
+)
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+Here are the available options that can be set in batterySetting in the Application class:
+
+<table><thead><tr><th>Options</th><th width="167.33333333333331">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>checkBattery(Boolean)</td><td>false</td><td>To allow to check the battery status or not.</td></tr><tr><td>lowBatteryLimit(Float)</td><td>25f</td><td></td></tr><tr><td>lowBatteryStop(Float)</td><td>15f</td><td></td></tr><tr><td>interval(Long)</td><td>5000L</td><td>A loop of time for getting battery status in 1 second.</td></tr></tbody></table>
