@@ -100,3 +100,44 @@ gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEve
 ```
 {% endtab %}
 {% endtabs %}
+
+### <mark style="color:purple;">GPS Call back listener</mark>
+
+Add the code to Preview:
+
+{% tabs %}
+{% tab title="Kotlin" %}
+
+{% endtab %}
+{% endtabs %}
+
+
+
+### <mark style="color:purple;">Video Call back listener</mark>
+
+Add the code to Preview:
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kts
+gizoAnalysis.onVideoRecordingStatus = { isRecording, previewAttached ->
+    Log.d("isRecording", "$isRecording")
+    Log.d("previewAttached", "$previewAttached")
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+### <mark style="color:purple;">Battery Call back listener</mark>
+
+Add the code to Preview:
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+Log.d("batteryStatus11", "${gizoAnalysis.batteryLastStatus}")
+```
+{% endtab %}
+{% endtabs %}
