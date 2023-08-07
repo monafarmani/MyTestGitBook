@@ -93,6 +93,10 @@ gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEve
     Log.d("gyroscopeEvent", "$gyroscopeEvent")
     Log.d("gravityEvent", "$gravityEvent")
 }
+
+ gizoAnalysis.checkGravityAlignment { isAlign ->
+        Log.d("checkGravityAlignment", "$isAlign")
+}
 ```
 {% endtab %}
 {% endtabs %}
