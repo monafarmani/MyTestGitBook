@@ -16,7 +16,7 @@ layout:
     visible: true
 ---
 
-# App Options Setting
+# App Options
 
 ## Overview
 
