@@ -16,9 +16,9 @@ layout:
     visible: true
 ---
 
-# Start Gizo Analysis
+# Gizo Analysis
 
-To start using the SDK we need to [start the camera ](start-gizo-analysis.md), for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in the Activity: first we start the camera, second preview is attached.
+To start using the SDK we need to [start the camera ](gizo-analysis.md), for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in the Activity: first we start the camera, second preview is attached.
 
 {% tabs %}
 {% tab title="Kotlin" %}
