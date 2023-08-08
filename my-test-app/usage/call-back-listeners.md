@@ -133,7 +133,16 @@ Add the code to Preview:
 
 {% tabs %}
 {% tab title="Kotlin" %}
-
+```kotlin
+gizoAnalysis.onLocationChange = { location, isGpsOn ->
+    Log.d("locationChange", "$location")
+    Log.d("isGpsOn", "$isGpsOn")
+}
+gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
+    Log.d("speedLimitKph", "$speedLimitKph")
+    Log.d("speedKph", "$speedKph")
+}
+```
 {% endtab %}
 {% endtabs %}
 
@@ -163,7 +172,8 @@ Add the code to Preview:
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Log.d("batteryStatus11", "${gizoAnalysis.batteryLastStatus}")
+ gizoAnalysis.onBatteryStatusChange = { status ->
+ }
 ```
 {% endtab %}
 {% endtabs %}

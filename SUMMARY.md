@@ -5,7 +5,7 @@
   * [🚀 Getting Started](my-test-app/getting-started.md)
   * [⚙ Usage](my-test-app/usage/README.md)
     * [Permissions](my-test-app/usage/permissions.md)
-    * [Start The Camera](my-test-app/usage/start-the-camera.md)
+    * [Start Gizo Analysis](my-test-app/usage/start-gizo-analysis.md)
     * [App Options Setting](my-test-app/usage/app-options-setting/README.md)
       * [GizoAnalysisSettings](my-test-app/usage/app-options-setting/gizoanalysissettings.md)
       * [GizoGpsSetting](my-test-app/usage/app-options-setting/gizogpssetting.md)
