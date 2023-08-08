@@ -32,7 +32,7 @@ Based on the [settings](app-options-setting/) applied by the developer, a series
 {% endtab %}
 {% endtabs %}
 
-**onDone is called when start camera is completed.**
+**onDone is called when start Gizo Analysis is completed.**
 
 ### <mark style="color:purple;">Stop Gizo Analysis</mark>
 
