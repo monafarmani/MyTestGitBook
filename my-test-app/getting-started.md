@@ -148,5 +148,5 @@ In the example above, we create a new instance of the Application class and call
 
 In the examole above, we add some lines of code to AndroidManifest.xml as well.
 
-**Note:** For using features of the sdk you need to add [Model ](usage/app-options-setting/gizoanalysissettings.md)and required [App Options Setting](usage/app-options-setting/) in the following steps.
+**Note:** For using features of the sdk you need to add [Model ](usage/app-options/gizoanalysissettings.md)and required [App Options Setting](usage/app-options/) in the following steps.
 
