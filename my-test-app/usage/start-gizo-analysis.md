@@ -46,29 +46,33 @@ When Stop Gizo Analysis is called all settings are inactive.&#x20;
 {% endtab %}
 {% endtabs %}
 
-### <mark style="color:purple;">Start and Stop Recording</mark>
+### <mark style="color:purple;">Start saving session</mark>
 
 Based on the settings we have applied, some files related to video , Analysis , gps and Imu are saved.
 
-To start and stop saving files using MyTestSDK , use the following code:
+To start saving files using MyTestSDK , use the following code:
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-// Start video recording
 gizoAnalysis.startSavingSession() 
 ```
 {% endtab %}
 {% endtabs %}
 
+### <mark style="color:purple;">Stop saving session</mark>
+
+To stop saving files using MyTestSDK , use the following code:
+
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
- // Stop video recording
- gizoAnalysis.stopSavingSession()
+gizoAnalysis.stopSavingSession()
 ```
 {% endtab %}
 {% endtabs %}
+
+### <mark style="color:purple;">Attach preview to camera</mark>
 
 Preview View is a Custom View that displays the camera feed for CameraX's Preview use case. This class manages the preview Surface's lifecycle. It internally uses either a TextureView or SurfaceView to display the camera feed, and applies required transformations on them to correctly display the preview, this involves correcting their aspect ratio, scale and rotation.
 
@@ -82,33 +86,31 @@ Gizo.app.gizoAnalysis.attachPreview(previewView)
 {% endtab %}
 {% endtabs %}
 
-## Video Recording Options in MyTestSDK
-
-### <mark style="color:purple;">Overview</mark>
-
-The video recording options in MyTestSDK allow developers to easily integrate video recording capabilities into their Android applications. This documentation provides instructions on how to utilize the start and stop recording functionality, as well as start and stop the camera, and lock and unlock the preview.
-
-###
+## Video Recording Options in MyTestSDK.
 
 ### <mark style="color:purple;">Lock and Unlock Preview</mark>
 
 Lock preview attaches the preview screen , while unlock preview detaches it .They are used to give developers the ability to display preview or not.
 
-To lock and unlock the preview using MyTestSDK , follow these steps:
+To lock the preview using MyTestSDK , follow this line of code:
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-// lock preview
 gizoAnalysis.lockPreview()
-
-// unlock preview
-gizoAnalysis.unlockPreview(previewView)
 ```
 {% endtab %}
 {% endtabs %}
 
-###
+To unlock the preview using MyTestSDK , follow this line of code:
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+gizoAnalysis.unlockPreview(previewView)
+```
+{% endtab %}
+{% endtabs %}
 
 
 
