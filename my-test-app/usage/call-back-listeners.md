@@ -110,22 +110,24 @@ gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
 
 When IMU gets activated, this value parameters can be checked out:
 
-<table><thead><tr><th width="290">Value-parameters</th><th></th></tr></thead><tbody><tr><td>linearAccelerationSensor</td><td></td></tr><tr><td>gyroscopeSensor</td><td></td></tr><tr><td>gravitySensor</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="241">Value-parameters</th><th>Description</th></tr></thead><tbody><tr><td>accelerationSensorEvent</td><td>includes information such as Acceleration values, Timestamp &#x26; Accuracy or precision.</td></tr><tr><td>gyroscopeSensorEvent</td><td>includes information such as Angular velocity values, Timestamp &#x26; Accuracy or precision.</td></tr><tr><td>gravitySensorEvent</td><td>includes information such as Gravity values, Timestamp &#x26; Accuracy or precision.</td></tr><tr><td>linearAccelerationEvent</td><td>includes information such as Acceleration values, Angular velocity values, Magnetic field values, Timestamp &#x26; Accuracy or precision.</td></tr><tr><td>gyroscopeEvent</td><td>includes information such as Acceleration values, Angular velocity values, Magnetic field values, Timestamp &#x26; Accuracy or precision.</td></tr><tr><td>garavityEvent</td><td>includes information such as Acceleration values, Angular velocity values, Magnetic field values, Timestamp &#x26; Accuracy or precision.</td></tr></tbody></table>
 
-Add the code to Preview:
+
+
+Gain these parameters with the codes below in Preview
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.onLinearAccelerationSensor={ sensorEvent->
+gizoAnalysis.onLinearAccelerationSensor={ accelearationSensorEvent->
     var sensorCallback = sensorEvent
 }
 
-gizoAnalysis.onGyroscopeSensor={ sensorEvent->
+gizoAnalysis.onGyroscopeSensor={ gyroscopeSensorEvent->
     var sensorCallback = sensorEvent
 }
 
-gizoAnalysis.onGravitySensor={ sensorEvent->
+gizoAnalysis.onGravitySensor={ gravitySensorEvent->
     var sensorCallback = sensorEvent
 }
 
