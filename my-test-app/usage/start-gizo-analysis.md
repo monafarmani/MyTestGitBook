@@ -48,7 +48,9 @@ When Stop Gizo Analysis is called all settings are inactive.&#x20;
 
 ### <mark style="color:purple;">Start and Stop Recording</mark>
 
-To start and stop video recording using MyTestSDK , use the following code:
+Based on the settings we have applied, some files related to video , Analysis , gps and Imu are saved.
+
+To start and stop saving files using MyTestSDK , use the following code:
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -58,8 +60,6 @@ gizoAnalysis.startSavingSession()
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 {% tabs %}
 {% tab title="Kotlin" %}
