@@ -137,26 +137,42 @@ gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEve
     var gravityCallBack = gravityEvent
 }
 
+
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
  gizoAnalysis.checkGravityAlignment { isAlign ->
 }
 ```
 {% endtab %}
 {% endtabs %}
 
-###
-
 
 
 ### <mark style="color:purple;">Video Call back listener</mark>
 
-Add the code to Preview:
+When video gets activated, this value parameters can be checked out:
+
+<table><thead><tr><th width="255">Value-parameters</th><th>Description</th></tr></thead><tbody><tr><td>isRecording</td><td>To check whether the camera is recording or not</td></tr><tr><td>previewAttached</td><td>To check whether the preview is attached or not</td></tr></tbody></table>
+
+
+
+Gain these parameters with the codes below in Preview
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kts
 gizoAnalysis.onVideoRecordingStatus = { isRecording, previewAttached ->
-    Log.d("isRecording", "$isRecording")
-    Log.d("previewAttached", "$previewAttached")
 }
 ```
 {% endtab %}
