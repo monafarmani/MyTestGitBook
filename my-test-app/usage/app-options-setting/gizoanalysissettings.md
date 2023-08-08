@@ -116,6 +116,6 @@ class Application : Application() {
 {% endtab %}
 {% endtabs %}
 
-**Note:** After these settings are done, a series of [callbacks ](../listeners.md)are triggered that the corresponding output can be observed.
+**Note:** After these settings are done, a series of [callbacks ](../call-back-listeners.md)are triggered that the corresponding output can be observed.
 
 **Note:** To enable GizoAnalysisSettings, it is essential to activate [GPS Setting](gizogpssetting.md).&#x20;

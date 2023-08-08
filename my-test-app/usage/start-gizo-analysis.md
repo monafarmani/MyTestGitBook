@@ -18,7 +18,11 @@ layout:
 
 # Gizo Analysis
 
-To start using the SDK we need to [start the camera ](start-gizo-analysis.md), for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in the Activity: first we start the camera, second preview is attached.
+### <mark style="color:purple;">Start Gizo Analysis</mark>
+
+To start using the SDK we need to start Gizo Analysis. for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in the Activity.
+
+Based on the [settings](app-options-setting/) applied by the developer, a series of features will be added to the sdk.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -30,9 +34,45 @@ To start using the SDK we need to [start the camera ](start-gizo-analysis.md), f
 
 **onDone is called when start camera is completed.**
 
+### <mark style="color:purple;">Stop Gizo Analysis</mark>
+
+When Stop Gizo Analysis is called all settings are inactive.&#x20;
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+  Gizo.app.gizoAnalysis.stop()
+```
+{% endtab %}
+{% endtabs %}
+
+### <mark style="color:purple;">Start and Stop Recording</mark>
+
+To start and stop video recording using MyTestSDK , use the following code:
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+// Start video recording
+gizoAnalysis.startSavingSession() 
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+ // Stop video recording
+ gizoAnalysis.stopSavingSession()
+```
+{% endtab %}
+{% endtabs %}
+
 Preview View is a Custom View that displays the camera feed for CameraX's Preview use case. This class manages the preview Surface's lifecycle. It internally uses either a TextureView or SurfaceView to display the camera feed, and applies required transformations on them to correctly display the preview, this involves correcting their aspect ratio, scale and rotation.
 
-So , to display camera a previewView should be attached as well.
+So, to display camera a previewView should be attached as well.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -48,31 +88,7 @@ Gizo.app.gizoAnalysis.attachPreview(previewView)
 
 The video recording options in MyTestSDK allow developers to easily integrate video recording capabilities into their Android applications. This documentation provides instructions on how to utilize the start and stop recording functionality, as well as start and stop the camera, and lock and unlock the preview.
 
-### <mark style="color:purple;">Start and Stop Recording</mark>
-
-To start and stop video recording using MyTestSDK , use the following code:
-
-{% tabs %}
-{% tab title="Kotlin" %}
-```kotlin
-// Start video recording
-coroutineScope.launch {
-    gizoAnalysis.startRecording { event ->
-        when (event) {
-            is VideoRecordEvent.Finalize -> {
-                if (event.hasError()) {
-                    //Do something
-             }
-          }
-       }
-     }
- }
- 
- // Stop video recording
- gizoAnalysis.stopRecording()
-```
-{% endtab %}
-{% endtabs %}
+###
 
 ### <mark style="color:purple;">Lock and Unlock Preview</mark>
 
@@ -92,20 +108,7 @@ gizoAnalysis.unlockPreview(previewView)
 {% endtab %}
 {% endtabs %}
 
-### <mark style="color:purple;">Stop camera</mark>
-
-Stop Camera is called when an activity is about to be destroyed or removed from memory.
-
-{% tabs %}
-{% tab title="Kotlin" %}
-```kotlin
-override fun onDestroy() {
-    super.onDestroy()
-    gizoAnalysis.stopCamera()
-}
-```
-{% endtab %}
-{% endtabs %}
+###
 
 
 
