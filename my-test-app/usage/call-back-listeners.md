@@ -34,9 +34,9 @@ private val gizoAnalysis: GizoAnalysis = Gizo.app.gizoAnalysis
 
 When Analysis gets activated, this value parameters can be checked out
 
-## Value Parameters
+### Value Parameters
 
-<table><thead><tr><th width="237">Value-Parameters</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td></td></tr><tr><td>ttcStatus</td><td>It returns states <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>ttcDepthPtn</td><td></td></tr><tr><td>speed</td><td>The speed of the car you are driving in.</td></tr><tr><td>gpsTime</td><td>The current time.</td></tr><tr><td>ttcFrontPtn</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="237">Value-Parameters</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td></td></tr><tr><td>ttcStatus</td><td>It returns states <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>ttcDepthPtn</td><td></td></tr><tr><td>speed</td><td>The speed of the car you are driving in.</td></tr><tr><td>gpsTime</td><td>The current time.</td></tr><tr><td>ttcFrontPtn</td><td></td></tr><tr><td>collisionThreshold </td><td>It provides a number that determines the specific status of danger, warning or none.</td></tr></tbody></table>
 
 
 
@@ -69,7 +69,7 @@ gizoAnalysis.ttcCalculator { depthPtn, speed, ttc ->
 
 
 
-We can calculate the customized ttcStatus based on depthPtn, speed, and ttc in Preview.
+We can calculate the customized ttcStatus based on depthPtn, speed, collisionThreshold and ttc in Preview.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -82,6 +82,14 @@ gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
 {% endtabs %}
 
 ### <mark style="color:purple;">IMU Call back listener</mark>
+
+
+
+| Value-parameters         |   |
+| ------------------------ | - |
+| linearAccelerationSensor |   |
+| gyroscopeSensor          |   |
+| gravitySensor            |   |
 
 Add the code to Preview:
 
