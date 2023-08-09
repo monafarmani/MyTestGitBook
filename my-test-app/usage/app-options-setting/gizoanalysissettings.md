@@ -20,7 +20,14 @@ layout:
 
 ## overview
 
-In our sdk we require accurate and efficient detection and localization of objects in images and video streams and also require accurate and efficient estimation of the depth or distance of objects in a scene.
+In our SDK we require accurate and efficient detection and localization of objects in images and video streams and also  accurate and efficient estimation of the depth or distance of objects in a scene.
+
+Object detection and depth estimation are crucial technologies in Android development that empower applications to perceive and understand their surroundings. By leveraging these capabilities, developers can enable their apps to identify objects within images or video streams and estimate the relative distances between objects in a scene.
+
+\
+**Object detection** plays a vital role in various Android applications, enabling tasks such as object recognition, tracking, and augmented reality
+
+**Depth estimation** enables Android applications to perceive the relative distances between objects in a scene. This capability is valuable for tasks like depth-based segmentation, virtual reality, or 3D reconstruction.
 
 In Android Studio, object detection and depth estimation can be implemented using machine learning models, such as those built with TensorFlow, and deployed using the TensorFlow Lite library.&#x20;
 
@@ -34,7 +41,9 @@ Download the model from this link:&#x20;
 
 ### <mark style="color:purple;">Step 2: Add Gizo Analysis Settings</mark>
 
-Add these lines of code in Application class to set the Gizo Analysis Settings&#x20;
+Gizo Analysis setting is used to customize some behavior and functionality of our library including  specifying the processing method on the model, the distance from the windshield to the hood of the car, the initial amount of timer, time to collision number(ttc), where to save the file, what period of time interval the data should be saved and sent & where to save matrix file.
+
+To do this task, add these lines of code in Application class to set the Gizo Analysis Settings:&#x20;
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -83,6 +92,8 @@ class Application : Application() {
 
 
 ### <mark style="color:purple;">Step 3: Loading model</mark>
+
+Loading a model in Android Studio allows the application to utilize the trained model's intelligence and perform complex tasks that go beyond traditional programming capabilities. By incorporating machine learning models into Android applications, developers can provide intelligent, data-driven features and functionalities to their users.
 
 Add these lines of code in Application class to load the model and receive the listener for different status of loading such as LOADING, LOADED, FAILED, NOT\_LOADED
 
