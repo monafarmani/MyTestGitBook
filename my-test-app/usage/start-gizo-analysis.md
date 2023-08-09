@@ -22,6 +22,8 @@ layout:
 
 In this library, using artificial intelligence, the driving behavior is analyzed, and a series of data is computed to reduce the risk of accidents and other driving problems. As a result, the possibility of smarter and safer driving is provided for users.
 
+###
+
 ### <mark style="color:purple;">Start Gizo Analysis</mark>
 
 To start using the SDK we need to start Gizo Analysis. for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in the Activity.
@@ -42,6 +44,8 @@ Based on the [settings](app-options-setting/) applied by the developer, a series
 
 **onDone is called when start Gizo Analysis is completed.**
 
+###
+
 ### <mark style="color:purple;">Stop Gizo Analysis</mark>
 
 Whenever we no longer need the SDK, we should call the stop function to halt all ongoing operations within the library. These processes include video recording, GPS, IMU, Analysis and so on..&#x20;
@@ -53,6 +57,8 @@ Whenever we no longer need the SDK, we should call the stop function to halt all
 ```
 {% endtab %}
 {% endtabs %}
+
+###
 
 ### <mark style="color:purple;">Start saving session</mark>
 
@@ -69,6 +75,8 @@ To start saving files using MyTestSDK , use the following code:
 {% endtab %}
 {% endtabs %}
 
+###
+
 ### <mark style="color:purple;">Stop saving session</mark>
 
 While saving files is an essential aspect of many applications, it's important to consider the performance, battery, storage, security, and network implications associated with file saving operations. By optimizing and managing file saving processes, you can ensure a smooth user experience while efficiently utilizing system resources.
@@ -83,6 +91,8 @@ Gizo.app.gizoAnalysis.stopSavingSession()
 {% endtab %}
 {% endtabs %}
 
+###
+
 ### <mark style="color:purple;">Attach preview to camera</mark>
 
 Preview View is a Custom View that displays the camera feed for CameraX's Preview use case. This class manages the preview Surface's lifecycle. It internally uses either a TextureView or SurfaceView to display the camera feed, and applies required transformations on them to correctly display the preview, this involves correcting their aspect ratio, scale and rotation.
@@ -96,6 +106,8 @@ Gizo.app.gizoAnalysis.attachPreview(previewView)
 ```
 {% endtab %}
 {% endtabs %}
+
+##
 
 ## Video Recording Options in MyTestSDK.
 
