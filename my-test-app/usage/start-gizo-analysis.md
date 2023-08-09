@@ -99,9 +99,17 @@ Gizo.app.gizoAnalysis.attachPreview(previewView)
 
 ## Video Recording Options in MyTestSDK.
 
-### <mark style="color:purple;">Lock and Unlock Preview</mark>
+In Android Studio, the Preview feature allows developers to visualize and interact with the user interface (UI) of their Android app without the need to run the app on a physical device or emulator. It provides a real-time preview of how the UI will look and behave on different devices and screen sizes.
+
+The Preview feature is primarily used in the XML layout editor, where developers design the UI of their app using XML markup or the visual drag-and-drop editor. With the Preview feature, developers can see a live rendering of the UI layout, including the arrangement of views, styles, themes, and other UI elements.
+
+### <mark style="color:purple;">Lock Preview</mark>
 
 Lock preview attaches the preview screen , while unlock preview detaches it .They are used to give developers the ability to display preview or not.
+
+Once the Lock Preview feature is enabled, the preview will remain fixed to the chosen device configuration until the feature is disabled or the configuration is changed.
+
+By using the Lock Preview feature, developers can maintain a focused and consistent preview display, allowing for more efficient UI design and testing in Android Studio.
 
 To lock the preview using MyTestSDK , follow this line of code:
 
@@ -112,6 +120,12 @@ Gizo.app.gizoAnalysis.lockPreview()
 ```
 {% endtab %}
 {% endtabs %}
+
+
+
+### <mark style="color:purple;">Unlock Preview</mark>
+
+In Android Studio, the "Unlock Preview" feature is the counterpart to the "Lock Preview" feature in the XML layout editor's Preview pane. When the Unlock Preview feature is enabled, it allows the preview display to dynamically update and adapt to changes made to the XML layout or other settings.
 
 To unlock the preview using MyTestSDK , follow this line of code:
 
