@@ -26,9 +26,11 @@ In this library, using artificial intelligence, the driving behavior is analyzed
 
 To start using the SDK we need to start Gizo Analysis. for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in the Activity.
 
+In Android development, a lifecycle refers to the series of states that an Android component, such as an Activity or Fragment, goes through during its existence. The Android framework provides a set of predefined methods that allow developers to perform specific actions or respond to events at different stages of the component's lifecycle.
 
+The typical lifecycle of an Android component includes the following states: Created, Started, Resumed, Paused, Stopped & Destroyed.
 
-Based on the [settings](app-options-setting/) applied by the developer, a series of features will be added to the sdk.
+Based on the [settings](app-options-setting/) applied by the developer, a series of features will be added to the SDK.
 
 {% tabs %}
 {% tab title="Kotlin" %}
