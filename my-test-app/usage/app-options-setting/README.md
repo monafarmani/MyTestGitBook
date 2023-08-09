@@ -20,7 +20,15 @@ layout:
 
 ## Overview
 
-The SDK provides several options that can be configured at the app level to customize its behavior. These options can be set in the Application class of your app.
+The SDK provides several options that can be configured at the app level to customize its behavior.&#x20;
+
+Welcome to the App Options section of our Android library! This section provides you with the flexibility to customize the behavior and functionality of our library according to your specific needs and these options can be set in the Application class of your app. By modifying these settings, you can tailor the library's features and options to seamlessly integrate with your application and deliver a personalized user experience.
+
+In this documentation, we will walk you through the various settings available and explain how each setting influences the library's behavior. You'll find detailed descriptions, default values & usage examples for each setting to help you understand their purpose and make informed decisions when configuring the library.
+
+Please refer to the following sections for detailed information on each setting, including usage examples.&#x20;
+
+Let's dive in and discover the settings that will empower you to make the most of our Android library!
 
 
 
