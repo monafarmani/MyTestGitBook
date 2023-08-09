@@ -44,7 +44,7 @@ Based on the [settings](app-options-setting/) applied by the developer, a series
 
 ### <mark style="color:purple;">Stop Gizo Analysis</mark>
 
-When Stop Gizo Analysis is called all settings are inactive.&#x20;
+Whenever we no longer need the SDK, we should call the stop function to halt all ongoing operations within the library. These processes include video recording, GPS, IMU, Analysis and so on..&#x20;
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -58,6 +58,8 @@ When Stop Gizo Analysis is called all settings are inactive.&#x20;
 
 Based on the settings we have applied, some files related to video , Analysis , gps and Imu are saved.
 
+Saving files like GPS data, videos, IMU data, and analysis results in Android Studio provides benefits such as data persistence, offline accessibility, advanced data analysis, sharing and collaboration, data backup and recovery, and historical tracking. It enhances the functionality, usability, and reliability of your app by ensuring the availability and integrity of important data
+
 To start saving files using MyTestSDK , use the following code:
 
 {% tabs %}
@@ -68,6 +70,8 @@ To start saving files using MyTestSDK , use the following code:
 {% endtabs %}
 
 ### <mark style="color:purple;">Stop saving session</mark>
+
+While saving files is an essential aspect of many applications, it's important to consider the performance, battery, storage, security, and network implications associated with file saving operations. By optimizing and managing file saving processes, you can ensure a smooth user experience while efficiently utilizing system resources.
 
 To stop saving files using MyTestSDK , use the following code:
 
