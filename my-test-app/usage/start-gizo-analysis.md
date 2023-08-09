@@ -54,9 +54,8 @@ To start saving files using MyTestSDK , use the following code:
 
 {% tabs %}
 {% tab title="Kotlin" %}
-```kotlin
-gizoAnalysis.startSavingSession() 
-```
+<pre class="language-kotlin"><code class="lang-kotlin"><strong>Gizo.app.gizoAnalysis.startSavingSession() 
+</strong></code></pre>
 {% endtab %}
 {% endtabs %}
 
@@ -67,7 +66,7 @@ To stop saving files using MyTestSDK , use the following code:
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.stopSavingSession()
+Gizo.app.gizoAnalysis.stopSavingSession()
 ```
 {% endtab %}
 {% endtabs %}
@@ -97,7 +96,7 @@ To lock the preview using MyTestSDK , follow this line of code:
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.lockPreview()
+Gizo.app.gizoAnalysis.lockPreview()
 ```
 {% endtab %}
 {% endtabs %}
@@ -107,7 +106,7 @@ To unlock the preview using MyTestSDK , follow this line of code:
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.unlockPreview(previewView)
+Gizo.app.gizoAnalysis.unlockPreview(previewView)
 ```
 {% endtab %}
 {% endtabs %}
