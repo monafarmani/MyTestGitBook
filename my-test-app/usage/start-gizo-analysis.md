@@ -18,9 +18,15 @@ layout:
 
 # Gizo Analysis
 
+## Overview
+
+In this library, using artificial intelligence, the driving behavior is analyzed, and a series of data is computed to reduce the risk of accidents and other driving problems. As a result, the possibility of smarter and safer driving is provided for users.
+
 ### <mark style="color:purple;">Start Gizo Analysis</mark>
 
 To start using the SDK we need to start Gizo Analysis. for this reason we need a lifecycle like an activity or a fragment and implement these lines of code in the Activity.
+
+
 
 Based on the [settings](app-options-setting/) applied by the developer, a series of features will be added to the sdk.
 
