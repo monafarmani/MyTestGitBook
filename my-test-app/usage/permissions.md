@@ -18,17 +18,25 @@ layout:
 
 # Permissions
 
-## <mark style="color:blue;">Permissions Settings</mark>
+## Overview
+
+Permissions in Android Studio refer to the security mechanisms that control an application's access to specific resources or features of the device. These permissions are declared in the AndroidManifest.xml file and are essential for ensuring user privacy and security.
+
+It's important to note that starting from Android 6.0 (API level 23), dangerous permissions are requested at runtime, even if they are declared in the manifest. This means that the user can grant or deny the permission when the application is running, and the application must handle the permission flow accordingly.
+
+Managing permissions properly is crucial for maintaining user trust and ensuring that applications access only the necessary resources. Android Studio provides tools and APIs to handle permissions effectively and securely within your application.
+
+## <mark style="color:purple;">Permissions Settings</mark>
 
 The following permissions are required by the SDK:
 
 <table><thead><tr><th width="348">PERMISSIONS</th><th>WHERE TO USE</th></tr></thead><tbody><tr><td>ACCESS_COARSE_LOCATION</td><td>in GPS setting.</td></tr><tr><td>ACCESS_FINE_LOCATION</td><td>in GPS setting.</td></tr><tr><td>CAMERA</td><td>in capturing videos.</td></tr><tr><td>ACCESS_NETWORK_STATE</td><td>in mapbox navigation.</td></tr><tr><td>WRITE_EXTERNAL_STORAGE</td><td>in saving files in download folder.</td></tr></tbody></table>
 
-## <mark style="color:blue;">Permissions Helper</mark>&#x20;
+## <mark style="color:purple;">Permissions Helper</mark>&#x20;
 
 So far, these permissions have been added to the manifest, but we need to add other helper permissions based on the settings we have made.
 
-To do this, these lines of code should be added in an  Activity:
+To do this, these lines of code should be added in an Activity:
 
 {% tabs %}
 {% tab title="Kotlin" %}
