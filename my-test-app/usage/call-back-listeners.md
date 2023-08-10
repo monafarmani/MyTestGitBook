@@ -30,9 +30,11 @@ Callback listeners allow you to register a listener object that will be notified
 
 ### <mark style="color:purple;">Analysis listener</mark>
 
+In our SDK, we require accurate and efficient detection and localization of objects in images and video streams and also accurate and efficient estimation of the depth or distance of objects in a scene and we gain these data with Gizo Analysis Setting.
+
 When Analysis gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="203">Value-Parameters</th><th width="145">Type</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>Bitmap?</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>String</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td>Float?</td><td></td></tr><tr><td>ttcStatus</td><td>TTCAlert</td><td>It returns state <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>ttcDepthPtn</td><td>String</td><td></td></tr><tr><td>speed</td><td>Float?</td><td>The speed of the car the user is driving in.</td></tr><tr><td>gpsTime</td><td>String</td><td>The current time.</td></tr><tr><td>collisionThreshold </td><td>Float</td><td>It provides a number that determines the specific status of danger, warning, or none.</td></tr></tbody></table>
+<table><thead><tr><th width="203">Value-Parameters</th><th width="145">Type</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>Bitmap?</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>String</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td>Float?</td><td>Time to collision.</td></tr><tr><td>ttcStatus</td><td>TTCAlert</td><td>It returns state <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>ttcDepthPtn</td><td>String</td><td>The distance to the front car.</td></tr><tr><td>speed</td><td>Float?</td><td>The speed of the car the user is driving in.</td></tr><tr><td>gpsTime</td><td>String</td><td>The current time.</td></tr><tr><td>collisionThreshold </td><td>Float</td><td>It provides a number that determines the specific status of danger, warning, or none.</td></tr></tbody></table>
 
 
 
@@ -85,7 +87,7 @@ As mentioned earlier this documentation provides instructions on enabling GPS, a
 
 When GPS gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="196">Value-parameters</th><th width="159">Type</th><th>Description</th></tr></thead><tbody><tr><td>location</td><td>Locatoin?</td><td>The location of the user.</td></tr><tr><td>isGpsOn</td><td>Boolean?</td><td>To check whether GPS is on or not.</td></tr><tr><td>speedLimitKph</td><td>Int?</td><td>speed limit kilometer per hour</td></tr><tr><td>speedKph</td><td>Int</td><td>speed kilometer per hour</td></tr></tbody></table>
+<table><thead><tr><th width="196">Value-parameters</th><th width="159">Type</th><th>Description</th></tr></thead><tbody><tr><td>location</td><td>Location?</td><td>The location of the user.</td></tr><tr><td>isGpsOn</td><td>Boolean?</td><td>To check whether GPS is on or not.</td></tr><tr><td>speedLimitKph</td><td>Int?</td><td>speed limit kilometer per hour</td></tr><tr><td>speedKph</td><td>Int</td><td>speed kilometer per hour</td></tr></tbody></table>
 
 
 
@@ -144,9 +146,11 @@ gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEve
 
 
 
+Landscape screen orientation in mobile devices refers to a display mode where the screen is wider than it is tall, resembling the shape of a landscape. In this orientation, the device is typically held horizontally, with the longer edge of the screen parallel to the ground.
 
+When a mobile device is in landscape orientation, the user interface and content on the screen adjust accordingly to make optimal use of the wider space. This orientation is commonly used for activities that benefit from a wider viewing area, such as watching videos, playing games, or viewing wide documents or images.
 
-
+In MyTestSDK if our mobile device is in landscape orientation, the listener calls back true.(isAlign would be true)
 
 {% tabs %}
 {% tab title="Kotlin" %}
