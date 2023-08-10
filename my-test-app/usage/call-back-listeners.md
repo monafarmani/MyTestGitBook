@@ -81,9 +81,11 @@ gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
 
 ### <mark style="color:purple;">GPS listener</mark>
 
-When gps gets activated, these value parameters can be checked out:
+As mentioned earlier this documentation provides instructions on enabling GPS, accessing location, speed limit, and speed.
 
-<table><thead><tr><th width="196">Value-parameters</th><th width="159">Type</th><th>Description</th></tr></thead><tbody><tr><td>location</td><td>Locatoin?</td><td>The location of the user</td></tr><tr><td>isGpsOn</td><td>Boolean?</td><td>To check whether gps is on or not</td></tr><tr><td>speedLimitKph</td><td>Int?</td><td>speed limit kilometer per hour</td></tr><tr><td>speedKph</td><td>Int</td><td>speed kilometer per hour</td></tr></tbody></table>
+When GPS gets activated, these value parameters can be checked out:
+
+<table><thead><tr><th width="196">Value-parameters</th><th width="159">Type</th><th>Description</th></tr></thead><tbody><tr><td>location</td><td>Locatoin?</td><td>The location of the user.</td></tr><tr><td>isGpsOn</td><td>Boolean?</td><td>To check whether GPS is on or not.</td></tr><tr><td>speedLimitKph</td><td>Int?</td><td>speed limit kilometer per hour</td></tr><tr><td>speedKph</td><td>Int</td><td>speed kilometer per hour</td></tr></tbody></table>
 
 
 
@@ -105,6 +107,8 @@ gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
 ###
 
 ### <mark style="color:purple;">IMU  listener</mark>
+
+As previously mentioned the IMU setting in MyTestSDK allows developers to utilize the sensors that make up the device’s IMU. The IMU typically consists of the **accelerometer**, **gyroscope,** and **gravity**.
 
 When IMU gets activated, these value parameters can be checked out:
 
@@ -157,7 +161,9 @@ gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEve
 
 ### <mark style="color:purple;">Session Status listener</mark>
 
-When video gets activated, these value parameters can be checked out:
+As previously stated based on the settings we have applied, some files related to video, analysis, GPS, and IMU are saved.
+
+When Start Session gets activated, these value parameters can be checked out:
 
 <table><thead><tr><th width="192">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not</td></tr></tbody></table>
 
@@ -177,6 +183,8 @@ gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
 
 
 ### <mark style="color:purple;">Battery listener</mark>
+
+Battery settings on MyTestSDK library refer to the configuration and management options related to the device’s battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile devices.
 
 When battery gets activated, this value parameter can be checked out:
 
