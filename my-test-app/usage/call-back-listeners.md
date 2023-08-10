@@ -155,11 +155,11 @@ gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEve
 
 
 
-### <mark style="color:purple;">Video listener</mark>
+### <mark style="color:purple;">Session Status listener</mark>
 
 When video gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="192">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>isRecording</td><td>Boolean</td><td>To check whether the camera is recording or not</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not</td></tr></tbody></table>
+<table><thead><tr><th width="192">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not</td></tr></tbody></table>
 
 
 
@@ -180,7 +180,7 @@ gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
 
 When battery gets activated, this value parameter can be checked out:
 
-<table><thead><tr><th width="184">Value-parameter</th><th width="106">Type</th><th>Description</th></tr></thead><tbody><tr><td>status</td><td>String</td><td>To check what is the battery status: LOW_BATTERY_STOP, LOW-BATTERY_WARNING or NORMAL</td></tr></tbody></table>
+<table><thead><tr><th width="184">Value-parameter</th><th width="142">Type</th><th>Description</th></tr></thead><tbody><tr><td>status</td><td>BatteryStatus</td><td>To check what is the battery status: LOW_BATTERY_STOP, LOW-BATTERY_WARNING or NORMAL</td></tr></tbody></table>
 
 
 
