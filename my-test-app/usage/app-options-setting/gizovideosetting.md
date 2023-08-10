@@ -20,11 +20,11 @@ layout:
 
 ## Overview
 
-Battery settings on MyTestSDK library refer to the configuration and management options related to the device’s battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile devices.
+Video settings on MyTestSDK refer to the various options and configurations that allow users to control and customize the video recording and playback experience. These settings can be accessed through the camera or video app on your mobile device.
 
-Gizo battery setting is used to customize some behavior and functionality of our library, including specifying the minimum percentage of battery charge that Analysis options can be implemented, The minimum percentage of battery charge that Recording video can be implemented, A loop of time for getting battery status in 1 second, and so on ...
+Gizo video setting is used to customize some behavior and functionality of our library, including specifying the quality of video capturing and where to save video files.
 
-To have access to battery setting options, you need to add these lines of code in the Application class, onCreate function, inside Gizo.initialize.
+To have access to video setting options, you need to add these lines of code in the Application class, onCreate function, inside Gizo.initialize.
 
 {% tabs %}
 {% tab title="Kotlin" %}
