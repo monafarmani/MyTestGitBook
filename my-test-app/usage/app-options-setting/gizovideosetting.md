@@ -20,9 +20,11 @@ layout:
 
 ## Overview
 
-In MyTestSDK library, video settings refer to the configuration and utilization of video-related features and components within an Android application. Video settings typically involve tasks such as capturing video from the device's camera, playing video files, or streaming video content.
+In MyTestSDK library, video settings refer to the configuration and utilization of video-related features and components within an Android application. Video settings typically involve tasks, such as capturing video from the device’s camera, playing video files, or streaming video content.
 
-To have access to video setting options, you need to add these lines of code in Application class , onCreate function , inside Gizo.initialize.
+Gizo video setting is used to customize some behavior and functionality of our library, including specifying where to save video files and the quality of video capturing.
+
+To have access to video setting options, you need to add these lines of code in the Application class, onCreate function, inside Gizo.initialize.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -40,5 +42,5 @@ To have access to video setting options, you need to add these lines of code in 
 
 Here are the available options that can be set in videoSetting in the Application class:
 
-<table><thead><tr><th width="227.33333333333331">Options</th><th width="213">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>quality(Quality)</td><td>Quality.HD</td><td>To define the quality of video capturing.</td></tr><tr><td><p>fileLocation</p><p>(GizoFileLocationPath)</p></td><td><p>GizoFileLocationPath</p><p>.CACHE</p></td><td>To save video file in download or cache.</td></tr></tbody></table>
+<table><thead><tr><th width="227.33333333333331">Options</th><th width="213">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>quality(Quality)</td><td>Quality.HD</td><td>To define the quality of video capturing.</td></tr><tr><td><p>fileLocation</p><p>(GizoFileLocationPath)</p></td><td><p>GizoFileLocationPath</p><p>.CACHE</p></td><td>To save video files in download or cache.</td></tr></tbody></table>
 
