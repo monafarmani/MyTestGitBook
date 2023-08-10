@@ -46,7 +46,7 @@ Gain these parameters with the codes below in Preview
 {% tab title="Kotlin" %}
 ```kotlin
 gizoAnalysis.onAnalysisResult = { result, fps, ttc, ttcStatus,
-ttcDepthPtn, speed, gpsTime, ttcFrontPtn ->
+ttcDepthPtn, speed, gpsTime ->
  
 }
 ```
@@ -174,7 +174,7 @@ Gain these parameters with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kts
-gizoAnalysis.onVideoRecordingStatus = { isRecording, previewAttached ->
+gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
 }
 ```
 {% endtab %}
