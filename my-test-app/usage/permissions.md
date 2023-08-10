@@ -26,6 +26,8 @@ It's important to note that starting from Android 6.0 (API level 23), dangerous 
 
 Managing permissions properly is crucial for maintaining user trust and ensuring that applications access only the necessary resources. Android Studio provides tools and APIs to handle permissions effectively and securely within your application.
 
+
+
 ## <mark style="color:purple;">Permissions Settings</mark>
 
 The following permissions are required by the SDK:
@@ -36,7 +38,7 @@ The following permissions are required by the SDK:
 
 So far, these permissions have been added to the manifest, but we need to add other helper permissions based on the settings we have made.
 
-To do this, these lines of code should be added in an Activity:
+To do this, these lines of code should be added to an activity
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -46,7 +48,9 @@ To do this, these lines of code should be added in an Activity:
 {% endtab %}
 {% endtabs %}
 
-The line of code above gives us an array of strings that includes the required permissions based on setting.
+The line of code above gives us an array of strings that includes the required permissions based on the setting.
+
+
 
 ## Why Permissions Helper
 
