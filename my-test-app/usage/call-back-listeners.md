@@ -18,9 +18,11 @@ layout:
 
 # Listeners
 
-Call back listeners allow you to register a listener object that will be notified when a specific event occurs. The listener object contains a set of callback methods that will be called by the system when the associated event occurs. These events include Analysis, IMU Sensors, GPS, Video and Battery.
+Callback listeners provide a way to handle user interactions and system events in Android applications. They allow you to customize the behavior of your app based on the events that occur, making your application more interactive and responsive to user actions.
 
-For using call back listeners we need to add this line of code in Main activity above onCreate function:
+Callback listeners allow you to register a listener object that will be notified when a specific event occurs. The listener object contains a set of callback methods that will be called by the system when the associated event occurs. These events include Analysis, IMU Sensors, GPS, Video, and Battery.
+
+For using callback listeners we need to add this line of code in the Main activity above onCreate function:
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -34,7 +36,7 @@ private val gizoAnalysis: GizoAnalysis = Gizo.app.gizoAnalysis
 
 When Analysis gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="237">Value-Parameters</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td></td></tr><tr><td>ttcStatus</td><td>It returns states <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the ttc.</td></tr><tr><td>ttcDepthPtn</td><td></td></tr><tr><td>speed</td><td>The speed of the car the user is driving in.</td></tr><tr><td>gpsTime</td><td>The current time.</td></tr><tr><td>ttcFrontPtn</td><td></td></tr><tr><td>collisionThreshold </td><td>It provides a number that determines the specific status of danger, warning or none.</td></tr></tbody></table>
+<table><thead><tr><th width="237">Value-Parameters</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td></td></tr><tr><td>ttcStatus</td><td>It returns state <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>ttcDepthPtn</td><td></td></tr><tr><td>speed</td><td>The speed of the car the user is driving in.</td></tr><tr><td>gpsTime</td><td>The current time.</td></tr><tr><td>collisionThreshold </td><td>It provides a number that determines the specific status of danger, warning or none.</td></tr></tbody></table>
 
 
 
