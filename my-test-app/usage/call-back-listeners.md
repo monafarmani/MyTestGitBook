@@ -38,7 +38,7 @@ When Analysis gets activated, these value parameters can be checked out:
 
 
 
-Gain these parameters with the codes below in Preview
+Gain these parameters with the codes below in Preview:
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -53,7 +53,7 @@ ttcDepthPtn, speed, gpsTime ->
 
 
 
-We can write a customized formula and calculate the ttc in Preview too.
+We can write a customized formula and calculate the TTC in Preview too.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -67,7 +67,7 @@ gizoAnalysis.ttcCalculator { depthPtn, speed, ttc ->
 
 
 
-We can calculate the customized ttcStatus based on depthPtn, speed, collisionThreshold and ttc in Preview too.
+We can calculate the customized ttcStatus based on depthPtn, speed, collisionThreshold, and TTC in Preview too.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -83,7 +83,7 @@ gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
 
 ### <mark style="color:purple;">GPS listener</mark>
 
-As mentioned earlier this documentation provides instructions on enabling GPS, accessing location, speed limit, and speed.
+As mentioned earlier, this documentation provides instructions on enabling GPS, accessing location, speed limit, and speed.
 
 When GPS gets activated, these value parameters can be checked out:
 
@@ -110,11 +110,11 @@ gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
 
 ### <mark style="color:purple;">IMU  listener</mark>
 
-As previously mentioned the IMU setting in MyTestSDK allows developers to utilize the sensors that make up the device’s IMU. The IMU typically consists of the **accelerometer**, **gyroscope,** and **gravity**.
+As previously mentioned, the IMU setting in MyTestSDK allows developers to utilize the sensors that make up the device’s IMU. The IMU typically consists of the accelerometer, gyroscope, and gravity.
 
 When IMU gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="238">Value-parameters</th><th width="152">Type</th><th>Description</th></tr></thead><tbody><tr><td>accelerationSensorEvent</td><td>SensorEvent?</td><td>includes information such as Acceleration values, Timestamp &#x26; Accuracy or precision.</td></tr><tr><td>gyroscopeSensorEvent</td><td>SensorEvent?</td><td>includes information such as Angular velocity values, Timestamp &#x26; Accuracy or precision.</td></tr><tr><td>gravitySensorEvent</td><td>SensorEvent?</td><td>includes information such as Gravity values, Timestamp &#x26; Accuracy or precision.</td></tr><tr><td>isAlign</td><td>Boolean</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="238">Value-parameters</th><th width="152">Type</th><th>Description</th></tr></thead><tbody><tr><td>accelerationSensorEvent</td><td>SensorEvent?</td><td>includes information such as Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gyroscopeSensorEvent</td><td>SensorEvent?</td><td>includes information such as Angular velocity values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gravitySensorEvent</td><td>SensorEvent?</td><td>includes information such as Gravity values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>isAlign</td><td>Boolean</td><td>Whether the mobile device is in a landscape orientation or not.</td></tr></tbody></table>
 
 
 
@@ -150,7 +150,7 @@ Landscape screen orientation in mobile devices refers to a display mode where th
 
 When a mobile device is in landscape orientation, the user interface and content on the screen adjust accordingly to make optimal use of the wider space. This orientation is commonly used for activities that benefit from a wider viewing area, such as watching videos, playing games, or viewing wide documents or images.
 
-In MyTestSDK if our mobile device is in landscape orientation, the listener calls back true.(isAlign would be true)
+In MyTestSDK, if our mobile device is in landscape orientation, the listener calls back true. (isAlign would be true)
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -165,11 +165,11 @@ In MyTestSDK if our mobile device is in landscape orientation, the listener call
 
 ### <mark style="color:purple;">Session Status listener</mark>
 
-As previously stated based on the settings we have applied, some files related to video, analysis, GPS, and IMU are saved.
+As previously stated, based on the settings we have applied, some files related to video, analysis, GPS, and IMU are saved.
 
-When Start Session gets activated, these value parameters can be checked out:
+When the Start Session gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="192">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not</td></tr></tbody></table>
+<table><thead><tr><th width="192">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not.</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not.</td></tr></tbody></table>
 
 
 
@@ -188,11 +188,11 @@ gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
 
 ### <mark style="color:purple;">Battery listener</mark>
 
-Battery settings on MyTestSDK library refer to the configuration and management options related to the device’s battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile devices.
+Battery settings on the MyTestSDK library refer to the configuration and management options related to the device’s battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile devices.
 
-When battery gets activated, this value parameter can be checked out:
+When the battery gets activated, this value parameter can be checked out:
 
-<table><thead><tr><th width="184">Value-parameter</th><th width="142">Type</th><th>Description</th></tr></thead><tbody><tr><td>status</td><td>BatteryStatus</td><td>To check what is the battery status: LOW_BATTERY_STOP, LOW-BATTERY_WARNING or NORMAL</td></tr></tbody></table>
+<table><thead><tr><th width="184">Value-parameter</th><th width="142">Type</th><th>Description</th></tr></thead><tbody><tr><td>status</td><td>BatteryStatus</td><td>To check what is the battery status: LOW_BATTERY_STOP, LOW-BATTERY_WARNING, or NORMAL</td></tr></tbody></table>
 
 
 
