@@ -22,16 +22,18 @@ Welcome to MyTestSDK! This guide will help you get started with integrating and 
 
 ## Introduction
 
-MyTestSDK is a powerful and versatile library that provides a great analysis on the way people drive their cars. By using MyTestSDK, you can Have precise control over driving, monitoring the driver's intelligence while driving, and issuing warnings when there is a risk of an accident..
+MyTestSDK is a powerful and versatile library that provides a great analysis of the way people drive their cars. MyTestSDK allows precise control over driving, monitoring intelligence, and issuing warnings for risk of accidents…
 
 
 
 ## prerequisites
 
+* Install the latest version of the Android Studio.
+* Install Mapbox SDK for Android and get access token
+
 Before you begin using MyTestSDK, make sure you have the following prerequisites installed and set up in your development environment:
 
-* Install the latest version of Android studio.
-* Install [mapbox ](https://docs.mapbox.com/android/maps/guides/install/)SDK for Android and get access token.
+
 
 ## To use My Test library, follow these steps:
 
@@ -58,9 +60,9 @@ repositories {
 {% endtab %}
 {% endtabs %}
 
-The `settings.gradle` file in Android Studio is a configuration file that is used to define the settings and modules for your project. It is located in the root directory of your project, alongside the `build.gradle` file.
+The `settings.gradle` file in Android Studio is a configuration file used to define your project’s settings and modules. It is located in the root directory of your project, alongside the `build.gradle` file.
 
-Some key aspects of the `settings.gradle` file include Project Structure, Module Inclusion, Module Names and Multi-Module Projects.
+Some key aspects of the `settings.gradle` file include Project Structure, Module Inclusion, Module Names, and Multi-Module Projects.
 
 3. Add the following lines to your app-level `build.gradle` file:
 
@@ -82,9 +84,9 @@ dependencies {
 {% endtab %}
 {% endtabs %}
 
-In Android Studio, the `build.gradle` file is a configuration file that is used to define various settings and dependencies for your Android project. It is located in the root directory of your project, as well as in each module (such as the app module) within the project.
+In Android Studio, the `build.gradle` file is a configuration file that is used to define various settings and dependencies for your Android project. It is located in the root directory of your project and each module within the project.
 
-4. We need to implement settings for map box because it is used in our library, so add the following lines to settings.gradle too:
+4. We need to implement settings for Mapbox because we use it in our library, so add the following lines to settings.gradle too:
 
 {% tabs %}
 {% tab title="Groovy" %}
@@ -157,7 +159,7 @@ class Application : Application() {
 {% endtab %}
 {% endtabs %}
 
-In the example above, we create a new instance of the Application class and call the initialize method to initialize the sdk.
+In the example above, we create a new instance of the Application class and call the initialize method to initialize the SDK.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -169,9 +171,9 @@ In the example above, we create a new instance of the Application class and call
 {% endtab %}
 {% endtabs %}
 
-In the examole above, we add some lines of code to AndroidManifest.xml as well.
+In the example above, we add some lines of code to AndroidManifest.xml as well.
 
 In the AndroidManifest.xml file, the `<application>` element is used to define the characteristics and configurations of your Android application. The `android:name` attribute within the `<application>` element specifies the name of the class that represents the application itself.
 
-**Note:** For using features of the sdk you need to add [Model ](usage/app-options-setting/gizoanalysissettings.md)and required [App Options Setting](usage/app-options-setting/) in the following steps.
+**Note:** For using features of the SDK you need to add Model and required App Options Setting in the following steps.
 
