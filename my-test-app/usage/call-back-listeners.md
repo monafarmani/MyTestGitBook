@@ -138,6 +138,14 @@ gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
 {% endtab %}
 {% endtabs %}
 
+The `gizoAnalysis` object is likely a component responsible for analyzing and processing speed-related data. By assigning a lambda expression to the `onSpeedChange` property, the application can respond to changes in the device's speed.
+
+The lambda expression takes two parameters: `speedLimitKph` and `speedKph`. `speedLimitKph` represents the speed limit in kilometers per hour (KPH) that is applicable to the current location or context. `speedKph` represents the current speed of the device or vehicle in KPH.
+
+Inside the lambda expression, the code block that would be executed when a speed change is detected is not provided in the given snippet. However, within this code block, you might find logic to handle the updated speed. For example, the application could compare the current speed with the speed limit and trigger alerts or warnings if the speed exceeds the limit. The user interface could also be updated to display the updated speed information, providing real-time feedback to the user. Additionally, further calculations or analysis based on the speed data could be performed within this code block.
+
+
+
 ### <mark style="color:purple;">IMU listener</mark>
 
 As previously mentioned, the IMU setting in MyTestSDK allows developers to utilize the sensors that make up the device’s IMU. The IMU typically consists of the accelerometer, gyroscope, and gravity.
