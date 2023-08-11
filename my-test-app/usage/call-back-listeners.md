@@ -270,6 +270,50 @@ When the video gets activated, this value parameter can be checked out:
 |                 |      |             |
 |                 |      |             |
 
+Gain these parameters with the codes below in Preview
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+gizoAnalysis.onRecordingEvent { event ->
+ 
+}
+```
+{% endtab %}
+{% endtabs %}
+
+The `gizoAnalysis` component likely represents a module or functionality within the application that is responsible for managing recording-related operations.
+
+The lambda expression assigned to the `onRecordingEvent` property takes a single parameter, `event`, which represents the recording event that has occurred.
+
+Within this code block, you might find logic to handle different recording events and perform specific actions based on the event type. For example, the application could respond to events such as recording start, stop, pause, resume, or completion. This could involve updating the user interface, notifying the user, performing additional processing or analysis on the recorded data, or triggering other related operations.
+
+Here there is an example of a sample of using event in yor app.
+
+{% tabs %}
+{% tab title="First Tab" %}
+
+{% endtab %}
+
+{% tab title="Second Tab" %}
+```kotlin
+   when (event) {
+        is VideoRecordEvent.Finalize -> {
+            if (event.hasError()) {
+                //Do something
+            }
+        }
+    }
+```
+{% endtab %}
+{% endtabs %}
+
+When a recording event occurs, the code checks if the event is an instance of `VideoRecordEvent.Finalize` using the `is` keyword. If it matches, the code block within the corresponding branch is executed.
+
+Inside the `VideoRecordEvent.Finalize` branch, there is an additional check using the `hasError()` function. This function likely checks if the event contains any error information. If the event has an error, the code block within the `if` statement is executed. However, the actual implementation of what should be done when an error occurs is not provided in the given snippet, as it is commented as "//Do something". You would need to replace that comment with the appropriate code that handles the error, such as displaying an error message, logging the error, or taking any necessary corrective action.
+
+
+
 ### <mark style="color:purple;">Battery listener</mark>
 
 Battery settings on the MyTestSDK library refer to the configuration and management options related to the device’s battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile devices.
