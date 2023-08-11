@@ -62,7 +62,7 @@ Gain these parameters with the codes below in Preview:
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.onAnalysisResult = { result, fps, ttc, ttcStatus,
+Gizo.app.gizoAnalysis.onAnalysisResult = { result, fps, ttc, ttcStatus,
 ttcDepthPtn, speed, gpsTime ->
  
 }
@@ -76,11 +76,10 @@ We can write a customized formula and calculate the TTC in Preview too.
 
 {% tabs %}
 {% tab title="Kotlin" %}
-```kotlin
-gizoAnalysis.ttcCalculator { depthPtn, speed, ttc ->
-    ttc
+<pre class="language-kotlin"><code class="lang-kotlin"><strong>Gizo.app.gizoAnalysis.ttcCalculator { depthPtn, speed, ttc ->
+</strong>    ttc
 }
-```
+</code></pre>
 {% endtab %}
 {% endtabs %}
 
@@ -91,7 +90,7 @@ We can calculate the customized ttcStatus based on depthPtn, speed, collisionThr
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
+Gizo.app.gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
   ttcStatus
 }
 ```
@@ -115,7 +114,7 @@ Gain these parameters with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.onLocationChange = { location, isGpsOn ->
+Gizo.app.gizoAnalysis.onLocationChange = { location, isGpsOn ->
    
 }
 ```
@@ -131,7 +130,7 @@ Within this code block, you might find logic to handle the updated location. For
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
-gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
+Gizo.app.gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
     
 }
 ```
@@ -161,31 +160,39 @@ Gain these parameters with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.onLinearAccelerationSensor={ accelerationSensorEvent->
+Gizo.app.gizoAnalysis.onLinearAccelerationSensor={ accelerationSensorEvent->
    
 }
 ```
 {% endtab %}
 {% endtabs %}
 
+The `gizoAnalysis` object is likely a component responsible for analyzing and processing data from the linear acceleration sensor. By assigning a lambda expression to the `onLinearAccelerationSensor` property, the application can respond to events triggered by the linear acceleration sensor.
 
+The lambda expression takes a single parameter `accelerationSensorEvent`, which represents the event data received from the linear acceleration sensor. This event data typically includes information about the acceleration of the device along various axes, such as the X, Y, and Z axes.
+
+Within this code block, you might find logic to handle the received acceleration data. For example, the application could analyze the acceleration values to detect specific motion patterns, such as shaking or sudden movements. The user interface could be updated to provide real-time feedback based on the acceleration values, such as displaying animations or triggering sound effects. Additionally, the acceleration data could be used to trigger specific behaviors or calculations within the application.
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
-gizoAnalysis.onGyroscopeSensor={ gyroscopeSensorEvent->
+Gizo.app.gizoAnalysis.onGyroscopeSensor={ gyroscopeSensorEvent->
   
 }
 ```
 {% endtab %}
 {% endtabs %}
 
+The `gizoAnalysis` object is likely a component responsible for analyzing and processing data from the gyroscope sensor. By assigning a lambda expression to the `onGyroscopeSensor` property, the application can respond to events triggered by the gyroscope sensor.
 
+The lambda expression takes a single parameter `gyroscopeSensorEvent`, which represents the event data received from the gyroscope sensor. This event data typically includes information about the device's rotational movement along different axes, such as the X, Y, and Z axes.
+
+Within this code block, you might find logic to handle the received gyroscope data. For example, the application could analyze the gyroscope values to detect specific types of rotation or gestures, such as tilting, shaking, or rotating the device. The user interface could be updated to reflect the device's orientation or movement, such as adjusting the display based on the device's tilt or triggering animations based on rotation. Additionally, the gyroscope data could be used to trigger specific behaviors or calculations within the application.
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
-gizoAnalysis.onGravitySensor={ gravitySensorEvent->
+Gizo.app.gizoAnalysis.onGravitySensor={ gravitySensorEvent->
    
 }
 ```
@@ -197,7 +204,7 @@ gizoAnalysis.onGravitySensor={ gravitySensorEvent->
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
-gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEvent ->
+Gizo.app.gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEvent ->
 
 }
 ```
@@ -213,7 +220,7 @@ In MyTestSDK, if our mobile device is in landscape orientation, the listener cal
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
- gizoAnalysis.checkGravityAlignment { isAlign ->
+Gizo.app.gizoAnalysis.checkGravityAlignment { isAlign ->
 }
 ```
 {% endtab %}
@@ -236,7 +243,7 @@ Gain this parameter with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
- gizoAnalysis.onBatteryStatusChange = { status ->
+ Gizo.app.gizoAnalysis.onBatteryStatusChange = { status ->
  
  }
 ```
