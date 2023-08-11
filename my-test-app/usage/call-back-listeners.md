@@ -47,9 +47,9 @@ gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
 {% endtab %}
 {% endtabs %}
 
-The `gizoAnalysis` component likely represents a module or functionality within the application responsible for managing sessions and their associated status.
+The gizoAnalysis component likely represents a module or functionality within the application responsible for managing sessions and their associated status.
 
-Inside the lambda expression, the code block that would be executed when a change in the session status occurs is not provided in the given snippet. However, within this code block, you might find logic to handle the updated session status. For example, the application could perform actions based on whether recording is in progress (`isRecording`) or if a preview is currently attached (`previewAttached`). This could involve updating the user interface, triggering specific behaviors, or performing other operations based on the current session status.
+Inside the lambda expression, the code block that would be executed when a change in the session status occurs is not provided in the given snippet. However, within this code block, you might find logic to handle the updated session status. For example, the application could perform actions based on whether the recording is in progress (isRecording) or if a preview is currently attached (previewAttached). This could involve updating the user interface, triggering specific behaviors, or performing other operations based on the current session status.
 
 
 
@@ -76,11 +76,11 @@ ttcDepthPtn, speed, gpsTime ->
 {% endtab %}
 {% endtabs %}
 
-The `gizoAnalysis` property is responsible for analyzing data and processing results.
+The gizoAnalysis property is responsible for analyzing data and processing results.
 
-The lambda expression assigned to the `onAnalysisResult` property takes several parameters: `result`, `fps`, `ttc`, `ttcStatus`, `ttcDepthPtn`, `speed`, and `gpsTime`. These parameters likely represent various analysis results and related information.
+The lambda expression assigned to the onAnalysisResult property takes several parameters: result, fps, ttc, ttcStatus, ttcDepthPtn, speed, and gpsTime. These parameters likely represent various analysis results and related information.
 
-Within this code block, you might find logic to handle the analysis results and utilize the provided information. This could involve displaying the analysis result, updating the user interface, storing the result for later use, or triggering specific actions based on the analysis outcome.
+Within this code block, you might find logic to handle the analysis results and utilize the provided information. This may mean showing the analysis result, changing the interface, saving the result for later, or taking actions based on the outcome...
 
 
 
@@ -115,6 +115,8 @@ Gizo.app.gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcS
 
 After the `ttcStatus` is calculated, it is returned as the result of the function call & can be used in the previous tab of the code.
 
+
+
 ### <mark style="color:purple;">GPS listener</mark>
 
 As mentioned earlier, this documentation provides instructions on enabling GPS, accessing location, speed limit, and speed.
@@ -137,9 +139,9 @@ Gizo.app.gizoAnalysis.onLocationChange = { location, isGpsOn ->
 {% endtab %}
 {% endtabs %}
 
-The `gizoAnalysis` object is likely a component responsible for analyzing and processing location data. By assigning a lambda expression to the `onLocationChange` property, the application can respond to changes in the device's location.
+The gizoAnalysis object is likely a component responsible for analyzing and processing location data. By assigning a lambda expression to the onLocationChange property, the application can respond to changes in the device’s location.
 
-The lambda expression takes two parameters: `location` and `isGpsOn`. `location` represents the updated GPS location, which could include latitude, longitude, and other relevant information. `isGpsOn` is a boolean parameter that indicates whether the GPS functionality is currently enabled on the device.
+The lambda expression takes two parameters: location and isGpsOn. Location is the updated GPS info, including latitude, longitude, and other relevant details.. isGpsOn is a boolean parameter that indicates whether the GPS functionality is currently enabled on the device.
 
 Within this code block, you might find logic to handle the updated location. For example, the application could update the user interface to display the new location information, trigger specific processes or calculations based on the new location, or save the location data for future use.
 
@@ -185,9 +187,9 @@ Gizo.app.gizoAnalysis.onLinearAccelerationSensor={ accelerationSensorEvent->
 {% endtab %}
 {% endtabs %}
 
-The `gizoAnalysis` object is likely a component responsible for analyzing and processing data from the linear acceleration sensor. By assigning a lambda expression to the `onLinearAccelerationSensor` property, the application can respond to events triggered by the linear acceleration sensor.
+The gizoAnalysis object is likely a component responsible for analyzing and processing data from the linear acceleration sensor. Assigning a lambda expression to the onLinearAccelerationSensor property lets the application respond to events triggered by the linear acceleration sensor..
 
-The lambda expression takes a single parameter `accelerationSensorEvent`, which represents the event data received from the linear acceleration sensor. This event data typically includes information about the acceleration of the device along various axes, such as the X, Y, and Z axes.
+The lambda expression uses accelerationSensorEvent as the input, which comes from the linear acceleration sensor. This event data typically includes information about the acceleration of the device along various axes, such as the X, Y, and Z axes.
 
 Within this code block, you might find logic to handle the received acceleration data. For example, the application could analyze the acceleration values to detect specific motion patterns, such as shaking or sudden movements. The user interface could be updated to provide real-time feedback based on the acceleration values, such as displaying animations or triggering sound effects. Additionally, the acceleration data could be used to trigger specific behaviors or calculations within the application.
 
@@ -239,11 +241,11 @@ Gizo.app.gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, g
 {% endtab %}
 {% endtabs %}
 
-The `gizoAnalysis` property is responsible for analyzing and processing data from various sensors, including the IMU sensor.
+The gizoAnalysis property is responsible for analyzing and processing data from various sensors, including the IMU sensor.
 
-The lambda expression assigned to the `onImuSensor` property takes three parameters: `linearAccelerationEvent`, `gyroscopeEvent`, and `gravityEvent`. These parameters represent the event data received from the linear acceleration sensor, gyroscope sensor, and gravity sensor respectively.
+The lambda expression assigned to the onImuSensor property takes three parameters: linearAccelerationEvent, gyroscopeEvent, and gravityEvent. These parameters represent the event data received from the linear acceleration sensor, gyroscope sensor, and gravity sensor, respectively.
 
-within this code block, you might find logic to handle the received sensor data. For example, the application could combine the linear acceleration, gyroscope, and gravity data to calculate various metrics related to the device's motion, orientation, or position in three-dimensional space. This could be used to detect device tilt, rotation, or movements in different directions. The application could then respond accordingly, such as updating the user interface, triggering specific behaviors, or performing calculations based on the derived metrics.
+Within this code block, you might find logic to handle the received sensor data. For example, the application could combine linear acceleration, gyroscope, and gravity data to calculate various metrics related to the device’s motion, orientation, or position in three-dimensional space. This could be used to detect device tilt, rotation, or movements in different directions. The application could then respond accordingly, such as updating the user interface, triggering specific behaviors, or performing calculations based on the derived met
 
 
 
@@ -270,7 +272,9 @@ In mobile devices, the "video settings" typically refer to the configurable opti
 
 When the video gets activated, this value parameter can be checked out:
 
-<table><thead><tr><th width="179.33333333333331">Value-parameter</th><th width="181">Type</th><th>Description</th></tr></thead><tbody><tr><td>event</td><td>VideoRecordEvent</td><td>VideoRecordEvent is used to report video recording events and status.</td></tr></tbody></table>
+<table><thead><tr><th width="179.33333333333331">Value-parameter</th><th width="181">Type</th><th>Description</th></tr></thead><tbody><tr><td>event</td><td>VideoRecordEvent</td><td>Used to report video recording events and status.</td></tr></tbody></table>
+
+
 
 Gain these parameters with the codes below in Preview
 
@@ -289,6 +293,8 @@ The `gizoAnalysis` component likely represents a module or functionality within 
 The lambda expression assigned to the `onRecordingEvent` property takes a single parameter, `event`, which represents the recording event that has occurred.
 
 Within this code block, you might find logic to handle different recording events and perform specific actions based on the event type. For example, the application could respond to events such as recording start, stop, pause, resume, or completion. This could involve updating the user interface, notifying the user, performing additional processing or analysis on the recorded data, or triggering other related operations.
+
+
 
 Here there is an example of a sample of using event in your app.
 
@@ -320,7 +326,7 @@ when (event) {
 
 When a recording event occurs, the code checks if the event is an instance of `VideoRecordEvent.Finalize` using the `is` keyword. If it matches, the code block within the corresponding branch is executed.
 
-Inside the `VideoRecordEvent.Finalize` branch, there is an additional check using the `hasError()` function. This function likely checks if the event contains any error information. If the event has an error, the code block within the `if` statement is executed. However, the actual implementation of what should be done when an error occurs is not provided in the given snippet, as it is commented as "//Do something". You would need to replace that comment with the appropriate code that handles the error, such as displaying an error message, logging the error, or taking any necessary corrective action.
+Inside the `VideoRecordEvent. Finalize` branch, there is an additional check using the `hasError()` function. This function likely checks if the event contains any error information. If the event has an error, the code block within the `if` statement is executed. However, the actual implementation of what should be done when an error occurs is not provided in the given snippet, as it is commented as "//Do something". You would need to replace that comment with the appropriate code that handles the error, such as displaying an error message, logging the error, or taking any necessary corrective action.
 
 
 
