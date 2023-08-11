@@ -199,7 +199,11 @@ Gizo.app.gizoAnalysis.onGravitySensor={ gravitySensorEvent->
 {% endtab %}
 {% endtabs %}
 
+The `gizoAnalysis` property is responsible for analyzing and processing data from various sensors, including the gravity sensor.
 
+The lambda expression assigned to the `onGravitySensor` property takes a single parameter `gravitySensorEvent`, which represents the event data received from the gravity sensor.
+
+Within this code block, you might find logic to handle the received gravity sensor data. For example, the application could analyze the gravity data to determine the device's orientation or position relative to gravity. This could be used to detect tilts or changes in orientation, allowing the application to respond accordingly. The gravity sensor data could also be used to update the user interface, trigger specific behaviors, or perform calculations based on the device's orientation.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -211,9 +215,13 @@ Gizo.app.gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, g
 {% endtab %}
 {% endtabs %}
 
-Landscape screen orientation in mobile devices refers to a display mode where the screen is wider than it is tall, resembling the shape of a landscape. In this orientation, the device is typically held horizontally, with the longer edge of the screen parallel to the ground.
+The `gizoAnalysis` property is responsible for analyzing and processing data from various sensors, including the IMU sensor.
 
-When a mobile device is in landscape orientation, the user interface and content on the screen adjust accordingly to make optimal use of the wider space. This orientation is commonly used for activities that benefit from a wider viewing area, such as watching videos, playing games, or viewing wide documents or images.
+The lambda expression assigned to the `onImuSensor` property takes three parameters: `linearAccelerationEvent`, `gyroscopeEvent`, and `gravityEvent`. These parameters represent the event data received from the linear acceleration sensor, gyroscope sensor, and gravity sensor respectively.
+
+within this code block, you might find logic to handle the received sensor data. For example, the application could combine the linear acceleration, gyroscope, and gravity data to calculate various metrics related to the device's motion, orientation, or position in three-dimensional space. This could be used to detect device tilt, rotation, or movements in different directions. The application could then respond accordingly, such as updating the user interface, triggering specific behaviors, or performing calculations based on the derived metrics.
+
+
 
 In MyTestSDK, if our mobile device is in landscape orientation, the listener calls back true. (isAlign would be true)
 
@@ -225,6 +233,10 @@ Gizo.app.gizoAnalysis.checkGravityAlignment { isAlign ->
 ```
 {% endtab %}
 {% endtabs %}
+
+Landscape screen orientation in mobile devices refers to a display mode where the screen is wider than it is tall, resembling the shape of a landscape. In this orientation, the device is typically held horizontally, with the longer edge of the screen parallel to the ground.
+
+When a mobile device is in landscape orientation, the user interface and content on the screen adjust accordingly to make optimal use of the wider space. This orientation is commonly used for activities that benefit from a wider viewing area, such as watching videos, playing games, or viewing wide documents or images.
 
 
 
