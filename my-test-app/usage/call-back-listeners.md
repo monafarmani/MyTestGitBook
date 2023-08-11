@@ -51,6 +51,8 @@ The `gizoAnalysis` component likely represents a module or functionality within 
 
 Inside the lambda expression, the code block that would be executed when a change in the session status occurs is not provided in the given snippet. However, within this code block, you might find logic to handle the updated session status. For example, the application could perform actions based on whether recording is in progress (`isRecording`) or if a preview is currently attached (`previewAttached`). This could involve updating the user interface, triggering specific behaviors, or performing other operations based on the current session status.
 
+
+
 ### <mark style="color:purple;">Analysis listener</mark>
 
 In our SDK, we require accurate and efficient detection and localization of objects in images and video streams and also accurate and efficient estimation of the depth or distance of objects in a scene and we gain these data with Gizo Analysis Setting.
@@ -264,11 +266,7 @@ In mobile devices, the "video settings" typically refer to the configurable opti
 
 When the video gets activated, this value parameter can be checked out:
 
-| Value-parameter | Type | Description |
-| --------------- | ---- | ----------- |
-|                 |      |             |
-|                 |      |             |
-|                 |      |             |
+<table><thead><tr><th width="179.33333333333331">Value-parameter</th><th width="181">Type</th><th>Description</th></tr></thead><tbody><tr><td>event</td><td>VideoRecordEvent</td><td>VideoRecordEvent is used to report video recording events and status.</td></tr></tbody></table>
 
 Gain these parameters with the codes below in Preview
 
@@ -288,11 +286,19 @@ The lambda expression assigned to the `onRecordingEvent` property takes a single
 
 Within this code block, you might find logic to handle different recording events and perform specific actions based on the event type. For example, the application could respond to events such as recording start, stop, pause, resume, or completion. This could involve updating the user interface, notifying the user, performing additional processing or analysis on the recorded data, or triggering other related operations.
 
-Here there is an example of a sample of using event in yor app.
+Here there is an example of a sample of using event in your app.
 
 {% tabs %}
 {% tab title="First Tab" %}
-
+```kotlin
+when (event) {
+    is VideoRecordEvent.Finalize -> {
+        if (event.hasError()) {
+            //Do something
+        }
+    }
+}
+```
 {% endtab %}
 
 {% tab title="Second Tab" %}
