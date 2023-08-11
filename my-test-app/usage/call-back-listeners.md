@@ -122,7 +122,11 @@ gizoAnalysis.onLocationChange = { location, isGpsOn ->
 {% endtab %}
 {% endtabs %}
 
-###
+The `gizoAnalysis` object is likely a component responsible for analyzing and processing location data. By assigning a lambda expression to the `onLocationChange` property, the application can respond to changes in the device's location.
+
+The lambda expression takes two parameters: `location` and `isGpsOn`. `location` represents the updated GPS location, which could include latitude, longitude, and other relevant information. `isGpsOn` is a boolean parameter that indicates whether the GPS functionality is currently enabled on the device.
+
+Within this code block, you might find logic to handle the updated location. For example, the application could update the user interface to display the new location information, trigger specific processes or calculations based on the new location, or save the location data for future use.
 
 {% tabs %}
 {% tab title="Kotlin" %}
