@@ -18,8 +18,6 @@ layout:
 
 # Listeners
 
-
-
 ## Overview
 
 Callback listeners provide a way to handle user interactions and system events in Android applications. They allow you to customize the behavior of your app based on the events that occur, making your application more interactive and responsive to user actions.
@@ -27,6 +25,27 @@ Callback listeners provide a way to handle user interactions and system events i
 Callback listeners allow you to register a listener object that will be notified when a specific event occurs. The listener object contains a set of callback methods that will be called by the system when the associated event occurs. These events include Analysis, IMU Sensors, GPS, Video, and Battery.
 
 
+
+### <mark style="color:purple;">Session Status listener</mark>
+
+As previously stated, based on the settings we have applied, some files related to video, analysis, GPS, and IMU are saved.
+
+When the Start Session gets activated, these value parameters can be checked out:
+
+<table><thead><tr><th width="370">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not.</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not.</td></tr></tbody></table>
+
+
+
+Gain these parameters with the codes below in Preview
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kts
+gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ### <mark style="color:purple;">Analysis listener</mark>
 
@@ -108,7 +127,7 @@ gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
 
 ###
 
-### <mark style="color:purple;">IMU  listener</mark>
+### <mark style="color:purple;">IMU listener</mark>
 
 As previously mentioned, the IMU setting in MyTestSDK allows developers to utilize the sensors that make up the device’s IMU. The IMU typically consists of the accelerometer, gyroscope, and gravity.
 
@@ -156,29 +175,6 @@ In MyTestSDK, if our mobile device is in landscape orientation, the listener cal
 {% tab title="Kotlin" %}
 ```kotlin
  gizoAnalysis.checkGravityAlignment { isAlign ->
-}
-```
-{% endtab %}
-{% endtabs %}
-
-
-
-### <mark style="color:purple;">Session Status listener</mark>
-
-As previously stated, based on the settings we have applied, some files related to video, analysis, GPS, and IMU are saved.
-
-When the Start Session gets activated, these value parameters can be checked out:
-
-<table><thead><tr><th width="192">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not.</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not.</td></tr></tbody></table>
-
-
-
-Gain these parameters with the codes below in Preview
-
-{% tabs %}
-{% tab title="Kotlin" %}
-```kts
-gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
 }
 ```
 {% endtab %}
