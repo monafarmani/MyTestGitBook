@@ -47,6 +47,10 @@ gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
 {% endtab %}
 {% endtabs %}
 
+The `gizoAnalysis` component likely represents a module or functionality within the application responsible for managing sessions and their associated status.
+
+Inside the lambda expression, the code block that would be executed when a change in the session status occurs is not provided in the given snippet. However, within this code block, you might find logic to handle the updated session status. For example, the application could perform actions based on whether recording is in progress (`isRecording`) or if a preview is currently attached (`previewAttached`). This could involve updating the user interface, triggering specific behaviors, or performing other operations based on the current session status.
+
 ### <mark style="color:purple;">Analysis listener</mark>
 
 In our SDK, we require accurate and efficient detection and localization of objects in images and video streams and also accurate and efficient estimation of the depth or distance of objects in a scene and we gain these data with Gizo Analysis Setting.
@@ -69,6 +73,12 @@ ttcDepthPtn, speed, gpsTime ->
 ```
 {% endtab %}
 {% endtabs %}
+
+The `gizoAnalysis` property is responsible for analyzing data and processing results.
+
+The lambda expression assigned to the `onAnalysisResult` property takes several parameters: `result`, `fps`, `ttc`, `ttcStatus`, `ttcDepthPtn`, `speed`, and `gpsTime`. These parameters likely represent various analysis results and related information.
+
+Within this code block, you might find logic to handle the analysis results and utilize the provided information. This could involve displaying the analysis result, updating the user interface, storing the result for later use, or triggering specific actions based on the analysis outcome.
 
 
 
@@ -247,6 +257,18 @@ Landscape screen orientation in mobile devices refers to a display mode where th
 When a mobile device is in landscape orientation, the user interface and content on the screen adjust accordingly to make optimal use of the wider space. This orientation is commonly used for activities that benefit from a wider viewing area, such as watching videos, playing games, or viewing wide documents or images.
 
 
+
+### <mark style="color:purple;">Video listener</mark>
+
+In mobile devices, the "video settings" typically refer to the configurable options and parameters that allow users to customize various aspects of video recording or playback. These settings can vary depending on the specific device, operating system, and camera capabilities.
+
+When the video gets activated, this value parameter can be checked out:
+
+| Value-parameter | Type | Description |
+| --------------- | ---- | ----------- |
+|                 |      |             |
+|                 |      |             |
+|                 |      |             |
 
 ### <mark style="color:purple;">Battery listener</mark>
 
