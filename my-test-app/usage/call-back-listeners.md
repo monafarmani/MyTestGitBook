@@ -118,14 +118,21 @@ Gain these parameters with the codes below in Preview
 gizoAnalysis.onLocationChange = { location, isGpsOn ->
    
 }
+```
+{% endtab %}
+{% endtabs %}
+
+###
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```
 gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
     
 }
 ```
 {% endtab %}
 {% endtabs %}
-
-###
 
 ### <mark style="color:purple;">IMU listener</mark>
 
@@ -145,25 +152,45 @@ Gain these parameters with the codes below in Preview
 gizoAnalysis.onLinearAccelerationSensor={ accelerationSensorEvent->
    
 }
-
-gizoAnalysis.onGyroscopeSensor={ gyroscopeSensorEvent->
-  
-}
-
-gizoAnalysis.onGravitySensor={ gravitySensorEvent->
-   
-}
-
-gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEvent ->
-
-}
-
-
 ```
 {% endtab %}
 {% endtabs %}
 
 
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```
+gizoAnalysis.onGyroscopeSensor={ gyroscopeSensorEvent->
+  
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```
+gizoAnalysis.onGravitySensor={ gravitySensorEvent->
+   
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```
+gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEvent ->
+
+}
+```
+{% endtab %}
+{% endtabs %}
 
 Landscape screen orientation in mobile devices refers to a display mode where the screen is wider than it is tall, resembling the shape of a landscape. In this orientation, the device is typically held horizontally, with the longer edge of the screen parallel to the ground.
 
