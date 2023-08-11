@@ -127,6 +127,8 @@ The lambda expression takes two parameters: `location` and `isGpsOn`. `location`
 
 Within this code block, you might find logic to handle the updated location. For example, the application could update the user interface to display the new location information, trigger specific processes or calculations based on the new location, or save the location data for future use.
 
+
+
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
@@ -173,6 +175,8 @@ The lambda expression takes a single parameter `accelerationSensorEvent`, which 
 
 Within this code block, you might find logic to handle the received acceleration data. For example, the application could analyze the acceleration values to detect specific motion patterns, such as shaking or sudden movements. The user interface could be updated to provide real-time feedback based on the acceleration values, such as displaying animations or triggering sound effects. Additionally, the acceleration data could be used to trigger specific behaviors or calculations within the application.
 
+
+
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
@@ -189,6 +193,8 @@ The lambda expression takes a single parameter `gyroscopeSensorEvent`, which rep
 
 Within this code block, you might find logic to handle the received gyroscope data. For example, the application could analyze the gyroscope values to detect specific types of rotation or gestures, such as tilting, shaking, or rotating the device. The user interface could be updated to reflect the device's orientation or movement, such as adjusting the display based on the device's tilt or triggering animations based on rotation. Additionally, the gyroscope data could be used to trigger specific behaviors or calculations within the application.
 
+
+
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
@@ -204,6 +210,8 @@ The `gizoAnalysis` property is responsible for analyzing and processing data fro
 The lambda expression assigned to the `onGravitySensor` property takes a single parameter `gravitySensorEvent`, which represents the event data received from the gravity sensor.
 
 Within this code block, you might find logic to handle the received gravity sensor data. For example, the application could analyze the gravity data to determine the device's orientation or position relative to gravity. This could be used to detect tilts or changes in orientation, allowing the application to respond accordingly. The gravity sensor data could also be used to update the user interface, trigger specific behaviors, or perform calculations based on the device's orientation.
+
+
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -261,3 +269,9 @@ Gain this parameter with the codes below in Preview
 ```
 {% endtab %}
 {% endtabs %}
+
+The `gizoAnalysis` property is responsible for analyzing and processing various aspects of the application, including monitoring the battery status.
+
+The lambda expression assigned to the `onBatteryStatusChange` property takes a single parameter `status`, which represents the updated battery status.
+
+Inside the lambda expression, the code block that would be executed when a change in the battery status occurs is not provided in the given snippet. However, within this code block, you might find logic to handle the updated battery status. For example, the application could perform actions based on the current battery level, such as adjusting power consumption, displaying a low battery warning, or triggering specific behaviors when the battery reaches a certain threshold.
