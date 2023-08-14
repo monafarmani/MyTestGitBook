@@ -32,6 +32,7 @@ To have access to video setting options, you need to add these lines of code in 
 .videoSetting(
     GizoVideoSetting.Builder()
         .quality(Quality.LOWEST)
+        .fileLocation(GizoFileLocationPath.CACHE)
         .build()
 )
 ```
