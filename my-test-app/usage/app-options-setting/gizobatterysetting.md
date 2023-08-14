@@ -31,7 +31,10 @@ To have access to battery setting options, you need to add these lines of code i
 ```kotlin
 .batterySetting(
     GizoBatterySetting.Builder()
-        .checkBattery(true)
+         .checkBattery(true)
+         .lowBatteryLimit(25f)
+         .lowBatteryStop(15f)
+         .interval(5000L)
         .build()
 )
 ```
