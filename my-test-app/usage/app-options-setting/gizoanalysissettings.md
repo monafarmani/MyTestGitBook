@@ -59,11 +59,10 @@ class Application : Application() {
             GizoApp.GizoAppOptions.Builder()
                 .debug(true)
                 .folderName("GizoSample")
+                
+                 //add these lines
                 .analysisSetting(GizoAnalysisSettings.Builder()
-                
-                //add these lines
-                
-                     .allow(true)
+                    .allow(true)
                     .modelName("arti_sense.tflite")
                     .loadDelegate(GizoAnalysisSettings.AnalysisDelegateType.Auto)
                     .carHeight(1.6)
@@ -88,6 +87,21 @@ class Application : Application() {
 ```
 {% endtab %}
 {% endtabs %}
+
+The `GizoAnalysisSettings` builder sets the analysis-related properties such as:
+
+* <mark style="color:blue;">`allow`</mark>`(true)`: Enabling the analysis feature.
+* <mark style="color:blue;">`modelName`</mark>`("arti_sense.tflite")`: Providing the name of the model to be used for analysis.
+* <mark style="color:blue;">`loadDelegate`</mark>`(GizoAnalysisSettings.AnalysisDelegateType.Auto)`: Specifying the analysis delegate type as "Auto", which determines the best delegate based on the device capabilities.
+* <mark style="color:blue;">`carHeight`</mark>`(1.6)`: Setting the height of the car for analysis.
+* <mark style="color:blue;">`collisionThreshold`</mark>`(0.5f)`: Setting the collision threshold value for analysis.
+* <mark style="color:blue;">`ttcFileLocation`</mark>`(GizoFileLocationPath.CACHE)`: Specifying the file location path for storing Time-to-Collision (TTC) data (in this case, set to the cache directory).
+* <mark style="color:blue;">`ttcDataTimerPeriod`</mark>`(30L)`: Setting the period of the TTC data timer to 30 milliseconds.
+* <mark style="color:blue;">`ttcDataTimerInitialDelay`</mark>`(0L)`: Setting the initial delay of the TTC data timer to 0 milliseconds (no delay).
+* <mark style="color:blue;">`saveMatrixFile`</mark>`(true)`: Indicating that the analysis matrix file should be saved.
+* <mark style="color:blue;">`saveTTcFile`</mark>`(true)`: Indicating that the TTC data should be saved to a file.
+
+Finally, the `build()` method is called on the `GizoAppOptions.Builder()` instance to create a `GizoAppOptions` object with the configured analysis settings.
 
 
 
@@ -127,7 +141,7 @@ class Application : Application() {
                     .build())
         )
         Gizo.app.setLoadModelObserver { status ->
-            Log.d("LoadModelStatus", "status:" + status.name)
+            
         }
 
         Gizo.app.loadModel()
