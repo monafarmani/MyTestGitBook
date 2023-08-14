@@ -41,6 +41,12 @@ To have access to battery setting options, you need to add these lines of code i
 {% endtab %}
 {% endtabs %}
 
+The `GizoBatterySetting` builder sets the battery-related properties such as `checkBattery` (enabling battery monitoring), `lowBatteryLimit` (the threshold below which the battery is considered low, set to 25%), `lowBatteryStop` (the threshold at which certain operations should be stopped, set to 15%), and `interval` (the interval at which the battery status is checked, set to 5000 milliseconds).
+
+Finally, the `build()` method is called on the `GizoAppOptions.Builder()` instance to create a `GizoAppOptions` object with the configured battery settings.
+
+This code suggests that the `GizoAppOptions` class specifies various configuration options for the `Gizo` application, including battery-related settings. The specific implementation and usage of `GizoAppOptions` would depend on the details of the `Gizo` application itself.
+
 
 
 Here are the available options that can be set in batterySetting in the Application class:
