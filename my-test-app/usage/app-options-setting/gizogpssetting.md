@@ -34,8 +34,15 @@ For this reason, add these lines of code in the Application class, onCreate func
  .gpsSetting(
        GizoGpsSetting.Builder()
        .allow(true)
-       .mapBoxKey("MAPBOX_PUBLIC_KEY")
+       .mapBoxKey("pk.eyJ1IjoibXlwbHVzIiwiYSI6ImNsYmMwbHBiNzFrcTQzcHFwaGdjb3RvcHIifQ.ysTPIV-rjUzxoBT4x_Zxww")
+       .interval(1000L)
+       .maxWaitTime(1000L)
+       .withForegroundService(true)
        .saveCsvFile(true)
+       .fileLocation(GizoFileLocationPath.CACHE)
+       .savePeriod(10L)
+       .saveInitialDelay(0L)
+       .saveDateTimeFormat("yyyy-MM-dd'T'HH-mm-ss-SSS'Z'")
        .build())
 ```
 {% endtab %}
