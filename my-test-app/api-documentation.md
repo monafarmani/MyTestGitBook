@@ -24,33 +24,9 @@ My Test Kotlin SDK provides the following APIs:
   * `doSomething()`: Returns a string with the result of something.
   * `doSomethingElse(param: Int)`: Returns a string with the result of something else.
 
-
+### <mark style="color:purple;">Trip</mark>
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/fake" method="post" %}
-[swagger.json](../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/agreements" method="get" %}
-[swagger.json](../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/CarBrand" method="get" %}
-[swagger.json](../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Config" method="get" %}
-[swagger.json](../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Map/geoCode" method="get" %}
-[swagger.json](../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/PrivacyPolicy" method="get" %}
-[swagger.json](../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/terms" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
@@ -91,6 +67,44 @@ My Test Kotlin SDK provides the following APIs:
 {% endswagger %}
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/myPerformance" method="get" %}
+[swagger.json](../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/agreements" method="get" %}
+[swagger.json](../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/CarBrand" method="get" %}
+[swagger.json](../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Config" method="get" %}
+[swagger.json](../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Map/geoCode" method="get" %}
+[swagger.json](../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/PrivacyPolicy" method="get" %}
+[swagger.json](../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/terms" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
