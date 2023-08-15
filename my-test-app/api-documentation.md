@@ -160,3 +160,32 @@ My Test Kotlin SDK provides the following APIs:
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
+
+
+
+
+
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/filesCompletedStatus" method="get" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadStart" method="post" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadChunks" method="post" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadComplete" method="post" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
