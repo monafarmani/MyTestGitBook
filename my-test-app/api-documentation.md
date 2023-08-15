@@ -70,23 +70,43 @@ My Test Kotlin SDK provides the following APIs:
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/Trip/{id}/gps" method="get" %}
+[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/filesCompletedStatus" method="get" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadStart" method="post" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadChunks" method="post" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadComplete" method="post" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (3).json" path="/api/v4/Trip/{id}/eventStats" method="get" %}
+[swagger (3).json](<../.gitbook/assets/swagger (3).json>)
+{% endswagger %}
 
 
 
 
 
-
-
-
-
-
-
+### <mark style="color:purple;">others</mark>
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/agreements" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
-
-
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/CarBrand" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -107,6 +127,12 @@ My Test Kotlin SDK provides the following APIs:
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/terms" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+
+
+
+
+### <mark style="color:purple;">User</mark>
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/checkIdentity" method="post" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -140,16 +166,6 @@ My Test Kotlin SDK provides the following APIs:
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-
-
-
-
-
-
-{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/Trip/{id}/gps" method="get" %}
-[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
-{% endswagger %}
-
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/verify" method="post" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
@@ -174,32 +190,6 @@ My Test Kotlin SDK provides the following APIs:
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
-
-
-
-
-
-
-{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" %}
-[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/filesCompletedStatus" method="get" %}
-[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadStart" method="post" %}
-[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadChunks" method="post" %}
-[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadComplete" method="post" %}
-[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
@@ -208,8 +198,3 @@ My Test Kotlin SDK provides the following APIs:
 
 
 
-
-
-{% swagger src="../.gitbook/assets/swagger (3).json" path="/api/v4/Trip/{id}/eventStats" method="get" %}
-[swagger (3).json](<../.gitbook/assets/swagger (3).json>)
-{% endswagger %}
