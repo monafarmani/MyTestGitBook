@@ -18,11 +18,15 @@ layout:
 
 # 📖 API Documentation
 
-My Test Kotlin SDK provides the following APIs:
+## Overview
 
-* `MyTestClass`
-  * `doSomething()`: Returns a string with the result of something.
-  * `doSomethingElse(param: Int)`: Returns a string with the result of something else.
+Our API documentation is generated using **Swagger**, an open-source framework that simplifies the process of designing, building, documenting, and consuming APIs (Application Programming Interfaces). It provides a set of tools and specifications that help developers describe, document, and visualize the structure and behavior of their APIs.
+
+At its core, Swagger uses the OpenAPI Specification (formerly known as Swagger Specification) to define APIs. The OpenAPI Specification is a machine-readable format for describing RESTful APIs. It provides a standardized way to describe API endpoints, request/response structures, authentication mechanisms, error handling, and more.
+
+Swagger offers several benefits for API development and documentation: **API Design and Development, API Documentation, API Visualization, SDK Generation,** and **API Testing.**
+
+
 
 ### <mark style="color:purple;">Trip</mark>
 
