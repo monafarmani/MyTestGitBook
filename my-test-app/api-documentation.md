@@ -26,9 +26,9 @@ My Test Kotlin SDK provides the following APIs:
 
 
 
-
-
-
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/fake" method="post" %}
+[swagger.json](../.gitbook/assets/swagger.json)
+{% endswagger %}
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/agreements" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
