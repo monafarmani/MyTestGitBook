@@ -189,3 +189,13 @@ My Test Kotlin SDK provides the following APIs:
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
+
+
+
+
+
+
+
+{% swagger src="../.gitbook/assets/swagger (3).json" path="/api/v4/Trip/{id}/eventStats" method="get" %}
+[swagger (3).json](<../.gitbook/assets/swagger (3).json>)
+{% endswagger %}

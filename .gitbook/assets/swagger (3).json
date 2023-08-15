@@ -1,0 +1,255 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Gizo",
+    "version": "4.0"
+  },
+  "paths": {
+    "/api/v4/Trip/{id}/eventStats": {
+      "get": {
+        "tags": [
+          "Trip"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TripEventStatsReportDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TripEventStatsReportDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TripEventStatsReportDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "EventsDetectedDto": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "speedLimit": {
+            "type": "number",
+            "format": "double"
+          },
+          "yourSpeed": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EventsDetectedTailGatingDto": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "speedInKmph": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ttc": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "depth": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EventsDto": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RideEvent": {
+        "type": "object",
+        "properties": {
+          "totalTime": {
+            "$ref": "#/components/schemas/TripTimeDto"
+          },
+          "nightTime": {
+            "$ref": "#/components/schemas/TripTimeDto"
+          },
+          "rushHour": {
+            "$ref": "#/components/schemas/TripTimeDto"
+          },
+          "tripDistance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TripEventStatsReportDto": {
+        "type": "object",
+        "properties": {
+          "eventType": {
+            "$ref": "#/components/schemas/TripEventType"
+          },
+          "eventName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "eventDescription": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "score": {
+            "type": "number",
+            "format": "double"
+          },
+          "scorePercentile": {
+            "type": "number",
+            "format": "double"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EventsDto"
+            },
+            "nullable": true
+          },
+          "eventDetected": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EventsDetectedDto"
+            },
+            "nullable": true
+          },
+          "eventDetectedTailGating": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EventsDetectedTailGatingDto"
+            },
+            "nullable": true
+          },
+          "rideTimeEvent": {
+            "$ref": "#/components/schemas/RideEvent"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TripEventType": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "TripTimeDto": {
+        "type": "object",
+        "properties": {
+          "hours": {
+            "type": "string",
+            "nullable": true
+          },
+          "minutes": {
+            "type": "string",
+            "nullable": true
+          },
+          "seconds": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Provide a JWT Bearer",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}
