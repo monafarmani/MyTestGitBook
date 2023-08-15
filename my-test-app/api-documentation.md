@@ -125,3 +125,38 @@ My Test Kotlin SDK provides the following APIs:
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/user/initial" method="patch" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+
+
+
+
+
+
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/Trip/{id}/gps" method="get" %}
+[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/verify" method="post" %}
+[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/currentUser" method="get" %}
+[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels" method="get" %}
+[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels/{id}" method="get" %}
+[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModel" method="put" %}
+[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModel" method="delete" %}
+[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
