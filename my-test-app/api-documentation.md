@@ -20,11 +20,11 @@ layout:
 
 ## Overview
 
+API documentation serves as a reference guide for developers and users to understand how to interact with an API effectively. It provides detailed explanations, instructions, and examples on how to make API requests, handle responses, and utilize various features and functionalities.
+
 Our API documentation is generated using **Swagger**, an open-source framework that simplifies the process of designing, building, documenting, and consuming APIs (Application Programming Interfaces). It provides a set of tools and specifications that help developers describe, document, and visualize the structure and behavior of their APIs.
 
-At its core, Swagger uses the OpenAPI Specification (formerly known as Swagger Specification) to define APIs. The OpenAPI Specification is a machine-readable format for describing RESTful APIs. It provides a standardized way to describe API endpoints, request/response structures, authentication mechanisms, error handling, and more.
 
-Swagger offers several benefits for API development and documentation: **API Design and Development, API Documentation, API Visualization, SDK Generation,** and **API Testing.**
 
 
 
