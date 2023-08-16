@@ -186,6 +186,10 @@ The endpoint is designed to handle requests for adding or updating the emergency
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+The endpoint is designed to handle requests for reporting or documenting an accident involving a user. It allows users to provide information about the accident, such as the date, time, location, description, and any other relevant details.
+
+
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/user/initial" method="patch" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
