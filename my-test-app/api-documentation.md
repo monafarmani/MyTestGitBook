@@ -146,21 +146,41 @@ Our API documentation is generated using **Swagger**, an open-source framework t
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+It allows users to upload a new image file to replace their existing profile image in the system
+
+
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel" method="post" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+The endpoint is designed to handle requests for adding or associating a car model with a user's profile. It allows users to specify the details of their car model, such as the make, model, year, and other relevant information.
+
+
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel/select" method="patch" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+The endpoint is designed to handle requests for selecting or setting a particular car model as the chosen model for a user. It allows users to specify the car model they prefer or want to associate with their user profile.
+
+
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+The endpoint is designed to handle requests for retrieving the emergency contact details associated with a user's profile. It allows users or authorized parties to access the contact information of the user's designated emergency contact(s) in case of an emergency situation.
+
+
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="post" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+The endpoint is designed to handle requests for adding or updating the emergency contact details associated with a user's profile. It allows users to provide or modify the contact information of their designated emergency contact(s) to be used in case of an emergency situation.
+
+
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/user/accident" method="post" %}
 [swagger.json](../.gitbook/assets/swagger.json)
