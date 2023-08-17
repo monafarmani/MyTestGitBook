@@ -94,6 +94,10 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
+
+
 ### <mark style="color:blue;">User profile</mark>
 
 The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
@@ -103,6 +107,8 @@ The endpoint is designed to handle requests for updating or modifying the profil
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -114,6 +120,10 @@ The endpoint is designed to handle requests for uploading or updating the profil
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
+
+
 ### <mark style="color:blue;">User car</mark>
 
 The endpoint is designed to handle requests for adding or updating the car model information associated with a user's profile. It allows users to provide details about the car model they own or use.
@@ -123,6 +133,8 @@ The endpoint is designed to handle requests for adding or updating the car model
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -134,6 +146,8 @@ The endpoint is designed to handle requests for retrieving or fetching the car m
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user's profile. It allows users to retrieve detailed information about a particular car model based on its unique identifier.
@@ -143,6 +157,8 @@ The endpoint is designed to handle requests for retrieving or fetching a specifi
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -154,6 +170,8 @@ The endpoint is designed to handle requests for selecting or choosing a specific
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for creating or updating the car model information associated with a user's profile. It allows users to provide or modify details about the car model they own or use.
@@ -164,6 +182,8 @@ The endpoint is designed to handle requests for creating or updating the car mod
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for deleting the car model information associated with a user's profile. It allows users to remove or delete the car model data that is currently associated with their profile.
@@ -173,6 +193,8 @@ The endpoint is designed to handle requests for deleting the car model informati
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -186,6 +208,8 @@ The endpoint is designed to handle requests for retrieving or fetching the emerg
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile. It allows users to provide or modify details about their designated emergency contact person or persons.
@@ -195,6 +219,8 @@ The endpoint is designed to handle requests for adding or updating the emergency
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -208,6 +234,8 @@ The endpoint is designed to handle requests for updating the initial information
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 ### <mark style="color:blue;">Report Accident</mark>
@@ -220,7 +248,7 @@ The endpoint is designed to handle requests for reporting an accident related to
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -236,6 +264,8 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching information about a specific trip or journey based on its unique identifier. It allows users to access detailed information about a particular trip.
@@ -246,7 +276,7 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-
+#### <mark style="color:orange;">**Response**</mark>
 
 The endpoint is designed to handle requests for creating a new trip or journey within the system. It allows users to submit the necessary information and parameters to define and initiate a new trip.
 
@@ -255,6 +285,8 @@ The endpoint is designed to handle requests for creating a new trip or journey w
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -266,6 +298,8 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for generating a report of trips or journeys. It allows users to retrieve aggregated or summarized information about multiple trips based on certain criteria or filters.
@@ -275,6 +309,8 @@ The endpoint is designed to handle requests for generating a report of trips or 
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -286,6 +322,8 @@ The endpoint is designed to handle requests for retrieving or fetching the drivi
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving event statistics within a trip report. It allows users to access aggregated information and statistics related to specific events or incidents that occurred during trips or journeys.
@@ -295,6 +333,8 @@ The endpoint is designed to handle requests for retrieving event statistics with
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -306,6 +346,8 @@ The endpoint is designed to handle requests for retrieving or fetching the total
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching the carbon emissions or carbon footprint of the last or most recent trip recorded in the system. It allows users to access information about the environmental impact in terms of carbon emissions resulting from the most recent trip.
@@ -315,6 +357,8 @@ The endpoint is designed to handle requests for retrieving or fetching the carbo
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -326,6 +370,8 @@ The endpoint is designed to handle requests for retrieving or fetching performan
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching GPS data associated with a specific trip. It allows users to access the latitude and longitude coordinates or other relevant GPS information recorded during the trip.
@@ -335,6 +381,8 @@ The endpoint is designed to handle requests for retrieving or fetching GPS data 
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -346,6 +394,8 @@ The endpoint is designed to handle requests for retrieving or fetching the statu
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching the completion status of files related to a trip. It allows users to check whether the files associated with the trip have been completed or not.
@@ -355,6 +405,8 @@ The endpoint is designed to handle requests for retrieving or fetching the compl
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -366,6 +418,8 @@ The endpoint is designed to handle requests for initiating the start of a file u
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for uploading file chunks of a trip to the server. When a large file needs to be uploaded, it is often split into smaller chunks for efficient and reliable transmission.
@@ -375,6 +429,8 @@ The endpoint is designed to handle requests for uploading file chunks of a trip 
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -386,6 +442,8 @@ The endpoint is designed to handle requests for indicating the completion of a f
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching event statistics related to a specific trip. It allows users to access aggregated data or metrics about various events that occurred during the trip.
@@ -396,7 +454,7 @@ The endpoint is designed to handle requests for retrieving or fetching event sta
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-
+#### <mark style="color:orange;">**Response**</mark>
 
 ### <mark style="color:purple;">others</mark>
 
@@ -410,6 +468,8 @@ The endpoint is designed to handle requests for retrieving or fetching agreement
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching information about car brands. It allows users to access a list of car brands available in the system or application.
@@ -419,6 +479,8 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -430,6 +492,8 @@ The endpoint is designed to handle requests for retrieving or fetching configura
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for geocoding addresses or place names.
@@ -439,6 +503,8 @@ The endpoint is designed to handle requests for geocoding addresses or place nam
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -450,6 +516,8 @@ The endpoint is designed to handle requests for retrieving or fetching a privacy
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+#### <mark style="color:orange;">**Response**</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching terms and conditions information from the system or application.
@@ -459,6 +527,10 @@ The endpoint is designed to handle requests for retrieving or fetching terms and
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
+
+
 
 ## Errors
 
