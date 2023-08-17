@@ -308,19 +308,31 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 
 
 
-
+The endpoint is designed to handle requests for retrieving or fetching configuration settings or information from the system or application.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Config" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+
+
+The endpoint is designed to handle requests for geocoding addresses or place names.
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Map/geoCode" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+
+
+The endpoint is designed to handle requests for retrieving or fetching a privacy policy from the system or application.
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/PrivacyPolicy" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+
+
+The endpoint is designed to handle requests for retrieving or fetching terms and conditions information from the system or application.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/terms" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
