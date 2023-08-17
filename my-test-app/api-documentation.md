@@ -92,6 +92,8 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 ### <mark style="color:blue;">User profile</mark>
 
 The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
@@ -99,6 +101,8 @@ The endpoint is designed to handle requests for updating or modifying the profil
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -108,7 +112,7 @@ The endpoint is designed to handle requests for uploading or updating the profil
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 ### <mark style="color:blue;">User car</mark>
 
@@ -118,6 +122,8 @@ The endpoint is designed to handle requests for adding or updating the car model
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching the car models associated with a user's profile. It allows users to retrieve information about the car models they own or use.
@@ -125,6 +131,8 @@ The endpoint is designed to handle requests for retrieving or fetching the car m
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels" method="get" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -134,6 +142,8 @@ The endpoint is designed to handle requests for retrieving or fetching a specifi
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for selecting or choosing a specific car model for a user's profile. It allows users to indicate their preference or choice of a particular car model.
@@ -141,6 +151,8 @@ The endpoint is designed to handle requests for selecting or choosing a specific
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel/select" method="patch" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -150,6 +162,8 @@ The endpoint is designed to handle requests for creating or updating the car mod
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for deleting the car model information associated with a user's profile. It allows users to remove or delete the car model data that is currently associated with their profile.
@@ -157,6 +171,8 @@ The endpoint is designed to handle requests for deleting the car model informati
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModel" method="delete" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -168,6 +184,8 @@ The endpoint is designed to handle requests for retrieving or fetching the emerg
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile. It allows users to provide or modify details about their designated emergency contact person or persons.
@@ -175,6 +193,8 @@ The endpoint is designed to handle requests for adding or updating the emergency
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -186,6 +206,8 @@ The endpoint is designed to handle requests for updating the initial information
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 ### <mark style="color:blue;">Report Accident</mark>
@@ -196,7 +218,7 @@ The endpoint is designed to handle requests for reporting an accident related to
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -212,6 +234,8 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching information about a specific trip or journey based on its unique identifier. It allows users to access detailed information about a particular trip.
@@ -219,6 +243,8 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/{id}" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -228,6 +254,8 @@ The endpoint is designed to handle requests for creating a new trip or journey w
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching the information of the last or most recent trip recorded in the system. It allows users to access details about the latest trip they have taken or the most recently recorded trip in the system.
@@ -235,6 +263,8 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/last" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -244,6 +274,8 @@ The endpoint is designed to handle requests for generating a report of trips or 
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching the driving score information associated with a trip or journey. It allows users to access details about the driving performance or behavior during a specific trip.
@@ -251,6 +283,8 @@ The endpoint is designed to handle requests for retrieving or fetching the drivi
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/drivingScore" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -260,6 +294,8 @@ The endpoint is designed to handle requests for retrieving event statistics with
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching the total carbon emissions or carbon footprint of a trip or journey. It allows users to access information about the environmental impact in terms of carbon emissions resulting from a specific trip.
@@ -267,6 +303,8 @@ The endpoint is designed to handle requests for retrieving or fetching the total
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/totalCarbon" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -276,6 +314,8 @@ The endpoint is designed to handle requests for retrieving or fetching the carbo
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching performance metrics or statistics related to a user's trips or journeys. It allows users to access information about their own performance as it pertains to their trips.
@@ -283,6 +323,8 @@ The endpoint is designed to handle requests for retrieving or fetching performan
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/myPerformance" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -292,6 +334,8 @@ The endpoint is designed to handle requests for retrieving or fetching GPS data 
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching the status of file chunks related to a trip. It allows users to check the status of individual or multiple file chunks that make up a larger file associated with the trip.
@@ -299,6 +343,8 @@ The endpoint is designed to handle requests for retrieving or fetching the statu
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -308,6 +354,8 @@ The endpoint is designed to handle requests for retrieving or fetching the compl
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for initiating the start of a file upload process related to a trip. It allows users to begin uploading a file or multiple files associated with the trip to the server.
@@ -315,6 +363,8 @@ The endpoint is designed to handle requests for initiating the start of a file u
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadStart" method="post" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -324,6 +374,8 @@ The endpoint is designed to handle requests for uploading file chunks of a trip 
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for indicating the completion of a file upload process related to a trip. It allows users to signal that all file chunks associated with the trip have been successfully uploaded.
@@ -331,6 +383,8 @@ The endpoint is designed to handle requests for indicating the completion of a f
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadComplete" method="post" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -340,7 +394,7 @@ The endpoint is designed to handle requests for retrieving or fetching event sta
 [swagger (3).json](<../.gitbook/assets/swagger (3).json>)
 {% endswagger %}
 
-
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -354,6 +408,8 @@ The endpoint is designed to handle requests for retrieving or fetching agreement
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching information about car brands. It allows users to access a list of car brands available in the system or application.
@@ -361,6 +417,8 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/CarBrand" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -370,6 +428,8 @@ The endpoint is designed to handle requests for retrieving or fetching configura
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for geocoding addresses or place names.
@@ -377,6 +437,8 @@ The endpoint is designed to handle requests for geocoding addresses or place nam
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Map/geoCode" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 
 
@@ -386,6 +448,8 @@ The endpoint is designed to handle requests for retrieving or fetching a privacy
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
 
 
 The endpoint is designed to handle requests for retrieving or fetching terms and conditions information from the system or application.
@@ -394,7 +458,7 @@ The endpoint is designed to handle requests for retrieving or fetching terms and
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
 ## Errors
 
