@@ -46,7 +46,7 @@ To obtain an API key, please contact our support team.
 
 Here are the list of  all the available endpoints or routes provided by the API
 
-### <mark style="color:purple;">User</mark>
+### <mark style="color:purple;">Login/Register And Verify</mark>
 
 The endpoint is designed to handle requests for verifying the identity of a user. It allows users or authorized parties to submit identity-related information or credentials to confirm the user's identity.
 
