@@ -290,13 +290,25 @@ The endpoint is designed to handle requests for retrieving or fetching event sta
 
 ### <mark style="color:purple;">others</mark>
 
+
+
+The endpoint is designed to handle requests for retrieving or fetching agreements. It allows users to access information about agreements stored in the system or application.
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/agreements" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+
+
+The endpoint is designed to handle requests for retrieving or fetching information about car brands. It allows users to access a list of car brands available in the system or application.
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/CarBrand" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+
+
+
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Config" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
