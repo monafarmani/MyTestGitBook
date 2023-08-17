@@ -26,6 +26,26 @@ Our API documentation is generated using **Swagger**, an open-source framework t
 
 
 
+## Authentication
+
+To access the API, you need to include an API key in the headers of your requests. The API key should be included in the `Authorization` header as follows:
+
+
+
+{% tabs %}
+{% tab title="First Tab" %}
+Authorization: Bearer \<your\_api\_key>
+{% endtab %}
+{% endtabs %}
+
+To obtain an API key, please contact our support team.
+
+
+
+## Endpoints
+
+Here are the list of  all the available endpoints or routes provided by the API
+
 ### <mark style="color:purple;">User</mark>
 
 The endpoint is designed to handle requests for verifying the identity of a user. It allows users or authorized parties to submit identity-related information or credentials to confirm the user's identity.
@@ -340,9 +360,26 @@ The endpoint is designed to handle requests for retrieving or fetching terms and
 
 
 
+## Errors
+
+In case of errors, the API may return the following HTTP status codes along with error responses:
+
+* 400 Bad Request: Invalid request parameters or missing required fields.
+* 401 Unauthorized: Missing or invalid API key.
+* 404 Not Found: The requested resource does not exist.
+* 500 Internal Server Error: An unexpected error occurred on the server.
 
 
 
+## Rate Limiting
+
+The API enforces rate limiting to ensure fair usage. Each API key is limited to 100 requests per minute. If the rate limit is exceeded, a response with status code 429 "Too Many Requests" will be returned.
+
+
+
+## Support
+
+For any questions or assistance regarding the Android Project API, please contact our support team at [support@example.com](mailto:support@example.com).
 
 
 
