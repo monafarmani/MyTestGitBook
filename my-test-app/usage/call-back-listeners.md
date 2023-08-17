@@ -299,7 +299,7 @@ Within this code block, you might find logic to handle different recording event
 Here there is an example of a sample of using event in your app.
 
 {% tabs %}
-{% tab title="First Tab" %}
+{% tab title="Kotlin" %}
 ```kotlin
 when (event) {
     is VideoRecordEvent.Finalize -> {
@@ -308,18 +308,6 @@ when (event) {
         }
     }
 }
-```
-{% endtab %}
-
-{% tab title="Second Tab" %}
-```kotlin
-   when (event) {
-        is VideoRecordEvent.Finalize -> {
-            if (event.hasError()) {
-                //Do something
-            }
-        }
-    }
 ```
 {% endtab %}
 {% endtabs %}
