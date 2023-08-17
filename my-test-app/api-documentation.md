@@ -26,43 +26,73 @@ Our API documentation is generated using **Swagger**, an open-source framework t
 
 
 
-## Authentication
-
-To access the API, you need to include an API key in the headers of your requests. The API key should be included in the `Authorization` header as follows:
-
-
-
-{% tabs %}
-{% tab title="First Tab" %}
-Authorization: Bearer \<your\_api\_key>
-{% endtab %}
-{% endtabs %}
-
-To obtain an API key, please contact our support team.
-
-
-
 ## Endpoints
 
-Here are the list of  all the available endpoints or routes provided by the API
+Here are the list of all the available endpoints or routes provided by the API
 
-### <mark style="color:purple;">Login/Register And Verify</mark>
+## <mark style="color:purple;">Login/Register And Verify</mark>
 
-The endpoint is designed to handle requests for verifying the identity of a user. It allows users or authorized parties to submit identity-related information or credentials to confirm the user's identity.
+**1. Check Identity:** The endpoint allows users to submit identity-related information or credentials to confirm the user's identity.
 
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/checkIdentity" method="post" %}
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/checkIdentity" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**username:** the phone number of the user e.g. **+49\_01747707607**
+
+#### <mark style="color:orange;">**Response**</mark>
+
+It returns a Boolean, and if it's true it could indicate that the user is authenticated, then a message would be sent for verification.
+
+**Note:** If the telephone number has been previously registered, it uses the corresponding data; otherwise, it adds a new user.
 
 
-The endpoint is designed to handle requests for verifying a user's identity, account, or other relevant information. It allows users or authorized parties to submit data or credentials for verification purposes.
 
-{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/verify" method="post" %}
+**2. Verify:** The endpoint allows users to submit data or credentials for verification purposes.
+
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/verify" method="post" expanded="true" fullWidth="false" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
 
+**username:** the phone number of the user that used in [Check Identity](api-documentation.md#api-v1-user-checkidentity) e.g. **+49\_01747707607**
+
+**verifyCode:**  the 5 number code which is send through messages sent e.g. **12345**
+
+#### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains several properties including&#x20;
+
+**`userName`**: This property likely represents the user phone number. It is expected to be a string value.
+
+**`token`**: The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
+
+**`firstName`**: This property represents the user's first name. It is expected to be a string value.
+
+**`lastName`**: The `lastName` property represents the user's last name. It is also expected to be a string value.
+
+**`email`**: This property represents the user's email address. It is expected to be a string value.
+
+**`phoneNumber`**: The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+
+**`isInitialized`**: The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
+
+
+
+## <mark style="color:purple;">User</mark>
+
+### <mark style="color:blue;">Current User</mark>
+
+The endpoint is designed to handle requests for retrieving or fetching the information of the currently authenticated user. It allows users to access their own profile or account details.
+
+{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/currentUser" method="get" %}
+[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
+### <mark style="color:blue;">User profile</mark>
 
 The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
 
@@ -79,6 +109,8 @@ The endpoint is designed to handle requests for uploading or updating the profil
 {% endswagger %}
 
 
+
+### <mark style="color:blue;">User car</mark>
 
 The endpoint is designed to handle requests for adding or updating the car model information associated with a user's profile. It allows users to provide details about the car model they own or use.
 
@@ -128,6 +160,8 @@ The endpoint is designed to handle requests for deleting the car model informati
 
 
 
+### <mark style="color:blue;">User Emergency Contact</mark>
+
 The endpoint is designed to handle requests for retrieving or fetching the emergency contact information associated with a user's profile. It allows users to retrieve details about the designated emergency contact person or persons.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="get" %}
@@ -144,13 +178,7 @@ The endpoint is designed to handle requests for adding or updating the emergency
 
 
 
-The endpoint is designed to handle requests for reporting an accident related to a user. It allows users to submit information about an accident they have experienced or been involved in.
-
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/user/accident" method="post" %}
-[swagger.json](../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-
+### <mark style="color:blue;">User First time Use initial</mark>
 
 The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
 
@@ -160,11 +188,19 @@ The endpoint is designed to handle requests for updating the initial information
 
 
 
-The endpoint is designed to handle requests for retrieving or fetching the information of the currently authenticated user. It allows users to access their own profile or account details.
+### <mark style="color:blue;">Report Accident</mark>
 
-{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/currentUser" method="get" %}
-[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+The endpoint is designed to handle requests for reporting an accident related to a user. It allows users to submit information about an accident they have experienced or been involved in.
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/user/accident" method="post" %}
+[swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+
+
+
+
+
 
 ### <mark style="color:purple;">Trip</mark>
 
