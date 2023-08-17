@@ -148,13 +148,25 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 
 ### <mark style="color:purple;">Trip</mark>
 
+
+
+The endpoint is designed to handle requests for retrieving or fetching information about trips or journeys. It allows users to access details related to various trips that may have been recorded or stored in the system.
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+
+
+The endpoint is designed to handle requests for retrieving or fetching information about a specific trip or journey based on its unique identifier. It allows users to access detailed information about a particular trip.
+
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/{id}" method="get" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+
+
+The endpoint is designed to handle requests for creating a new trip or journey within the system. It allows users to submit the necessary information and parameters to define and initiate a new trip.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/createTrip" method="post" %}
 [swagger.json](../.gitbook/assets/swagger.json)
