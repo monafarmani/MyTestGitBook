@@ -78,7 +78,7 @@ The provided endpoint response contains several properties including&#x20;
 
 **profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL, e.g. **"ProfilePic/93/ae316a8c-78e3-4427-9f6c-63a0d37d1d0d.jpg"**
 
-**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02"**
+**birthDate :** The`birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-dd", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02"**
 
 **gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified, e.g. **1**
 
@@ -102,23 +102,23 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 
 The provided endpoint response contains several properties including&#x20;
 
-**username :** This property likely represents the user phone number. It is expected to be a string value.
+**username :** This property likely represents the user phone number. It is expected to be a string value, e.g. **"+49\_01747707607"**
 
-**firstName :** This property represents the user's first name. It is expected to be a string value.
+**firstName :** This property represents the user's first name. It is expected to be a string value, e.g.**"David"**
 
-**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value.
+**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value, e.g. **"Smith"**
 
-**email :** This property represents the user's email address. It is expected to be a string value.
+**email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
-**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
 
-**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL, e.g. **"ProfilePic/93/ae316a8c-78e3-4427-9f6c-63a0d37d1d0d.jpg"**
 
-**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
+**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02"**
 
-**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
+**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified, e.g. **1**
 
-**isInitialized :** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
+**isInitialized :** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not, e.g. **true**
 
 
 
