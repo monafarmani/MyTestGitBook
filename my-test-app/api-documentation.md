@@ -40,13 +40,13 @@ Here are the list of all the available endpoints or routes provided by the API
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username :** the phone number of the user and It is expected to be a string value. e.g. **+49\_01747707607**
+**username :** the phone number of the user and It is expected to be a string value. e.g. "**+49\_01747707607"**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 It returns a Boolean, and if it's true it could indicate that the user is authenticated, then a message would be sent for verification.
 
-**Note :** If the telephone number has been previously registered, it uses the corresponding data; otherwise, it adds a new user.
+**Note :** If the telephone number has been previously registered, it uses the corresponding data otherwise, it adds a new user.
 
 
 
@@ -58,35 +58,47 @@ It returns a Boolean, and if it's true it could indicate that the user is authen
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username :** the phone number of the user that used in [Check Identity](api-documentation.md#api-v1-user-checkidentity) and It is expected to be a string value, e.g. **+49\_01747707607**
+**username :** the phone number of the user that used in [Check Identity](api-documentation.md#api-v1-user-checkidentity) and It is expected to be a string value, e.g. "**+49\_01747707607"**
 
-**verifyCode :**  the 5 number code which is sent through messages and It is expected to be a string value, e.g. **12345**
+**verifyCode :**  the 5 number code which is sent through messages and It is expected to be a string value, e.g. "**12345"**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains several properties including&#x20;
 
-**username :** This property likely represents the user phone number. It is expected to be a string value.
+**username :** This property likely represents the user phone number. It is expected to be a string value, e.g. "**+49\_01747707607"**
 
-**firstName :** This property represents the user's first name. It is expected to be a string value.
+**firstName :** This property represents the user's first name. It is expected to be a string value, e.g.**"David"**
 
-**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value.
+**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value, e.g. "**Smith"**
 
-**email :** This property represents the user's email address. It is expected to be a string value.
+**email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
-**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. "**+49\_01747707607"**
 
 **profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
 
-**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
+**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02"**
 
-**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
+**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified, e.g. **1**
 
-**isInitialized :** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
+**isInitialized :** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not, e.g. **true**
 
 **token :** The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
 
 
+
+
+
+**firstName :** first name of the user and It is expected to be a string value, e.g.**"David"**
+
+**lastName :** last name of the user and It is expected to be a string value. e.g. "**Smith"**
+
+**email :** email of the user and It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
+
+**Note:** email can be an empty text. if not , it must be sent by proper format of email.
+
+**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-dd", which indicates the date and time in ISO 8601 format. e.g. **"1999-08-02"**
 
 ## <mark style="color:purple;">User</mark>
 
