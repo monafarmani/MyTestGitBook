@@ -96,7 +96,25 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains several key-value pairs representing different properties. Here's the breakdown of each property and its potential meaning:
 
+`userName`: This property likely represents the username associated with the user's account. It is expected to be a string value.
+
+**`firstName`:** This property represents the user's first name. It is expected to be a string value.
+
+**`lastName`:** The `lastName` property represents the user's last name. It is also expected to be a string value.
+
+**`email`:** This property represents the user's email address. It is expected to be a string value.
+
+**`phoneNumber`:** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+
+**`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+
+**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "2023-08-15T11:12:39.091Z", which indicates the date and time in ISO 8601 format. The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
+
+**`gender`:** The `gender` property represents the user's gender. In this case, it is represented as a numeric value (`0`). The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Common conventions include `0` for unspecified, `1` for male, and `2` for female.
+
+**`isInitialized`:** The `isInitialized` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the user account has been fully initialized or set up. In this case, `isInitialized` being `true` suggests that the user account has completed the necessary initialization steps.
 
 ### <mark style="color:blue;">User profile</mark>
 
@@ -160,7 +178,7 @@ The provided endpoint response contains several key-value pairs representing dif
 
 ### <mark style="color:blue;">User car</mark>
 
-The endpoint is designed to handle requests for adding or updating the car model information associated with a user's profile. It allows users to provide details about the car model they own or use.
+**1. Car Model :** The endpoint is designed to handle requests for adding or updating the car model information associated with a user's profile. It allows users to provide details about the car model they own or use.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -168,11 +186,35 @@ The endpoint is designed to handle requests for adding or updating the car model
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+**carModelName:**
+
+&#x20;**carBrandName:**
+
+&#x20;**license:**&#x20;
+
+&#x20;**yearOfProduction:**
+
+&#x20;**mileage:**&#x20;
+
 #### <mark style="color:orange;">**Response**</mark>
 
 
 
-The endpoint is designed to handle requests for retrieving or fetching the car models associated with a user's profile. It allows users to retrieve information about the car models they own or use.
+**2. Select Car Model:** The endpoint is designed to handle requests for selecting or choosing a specific car model for a user's profile. It allows users to indicate their preference or choice of a particular car model.
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel/select" method="patch" expanded="true" %}
+[swagger.json](../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**id:**
+
+#### <mark style="color:orange;">**Response**</mark>
+
+
+
+**3. Car Models:** The endpoint is designed to handle requests for retrieving or fetching the car models associated with a user's profile. It allows users to retrieve information about the car models they own or use.
 
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels" method="get" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
@@ -182,9 +224,29 @@ The endpoint is designed to handle requests for retrieving or fetching the car m
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response appears to be a JSON array containing a single object. Here is the breakdown of the properties within the object and their potential meanings:
+
+**`id`:** This property likely represents the ID of the car. It is expected to be a numeric value (`0` in this case).
+
+**`carModelId`:** The `carModelId` property likely represents the ID of the car model associated with the car. It is expected to be a numeric value (`0` in this case).
+
+**`carBrandId`:** This property likely represents the ID of the car brand associated with the car. It is expected to be a numeric value (`0` in this case).
+
+**`carName`:** The `carName` property represents the name or identifier of the car. It is expected to be a string value.
+
+**`carModel`:** This property represents the model of the car. It is expected to be a string value.
+
+**`license`:** The `license` property represents the license plate number or identifier of the car. It is expected to be a string value.
+
+**`yearOfProduction`:** This property represents the year of production for the car. It is expected to be a numeric value (`0` in this case).
+
+**`mileage`:** The `mileage` property represents the mileage or distance traveled by the car. It is expected to be a numeric value (`0` in this case).
+
+**`isSelected`:** The `isSelected` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the car is selected or chosen for a particular purpose.
 
 
-The endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user's profile. It allows users to retrieve detailed information about a particular car model based on its unique identifier.
+
+**4. Car Models by Id:** The endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user's profile. It allows users to retrieve detailed information about a particular car model based on its unique identifier.
 
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels/{id}" method="get" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
@@ -192,41 +254,43 @@ The endpoint is designed to handle requests for retrieving or fetching a specifi
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-#### <mark style="color:orange;">**Response**</mark>
-
-
-
-The endpoint is designed to handle requests for selecting or choosing a specific car model for a user's profile. It allows users to indicate their preference or choice of a particular car model.
-
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel/select" method="patch" expanded="true" %}
-[swagger.json](../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
+**id:**&#x20;
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response appears to be a JSON object containing properties related to a car. Here's the breakdown of each property and its potential meaning:
+
+**`id`:** This property likely represents the ID of the car. It is expected to be a numeric value (`0` in this case).
+
+**`carModelId`:** The `carModelId` property likely represents the ID of the car model associated with the car. It is expected to be a numeric value (`0` in this case).
+
+**`carBrandId`:** This property likely represents the ID of the car brand associated with the car. It is expected to be a numeric value (`0` in this case).
+
+**`carName`:** The `carName` property represents the name or identifier of the car. It is expected to be a string value.
+
+**`carModel`:** This property represents the model of the car. It is expected to be a string value.
+
+**`license`:** The `license` property represents the license plate number or identifier of the car. It is expected to be a string value.
+
+**`yearOfProduction`:** This property represents the year of production for the car. It is expected to be a numeric value (`0` in this case).
+
+**`mileage`:** The `mileage` property represents the mileage or distance traveled by the car. It is expected to be a numeric value (`0` in this case).
+
+**`isSelected`:** The `isSelected` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the car is selected or chosen for a particular purpose.
 
 
-The endpoint is designed to handle requests for creating or updating the car model information associated with a user's profile. It allows users to provide or modify details about the car model they own or use.
-
-{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModel" method="put" expanded="true" %}
-[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
 
 
 
-The endpoint is designed to handle requests for deleting the car model information associated with a user's profile. It allows users to remove or delete the car model data that is currently associated with their profile.
+**5. Delete Car Model:** The endpoint is designed to handle requests for deleting the car model information associated with a user's profile. It allows users to remove or delete the car model data that is currently associated with their profile.
 
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModel" method="delete" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+**id:**&#x20;
 
 #### <mark style="color:orange;">**Response**</mark>
 
