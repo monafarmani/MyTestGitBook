@@ -170,7 +170,7 @@ The provided endpoint response contains several properties including&#x20;
 
 **profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL, e.g. **"ProfilePic/93/ae316a8c-78e3-4427-9f6c-63a0d37d1d0d.jpg"**
 
-**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-dd", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02"**
+**birthDate :** The`birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-ddTHH:mm:ss", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02T00:00:00"**
 
 **gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified, e.g. **1**
 
@@ -198,11 +198,13 @@ The provided endpoint response contains several properties including
 
 **email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
+<mark style="color:red;">**Note :**</mark> email can be null or string.
+
 **phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
 
 **profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL, e.g. **"ProfilePic/93/ae316a8c-78e3-4427-9f6c-63a0d37d1d0d.jpg"**
 
-**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-dd", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02"**
+**birthDate :** The`birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-ddTHH:mm:ss", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02T00:00:00"**
 
 **gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified, e.g. **1**
 
