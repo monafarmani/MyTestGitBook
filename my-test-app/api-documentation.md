@@ -212,7 +212,7 @@ The provided endpoint response contains several properties including
 
 ### <mark style="color:blue;">User car</mark>
 
-<mark style="color:green;">**Car Model :**</mark> The endpoint is designed to handle requests for adding the car model information associated with  user's cars.
+<mark style="color:green;">**Car Model :**</mark> The endpoint is designed to handle requests for adding the car model information associated with user's cars.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -240,7 +240,7 @@ If it's true, it means that car model is added.
 
 
 
-<mark style="color:green;">**Select Car Model :**</mark> The endpoint is designed to handle requests for selecting or choosing a specific car model for a current active user's car. It allows users to indicate their preference or choice of a particular car model.
+<mark style="color:green;">**Select Car Model :**</mark> The endpoint is designed to handle requests for selecting or choosing a specific car model for a current active user's car.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel/select" method="patch" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -256,7 +256,7 @@ If it's true, it means that car model is selected.
 
 
 
-<mark style="color:green;">**Car Models :**</mark> The endpoint is designed to handle requests for retrieving or fetching the car models associated with a user's profile. It allows users to retrieve information about the car models they own or use.
+<mark style="color:green;">**Car Models :**</mark> The endpoint is designed to handle requests for retrieving or fetching the car models associated with the user.
 
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels" method="get" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
@@ -264,25 +264,25 @@ If it's true, it means that car model is selected.
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several properties including
+The provided endpoint response contains a list of car model properties
 
-**id :** this property likely represents the ID of the car. It is expected to be a numeric value.
+**id :** this property likely represents the ID of the car. It is expected to be a numeric value, e.g. **2256**
 
-**carModelId :** the `carModelId` property likely represents the ID of the car model associated with the car. It is expected to be a numeric value .
+**carModelId :** the `carModelId` property likely represents the ID of the car model associated with the car. It is expected to be a numeric value, e.g. **80**
 
-**caBrandId :** this property likely represents the ID of the car brand associated with the car. It is expected to be a numeric value .
+**caBrandId :** this property likely represents the ID of the car brand associated with the car. It is expected to be a numeric value, e.g. **3**
 
-**carName :** the `carName` property represents the name or identifier of the car. It is expected to be a string value.
+**carName :** the `carName` property represents the name or identifier of the car. It is expected to be a string value, e.g. **"Benz"**
 
-**carModel :** this property represents the model of the car. It is expected to be a string value.
+**carModel :** this property represents the model of the car. It is expected to be a string value, e.g. **"C200"**
 
-**license:** the `license` property represents the license plate number or identifier of the car. It is expected to be a string value.
+**license:** the `license` property represents the license plate number or identifier of the car. It is expected to be a string value, e.g. **"RAKL 8136"**
 
-**yearOfProduction :** this property represents the year of production for the car. It is expected to be a numeric value .
+**yearOfProduction :** this property represents the year of production for the car. It is expected to be a numeric value, e.g. **2023**
 
-**mileage :** the `mileage` property represents the mileage or distance traveled by the car. It is expected to be a numeric value (`0` in this case).
+**mileage :** the `mileage` property represents the mileage or distance traveled by the car. It is expected to be a numeric value (`0` in this case), e.g. **1000**
 
-**isSelected :** the `isSelected` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the car is selected or chosen for a particular purpose.
+**isSelected :** the `isSelected` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the car is selected or chosen for a particular purpose, e.g. **false**
 
 **Note :** just one car can be selected in a list.
 
