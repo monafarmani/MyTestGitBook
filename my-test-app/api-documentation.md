@@ -32,7 +32,7 @@ Here are the list of all the available endpoints or routes provided by the API
 
 ## <mark style="color:purple;">Login/Register And Verify</mark>
 
-<mark style="color:green;">**1. Check Identity :**</mark> The endpoint allows users to submit identity-related information or credentials to confirm the user's identity.
+<mark style="color:green;">**Check Identity :**</mark> The endpoint allows users to submit identity-related information or credentials to confirm the user's identity.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/checkIdentity" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -50,7 +50,7 @@ It returns a Boolean, and if it's true it could indicate that the user is authen
 
 
 
-<mark style="color:green;">**2. Verify :**</mark> The endpoint allows users to submit data or credentials for verification purposes.
+<mark style="color:green;">**Verify :**</mark> The endpoint allows users to submit data or credentials for verification purposes.
 
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/verify" method="post" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
@@ -94,7 +94,7 @@ The provided endpoint response contains several properties including&#x20;
 
 ### <mark style="color:blue;">Current User</mark>
 
-The endpoint is designed to handle requests for retrieving or fetching the information of the currently authenticated user. It allows users to access their own profile or account details.
+<mark style="color:green;">**Current User :**</mark> The endpoint is designed to handle requests for retrieving or fetching the information of the currently authenticated user. It allows users to access their own profile or account details.
 
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/currentUser" method="get" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
@@ -128,7 +128,7 @@ The provided endpoint response contains several properties including&#x20;
 
 ### <mark style="color:blue;">User profile</mark>
 
-<mark style="color:green;">**1. Profile :**</mark>  The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
+<mark style="color:green;">**Profile :**</mark>  The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
 
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
@@ -176,7 +176,7 @@ The provided endpoint response contains several properties including&#x20;
 
 
 
-<mark style="color:green;">**2. Profile image :**</mark> The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
+<mark style="color:green;">**Profile image :**</mark> The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/uploadProfileImage" method="patch" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -212,7 +212,7 @@ The provided endpoint response contains several properties including
 
 ### <mark style="color:blue;">User car</mark>
 
-<mark style="color:green;">**1. Car Model :**</mark> The endpoint is designed to handle requests for adding or updating the car model information associated with a user's profile. It allows users to provide details about the car model they own or use.
+<mark style="color:green;">**Car Model :**</mark> The endpoint is designed to handle requests for adding the car model information associated with  user's cars.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -240,7 +240,7 @@ If it's true, it means that car model is added.
 
 
 
-<mark style="color:green;">**2. Select Car Model :**</mark> The endpoint is designed to handle requests for selecting or choosing a specific car model for a user's profile. It allows users to indicate their preference or choice of a particular car model.
+<mark style="color:green;">**Select Car Model :**</mark> The endpoint is designed to handle requests for selecting or choosing a specific car model for a current active user's car. It allows users to indicate their preference or choice of a particular car model.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel/select" method="patch" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -256,7 +256,7 @@ If it's true, it means that car model is selected.
 
 
 
-<mark style="color:green;">**3. Car Models :**</mark> The endpoint is designed to handle requests for retrieving or fetching the car models associated with a user's profile. It allows users to retrieve information about the car models they own or use.
+<mark style="color:green;">**Car Models :**</mark> The endpoint is designed to handle requests for retrieving or fetching the car models associated with a user's profile. It allows users to retrieve information about the car models they own or use.
 
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels" method="get" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
@@ -288,7 +288,7 @@ The provided endpoint response contains several properties including
 
 
 
-<mark style="color:green;">**4. Car Models by Id :**</mark> the endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user's profile. It allows users to retrieve detailed information about a particular car model based on its unique identifier.
+<mark style="color:green;">**Car Models by Id :**</mark> the endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user's profile. It allows users to retrieve detailed information about a particular car model based on its unique identifier.
 
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels/{id}" method="get" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
@@ -324,7 +324,7 @@ The provided endpoint response contains several properties including
 
 
 
-<mark style="color:green;">**5. Delete Car Model:**</mark> The endpoint is designed to handle requests for deleting the car model information associated with a user's profile. It allows users to remove or delete the car model data that is currently associated with their profile.
+<mark style="color:green;">**Delete Car Model:**</mark> The endpoint is designed to handle requests for deleting the car model information associated with a user's profile. It allows users to remove or delete the car model data that is currently associated with their profile.
 
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModel" method="delete" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
@@ -340,7 +340,7 @@ If it's true, it means that car is deleted.
 
 ### <mark style="color:blue;">User Emergency Contact</mark>
 
-<mark style="color:green;">**1. Add Emergency Contact :**</mark> The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile. It allows users to provide or modify details about their designated emergency contact person or persons.
+<mark style="color:green;">**Add Emergency Contact :**</mark> The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile. It allows users to provide or modify details about their designated emergency contact person or persons.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -362,7 +362,7 @@ If it's true, it means that emergency contact information is recorded.
 
 
 
-<mark style="color:green;">**2. Get Emergency Contact Information :**</mark> The endpoint is designed to handle requests for retrieving or fetching the emergency contact information associated with a user's profile. It allows users to retrieve details about the designated emergency contact person or persons.
+&#x20;<mark style="color:green;">**Get Emergency Contact Information :**</mark> The endpoint is designed to handle requests for retrieving or fetching the emergency contact information associated with a user's profile. It allows users to retrieve details about the designated emergency contact person or persons.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -386,7 +386,7 @@ The provided endpoint response appears to be a JSON object containing properties
 
 ### <mark style="color:blue;">User First time Use initial</mark>
 
-&#x20;The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
+&#x20;<mark style="color:green;">**Initial :**</mark> The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/user/initial" method="patch" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -400,7 +400,7 @@ If it's true, it means that getting initial information from user is completed .
 
 ### <mark style="color:blue;">Report Accident</mark>
 
-The endpoint is designed to handle requests for reporting an accident related to a user. It allows users to submit information about an accident they have experienced or been involved in.
+<mark style="color:green;">**Accident :**</mark> The endpoint is designed to handle requests for reporting an accident related to a user. It allows users to submit information about an accident they have experienced or been involved in.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/user/accident" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
