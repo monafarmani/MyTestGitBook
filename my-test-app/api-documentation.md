@@ -32,7 +32,7 @@ Here are the list of all the available endpoints or routes provided by the API
 
 ## <mark style="color:purple;">Login/Register And Verify</mark>
 
-**1. Check Identity:** The endpoint allows users to submit identity-related information or credentials to confirm the user's identity.
+**1. Check Identity :** The endpoint allows users to submit identity-related information or credentials to confirm the user's identity.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/checkIdentity" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -40,45 +40,45 @@ Here are the list of all the available endpoints or routes provided by the API
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username:** the phone number of the user e.g. **+49\_01747707607**
+**username :** the phone number of the user e.g. **+49\_01747707607**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 It returns a Boolean, and if it's true it could indicate that the user is authenticated, then a message would be sent for verification.
 
-**Note:** If the telephone number has been previously registered, it uses the corresponding data; otherwise, it adds a new user.
+**Note :** If the telephone number has been previously registered, it uses the corresponding data; otherwise, it adds a new user.
 
 
 
-**2. Verify:** The endpoint allows users to submit data or credentials for verification purposes.
+**2. Verify :** The endpoint allows users to submit data or credentials for verification purposes.
 
-{% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/verify" method="post" expanded="true" fullWidth="false" %}
-[swagger (1).json](<../.gitbook/assets/swagger (1).json>)
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/verify" method="post" %}
+[swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username:** the phone number of the user that used in [Check Identity](api-documentation.md#api-v1-user-checkidentity) e.g. **+49\_01747707607**
+**username :** the phone number of the user that used in [Check Identity](api-documentation.md#api-v1-user-checkidentity) e.g. **+49\_01747707607**
 
-**verifyCode:**  the 5 number code which is send through messages sent e.g. **12345**
+**verifyCode :**  the 5 number code which is send through messages sent e.g. **12345**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains several properties including&#x20;
 
-**`userName`**: This property likely represents the user phone number. It is expected to be a string value.
+**`userName`:** This property likely represents the user phone number. It is expected to be a string value.
 
-**`token`**: The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
+**`token`:** The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
 
-**`firstName`**: This property represents the user's first name. It is expected to be a string value.
+**`firstName`:** This property represents the user's first name. It is expected to be a string value.
 
-**`lastName`**: The `lastName` property represents the user's last name. It is also expected to be a string value.
+**`lastName`:** The `lastName` property represents the user's last name. It is also expected to be a string value.
 
-**`email`**: This property represents the user's email address. It is expected to be a string value.
+**`email`:** This property represents the user's email address. It is expected to be a string value.
 
-**`phoneNumber`**: The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+**`phoneNumber`:** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
 
-**`isInitialized`**: The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
+**`isInitialized`:** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
 
 
 
@@ -92,13 +92,11 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several key-value pairs representing different properties. Here's the breakdown of each property and its potential meaning:
+The provided endpoint response contains several properties including
 
-`userName`: This property likely represents the username associated with the user's account. It is expected to be a string value.
+**`userName`:** This property likely represents the user phone number. It is expected to be a string value.
 
 **`firstName`:** This property represents the user's first name. It is expected to be a string value.
 
@@ -112,19 +110,17 @@ The provided endpoint response contains several key-value pairs representing dif
 
 **`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "2023-08-15T11:12:39.091Z", which indicates the date and time in ISO 8601 format. The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
 
-**`gender`:** The `gender` property represents the user's gender. In this case, it is represented as a numeric value (`0`). The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Common conventions include `0` for unspecified, `1` for male, and `2` for female.
+**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Common conventions include `0` for unspecified, `1` for male, and `2` for female.
 
-**`isInitialized`:** The `isInitialized` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the user account has been fully initialized or set up. In this case, `isInitialized` being `true` suggests that the user account has completed the necessary initialization steps.
+**`isInitialized`:** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
 
 ### <mark style="color:blue;">User profile</mark>
 
-**1.profile:** The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
+**1. Profile :** The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
 
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -146,7 +142,7 @@ The provided endpoint response contains several key-value pairs representing dif
 
 
 
-**2.Profile Image:** The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
+**2. Profile image :** The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/uploadProfileImage" method="patch" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -219,8 +215,6 @@ The provided endpoint response contains several key-value pairs representing dif
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels" method="get" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -324,8 +318,6 @@ The provided endpoint response appears to be a JSON object containing properties
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response appears to be a JSON object containing properties related to a person's information. Here's the breakdown of each property and its potential meaning:
@@ -350,8 +342,6 @@ The provided endpoint response appears to be a JSON object containing properties
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
 #### <mark style="color:orange;">**Response**</mark>
 
 
@@ -363,8 +353,6 @@ The endpoint is designed to handle requests for reporting an accident related to
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/user/accident" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
 
