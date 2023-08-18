@@ -32,7 +32,7 @@ Here are the list of all the available endpoints or routes provided by the API
 
 ## <mark style="color:purple;">Login/Register And Verify</mark>
 
-**1. Check Identity :** The endpoint allows users to submit identity-related information or credentials to confirm the user's identity.
+<mark style="color:green;">**1. Check Identity :**</mark> The endpoint allows users to submit identity-related information or credentials to confirm the user's identity.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/checkIdentity" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -50,9 +50,9 @@ It returns a Boolean, and if it's true it could indicate that the user is authen
 
 
 
-**2. Verify :** The endpoint allows users to submit data or credentials for verification purposes.
+<mark style="color:green;">**2. Verify :**</mark> The endpoint allows users to submit data or credentials for verification purposes.
 
-{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/verify" method="post" %}
+{% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/verify" method="post" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
@@ -68,8 +68,6 @@ The provided endpoint response contains several properties including&#x20;
 
 **`userName`:** This property likely represents the user phone number. It is expected to be a string value.
 
-**`token`:** The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
-
 **`firstName`:** This property represents the user's first name. It is expected to be a string value.
 
 **`lastName`:** The `lastName` property represents the user's last name. It is also expected to be a string value.
@@ -78,7 +76,15 @@ The provided endpoint response contains several properties including&#x20;
 
 **`phoneNumber`:** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
 
+**`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+
+**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
+
+**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
+
 **`isInitialized`:** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
+
+**`token`:** The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
 
 
 
@@ -108,15 +114,17 @@ The provided endpoint response contains several properties including
 
 **`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
 
-**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "2023-08-15T11:12:39.091Z", which indicates the date and time in ISO 8601 format. The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
+**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
 
-**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Common conventions include `0` for unspecified, `1` for male, and `2` for female.
+**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
 
 **`isInitialized`:** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
 
+
+
 ### <mark style="color:blue;">User profile</mark>
 
-**1. Profile :** The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
+<mark style="color:green;">**1. Profile :**</mark>  The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
 
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
@@ -132,9 +140,9 @@ The provided endpoint response contains several key-value pairs representing dif
 
 **`email`:** This property represents the user's email address. It is expected to be a string value.
 
-**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "2023-08-15T11:12:39.979Z", which indicates the date and time in ISO 8601 format. The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
+**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
 
-**`gender`:** The `gender` property represents the user's gender. In this case, it is represented as a numeric value (`0`). The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Common conventions include `0` for unspecified, `1` for male, and `2` for female.
+**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
 
 **`companyCode`:** This property represents a company code associated with the user. It is expected to be a string value.
 
@@ -142,7 +150,7 @@ The provided endpoint response contains several key-value pairs representing dif
 
 
 
-**2. Profile image :** The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
+<mark style="color:green;">**2. Profile image :**</mark> The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/uploadProfileImage" method="patch" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -150,13 +158,13 @@ The provided endpoint response contains several key-value pairs representing dif
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**profileImage:**&#x20;
+**profileImage:** its a profile picture or avatar that must be sent by multipart/form-data format.
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several key-value pairs representing different properties. Here's the breakdown of each property and its potential meaning:
+The provided endpoint response contains several properties including
 
-**`userName`:** This property likely represents the username associated with the user's account. It is expected to be a string value.
+**`userName`:** This property likely represents the user phone number. It is expected to be a string value.
 
 **`firstName`:** This property represents the user's first name. It is expected to be a string value.
 
@@ -168,13 +176,15 @@ The provided endpoint response contains several key-value pairs representing dif
 
 **`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
 
-**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "2023-08-15T11:12:36.807Z", which indicates the date and time in ISO 8601 format. The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
+**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
 
-**`gender`:** The `gender` property represents the user's gender. In this case, it is represented as a numeric value (`0`). The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Common conventions include `0` for unspecified, `1` for male, and `2` for female.
+**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
+
+
 
 ### <mark style="color:blue;">User car</mark>
 
-**1. Car Model :** The endpoint is designed to handle requests for adding or updating the car model information associated with a user's profile. It allows users to provide details about the car model they own or use.
+<mark style="color:green;">**1. Car Model :**</mark> The endpoint is designed to handle requests for adding or updating the car model information associated with a user's profile. It allows users to provide details about the car model they own or use.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/carModel" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -182,15 +192,15 @@ The provided endpoint response contains several key-value pairs representing dif
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**carModelName:**
+**carModelName:** The  model name of the user's car e.g.&#x20;
 
-&#x20;**carBrandName:**
+&#x20;**carBrandName:** The brand name of the user's car e.g.&#x20;
 
-&#x20;**license:**&#x20;
+&#x20;**license:** The license number of the user's car e.g.&#x20;
 
-&#x20;**yearOfProduction:**
+&#x20;**yearOfProduction:** The year of production of the user's car e.g.&#x20;
 
-&#x20;**mileage:**&#x20;
+&#x20;**mileage:** The mileage tavelled by the user's car e.g.&#x20;
 
 #### <mark style="color:orange;">**Response**</mark>
 
