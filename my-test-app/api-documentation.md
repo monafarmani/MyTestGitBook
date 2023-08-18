@@ -220,17 +220,17 @@ The provided endpoint response contains several properties including
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**carModelName :** the  model name of the user's car e.g. **C200**
+**carModelName :** the model name of the user's car and It is expected to be a string value, e.g. **"C200"**
 
-&#x20;**carBrandName :** the brand name of the user's car e.g. **Benz**
+&#x20;**carBrandName :** the brand name of the user's car and It is expected to be a string value, e.g. **"Benz"**
 
-&#x20;**license :** the license plate number  of the user's car e.g. RAKL **8136**
+&#x20;**license :** the license plate number  of the user's car and It is expected to be a string value, e.g. **"RAKL 8136"**
 
-&#x20;**yearOfProduction :** the year of production of the user's car e.g. **2001**&#x20;
+&#x20;**yearOfProduction :** the year of production of the user's car and It is expected to be a numeric value, e.g. **2001**
 
 **Note :** yearOfProduction must be added between 1900 and current year.
 
-**mileage :** the mileage or distance traveled by the user's car e.g. **1000**
+**mileage :** the mileage or distance traveled by the user's car and It is expected to be a numeric value, e.g. **1000**
 
 **Note :** the Maximum character in mileage is 9.
 
