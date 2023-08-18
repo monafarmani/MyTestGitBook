@@ -228,11 +228,11 @@ The provided endpoint response contains several properties including
 
 &#x20;**yearOfProduction :** the year of production of the user's car and It is expected to be a numeric value, e.g. **2001**
 
-**Note :** yearOfProduction must be added between 1900 and current year.
+<mark style="color:red;">**Note :**</mark> yearOfProduction must be added between 1900 and current year.
 
 **mileage :** the mileage or distance traveled by the user's car and It is expected to be a numeric value, e.g. **1000**
 
-**Note :** the Maximum character in mileage is 9.
+<mark style="color:red;">**Note :**</mark> the Maximum character in mileage is 9.
 
 #### <mark style="color:orange;">**Response**</mark>
 
