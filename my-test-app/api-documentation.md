@@ -298,7 +298,27 @@ The provided endpoint response appears to be a JSON object containing properties
 
 ### <mark style="color:blue;">User Emergency Contact</mark>
 
-The endpoint is designed to handle requests for retrieving or fetching the emergency contact information associated with a user's profile. It allows users to retrieve details about the designated emergency contact person or persons.
+**1. Add Emergency Contact:** The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile. It allows users to provide or modify details about their designated emergency contact person or persons.
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="post" expanded="true" %}
+[swagger.json](../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**firstName:**
+
+&#x20;**lastName:**
+
+&#x20;**phoneNumber:**
+
+**email:**
+
+#### <mark style="color:orange;">**Response**</mark>
+
+
+
+**2. Get Emergency Contact Information:** The endpoint is designed to handle requests for retrieving or fetching the emergency contact information associated with a user's profile. It allows users to retrieve details about the designated emergency contact person or persons.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -308,23 +328,23 @@ The endpoint is designed to handle requests for retrieving or fetching the emerg
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response appears to be a JSON object containing properties related to a person's information. Here's the breakdown of each property and its potential meaning:
+
+**`firstName`:** The `firstName` property represents the person's first name. It is expected to be a string value.
+
+**`lastName`:** The `lastName` property represents the person's last name. It is also expected to be a string value.
+
+**`phoneNumber`:** The `phoneNumber` property represents the person's phone number. It is expected to be a string value.
+
+**`email`:** The `email` property represents the person's email address. It is also expected to be a string value.
 
 
-The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile. It allows users to provide or modify details about their designated emergency contact person or persons.
-
-{% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="post" expanded="true" %}
-[swagger.json](../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
 
 
 
 ### <mark style="color:blue;">User First time Use initial</mark>
 
-The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
+**Initial:** The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/user/initial" method="patch" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
