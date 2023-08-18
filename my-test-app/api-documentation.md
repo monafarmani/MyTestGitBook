@@ -248,7 +248,7 @@ If it's true, it means that car model is added.
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**id :** The id of the car which is selected.
+**id :** The id of the car which is selected and It is expected to be a numeric value, e.g. **1560**
 
 #### <mark style="color:orange;">**Response**</mark>
 
