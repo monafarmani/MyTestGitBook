@@ -40,7 +40,7 @@ Here are the list of all the available endpoints or routes provided by the API
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username :** the phone number of the user and It is expected to be a string value. e.g. "**+49\_01747707607"**
+**username :** the phone number of the user and It is expected to be a string value. e.g. **"+49\_01747707607"**
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -58,23 +58,23 @@ It returns a Boolean, and if it's true it could indicate that the user is authen
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username :** the phone number of the user that used in [Check Identity](api-documentation.md#api-v1-user-checkidentity) and It is expected to be a string value, e.g. "**+49\_01747707607"**
+**username :** the phone number of the user that used in [Check Identity](api-documentation.md#api-v1-user-checkidentity) and It is expected to be a string value, e.g. **"+49\_01747707607"**
 
-**verifyCode :**  the 5 number code which is sent through messages and It is expected to be a string value, e.g. "**12345"**
+**verifyCode :**  the 5 number code which is sent through messages and It is expected to be a string value, e.g. **"12345"**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains several properties including&#x20;
 
-**username :** This property likely represents the user phone number. It is expected to be a string value, e.g. "**+49\_01747707607"**
+**username :** This property likely represents the user phone number. It is expected to be a string value, e.g. **"+49\_01747707607"**
 
 **firstName :** This property represents the user's first name. It is expected to be a string value, e.g.**"David"**
 
-**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value, e.g. "**Smith"**
+**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value, e.g. **"Smith"**
 
 **email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
-**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. "**+49\_01747707607"**
+**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
 
 **profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
 
@@ -92,7 +92,7 @@ The provided endpoint response contains several properties including&#x20;
 
 **firstName :** first name of the user and It is expected to be a string value, e.g.**"David"**
 
-**lastName :** last name of the user and It is expected to be a string value. e.g. "**Smith"**
+**lastName :** last name of the user and It is expected to be a string value. e.g. **"Smith"**
 
 **email :** email of the user and It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
