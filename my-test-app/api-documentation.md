@@ -40,7 +40,7 @@ Here are the list of all the available endpoints or routes provided by the API
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username :** the phone number of the user e.g. **+49\_01747707607**
+**username :** the phone number of the user and It is expected to be a string value. e.g. **+49\_01747707607**
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -58,9 +58,9 @@ It returns a Boolean, and if it's true it could indicate that the user is authen
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username :** the phone number of the user that used in [Check Identity](api-documentation.md#api-v1-user-checkidentity) e.g. **+49\_01747707607**
+**username :** the phone number of the user that used in [Check Identity](api-documentation.md#api-v1-user-checkidentity) and It is expected to be a string value, e.g. **+49\_01747707607**
 
-**verifyCode :**  the 5 number code which is send through messages sent e.g. **12345**
+**verifyCode :**  the 5 number code which is sent through messages and It is expected to be a string value, e.g. **12345**
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -130,9 +130,29 @@ The provided endpoint response contains several properties including
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**firstName :** first name of the user and It is expected to be a string value, e.g.**"David"**
+
+**lastName :** last name of the user and It is expected to be a string value. e.g. "**Smith"**
+
+**email :** email of the user and It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
+
+**Note:** email can be an empty text. if not , it must be sent by proper format of email.
+
+**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-dd", which indicates the date and time in ISO 8601 format. e.g. **"1999-08-02"**
+
+**gender :** gender of the user which is Int :  **0** is used for female,**`1`**for male and **2** for unspecified.
+
+**companyCode :** This property represents a company code associated with the user. It is expected to be a string value.&#x20;
+
+**Note :** company code is either null or String
+
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several key-value pairs representing different properties. Here's the breakdown of each property and its potential meaning:
+The provided endpoint response contains several properties including
+
+**`userName`:** This property likely represents the user phone number. It is expected to be a string value.
 
 **`firstName`:** This property represents the user's first name. It is expected to be a string value.
 
@@ -140,11 +160,13 @@ The provided endpoint response contains several key-value pairs representing dif
 
 **`email`:** This property represents the user's email address. It is expected to be a string value.
 
+**`phoneNumber`:** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+
+**`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+
 **`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
 
-**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
-
-**`companyCode`:** This property represents a company code associated with the user. It is expected to be a string value.
+**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here **0** is used for female,**`1`**for male and **2** for unspecified.
 
 
 
