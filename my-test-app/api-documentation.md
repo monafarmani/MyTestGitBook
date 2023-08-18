@@ -76,7 +76,7 @@ The provided endpoint response contains several properties including&#x20;
 
 **phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
 
-**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL, e.g. **"ProfilePic/93/ae316a8c-78e3-4427-9f6c-63a0d37d1d0d.jpg"**
 
 **birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02"**
 
@@ -87,18 +87,6 @@ The provided endpoint response contains several properties including&#x20;
 **token :** The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
 
 
-
-
-
-**firstName :** first name of the user and It is expected to be a string value, e.g.**"David"**
-
-**lastName :** last name of the user and It is expected to be a string value. e.g. **"Smith"**
-
-**email :** email of the user and It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
-
-**Note:** email can be an empty text. if not , it must be sent by proper format of email.
-
-**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-dd", which indicates the date and time in ISO 8601 format. e.g. **"1999-08-02"**
 
 ## <mark style="color:purple;">User</mark>
 
