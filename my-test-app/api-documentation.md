@@ -100,7 +100,7 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 
 ### <mark style="color:blue;">User profile</mark>
 
-The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
+**1.profile:** The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
 
 {% swagger src="../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" expanded="true" %}
 [swagger (2).json](<../.gitbook/assets/swagger (2).json>)
@@ -110,9 +110,25 @@ The endpoint is designed to handle requests for updating or modifying the profil
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains several key-value pairs representing different properties. Here's the breakdown of each property and its potential meaning:
+
+**`firstName`:** This property represents the user's first name. It is expected to be a string value.
+
+**`lastName`:** The `lastName` property represents the user's last name. It is also expected to be a string value.
+
+**`email`:** This property represents the user's email address. It is expected to be a string value.
+
+**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "2023-08-15T11:12:39.979Z", which indicates the date and time in ISO 8601 format. The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
+
+**`gender`:** The `gender` property represents the user's gender. In this case, it is represented as a numeric value (`0`). The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Common conventions include `0` for unspecified, `1` for male, and `2` for female.
+
+**`companyCode`:** This property represents a company code associated with the user. It is expected to be a string value.
 
 
-The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
+
+
+
+**2.Profile Image:** The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/uploadProfileImage" method="patch" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -120,9 +136,27 @@ The endpoint is designed to handle requests for uploading or updating the profil
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+**profileImage:**&#x20;
+
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains several key-value pairs representing different properties. Here's the breakdown of each property and its potential meaning:
 
+**`userName`:** This property likely represents the username associated with the user's account. It is expected to be a string value.
+
+**`firstName`:** This property represents the user's first name. It is expected to be a string value.
+
+**`lastName`:** The `lastName` property represents the user's last name. It is also expected to be a string value.
+
+**`email`:** This property represents the user's email address. It is expected to be a string value.
+
+**`phoneNumber`:** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+
+**`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+
+**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "2023-08-15T11:12:36.807Z", which indicates the date and time in ISO 8601 format. The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
+
+**`gender`:** The `gender` property represents the user's gender. In this case, it is represented as a numeric value (`0`). The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Common conventions include `0` for unspecified, `1` for male, and `2` for female.
 
 ### <mark style="color:blue;">User car</mark>
 
