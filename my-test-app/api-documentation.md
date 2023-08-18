@@ -66,25 +66,25 @@ It returns a Boolean, and if it's true it could indicate that the user is authen
 
 The provided endpoint response contains several properties including&#x20;
 
-**`userName`:** This property likely represents the user phone number. It is expected to be a string value.
+**username :** This property likely represents the user phone number. It is expected to be a string value.
 
-**`firstName`:** This property represents the user's first name. It is expected to be a string value.
+**firstName :** This property represents the user's first name. It is expected to be a string value.
 
-**`lastName`:** The `lastName` property represents the user's last name. It is also expected to be a string value.
+**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value.
 
-**`email`:** This property represents the user's email address. It is expected to be a string value.
+**email :** This property represents the user's email address. It is expected to be a string value.
 
-**`phoneNumber`:** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
 
-**`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
 
-**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
+**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
 
-**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
+**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
 
-**`isInitialized`:** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
+**isInitialized :** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
 
-**`token`:** The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
+**token :** The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
 
 
 
@@ -100,25 +100,25 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several properties including
+The provided endpoint response contains several properties including&#x20;
 
-**`userName`:** This property likely represents the user phone number. It is expected to be a string value.
+**username :** This property likely represents the user phone number. It is expected to be a string value.
 
-**`firstName`:** This property represents the user's first name. It is expected to be a string value.
+**firstName :** This property represents the user's first name. It is expected to be a string value.
 
-**`lastName`:** The `lastName` property represents the user's last name. It is also expected to be a string value.
+**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value.
 
-**`email`:** This property represents the user's email address. It is expected to be a string value.
+**email :** This property represents the user's email address. It is expected to be a string value.
 
-**`phoneNumber`:** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
 
-**`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
 
-**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
+**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
 
-**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
+**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
 
-**`isInitialized`:** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
+**isInitialized :** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not.
 
 
 
@@ -150,25 +150,23 @@ The provided endpoint response contains several properties including
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several properties including
+The provided endpoint response contains several properties including&#x20;
 
-**`userName`:** This property likely represents the user phone number. It is expected to be a string value.
+**username :** This property likely represents the user phone number. It is expected to be a string value.
 
-**`firstName`:** This property represents the user's first name. It is expected to be a string value.
+**firstName :** This property represents the user's first name. It is expected to be a string value.
 
-**`lastName`:** The `lastName` property represents the user's last name. It is also expected to be a string value.
+**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value.
 
-**`email`:** This property represents the user's email address. It is expected to be a string value.
+**email :** This property represents the user's email address. It is expected to be a string value.
 
-**`phoneNumber`:** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+**phoneNumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
 
-**`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
 
-**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
+**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
 
-**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here **0** is used for female,**`1`**for male and **2** for unspecified.
-
-
+**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here **0** is used for female,**`1`**for male and **2** for unspecified.
 
 
 
@@ -180,27 +178,27 @@ The provided endpoint response contains several properties including
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**profileImage:** its a profile picture or avatar that must be sent by multipart/form-data format.
+**profileImage :** its a profile picture or avatar that must be sent by multipart/form-data format. It is expected to be a string value.
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains several properties including
 
-**`userName`:** This property likely represents the user phone number. It is expected to be a string value.
+**username :** This property likely represents the user phone number. It is expected to be a string value.
 
-**`firstName`:** This property represents the user's first name. It is expected to be a string value.
+**firstName :** This property represents the user's first name. It is expected to be a string value.
 
-**`lastName`:** The `lastName` property represents the user's last name. It is also expected to be a string value.
+**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value.
 
-**`email`:** This property represents the user's email address. It is expected to be a string value.
+**email :** This property represents the user's email address. It is expected to be a string value.
 
-**`phoneNumber`:** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
+**phoneNumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value.
 
-**`profileImagePath`:** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
+**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL.
 
-**`birthDate`:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
+**birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "1999-08-01T00:00:00", which indicates the date and time in ISO 8601 format.
 
-**`gender`:** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
+**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified.
 
 
 
@@ -260,23 +258,23 @@ If it's true, it means that car model is selected.
 
 The provided endpoint response contains several properties including
 
-**`id`:** this property likely represents the ID of the car. It is expected to be a numeric value.
+**id :** this property likely represents the ID of the car. It is expected to be a numeric value.
 
-**`carModelId`:** the `carModelId` property likely represents the ID of the car model associated with the car. It is expected to be a numeric value .
+**carModelId :** the `carModelId` property likely represents the ID of the car model associated with the car. It is expected to be a numeric value .
 
-**`carBrandId`:** this property likely represents the ID of the car brand associated with the car. It is expected to be a numeric value .
+**caBrandId :** this property likely represents the ID of the car brand associated with the car. It is expected to be a numeric value .
 
-**`carName`:** the `carName` property represents the name or identifier of the car. It is expected to be a string value.
+**carName :** the `carName` property represents the name or identifier of the car. It is expected to be a string value.
 
-**`carModel`:** this property represents the model of the car. It is expected to be a string value.
+**carModel :** this property represents the model of the car. It is expected to be a string value.
 
-**`license`:** the `license` property represents the license plate number or identifier of the car. It is expected to be a string value.
+**license:** the `license` property represents the license plate number or identifier of the car. It is expected to be a string value.
 
-**`yearOfProduction`:** this property represents the year of production for the car. It is expected to be a numeric value .
+**yearOfProduction :** this property represents the year of production for the car. It is expected to be a numeric value .
 
-**`mileage`:** the `mileage` property represents the mileage or distance traveled by the car. It is expected to be a numeric value (`0` in this case).
+**mileage :** the `mileage` property represents the mileage or distance traveled by the car. It is expected to be a numeric value (`0` in this case).
 
-**`isSelected`:** the `isSelected` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the car is selected or chosen for a particular purpose.
+**isSelected :** the `isSelected` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the car is selected or chosen for a particular purpose.
 
 **Note :** just one car can be selected in a list.
 
@@ -298,21 +296,21 @@ The provided endpoint response contains several properties including
 
 **`id`:** this property likely represents the ID of the car. It is expected to be a numeric value.
 
-**`carModelId`:** the `carModelId` property likely represents the ID of the car model associated with the car. It is expected to be a numeric value .
+**carModelId :** the `carModelId` property likely represents the ID of the car model associated with the car. It is expected to be a numeric value .
 
-**`carBrandId`:** this property likely represents the ID of the car brand associated with the car. It is expected to be a numeric value .
+**caBrandId :** this property likely represents the ID of the car brand associated with the car. It is expected to be a numeric value .
 
-**`carName`:** the `carName` property represents the name or identifier of the car. It is expected to be a string value.
+**carName :** the `carName` property represents the name or identifier of the car. It is expected to be a string value.
 
-**`carModel`:** this property represents the model of the car. It is expected to be a string value.
+**carModel :** this property represents the model of the car. It is expected to be a string value.
 
-**`license`:** the `license` property represents the license plate number or identifier of the car. It is expected to be a string value.
+**license:** the `license` property represents the license plate number or identifier of the car. It is expected to be a string value.
 
-**`yearOfProduction`:** this property represents the year of production for the car. It is expected to be a numeric value .
+**yearOfProduction :** this property represents the year of production for the car. It is expected to be a numeric value .
 
-**`mileage`:** the `mileage` property represents the mileage or distance traveled by the car. It is expected to be a numeric value (`0` in this case).
+**mileage :** the `mileage` property represents the mileage or distance traveled by the car. It is expected to be a numeric value (`0` in this case).
 
-**`isSelected`:** the `isSelected` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the car is selected or chosen for a particular purpose.
+**isSelected :** the `isSelected` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the car is selected or chosen for a particular purpose.
 
 **Note :** just one car can be selected in a list.
 
@@ -366,13 +364,13 @@ If it's true, it means that emergency contact information is recorded.
 
 The provided endpoint response appears to be a JSON object containing properties related to a person's information. Here's the breakdown of each property and its potential meaning:
 
-**`firstName`:** the `firstName` property represents the person's first name. It is expected to be a string value.
+**firstName :** the `firstName` property represents the person's first name. It is expected to be a string value.
 
-**`lastName`:** the `lastName` property represents the person's last name. It is also expected to be a string value.
+**lastName :** the `lastName` property represents the person's last name. It is also expected to be a string value.
 
-**`phoneNumber`:** the `phoneNumber` property represents the person's phone number. It is expected to be a string value.
+**phoneNumber :** the `phoneNumber` property represents the person's phone number. It is expected to be a string value.
 
-**`email`:** the `email` property represents the person's email address. It is also expected to be a string value.
+**email :** the `email` property represents the person's email address. It is also expected to be a string value.
 
 
 
