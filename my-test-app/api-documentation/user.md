@@ -18,11 +18,9 @@ layout:
 
 # User
 
-## <mark style="color:purple;">User</mark>
+### <mark style="color:green;">**Current User**</mark>&#x20;
 
-### <mark style="color:blue;">Current User</mark>
-
-<mark style="color:green;">**Current User :**</mark> The endpoint is designed to handle requests for retrieving or fetching the information of the currently authenticated user. It allows users to access their own profile or account details.
+The endpoint is designed to handle requests for retrieving or fetching the information of the currently authenticated user. It allows users to access their own profile or account details.
 
 {% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/User/currentUser" method="get" expanded="true" %}
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
@@ -54,9 +52,9 @@ The provided endpoint response contains several properties including&#x20;
 
 
 
-### <mark style="color:blue;">User profile</mark>
+### <mark style="color:green;">**Profile**</mark>
 
-<mark style="color:green;">**Profile :**</mark>  The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
+&#x20;The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
 
 {% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" expanded="true" %}
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
@@ -104,7 +102,9 @@ The provided endpoint response contains several properties including&#x20;
 
 
 
-<mark style="color:green;">**Profile image :**</mark> The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
+### <mark style="color:green;">**Profile image**</mark>&#x20;
+
+The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/User/uploadProfileImage" method="patch" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
