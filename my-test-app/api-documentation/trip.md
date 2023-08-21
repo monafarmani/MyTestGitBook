@@ -18,11 +18,9 @@ layout:
 
 # Trip
 
+### <mark style="color:green;">**Create Trip**</mark>&#x20;
 
-
-## <mark style="color:purple;">Trip</mark>
-
-<mark style="color:green;">**Create Trip :**</mark> The endpoint is designed to handle requests for creating a new trip or journey within the system. It allows users to submit the necessary information and parameters to define and initiate a new trip.
+The endpoint is designed to handle requests for creating a new trip or journey within the system. It allows users to submit the necessary information and parameters to define and initiate a new trip.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/createTrip" method="post" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -34,7 +32,7 @@ layout:
 
 
 
-
+### <mark style="color:green;">Upoload Start</mark>
 
 The endpoint is designed to handle requests for initiating the start of a file upload process related to a trip. It allows users to begin uploading a file or multiple files associated with the trip to the server.
 
