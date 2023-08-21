@@ -32,6 +32,8 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+**UserTripReportType :**
+
 #### <mark style="color:orange;">**Response**</mark>
 
 **date :** The date property represents a specific date and time. The value of "2023-08-15T11:12:36.801Z" indicates a timestamp in UTC format, representing the date and time when the associated event or data was recorded.
@@ -73,6 +75,8 @@ The endpoint is designed to handle requests for retrieving event statistics with
 Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+**TripReportType :**
 
 #### <mark style="color:orange;">**Response**</mark>
 
