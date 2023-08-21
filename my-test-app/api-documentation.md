@@ -74,7 +74,7 @@ The provided endpoint response contains several properties including&#x20;
 
 **email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
-<mark style="color:red;">**Note :**</mark> email can be null or string.
+<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
 
 **phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
 
@@ -112,7 +112,7 @@ The provided endpoint response contains several properties including&#x20;
 
 **email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
-<mark style="color:red;">**Note :**</mark> email can be null or string.
+<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
 
 **phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
 
@@ -142,7 +142,7 @@ The provided endpoint response contains several properties including&#x20;
 
 **email :** email of the user and It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
-<mark style="color:red;">**Note :**</mark> email can be an empty text. if not , it must be sent by proper format of email.
+<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
 
 **birthDate :** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-dd", which indicates the date and time in ISO 8601 format. e.g. **"1999-08-02"**
 
@@ -164,7 +164,7 @@ The provided endpoint response contains several properties including&#x20;
 
 **email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
-<mark style="color:red;">**Note :**</mark> email can be null or string.
+<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
 
 **phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
 
@@ -198,7 +198,7 @@ The provided endpoint response contains several properties including
 
 **email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
-<mark style="color:red;">**Note :**</mark> email can be null or string.
+<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
 
 **phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
 
@@ -342,7 +342,7 @@ If it's true, it means that the car is deleted.
 
 ### <mark style="color:blue;">User Emergency Contact</mark>
 
-<mark style="color:green;">**Add Emergency Contact :**</mark> The endpoint is designed to handle requests for adding the emergency contact information associated with a user's profile.&#x20;
+<mark style="color:green;">**Add Emergency Contact :**</mark> The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile.&#x20;
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -358,13 +358,15 @@ If it's true, it means that the car is deleted.
 
 **email :** the `email` property represents the person's email address of an emergency contact. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
 
+<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
+
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that emergency contact information is recorded.
+If it's true, it means that emergency contact information is updated.
 
 
 
-&#x20;<mark style="color:green;">**Get Emergency Contact Information :**</mark> The endpoint is designed to handle requests for retrieving or fetching the emergency contact information associated with a user's profile. It allows users to retrieve details about the designated emergency contact person or persons.
+<mark style="color:green;">**Get Emergency Contact Information :**</mark> The endpoint is designed to handle requests for retrieving or fetching the emergency contact information associated with a user's profile. It allows users to retrieve details about the designated emergency contact person.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -381,6 +383,8 @@ The provided endpoint response contains several properties including
 **phoneNumber :** the `phoneNumber` property represents the person's phone number. It is expected to be a string value, e.g. **"+49\_01747707508"**
 
 **email :** the `email` property represents the person's email address. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
+
+<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
 
 
 
