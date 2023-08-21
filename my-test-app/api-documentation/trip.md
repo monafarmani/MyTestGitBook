@@ -26,6 +26,10 @@ The endpoint is designed to handle requests for creating a new trip or journey w
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
@@ -39,6 +43,10 @@ The endpoint is designed to handle requests for initiating the start of a file u
 {% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadStart" method="post" expanded="true" %}
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
@@ -54,6 +62,10 @@ The endpoint is designed to handle requests for uploading file chunks of a trip 
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
@@ -67,6 +79,10 @@ The endpoint is designed to handle requests for indicating the completion of a f
 {% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadComplete" method="post" expanded="true" %}
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
@@ -82,6 +98,10 @@ The endpoint is designed to handle requests for retrieving or fetching the statu
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
@@ -96,6 +116,10 @@ The endpoint is designed to handle requests for retrieving or fetching the compl
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
@@ -107,6 +131,10 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Query Parameters</mark>
 
@@ -159,6 +187,10 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/{id}" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Path Parameters</mark>
 
@@ -215,6 +247,10 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/last" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
@@ -280,6 +316,10 @@ The endpoint is designed to handle requests for retrieving or fetching the total
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
@@ -293,6 +333,10 @@ The endpoint is designed to handle requests for retrieving or fetching the carbo
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/lastTripCarbon" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
@@ -308,6 +352,10 @@ The endpoint is designed to handle requests for retrieving or fetching GPS data 
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
@@ -321,6 +369,10 @@ The endpoint is designed to handle requests for retrieving or fetching event sta
 {% swagger src="../../.gitbook/assets/swagger (3).json" path="/api/v4/Trip/{id}/eventStats" method="get" expanded="true" %}
 [swagger (3).json](<../../.gitbook/assets/swagger (3).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
