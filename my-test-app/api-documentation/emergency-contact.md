@@ -18,9 +18,9 @@ layout:
 
 # Emergency Contact
 
-### <mark style="color:blue;">User Emergency Contact</mark>
+### <mark style="color:green;">**Add Emergency Contact**</mark>&#x20;
 
-<mark style="color:green;">**Add Emergency Contact :**</mark> The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile.&#x20;
+The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile.&#x20;
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="post" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -44,7 +44,9 @@ If it's true, it means that emergency contact information is updated.
 
 
 
-<mark style="color:green;">**Get Emergency Contact Information :**</mark> The endpoint is designed to handle requests for retrieving or fetching the emergency contact information associated with a user's profile. It allows users to retrieve details about the designated emergency contact person.
+### <mark style="color:green;">**Get Emergency Contact Information**</mark>&#x20;
+
+The endpoint is designed to handle requests for retrieving or fetching the emergency contact information associated with a user's profile. It allows users to retrieve details about the designated emergency contact person.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -68,13 +70,9 @@ The provided endpoint response contains several properties including
 
 
 
+### <mark style="color:green;">**Accident**</mark>&#x20;
 
-
-
-
-### <mark style="color:blue;">Report Accident</mark>
-
-<mark style="color:green;">**Accident :**</mark> The endpoint is designed to handle requests for reporting an accident related to a user. It allows users to submit information about an accident they have experienced or been involved in.
+The endpoint is designed to handle requests for reporting an accident related to a user. It allows users to submit information about an accident they have experienced or been involved in.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/user/accident" method="post" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
