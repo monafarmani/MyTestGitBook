@@ -32,7 +32,7 @@ The endpoint is designed to handle requests for adding or updating the emergency
 
 **lastName :** the `lastName` property represents the person's last name of an emergency contact. It is also expected to be a string value, e.g. **"Williams"**
 
-**phoneNumber :** the `phoneNumber` property represents the person's phone number of an emergency contact. It is expected to be a string value, e.g. **"+49\_01747707508"**
+**phoneNumber :** the `phoneNumber` property represents the person's phone number of an emergency contact. It is expected to be a string value, e.g. **"+49\_01734807508"**
 
 **email :** the `email` property represents the person's email address of an emergency contact. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
 
@@ -60,7 +60,7 @@ The provided endpoint response contains several properties including
 
 **lastName :** the `lastName` property represents the person's last name. It is also expected to be a string value, e.g. **"Williams"**
 
-**phoneNumber :** the `phoneNumber` property represents the person's phone number. It is expected to be a string value, e.g. **"+49\_01747707508"**
+**phoneNumber :** the `phoneNumber` property represents the person's phone number. It is expected to be a string value, e.g. **"+49\_01734807508"**
 
 **email :** the `email` property represents the person's email address. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
 
