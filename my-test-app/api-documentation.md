@@ -388,8 +388,6 @@ The provided endpoint response contains several properties including
 
 
 
-
-
 ### <mark style="color:blue;">User First time Use initial</mark>
 
 &#x20;<mark style="color:green;">**Initial :**</mark> The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
@@ -400,7 +398,7 @@ The provided endpoint response contains several properties including
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that getting initial information from user is completed .
+If it's true, it means that getting initial information from user is completed.
 
 
 
@@ -414,13 +412,13 @@ If it's true, it means that getting initial information from user is completed .
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that an accident is reported and a message would be sent to the [emergency contact](api-documentation.md#user-emergency-contact) .
+If it's true, it means that an accident is reported and a message would be sent to the [emergency contact](api-documentation.md#user-emergency-contact).
+
+
 
 ## <mark style="color:purple;">Trip</mark>
 
-
-
-The endpoint is designed to handle requests for retrieving or fetching information about trips or journeys. It allows users to access details related to various trips that may have been recorded or stored in the system.
+<mark style="color:green;">**Trip :**</mark> The endpoint is designed to handle requests for retrieving or fetching information about trips or journeys. It allows users to access details related to various trips that may have been recorded or stored in the system.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -434,43 +432,43 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 
 The provided endpoint response is a JSON array containing a single object. Here's the breakdown of each property within the object and their potential meanings:
 
-**`id`:** This property likely represents the ID of the object or item. It is expected to be a numeric value (`0` in this case).
+**id :** This property likely represents the ID of the object or item. It is expected to be a numeric value (`0` in this case).
 
-**`score`:** The `score` property likely represents a score or rating associated with the object. It is expected to be a numeric value (`0` in this case).
+**score :** The `score` property likely represents a score or rating associated with the object. It is expected to be a numeric value (`0` in this case).
 
-**`isCompleted`:** The `isCompleted` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the object or associated task is completed.
+**isCompleted :** The `isCompleted` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the object or associated task is completed.
 
-**`createDate`:** This property represents the date and time when the object or item was created. In the provided response, it is formatted as "2023-08-15T11:12:36.799Z", indicating the date and time in ISO 8601 format with UTC (Coordinated Universal Time).
+**createDate :** This property represents the date and time when the object or item was created. In the provided response, it is formatted as "2023-08-15T11:12:36.799Z", indicating the date and time in ISO 8601 format with UTC (Coordinated Universal Time).
 
-**`originAddress`:** The `originAddress` property likely represents the address of the origin location. It is expected to be a string value.
+**originAddress :** The `originAddress` property likely represents the address of the origin location. It is expected to be a string value.
 
-**`originPostalCode`:** This property represents the postal code associated with the origin location. It is expected to be a string value.
+**originPostalCode :** This property represents the postal code associated with the origin location. It is expected to be a string value.
 
-**`originLocality`:** The `originLocality` property represents the locality or city of the origin location. It is expected to be a string value.
+**originLocality :** The `originLocality` property represents the locality or city of the origin location. It is expected to be a string value.
 
-**`originPlace`:** This property likely represents the name or identifier of the origin place. It is expected to be a string value.
+**originplace :** This property likely represents the name or identifier of the origin place. It is expected to be a string value.
 
-**`originRegion`:** The `originRegion` property represents the region or state of the origin location. It is expected to be a string value.
+**originRegion :** The `originRegion` property represents the region or state of the origin location. It is expected to be a string value.
 
-**`destinationAddress`:** The `destinationAddress` property represents the address of the destination location. It is expected to be a string value.
+**destinationaddress :** The `destinationAddress` property represents the address of the destination location. It is expected to be a string value.
 
-**`destinationPostalCode`:** This property represents the postal code associated with the destination location. It is expected to be a string value.
+**destinationPostalCode :** This property represents the postal code associated with the destination location. It is expected to be a string value.
 
-**`destinationLocality`:** The `destinationLocality` property represents the locality or city of the destination location. It is expected to be a string value.
+**destinationLocality :** The `destinationLocality` property represents the locality or city of the destination location. It is expected to be a string value.
 
-**`destinationPlace`:** This property likely represents the name or identifier of the destination place. It is expected to be a string value.
+**destinationPlace :** This property likely represents the name or identifier of the destination place. It is expected to be a string value.
 
-**`destinationRegion`:** The `destinationRegion` property represents the region or state of the destination location. It is expected to be a string value.
+**destinationRegion :** The `destinationRegion` property represents the region or state of the destination location. It is expected to be a string value.
 
-**`startDateTime`:** The `startDateTime` property represents the date and time when the object or item's activity or event starts. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC.
+**startdatetime :** The `startDateTime` property represents the date and time when the object or item's activity or event starts. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC.
 
-**`endDateTime`:** This property represents the date and time when the object or item's activity or event ends. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC.
+**endDateTime:** This property represents the date and time when the object or item's activity or event ends. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC.
 
-**`duration`:** The `duration` property is an object that contains sub-properties representing the duration of the object or item. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case).
+**duration:** The `duration` property is an object that contains sub-properties representing the duration of the object or item. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case).
 
 
 
-The endpoint is designed to handle requests for retrieving or fetching information about a specific trip or journey based on its unique identifier. It allows users to access detailed information about a particular trip.
+<mark style="color:green;">**Trip By Id :**</mark> The endpoint is designed to handle requests for retrieving or fetching information about a specific trip or journey based on its unique identifier. It allows users to access detailed information about a particular trip.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/{id}" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -524,7 +522,7 @@ The provided endpoint response appears to be a JSON object containing properties
 
 
 
-The endpoint is designed to handle requests for creating a new trip or journey within the system. It allows users to submit the necessary information and parameters to define and initiate a new trip.
+<mark style="color:green;">**Create Trip :**</mark> The endpoint is designed to handle requests for creating a new trip or journey within the system. It allows users to submit the necessary information and parameters to define and initiate a new trip.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/createTrip" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -538,7 +536,7 @@ The endpoint is designed to handle requests for creating a new trip or journey w
 
 
 
-The endpoint is designed to handle requests for retrieving or fetching the information of the last or most recent trip recorded in the system. It allows users to access details about the latest trip they have taken or the most recently recorded trip in the system.
+<mark style="color:green;">**Last Trip :**</mark> The endpoint is designed to handle requests for retrieving or fetching the information of the last or most recent trip recorded in the system. It allows users to access details about the latest trip they have taken or the most recently recorded trip in the system.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/last" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -600,7 +598,7 @@ The provided endpoint response appears to be a JSON object containing properties
 
 
 
-The endpoint is designed to handle requests for generating a report of trips or journeys. It allows users to retrieve aggregated or summarized information about multiple trips based on certain criteria or filters.
+<mark style="color:green;">**Report :**</mark> The endpoint is designed to handle requests for generating a report of trips or journeys. It allows users to retrieve aggregated or summarized information about multiple trips based on certain criteria or filters.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/report" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -612,7 +610,7 @@ The endpoint is designed to handle requests for generating a report of trips or 
 
 
 
-The endpoint is designed to handle requests for retrieving or fetching the driving score information associated with a trip or journey. It allows users to access details about the driving performance or behavior during a specific trip.
+<mark style="color:green;">**Driving Score :**</mark> The endpoint is designed to handle requests for retrieving or fetching the driving score information associated with a trip or journey. It allows users to access details about the driving performance or behavior during a specific trip.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/drivingScore" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -624,7 +622,7 @@ The endpoint is designed to handle requests for retrieving or fetching the drivi
 
 
 
-The endpoint is designed to handle requests for retrieving event statistics within a trip report. It allows users to access aggregated information and statistics related to specific events or incidents that occurred during trips or journeys.
+<mark style="color:green;">**Event Stats :**</mark> The endpoint is designed to handle requests for retrieving event statistics within a trip report. It allows users to access aggregated information and statistics related to specific events or incidents that occurred during trips or journeys.
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/Trip/report/eventStats" method="get" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
