@@ -52,6 +52,7 @@ To set app options for the SDK, you will need to create a new instance of the Ap
                 .gpsSetting(GizoGpsSetting.Builder().build())
                 .videoSetting(GizoVideoSetting.Builder().build())
                 .batterySetting(GizoBatterySetting.Builder().build())
+                .orientationSetting(GizoOrientationSetting.Builder())
                 .build()
         )
     }

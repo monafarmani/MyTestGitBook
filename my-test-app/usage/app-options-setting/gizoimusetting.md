@@ -35,7 +35,7 @@ For this reason, add these lines of code in the Application class, onCreate func
           .allowMagneticSensor(true)
           .allowGyroscopeSensor(true)
           .saveCsvFile(true)
-          ..useAccelerationRawType(true)
+          .useAccelerationRawType(true)
           .fileLocation(GizoFileLocationPath.CACHE)
           .imuDataTimerPeriod(5000L)
           .imuDataTimerInitialDelay(0L)
@@ -48,10 +48,11 @@ For this reason, add these lines of code in the Application class, onCreate func
 
 The `GizoImuSetting` builder sets the IMU-related properties such as:
 
-* <mark style="color:blue;">`allowLinearAccelerationSensor`</mark>`(true)`: Enabling the Linear Acceleration sensor.
-* <mark style="color:blue;">`allowGravitySensor`</mark>`(true)`: Enabling the Gravity sensor.
+* <mark style="color:blue;">`allowAccelerationSensor`</mark>`(true)`: Enabling the Linear Acceleration sensor.
+* <mark style="color:blue;">`allowMagneticSensor`</mark>`(true)`: Enabling the Gravity sensor.
 * <mark style="color:blue;">`allowGyroscopeSensor`</mark>`(true)`: Enabling the Gyroscope sensor.
 * <mark style="color:blue;">`saveCsvFile`</mark>`(true)`: Indicating that the IMU data should be saved to a CSV file.
+* <mark style="color:blue;">`useAccelerationRawType`</mark>`(true)`:&#x20;
 * <mark style="color:blue;">`fileLocation`</mark>`(GizoFileLocationPath.CACHE)`: Specifying the file location path for storing the IMU data CSV file (in this case, set to the cache directory).
 * <mark style="color:blue;">`imuDataTimerPeriod`</mark>`(5000L)`: Setting the period of the IMU data timer to 5000 milliseconds (5 seconds).
 * <mark style="color:blue;">`imuDataTimerInitialDelay`</mark>`(0L)`: Setting the initial delay of the IMU data timer to 0 milliseconds (no delay).
