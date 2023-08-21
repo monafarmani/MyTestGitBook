@@ -32,7 +32,7 @@ As previously stated, based on the settings we have applied, some files related 
 
 When the Start Session gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="370">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not.</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not.</td></tr></tbody></table>
+<table><thead><tr><th width="213">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not.</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not.</td></tr></tbody></table>
 
 
 
@@ -41,7 +41,7 @@ Gain these parameters with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kts
-gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
+Gizo.app.gizoAnalysis.onSessionStatus = { isRecording, previewAttached ->
 }
 ```
 {% endtab %}
@@ -281,7 +281,7 @@ Gain these parameters with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-gizoAnalysis.onRecordingEvent { event ->
+Gizo.app.gizoAnalysis.onRecordingEvent { event ->
  
 }
 ```
