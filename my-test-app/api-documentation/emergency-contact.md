@@ -26,9 +26,13 @@ The endpoint is designed to handle requests for adding or updating the emergency
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
-Authentication Bearer Token<mark style="color:orange;">Request Body Parameters</mark>
+Authentication Bearer Token
+
+
+
+<mark style="color:orange;">**Request Body Parameters**</mark>
 
 **firstName :** the `firstName` property represents the person's first name of an emergency contact. It is expected to be a string value, e.g. **"Sarah"**
 
@@ -54,7 +58,7 @@ The endpoint is designed to handle requests for retrieving or fetching the emerg
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
@@ -82,7 +86,7 @@ The endpoint is designed to handle requests for reporting an accident related to
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
