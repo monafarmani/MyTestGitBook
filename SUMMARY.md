@@ -13,7 +13,7 @@
       * [GizoVideoSetting](my-test-app/usage/app-options-setting/gizovideosetting.md)
       * [GizoBatterySetting](my-test-app/usage/app-options-setting/gizobatterysetting.md)
     * [Listeners](my-test-app/usage/call-back-listeners.md)
-  * [📖 API Documentation](my-test-app/api-documentation/README.md)
+  * [📖 API Documentation](my-test-app/api-documentation.md)
     * [Authentication](my-test-app/api-documentation/authentication.md)
     * [User](my-test-app/api-documentation/user.md)
     * [Car](my-test-app/api-documentation/car.md)
