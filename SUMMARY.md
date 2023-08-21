@@ -19,6 +19,7 @@
     * [User's Car](my-test-app/api-documentation/car.md)
     * [Emergency Contact](my-test-app/api-documentation/emergency-contact.md)
     * [Trip](my-test-app/api-documentation/trip.md)
+    * [Performance](my-test-app/api-documentation/performance.md)
     * [Settings](my-test-app/api-documentation/settings.md)
   * [✏ Change Log](my-test-app/change-log.md)
   * [⚙ Configuration](my-test-app/configuration.md)

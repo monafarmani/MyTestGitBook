@@ -74,6 +74,32 @@ The endpoint is designed to handle requests for indicating the completion of a f
 
 
 
+### <mark style="color:green;">Get File Chunk Status</mark>
+
+The endpoint is designed to handle requests for retrieving or fetching the status of file chunks related to a trip. It allows users to check the status of individual or multiple file chunks that make up a larger file associated with the trip.
+
+{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" expanded="true" %}
+[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
+
+
+
+### <mark style="color:green;">Get Files Of Completed Status</mark>
+
+The endpoint is designed to handle requests for retrieving or fetching the completion status of files related to a trip. It allows users to check whether the files associated with the trip have been completed or not.
+
+{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/filesCompletedStatus" method="get" expanded="true" %}
+[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
+
 ### <mark style="color:green;">**Get List Of Trips**</mark>&#x20;
 
 The endpoint is designed to handle requests for retrieving or fetching information about trips or journeys. It allows users to access details related to various trips that may have been recorded or stored in the system.
@@ -246,43 +272,7 @@ The provided endpoint response appears to be a JSON object containing properties
 
 
 
-<mark style="color:green;">**Report**</mark>&#x20;
-
-The endpoint is designed to handle requests for generating a report of trips or journeys. It allows users to retrieve aggregated or summarized information about multiple trips based on certain criteria or filters.
-
-{% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/report" method="get" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
-
-
-
-<mark style="color:green;">**Driving Score :**</mark> The endpoint is designed to handle requests for retrieving or fetching the driving score information associated with a trip or journey. It allows users to access details about the driving performance or behavior during a specific trip.
-
-{% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/drivingScore" method="get" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
-
-
-
-<mark style="color:green;">**Event Stats :**</mark> The endpoint is designed to handle requests for retrieving event statistics within a trip report. It allows users to access aggregated information and statistics related to specific events or incidents that occurred during trips or journeys.
-
-{% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/report/eventStats" method="get" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
-
-
+### <mark style="color:green;">Get Total Carbon</mark>
 
 The endpoint is designed to handle requests for retrieving or fetching the total carbon emissions or carbon footprint of a trip or journey. It allows users to access information about the environmental impact in terms of carbon emissions resulting from a specific trip.
 
@@ -296,6 +286,8 @@ The endpoint is designed to handle requests for retrieving or fetching the total
 
 
 
+### <mark style="color:green;">Get Last Trip's Carbon</mark>
+
 The endpoint is designed to handle requests for retrieving or fetching the carbon emissions or carbon footprint of the last or most recent trip recorded in the system. It allows users to access information about the environmental impact in terms of carbon emissions resulting from the most recent trip.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/lastTripCarbon" method="get" expanded="true" %}
@@ -308,17 +300,7 @@ The endpoint is designed to handle requests for retrieving or fetching the carbo
 
 
 
-The endpoint is designed to handle requests for retrieving or fetching performance metrics or statistics related to a user's trips or journeys. It allows users to access information about their own performance as it pertains to their trips.
-
-{% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/myPerformance" method="get" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
-
-
+### <mark style="color:green;">Get Trip GPS By Id</mark>
 
 The endpoint is designed to handle requests for retrieving or fetching GPS data associated with a specific trip. It allows users to access the latitude and longitude coordinates or other relevant GPS information recorded during the trip.
 
@@ -332,35 +314,7 @@ The endpoint is designed to handle requests for retrieving or fetching GPS data 
 
 
 
-The endpoint is designed to handle requests for retrieving or fetching the status of file chunks related to a trip. It allows users to check the status of individual or multiple file chunks that make up a larger file associated with the trip.
-
-{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" expanded="true" %}
-[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
-
-
-
-The endpoint is designed to handle requests for retrieving or fetching the completion status of files related to a trip. It allows users to check whether the files associated with the trip have been completed or not.
-
-{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/filesCompletedStatus" method="get" expanded="true" %}
-[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
-
-
-
-
-
-
-
-
+### <mark style="color:green;">Get Trip Event Stats By Id</mark>
 
 The endpoint is designed to handle requests for retrieving or fetching event statistics related to a specific trip. It allows users to access aggregated data or metrics about various events that occurred during the trip.
 
