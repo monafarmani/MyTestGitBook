@@ -18,9 +18,9 @@ layout:
 
 # Authentication
 
-## <mark style="color:purple;">Login/Register And Verify</mark>
+### <mark style="color:green;">**Check Identity**</mark>&#x20;
 
-<mark style="color:green;">**Check Identity :**</mark> The endpoint allows users to submit identity-related information or credentials to confirm the user's identity.
+The endpoint allows users to submit identity-related information or credentials to confirm the user's identity.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/User/checkIdentity" method="post" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -38,7 +38,9 @@ It returns a Boolean, and if it's true it could indicate that the user is authen
 
 
 
-<mark style="color:green;">**Verify :**</mark> The endpoint allows users to submit data or credentials for verification purposes.
+### <mark style="color:green;">**Verify**</mark>&#x20;
+
+The endpoint allows users to submit data or credentials for verification purposes.
 
 {% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/User/verify" method="post" expanded="true" %}
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
