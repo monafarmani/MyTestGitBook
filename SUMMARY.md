@@ -16,7 +16,7 @@
   * [📖 API Documentation](my-test-app/api-documentation.md)
     * [Authentication](my-test-app/api-documentation/authentication.md)
     * [User](my-test-app/api-documentation/user.md)
-    * [User's Car](my-test-app/api-documentation/users-car.md)
+    * [User's Car](my-test-app/api-documentation/car.md)
     * [Emergency Contact](my-test-app/api-documentation/emergency-contact.md)
     * [Trip](my-test-app/api-documentation/trip.md)
     * [Settings](my-test-app/api-documentation/settings.md)

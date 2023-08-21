@@ -36,16 +36,6 @@ The endpoint is designed to handle requests for retrieving or fetching agreement
 
 
 
-The endpoint is designed to handle requests for retrieving or fetching information about car brands. It allows users to access a list of car brands available in the system or application.
-
-{% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/CarBrand" method="get" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
-
 
 
 The endpoint is designed to handle requests for retrieving or fetching configuration settings or information from the system or application.
