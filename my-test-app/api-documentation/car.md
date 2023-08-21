@@ -58,7 +58,7 @@ The endpoint is designed to handle requests for selecting or choosing a specific
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**id :** The id of the car which is selected and It is expected to be a numeric value, e.g. **1560**
+**id :** The ID of the car which is selected and It is expected to be a numeric value, e.g. **1560**
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -102,7 +102,7 @@ The provided endpoint response contains a list of car model properties
 
 ### <mark style="color:green;">**Car Models by Id**</mark>&#x20;
 
-،he endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user.
+The endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user.
 
 {% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels/{id}" method="get" expanded="true" %}
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
