@@ -324,7 +324,7 @@ The provided endpoint response contains several properties including
 
 
 
-<mark style="color:green;">**Delete Car Model:**</mark> The endpoint is designed to handle requests for deleting the car model information associated with a user'.&#x20;
+<mark style="color:green;">**Delete Car Model:**</mark> The endpoint is designed to handle requests for deleting the car model information associated with a user.&#x20;
 
 {% swagger src="../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModel" method="delete" expanded="true" %}
 [swagger (1).json](<../.gitbook/assets/swagger (1).json>)
@@ -332,15 +332,17 @@ The provided endpoint response contains several properties including
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**id :** The ID of the car and It is expected to be a numeric value, e.g. **2256**
+**id :** The ID of the car and it is expected to be a numeric value, e.g. **2256**
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that car is deleted.
+If it's true, it means that the car is deleted.
+
+###
 
 ### <mark style="color:blue;">User Emergency Contact</mark>
 
-<mark style="color:green;">**Add Emergency Contact :**</mark> The endpoint is designed to handle requests for adding or updating the emergency contact information associated with a user's profile. It allows users to provide or modify details about their designated emergency contact person or persons.
+<mark style="color:green;">**Add Emergency Contact :**</mark> The endpoint is designed to handle requests for adding the emergency contact information associated with a user's profile.&#x20;
 
 {% swagger src="../.gitbook/assets/swagger.json" path="/api/v1/User/emergencyContact" method="post" expanded="true" %}
 [swagger.json](../.gitbook/assets/swagger.json)
@@ -348,13 +350,13 @@ If it's true, it means that car is deleted.
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**firstName :** first name of the emergency contact
+**firstName :** the `firstName` property represents the person's first name of an emergency contact. It is expected to be a string value, e.g. **"Sarah"**
 
-&#x20;**lastName :** last name of the emergency contact
+**lastName :** the `lastName` property represents the person's last name of an emergency contact. It is also expected to be a string value, e.g. **"Williams"**
 
-&#x20;**phoneNumber :** phone  number of the emergency contact
+**phoneNumber :** the `phoneNumber` property represents the person's phone number of an emergency contact. It is expected to be a string value, e.g. **"+49\_01747707508"**
 
-**email :** email of the emergency contact
+**email :** the `email` property represents the person's email address of an emergency contact. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -370,15 +372,15 @@ If it's true, it means that emergency contact information is recorded.
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response appears to be a JSON object containing properties related to a person's information. Here's the breakdown of each property and its potential meaning:
+The provided endpoint response contains several properties including
 
-**firstName :** the `firstName` property represents the person's first name. It is expected to be a string value.
+**firstName :** the `firstName` property represents the person's first name. It is expected to be a string value, e.g. **"Sarah"**
 
-**lastName :** the `lastName` property represents the person's last name. It is also expected to be a string value.
+**lastName :** the `lastName` property represents the person's last name. It is also expected to be a string value, e.g. **"Williams"**
 
-**phoneNumber :** the `phoneNumber` property represents the person's phone number. It is expected to be a string value.
+**phoneNumber :** the `phoneNumber` property represents the person's phone number. It is expected to be a string value, e.g. **"+49\_01747707508"**
 
-**email :** the `email` property represents the person's email address. It is also expected to be a string value.
+**email :** the `email` property represents the person's email address. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
 
 
 
