@@ -78,6 +78,14 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+**OriginLatitude :**
+
+**OriginLongitude :**
+
+**DestinationLatitude :**
+
+**DestinationLongitude :**
+
 #### <mark style="color:orange;">**Response**</mark>
 
 
