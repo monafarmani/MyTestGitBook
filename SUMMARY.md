@@ -10,6 +10,7 @@
       * [GizoAnalysisSettings](my-test-app/usage/app-options-setting/gizoanalysissettings.md)
       * [GizoGpsSetting](my-test-app/usage/app-options-setting/gizogpssetting.md)
       * [GizoImuSetting](my-test-app/usage/app-options-setting/gizoimusetting.md)
+      * [OrientationSetting](my-test-app/usage/app-options/orientationsetting.md)
       * [GizoVideoSetting](my-test-app/usage/app-options-setting/gizovideosetting.md)
       * [GizoBatterySetting](my-test-app/usage/app-options-setting/gizobatterysetting.md)
     * [Listeners](my-test-app/usage/call-back-listeners.md)
