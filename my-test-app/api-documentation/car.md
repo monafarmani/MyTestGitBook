@@ -26,6 +26,10 @@ The endpoint is designed to handle requests for adding the car model information
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 **carModelName :** the model name of the user's car and It is expected to be a string value, e.g. **"C200"**
@@ -56,6 +60,10 @@ The endpoint is designed to handle requests for selecting or choosing a specific
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 **id :** The ID of the car which is selected and It is expected to be a numeric value, e.g. **1560**
@@ -73,6 +81,10 @@ The endpoint is designed to handle requests for retrieving or fetching the car m
 {% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels" method="get" expanded="true" %}
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -107,6 +119,10 @@ The endpoint is designed to handle requests for retrieving or fetching a specifi
 {% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels/{id}" method="get" expanded="true" %}
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Parameters</mark>
 
@@ -145,6 +161,10 @@ The endpoint is designed to handle requests for deleting the car model informati
 {% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModel" method="delete" expanded="true" %}
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
