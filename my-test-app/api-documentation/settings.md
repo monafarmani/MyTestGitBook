@@ -26,6 +26,10 @@ The endpoint is designed to handle requests for retrieving or fetching agreement
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">**Response**</mark>
 
 
@@ -38,6 +42,10 @@ The endpoint is designed to handle requests for retrieving or fetching configura
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">**Response**</mark>
 
 
@@ -49,6 +57,10 @@ The endpoint is designed to handle requests for geocoding addresses or place nam
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Map/geoCode" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
@@ -64,6 +76,10 @@ The endpoint is designed to handle requests for retrieving or fetching a privacy
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">**Response**</mark>
 
 
@@ -75,5 +91,9 @@ The endpoint is designed to handle requests for retrieving or fetching terms and
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/terms" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
