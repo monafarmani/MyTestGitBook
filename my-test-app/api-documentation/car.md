@@ -18,9 +18,9 @@ layout:
 
 # Car
 
-### <mark style="color:blue;">User car</mark>
+### <mark style="color:green;">**Car Model**</mark>&#x20;
 
-<mark style="color:green;">**Car Model :**</mark> The endpoint is designed to handle requests for adding the car model information associated with user's cars.
+The endpoint is designed to handle requests for adding the car model information associated with user's cars.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/User/carModel" method="post" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -48,7 +48,9 @@ If it's true, it means that car model is added.
 
 
 
-<mark style="color:green;">**Select Car Model :**</mark> The endpoint is designed to handle requests for selecting or choosing a specific car model for a current active user's car.
+### <mark style="color:green;">**Select Car Model**</mark>&#x20;
+
+The endpoint is designed to handle requests for selecting or choosing a specific car model for a current active user's car.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/User/carModel/select" method="patch" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -64,7 +66,9 @@ If it's true, it means that car model is selected.
 
 
 
-<mark style="color:green;">**Car Models :**</mark> The endpoint is designed to handle requests for retrieving or fetching the car models associated with the user.
+### <mark style="color:green;">**Car Models**</mark>&#x20;
+
+The endpoint is designed to handle requests for retrieving or fetching the car models associated with the user.
 
 {% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels" method="get" expanded="true" %}
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
@@ -96,7 +100,9 @@ The provided endpoint response contains a list of car model properties
 
 
 
-<mark style="color:green;">**Car Models by Id :**</mark> the endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user.
+### <mark style="color:green;">**Car Models by Id**</mark>&#x20;
+
+،he endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user.
 
 {% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModels/{id}" method="get" expanded="true" %}
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
@@ -132,7 +138,9 @@ The provided endpoint response contains several properties including
 
 
 
-<mark style="color:green;">**Delete Car Model:**</mark> The endpoint is designed to handle requests for deleting the car model information associated with a user.&#x20;
+### <mark style="color:green;">**Delete Car Model**</mark>
+
+The endpoint is designed to handle requests for deleting the car model information associated with a user.&#x20;
 
 {% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/User/carModel" method="delete" expanded="true" %}
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
