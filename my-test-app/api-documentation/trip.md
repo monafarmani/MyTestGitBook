@@ -76,6 +76,8 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains a list of car model properties
+
 **id :** The id property represents an identifier or reference associated with the process. In this case, the value is 0, indicating that either an ID has not been assigned yet or the process has not been initiated.
 
 **mergeStatus :** The mergeStatus property indicates the status of a merge operation. When set to true, it suggests that the merge process has been successfully completed.
@@ -118,7 +120,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-
+The provided endpoint response contains a list of car model properties
 
 **fileChunkIds :** The fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process. In this case, there is one element in the array with a value of 0, indicating that there is one file chunk associated with the upload.
 
@@ -146,6 +148,8 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains a list of car model properties
+
 **isCompleted :** The isCompleted property is a boolean value that indicates whether the process or operation has been completed. In this case, the value is true, suggesting that the process has been successfully completed.
 
 **message :** The message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
@@ -170,7 +174,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response is a JSON array containing a single object. Here's the breakdown of each property within the object and their potential meanings:
+The provided endpoint response contains a list of car model properties
 
 **id :** This property likely represents the ID of the object or item. It is expected to be a numeric value (`0` in this case).
 
@@ -242,7 +246,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-
+The provided endpoint response contains a list of car model properties
 
 **`id`:** This property likely represents the ID of the event or task. It is expected to be a numeric value (`0` in this case).
 
@@ -308,7 +312,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-
+The provided endpoint response contains a list of car model properties
 
 **carbon :** The carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation. In this case, the value is 0, which suggests that there are no carbon emissions associated with the specific context being referred to.
 
@@ -327,6 +331,8 @@ The endpoint is designed to handle requests for retrieving or fetching the carbo
 Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains a list of car model properties
 
 **carbon :** The carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation. In this case, the value is 0, which suggests that there are no carbon emissions associated with the specific context being referred to.
 
@@ -350,6 +356,8 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains a list of car model properties
+
 **gpsDetail :** The gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
 **events :** The events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates
@@ -371,6 +379,8 @@ Authentication Bearer Token
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains a list of car model properties
 
 **eventType :** The eventType property represents the type of event that occurred. The value 0 suggests that it is a specific type of event, and the exact meaning of this event would depend on the application or system's context.
 
