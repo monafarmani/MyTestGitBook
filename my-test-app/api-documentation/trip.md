@@ -76,6 +76,12 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+**id :** The id property represents an identifier or reference associated with the process. In this case, the value is 0, indicating that either an ID has not been assigned yet or the process has not been initiated.
+
+**mergeStatus :** The mergeStatus property indicates the status of a merge operation. When set to true, it suggests that the merge process has been successfully completed.
+
+**uploadPercent :** The uploadPercent property represents the progress or percentage of an upload process. The value of 0 indicates that the upload process has not yet started or is in its initial stage.
+
 
 
 ### <mark style="color:green;">Complete Chunks</mark>
@@ -114,6 +120,16 @@ Authentication Bearer Token
 
 
 
+**fileChunkIds :** The fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process. In this case, there is one element in the array with a value of 0, indicating that there is one file chunk associated with the upload.
+
+**chunkSize :** The chunkSize property represents the size of each file chunk in bytes. The value of 0 in this case suggests that either the chunk size has not been determined or is not applicable for the specific upload process.
+
+**fileId :** The fileId property is the identifier or reference for the uploaded file. The value of 0 indicates that either an ID has not been assigned yet or the file has not been uploaded.
+
+**isUploaded :** The isUploaded property is a boolean value that indicates whether the file has been successfully uploaded. In this case, the value is true, suggesting that the upload process has been completed successfully.
+
+**uploadPercent :** The uploadPercent property represents the progress or percentage of the upload process. The value of 0 indicates that the upload process has not yet started or is in its initial stage.
+
 ### <mark style="color:green;">Get Files Of Completed Status</mark>
 
 The endpoint is designed to handle requests for retrieving or fetching the completion status of files related to a trip. It allows users to check whether the files associated with the trip have been completed or not.
@@ -129,6 +145,12 @@ Authentication Bearer Token
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
+
+**isCompleted :** The isCompleted property is a boolean value that indicates whether the process or operation has been completed. In this case, the value is true, suggesting that the process has been successfully completed.
+
+**message :** The message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
+
+
 
 ### <mark style="color:green;">**Get List Of Trips**</mark>&#x20;
 
@@ -204,46 +226,6 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response appears to be a JSON object containing properties related to an event or task. Here's the breakdown of each property and its potential meaning:
-
-**`id`:** This property likely represents the ID of the event or task. It is expected to be a numeric value (`0` in this case).
-
-**`score`:** The `score` property likely represents a score or rating associated with the event or task. It is expected to be a numeric value (`0` in this case).
-
-**`isCompleted`:** The `isCompleted` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the event or task is completed.
-
-**`originAddress`:** The `originAddress` property represents the address of the origin location. It is expected to be a string value.
-
-**`originPostalCode`:** This property represents the postal code associated with the origin location. It is expected to be a string value.
-
-**`originLocality`:** The `originLocality` property represents the locality or city of the origin location. It is expected to be a string value.
-
-**`originPlace`:** This property likely represents the name or identifier of the origin place. It is expected to be a string value.
-
-**`originRegion`:** The `originRegion` property represents the region or state of the origin location. It is expected to be a string value.
-
-**`origin`:** The `origin` property represents the overall origin information. It is expected to be a string value.
-
-**`destinationAddress`:** The `destinationAddress` property represents the address of the destination location. It is expected to be a string value.
-
-**`destinationPostalCode`:** This property represents the postal code associated with the destination location. It is expected to be a string value.
-
-**`destinationLocality`:** The `destinationLocality` property represents the locality or city of the destination location. It is expected to be a string value.
-
-**`destinationPlace`:** This property likely represents the name or identifier of the destination place. It is expected to be a string value.
-
-**`destinationRegion`:** The `destinationRegion` property represents the region or state of the destination location. It is expected to be a string value.
-
-**`destination`:** The `destination` property represents the overall destination information. It is expected to be a string value.
-
-**`startDateTime`:** The `startDateTime` property represents the date and time when the event or task starts. It is formatted as "2023-08-15T11:12:36.800Z" in ISO 8601 format with UTC (Coordinated Universal Time).
-
-**`endDateTime`:** This property represents the date and time when the event or task ends. It is formatted as "2023-08-15T11:12:36.800Z" in ISO 8601 format with UTC.
-
-**`duration`:** The `duration` property is an object that contains sub-properties representing the duration of the event or task. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case).
-
-**`createDate`:** This property represents the date and time when the event or task was created. It is formatted as "2023-08-15T11:12:36.800Z", indicating the date and time in ISO 8601 format with UTC.
-
 
 
 ### <mark style="color:green;">**Get Last Trip**</mark>&#x20;
@@ -258,11 +240,9 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response appears to be a JSON object containing properties related to an event or task, including GPS information. Here's the breakdown of each property and its potential meaning:
+
 
 **`id`:** This property likely represents the ID of the event or task. It is expected to be a numeric value (`0` in this case).
 
@@ -326,9 +306,11 @@ The endpoint is designed to handle requests for retrieving or fetching the total
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
 #### <mark style="color:orange;">**Response**</mark>
+
+
+
+**carbon :** The carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation. In this case, the value is 0, which suggests that there are no carbon emissions associated with the specific context being referred to.
 
 
 
@@ -344,9 +326,11 @@ The endpoint is designed to handle requests for retrieving or fetching the carbo
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
 #### <mark style="color:orange;">**Response**</mark>
+
+**carbon :** The carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation. In this case, the value is 0, which suggests that there are no carbon emissions associated with the specific context being referred to.
+
+**lastUpdate :** The lastUpdate property indicates the date and time when the carbon emission information was last updated. The value of "2023-08-15T11:12:36.801Z" represents the specific timestamp in UTC format.
 
 
 
@@ -366,6 +350,10 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+**gpsDetail :** The gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
+
+**events :** The events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates
+
 
 
 ### <mark style="color:green;">Get Trip Event Stats By Id</mark>
@@ -383,3 +371,18 @@ Authentication Bearer Token
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
+
+**eventType :** The eventType property represents the type of event that occurred. The value 0 suggests that it is a specific type of event, and the exact meaning of this event would depend on the application or system's context.
+
+**score :** The score property represents a score associated with the event. The value 0 indicates the score achieved for the event.
+
+**scorePercentile :** The scorePercentile property represents the percentile rank of the score achieved for the event. The value 0 suggests that the score percentile is at the lowest rank.
+
+**events :** The events property is an array that contains objects representing specific events. Each event object includes properties such as time, value, latitude, longitude, and location. These properties provide details about the event's time, value, GPS coordinates, and location.
+
+**eventDetected :** The eventDetected property is an array that contains objects representing detected events. Each detected event object includes properties such as time, latitude, longitude, speedLimit, and yourSpeed. These properties provide details about the detected event's time, GPS coordinates, speed limit, and your actual speed.
+
+**eventDetectedTailGating :** The eventDetectedTailGating property is an array that contains objects representing detected tailgating events. Each detected tailgating event object includes properties such as time, speedInKmph, ttc, and depth. These properties provide details about the detected tailgating event's time, speed in kilometers per hour, time-to-collision (TTC), and depth.
+
+**rideTimeEvent :** The rideTimeEvent property represents information related to ride time. It includes sub-properties such as totalTime and tripDistance. The totalTime property further includes sub-properties like hours, minutes, and seconds, representing the total time of the ride in hours, minutes, and seconds. The tripDistance property represents the distance covered during the ride.
+
