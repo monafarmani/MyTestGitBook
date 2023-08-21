@@ -54,7 +54,7 @@ The provided endpoint response contains several properties including&#x20;
 
 ### <mark style="color:green;">**Profile**</mark>
 
-&#x20;The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
+The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
 
 {% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/User/profile" method="patch" expanded="true" %}
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
@@ -135,3 +135,17 @@ The provided endpoint response contains several properties including
 **birthDate :** The`birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-ddTHH:mm:ss", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02T00:00:00"**
 
 **gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified, e.g. **1**
+
+
+
+### &#x20;<mark style="color:green;">**Initial**</mark>&#x20;
+
+The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
+
+{% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/user/initial" method="patch" expanded="true" %}
+[swagger.json](../../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+#### <mark style="color:orange;">**Response**</mark>
+
+If it's true, it means that getting initial information from user is completed.

@@ -66,17 +66,9 @@ The provided endpoint response contains several properties including
 
 
 
-### <mark style="color:blue;">User First time Use initial</mark>
 
-&#x20;<mark style="color:green;">**Initial :**</mark> The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/user/initial" method="patch" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
-{% endswagger %}
 
-#### <mark style="color:orange;">**Response**</mark>
-
-If it's true, it means that getting initial information from user is completed.
 
 
 
