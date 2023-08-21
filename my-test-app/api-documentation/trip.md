@@ -60,7 +60,7 @@ The endpoint is designed to handle requests for uploading file chunks of a trip 
 
 
 
-### <mark style="color:green;">Upload chunks</mark>
+### <mark style="color:green;">Complete Chunks</mark>
 
 The endpoint is designed to handle requests for indicating the completion of a file upload process related to a trip. It allows users to signal that all file chunks associated with the trip have been successfully uploaded.
 
@@ -72,7 +72,11 @@ The endpoint is designed to handle requests for indicating the completion of a f
 
 #### <mark style="color:orange;">**Response**</mark>
 
-<mark style="color:green;">**Trip :**</mark> The endpoint is designed to handle requests for retrieving or fetching information about trips or journeys. It allows users to access details related to various trips that may have been recorded or stored in the system.
+
+
+### <mark style="color:green;">**Get List Of Trips**</mark>&#x20;
+
+The endpoint is designed to handle requests for retrieving or fetching information about trips or journeys. It allows users to access details related to various trips that may have been recorded or stored in the system.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -122,7 +126,9 @@ The provided endpoint response is a JSON array containing a single object. Here'
 
 
 
-<mark style="color:green;">**Trip By Id :**</mark> The endpoint is designed to handle requests for retrieving or fetching information about a specific trip or journey based on its unique identifier. It allows users to access detailed information about a particular trip.
+### <mark style="color:green;">**Get Trip By Id**</mark>&#x20;
+
+The endpoint is designed to handle requests for retrieving or fetching information about a specific trip or journey based on its unique identifier. It allows users to access detailed information about a particular trip.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/{id}" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -176,13 +182,9 @@ The provided endpoint response appears to be a JSON object containing properties
 
 
 
+### <mark style="color:green;">**Get Last Trip**</mark>&#x20;
 
-
-
-
-
-
-<mark style="color:green;">**Last Trip :**</mark> The endpoint is designed to handle requests for retrieving or fetching the information of the last or most recent trip recorded in the system. It allows users to access details about the latest trip they have taken or the most recently recorded trip in the system.
+The endpoint is designed to handle requests for retrieving or fetching the information of the last or most recent trip recorded in the system. It allows users to access details about the latest trip they have taken or the most recently recorded trip in the system.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/last" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -244,7 +246,9 @@ The provided endpoint response appears to be a JSON object containing properties
 
 
 
-<mark style="color:green;">**Report :**</mark> The endpoint is designed to handle requests for generating a report of trips or journeys. It allows users to retrieve aggregated or summarized information about multiple trips based on certain criteria or filters.
+<mark style="color:green;">**Report**</mark>&#x20;
+
+The endpoint is designed to handle requests for generating a report of trips or journeys. It allows users to retrieve aggregated or summarized information about multiple trips based on certain criteria or filters.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/report" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
