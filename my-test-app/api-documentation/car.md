@@ -18,7 +18,7 @@ layout:
 
 # Car
 
-### <mark style="color:green;">**Car Model**</mark>&#x20;
+### <mark style="color:green;">Add</mark> <mark style="color:green;"></mark><mark style="color:green;">**Car Model**</mark>&#x20;
 
 The endpoint is designed to handle requests for adding the car model information associated with user's cars.
 
@@ -48,7 +48,7 @@ If it's true, it means that car model is added.
 
 
 
-### <mark style="color:green;">**Select Car Model**</mark>&#x20;
+### <mark style="color:green;">**Select Active Car Model**</mark>&#x20;
 
 The endpoint is designed to handle requests for selecting or choosing a specific car model for a current active user's car.
 
@@ -66,7 +66,7 @@ If it's true, it means that car model is selected.
 
 
 
-### <mark style="color:green;">**Car Models**</mark>&#x20;
+### <mark style="color:green;">**Get List Of Car Models**</mark>&#x20;
 
 The endpoint is designed to handle requests for retrieving or fetching the car models associated with the user.
 
@@ -100,7 +100,7 @@ The provided endpoint response contains a list of car model properties
 
 
 
-### <mark style="color:green;">**Car Models by Id**</mark>&#x20;
+### <mark style="color:green;">**Get Car Model By Id**</mark>&#x20;
 
 The endpoint is designed to handle requests for retrieving or fetching a specific car model associated with a user.
 
