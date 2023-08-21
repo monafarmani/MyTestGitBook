@@ -30,9 +30,11 @@ The endpoint is designed to handle requests for creating a new trip or journey w
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
 #### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains several properties including
+
+**tripId :** The tripId property represents an identifier or reference to a trip. It is expected to be a numeric value.
 
 
 
@@ -51,6 +53,10 @@ Authentication Bearer Token
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 #### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains several properties including
+
+**fileManagerId :** The fileManagerId property represents an identifier or reference to a file manager. It is expected to be a numeric value.
 
 
 
