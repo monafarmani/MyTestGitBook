@@ -26,7 +26,7 @@ The endpoint is designed to handle requests for updating or modifying the profil
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
@@ -80,7 +80,7 @@ The endpoint is designed to handle requests for uploading or updating the profil
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
@@ -122,7 +122,7 @@ The endpoint is designed to handle requests for updating the initial information
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
@@ -140,7 +140,7 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
