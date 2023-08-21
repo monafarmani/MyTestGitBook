@@ -26,6 +26,10 @@ The endpoint allows users to submit identity-related information or credentials 
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 **username :** the phone number of the user and It is expected to be a string value. e.g. **"+49\_01747707607"**
@@ -45,6 +49,10 @@ The endpoint allows users to submit data or credentials for verification purpose
 {% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/User/verify" method="post" expanded="true" %}
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
