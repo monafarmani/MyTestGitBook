@@ -20,7 +20,7 @@ layout:
 
 ### <mark style="color:green;">**Create Trip**</mark>&#x20;
 
-The endpoint is designed to handle requests for creating a new trip or journey within the system. It allows users to submit the necessary information and parameters to define and initiate a new trip.
+The endpoint is designed to handle requests for creating a new trip or journey within the system.&#x20;
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/createTrip" method="post" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -32,13 +32,13 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several properties including
+The provided endpoint response contains a property which is : &#x20;
 
-**tripId :** The tripId property represents an identifier or reference to a trip. It is expected to be a numeric value.
+**tripId :** The tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**
 
 
 
-### <mark style="color:green;">Upoload Start</mark>
+### <mark style="color:green;">Upload Start</mark>
 
 The endpoint is designed to handle requests for initiating the start of a file upload process related to a trip. It allows users to begin uploading a file or multiple files associated with the trip to the server.
 
@@ -52,9 +52,17 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+**ItemId :**
+
+**chunkCount :**
+
+**FileType :**
+
+**FileExtension :**
+
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several properties including
+The provided endpoint response contains a property which is :&#x20;
 
 **fileManagerId :** The fileManagerId property represents an identifier or reference to a file manager. It is expected to be a numeric value.
 
@@ -73,6 +81,14 @@ The endpoint is designed to handle requests for uploading file chunks of a trip 
 Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+**FileId :**
+
+**FileChunkId :**
+
+**FileType :**
+
+**FileChunk :**
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -100,6 +116,8 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+**ItemId :**
+
 #### <mark style="color:orange;">**Response**</mark>
 
 
@@ -117,6 +135,10 @@ The endpoint is designed to handle requests for retrieving or fetching the statu
 Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+**TripId :**
+
+**TripFileType :**
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -145,6 +167,8 @@ The endpoint is designed to handle requests for retrieving or fetching the compl
 Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+**tripId :**
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -354,6 +378,8 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
+**id :**
+
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of car model properties
@@ -377,6 +403,8 @@ The endpoint is designed to handle requests for retrieving or fetching event sta
 Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
+
+**id :**
 
 #### <mark style="color:orange;">**Response**</mark>
 
