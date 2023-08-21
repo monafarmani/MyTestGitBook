@@ -18,7 +18,7 @@ layout:
 
 # User
 
-### <mark style="color:green;">**Profile**</mark>
+### <mark style="color:green;">Update</mark> <mark style="color:green;"></mark><mark style="color:green;">**Profile**</mark>
 
 The endpoint is designed to handle requests for updating or modifying the profile information of a user. It allows users to make changes to their profile data, such as their name, email address, contact information, or any other relevant details.
 
@@ -68,7 +68,7 @@ The provided endpoint response contains several properties including&#x20;
 
 
 
-### <mark style="color:green;">**Profile image**</mark>&#x20;
+### <mark style="color:green;">**Update Profile Image**</mark>&#x20;
 
 The endpoint is designed to handle requests for uploading or updating the profile image of a user. It allows users to provide an image file representing their profile picture or avatar.
 
@@ -104,7 +104,7 @@ The provided endpoint response contains several properties including
 
 
 
-### &#x20;<mark style="color:green;">**Initial**</mark>&#x20;
+### <mark style="color:green;">**Update User First-time Use Initial**</mark>&#x20;
 
 The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
 
@@ -120,7 +120,7 @@ If it's true, it means that getting initial information from user is completed.
 
 
 
-### <mark style="color:green;">**Current User**</mark>&#x20;
+### <mark style="color:green;">**Get Current User**</mark>&#x20;
 
 The endpoint is designed to handle requests for retrieving or fetching the information of the currently authenticated user. It allows users to access their own profile or account details.
 
