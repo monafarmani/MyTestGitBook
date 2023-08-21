@@ -54,8 +54,6 @@ The endpoint is designed to handle requests for retrieving or fetching the drivi
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
 #### <mark style="color:orange;">**Response**</mark>
 
 **averageScore :** The averageScore property represents the average score associated with a specific context or set of data. In this case, the value is 0, which suggests that the average score is zero.
