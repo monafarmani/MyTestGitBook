@@ -22,6 +22,54 @@ layout:
 
 ## <mark style="color:purple;">Trip</mark>
 
+<mark style="color:green;">**Create Trip :**</mark> The endpoint is designed to handle requests for creating a new trip or journey within the system. It allows users to submit the necessary information and parameters to define and initiate a new trip.
+
+{% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/createTrip" method="post" expanded="true" %}
+[swagger.json](../../.gitbook/assets/swagger.json)
+{% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
+
+
+
+
+
+The endpoint is designed to handle requests for initiating the start of a file upload process related to a trip. It allows users to begin uploading a file or multiple files associated with the trip to the server.
+
+{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadStart" method="post" expanded="true" %}
+[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
+
+
+
+The endpoint is designed to handle requests for uploading file chunks of a trip to the server. When a large file needs to be uploaded, it is often split into smaller chunks for efficient and reliable transmission.
+
+{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadChunks" method="post" expanded="true" %}
+[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
+
+
+
+The endpoint is designed to handle requests for indicating the completion of a file upload process related to a trip. It allows users to signal that all file chunks associated with the trip have been successfully uploaded.
+
+{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadComplete" method="post" expanded="true" %}
+[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+#### <mark style="color:orange;">**Response**</mark>
+
 <mark style="color:green;">**Trip :**</mark> The endpoint is designed to handle requests for retrieving or fetching information about trips or journeys. It allows users to access details related to various trips that may have been recorded or stored in the system.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip" method="get" expanded="true" %}
@@ -126,15 +174,7 @@ The provided endpoint response appears to be a JSON object containing properties
 
 
 
-<mark style="color:green;">**Create Trip :**</mark> The endpoint is designed to handle requests for creating a new trip or journey within the system. It allows users to submit the necessary information and parameters to define and initiate a new trip.
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/Trip/createTrip" method="post" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
 
 
 
@@ -310,39 +350,9 @@ The endpoint is designed to handle requests for retrieving or fetching the compl
 
 
 
-The endpoint is designed to handle requests for initiating the start of a file upload process related to a trip. It allows users to begin uploading a file or multiple files associated with the trip to the server.
-
-{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadStart" method="post" expanded="true" %}
-[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
 
 
 
-The endpoint is designed to handle requests for uploading file chunks of a trip to the server. When a large file needs to be uploaded, it is often split into smaller chunks for efficient and reliable transmission.
-
-{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadChunks" method="post" expanded="true" %}
-[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
-
-
-
-The endpoint is designed to handle requests for indicating the completion of a file upload process related to a trip. It allows users to signal that all file chunks associated with the trip have been successfully uploaded.
-
-{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadComplete" method="post" expanded="true" %}
-[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-#### <mark style="color:orange;">**Response**</mark>
 
 
 
