@@ -58,6 +58,8 @@ The endpoint is designed to handle requests for uploading file chunks of a trip 
 
 
 
+### <mark style="color:green;">Upload chunks</mark>
+
 The endpoint is designed to handle requests for indicating the completion of a file upload process related to a trip. It allows users to signal that all file chunks associated with the trip have been successfully uploaded.
 
 {% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadComplete" method="post" expanded="true" %}
