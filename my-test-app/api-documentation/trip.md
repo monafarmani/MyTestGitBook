@@ -46,6 +46,8 @@ The endpoint is designed to handle requests for initiating the start of a file u
 
 
 
+### <mark style="color:green;">Upload Chunks</mark>
+
 The endpoint is designed to handle requests for uploading file chunks of a trip to the server. When a large file needs to be uploaded, it is often split into smaller chunks for efficient and reliable transmission.
 
 {% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/uploadChunks" method="post" expanded="true" %}
