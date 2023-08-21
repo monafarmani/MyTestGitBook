@@ -108,6 +108,8 @@ The provided endpoint response contains several properties including
 
 The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
 
+<mark style="color:red;">**Note :**</mark> Initial is called after [user's profile data](user.md#profile) &[ user car's data](car.md#car-model) get completed in first time use.
+
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/user/initial" method="patch" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
