@@ -26,6 +26,10 @@ The endpoint is designed to handle requests for updating or modifying the profil
 [swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 **firstName :** first name of the user and It is expected to be a string value, e.g.**"David"**
@@ -76,6 +80,10 @@ The endpoint is designed to handle requests for uploading or updating the profil
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
 **profileImage :** its a profile picture or avatar that must be sent by multipart/form-data format. It is expected to be a string value.
@@ -114,6 +122,10 @@ The endpoint is designed to handle requests for updating the initial information
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
+
 #### <mark style="color:orange;">**Response**</mark>
 
 If it's true, it means that getting initial information from user is completed.
@@ -127,6 +139,10 @@ The endpoint is designed to handle requests for retrieving or fetching the infor
 {% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/User/currentUser" method="get" expanded="true" %}
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
+
+#### <mark style="color:orange;">Header Parameters</mark>
+
+Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
