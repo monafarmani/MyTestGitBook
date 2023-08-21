@@ -68,9 +68,7 @@ The provided endpoint response contains several properties including
 
 
 
-
-
-### <mark style="color:green;">**Accident**</mark>&#x20;
+### <mark style="color:green;">**Report Accident**</mark>&#x20;
 
 The endpoint is designed to handle requests for reporting an accident related to a user. It allows users to submit information about an accident they have experienced or been involved in.
 
