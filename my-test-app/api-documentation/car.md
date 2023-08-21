@@ -26,7 +26,7 @@ The endpoint is designed to handle requests for adding the car model information
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
@@ -60,7 +60,7 @@ The endpoint is designed to handle requests for selecting or choosing a specific
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
@@ -82,7 +82,7 @@ The endpoint is designed to handle requests for retrieving or fetching the car m
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
@@ -120,7 +120,7 @@ The endpoint is designed to handle requests for retrieving or fetching a specifi
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
@@ -162,7 +162,7 @@ The endpoint is designed to handle requests for deleting the car model informati
 [swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
-#### <mark style="color:orange;">Header Parameters</mark>
+#### <mark style="color:orange;">Header Request Parameters</mark>
 
 Authentication Bearer Token
 
