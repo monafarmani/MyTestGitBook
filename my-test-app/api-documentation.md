@@ -34,7 +34,7 @@ Here are the list of all the available endpoints or routes provided by the API
 
 ### [User](api-documentation/user.md)
 
-### [Car](api-documentation/car.md)
+### [Car](api-documentation/users-car.md)
 
 ### [Trip](api-documentation/trip.md)
 
