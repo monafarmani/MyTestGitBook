@@ -335,6 +335,8 @@ Inside the lambda expression, the code block that would be executed when a chang
 
 ### <mark style="color:purple;">Orientation Listener</mark>
 
+Screen orientation refers to the orientation of the device's screen, which can be either portrait (vertical) or landscape (horizontal).&#x20;
+
 In Gizo SDK, if our mobile device is in landscape orientation with a 90 angle, the listener calls back true. (isAlign would be true)
 
 {% tabs %}
