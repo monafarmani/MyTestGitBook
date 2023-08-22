@@ -125,6 +125,8 @@ When GPS gets activated, these value parameters can be checked out:
 
 <table><thead><tr><th width="196">Value-parameters</th><th width="159">Type</th><th>Description</th></tr></thead><tbody><tr><td>location</td><td>Location?</td><td>The location of the user.</td></tr><tr><td>isGpsOn</td><td>Boolean?</td><td>To check whether GPS is on or not.</td></tr><tr><td>speedLimitKph</td><td>Int?</td><td>speed limit kilometer per hour</td></tr><tr><td>speedKph</td><td>Int</td><td>speed kilometer per hour</td></tr></tbody></table>
 
+**Location** refers to the specific geographical coordinates that indicate the position of a GPS receiver or device on the Earth's surface. It represents the latitude and longitude coordinates that define a particular point on the map.
+
 
 
 Gain these parameters with the codes below in Preview
@@ -249,7 +251,7 @@ Within this code block, you might find logic to handle the received sensor data.
 
 
 
-In Gizo SDK, if our mobile device is in landscape orientation, the listener calls back true. (isAlign would be true)
+In Gizo SDK, if our mobile device is in landscape orientation with a 90 angle, the listener calls back true. (isAlign would be true)
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -345,3 +347,8 @@ The `gizoAnalysis` property is responsible for analyzing and processing various 
 The lambda expression assigned to the `onBatteryStatusChange` property takes a single parameter `status`, which represents the updated battery status.
 
 Inside the lambda expression, the code block that would be executed when a change in the battery status occurs is not provided in the given snippet. However, within this code block, you might find logic to handle the updated battery status. For example, the application could perform actions based on the current battery level, such as adjusting power consumption, displaying a low battery warning, or triggering specific behaviors when the battery reaches a certain threshold.
+
+
+
+### <mark style="color:purple;">Orientation Listener</mark>
+
