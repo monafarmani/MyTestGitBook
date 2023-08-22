@@ -78,5 +78,5 @@ In the example above, we initialize the SDK instance as before and then create a
 * **GizoGpsSetting** provides instructions on enabling GPS, accessing location, speed limit, and speed.
 * **GizoVideoSetting** refers to the configuration and utilization of video-related features and components within an Android application. Video settings typically involve tasks, such as capturing video from the device’s camera, playing video files, or streaming video content.
 * **GizoBatterySetting** refers to the configuration and management options related to the device's battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile devices.
-* **GizoOrientationSetting** refers to  the checking the orientation of the device's screen, which should be in a proper position which is landscape (horizontal).
+* **GizoOrientationSetting** refers to checking the orientation of the device's screen, which should be in a proper position which is landscape (horizontal) with 90 angle.
 
