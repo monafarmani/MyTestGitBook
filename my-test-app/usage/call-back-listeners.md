@@ -59,7 +59,7 @@ In our SDK, we require accurate and efficient detection and localization of obje
 
 When Analysis gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="203">Value-Parameters</th><th width="145">Type</th><th>Description</th></tr></thead><tbody><tr><td>result</td><td>Bitmap?</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>fps</td><td>String</td><td>It provides the analysis time on the output image in milliseconds.</td></tr><tr><td>ttc</td><td>Float?</td><td>Time to collision.</td></tr><tr><td>ttcStatus</td><td>TTCAlert</td><td>It returns state <strong>danger</strong>, <strong>warning</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>ttcDepthPtn</td><td>String</td><td>The distance to the front car.</td></tr><tr><td>speed</td><td>Float?</td><td>The speed of the car the user is driving in.</td></tr><tr><td>gpsTime</td><td>String</td><td>The current time.</td></tr><tr><td>collisionThreshold </td><td>Float</td><td>It provides a number that determines the specific status of danger, warning, or none.</td></tr></tbody></table>
+<table><thead><tr><th width="203">Value-Parameters</th><th width="145">Type</th><th>Description</th></tr></thead><tbody><tr><td>preview</td><td>Bitmap?</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>ttc</td><td>Float?</td><td>Time to collision.</td></tr><tr><td>ttcStatus</td><td>TTCAlert</td><td>It returns state <strong>collision</strong>, <strong>tailgating</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>frontObject</td><td>String</td><td>The distance to the front car.</td></tr><tr><td>speed</td><td>Float?</td><td>The speed of the car the user is driving in.</td></tr><tr><td>gpsTime</td><td>String</td><td>The current time.</td></tr></tbody></table>
 
 
 
@@ -68,8 +68,8 @@ Gain these parameters with the codes below in Preview:
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onAnalysisResult = { result, fps, ttc, ttcStatus,
-ttcDepthPtn, speed, gpsTime ->
+Gizo.app.gizoAnalysis.onAnalysisResult = { preview, ttc, ttcStatus,
+frontObject, speed, gpsTime ->
  
 }
 ```
@@ -78,7 +78,7 @@ ttcDepthPtn, speed, gpsTime ->
 
 The gizoAnalysis property is responsible for analyzing data and processing results.
 
-The lambda expression assigned to the onAnalysisResult property takes several parameters: result, fps, ttc, ttcStatus, ttcDepthPtn, speed, and gpsTime. These parameters likely represent various analysis results and related information.
+The lambda expression assigned to the onAnalysisResult property takes several parameters: preview, ttc, ttcStatus, frontObject, speed, and gpsTime. These parameters likely represent various analysis results and related information.
 
 Within this code block, you might find logic to handle the analysis results and utilize the provided information. This may mean showing the analysis result, changing the interface, saving the result for later, or taking actions based on the outcome...
 
@@ -88,7 +88,7 @@ We can write a customized formula and calculate the TTC in Preview too.
 
 {% tabs %}
 {% tab title="Kotlin" %}
-<pre class="language-kotlin"><code class="lang-kotlin"><strong>Gizo.app.gizoAnalysis.ttcCalculator { depthPtn, speed, ttc ->
+<pre class="language-kotlin"><code class="lang-kotlin"><strong>Gizo.app.gizoAnalysis.ttcCalculator { frontObject, speed, ttc ->
 </strong>    ttc
 }
 </code></pre>
@@ -99,12 +99,12 @@ We can write a customized formula and calculate the TTC in Preview too.
 
 
 
-We can calculate the customized ttcStatus based on depthPtn, speed, collisionThreshold, and TTC in Preview too.
+We can calculate the customized ttcStatus based on depthPtn, speed, and TTC in Preview too.
 
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.ttcStatusCalculator { ttc, speed, collisionThreshold, ttcStatus ->
+Gizo.app.gizoAnalysis.ttcStatusCalculator { ttc, speed, ttcStatus ->
   ttcStatus
 }
 ```
