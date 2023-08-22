@@ -20,7 +20,7 @@ layout:
 
 ## Overview
 
-The IMU setting in MyTestSDK allows developers to utilize the sensors that make up the device’s IMU. The IMU typically consists of the **accelerometer**, **gyroscope,** and **gravity**.
+The IMU setting in MyTestSDK allows developers to utilize the sensors that make up the device’s IMU. The IMU typically consists of the **accelerometer**, **gyroscope,** and **Magnetic**.
 
 Gizo IMU setting is used to customize some behavior and functionality of our library including specifying where to save IMU files, the period of time that an IMU data row is saved in a CSV file, the initial delay to save IMU data, the format to save date time and so on...
 
