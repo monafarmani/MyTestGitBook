@@ -74,7 +74,7 @@ In the example above, we initialize the SDK instance as before and then create a
 
 
 * **GizoAnalysisSetting** allows developers to gain some data based on the image caught from the camera and get object detection & depth estimation.
-* **GizoImuSetting** allows developers to utilize the sensors that make up the device's IMU. The IMU typically consists of the **accelerometer**, **gyroscope,** and **gravity**.
+* **GizoImuSetting** allows developers to utilize the sensors that make up the device's IMU. The IMU typically consists of the **accelerometer**, **gyroscope,** and **Magnetic**.
 * **GizoGpsSetting** provides instructions on enabling GPS, accessing location, speed limit, and speed.
 * **GizoVideoSetting** refers to the configuration and utilization of video-related features and components within an Android application. Video settings typically involve tasks, such as capturing video from the device’s camera, playing video files, or streaming video content.
 * **GizoBatterySetting** refers to the configuration and management options related to the device's battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile devices.
