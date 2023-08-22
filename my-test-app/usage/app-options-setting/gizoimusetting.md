@@ -54,7 +54,7 @@ The `GizoImuSetting` builder sets the IMU-related properties such as:
 * <mark style="color:blue;">`saveCsvFile`</mark>`(true)`: Indicating that the IMU data should be saved to a CSV file.
 * <mark style="color:blue;">`useAccelerationRawType`</mark>`(true)`: indicating the type of the Acceleration sensor.
 * <mark style="color:blue;">`fileLocation`</mark>`(GizoFileLocationPath.CACHE)`: Specifying the file location path for storing the IMU data CSV file (in this case, set to the cache directory).
-* <mark style="color:blue;">`imuDataTimerPeriod`</mark>`(5000L)`: Setting the period of the IMU data timer to 5000 milliseconds (5 seconds).
+* <mark style="color:blue;">`imuDataTimerPeriod`</mark>`(10L)`: Setting the period of the IMU data timer to 5000 milliseconds (5 seconds).
 * <mark style="color:blue;">`imuDataTimerInitialDelay`</mark>`(0L)`: Setting the initial delay of the IMU data timer to 0 milliseconds (no delay).
 * <mark style="color:blue;">`saveDataDateTimeFormat`</mark>`("yyyy-MM-dd'T'HH-mm-ss-SSS'Z'")`: Specifying the date and time format for saving the IMU data file.
 
@@ -65,7 +65,7 @@ This code suggests that the `GizoAppOptions` class specifies various configurati
 
 
 * **Linear acceleration sensor:** It is part of the device's sensor array and is used to measure the linear acceleration of the device, excluding the influence of gravity.
-* **Magnetic sensor:** It is part of the device's sensor array and is used to measure the gravitational force acting on the device.
+* **Magnetic sensor:** It is a sensor that measures the strength and direction of the magnetic field in its vicinity. It is typically used to detect the presence of a magnetic field and determine its orientation.
 * **Gyroscope sensor:** It is part of the device's sensor array and is used to measure the device's angular velocity or rotational motion. The gyroscope provides information about the device's orientation and rotation rate.
 
 
