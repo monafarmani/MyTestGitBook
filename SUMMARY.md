@@ -12,7 +12,7 @@
       * [GizoImuSetting](my-test-app/usage/app-options-setting/gizoimusetting.md)
       * [GizoVideoSetting](my-test-app/usage/app-options-setting/gizovideosetting.md)
       * [GizoBatterySetting](my-test-app/usage/app-options-setting/gizobatterysetting.md)
-    * [OrientationSetting](my-test-app/usage/orientationsetting.md)
+    * [OrientationSetting](my-test-app/usage/app-options/orientationsetting.md)
     * [Listeners](my-test-app/usage/call-back-listeners.md)
   * [📖 API Documentation](my-test-app/api-documentation.md)
     * [Authentication](my-test-app/api-documentation/authentication.md)
