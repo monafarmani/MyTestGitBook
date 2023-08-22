@@ -7,7 +7,7 @@
     * [Gizo Analysis](my-test-app/usage/start-gizo-analysis.md)
     * [Permissions](my-test-app/usage/permissions.md)
     * [App Options](my-test-app/usage/app-options-setting/README.md)
-      * [GizoAnalysisSettings](my-test-app/usage/app-options-setting/gizoanalysissettings.md)
+      * [GizoAnalysisSetting](my-test-app/usage/app-options/gizoanalysissetting.md)
       * [GizoGpsSetting](my-test-app/usage/app-options-setting/gizogpssetting.md)
       * [GizoImuSetting](my-test-app/usage/app-options-setting/gizoimusetting.md)
       * [GizoVideoSetting](my-test-app/usage/app-options-setting/gizovideosetting.md)

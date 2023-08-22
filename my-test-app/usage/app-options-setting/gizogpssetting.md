@@ -39,7 +39,7 @@ For this reason, add these lines of code in the Application class, onCreate func
        .maxWaitTime(1000L)
        .withForegroundService(true)
        .saveCsvFile(true)
-       .fileLocation(GizoFileLocationPath.CACHE)
+       .fileLocation(FileLocationPath.CACHE)
        .savePeriod(10L)
        .saveInitialDelay(0L)
        .saveDateTimeFormat("yyyy-MM-dd'T'HH-mm-ss-SSS'Z'")
@@ -56,7 +56,7 @@ The `GizoGpsSetting` builder sets the GPS-related properties such as:
 * <mark style="color:blue;">`maxWaitTime`</mark>`(1000L)`: Setting the maximum wait time for GPS updates to 1000 milliseconds (1 second).
 * <mark style="color:blue;">`withForegroundService`</mark>`(true)`: Indicating that the GPS service should run in the foreground.
 * <mark style="color:blue;">`saveCsvFile`</mark>`(true)`: Indicating that the GPS data should be saved to a CSV file.
-* <mark style="color:blue;">`fileLocation`</mark>`(GizoFileLocationPath.CACHE)`: Specifying the file location path for storing the GPS data CSV file (in this case, set to the cache directory).
+* <mark style="color:blue;">`fileLocation`</mark>`(FileLocationPath.CACHE)`: Specifying the file location path for storing the GPS data CSV file (in this case, set to the cache directory).
 * <mark style="color:blue;">`savePeriod`</mark>`(10L)`: Setting the period of saving GPS data to 10 milliseconds.
 * <mark style="color:blue;">`saveInitialDelay`</mark>`(0L)`: Setting the initial delay of saving GPS data to 0 milliseconds (no delay).
 * <mark style="color:blue;">`saveDateTimeFormat`</mark>`("yyyy-MM-dd'T'HH-mm-ss-SSS'Z'")`: Specifying the date and time format for saving the GPS data file.
@@ -69,7 +69,7 @@ This code suggests that the `GizoAppOptions` class provides a way to specify var
 
 &#x20;Here are the available options that can be set in gpsSetting in the Application class:
 
-<table><thead><tr><th width="253.33333333333331">Options</th><th width="196">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>allow(Boolean)</td><td>false</td><td>To allow access to GPS setting.</td></tr><tr><td><p>mapBoxKey</p><p>(String)</p></td><td>_____</td><td>The key was obtained from Mapbox.</td></tr><tr><td>interval(Long)</td><td>1000L</td><td>A loop of time for getting location in 1 second.</td></tr><tr><td>maxWaitTime(Long)</td><td>1000L</td><td>Maximum amount of initial wait time. </td></tr><tr><td><p>withForegroundService</p><p>(Boolean)</p></td><td>true</td><td>To have foreground service or not.</td></tr><tr><td>saveCsvFile(Boolean)</td><td>false</td><td>To save CSV file or not.</td></tr><tr><td><p>fileLocation</p><p>(GizoFileLocationPath)</p></td><td><p>GizoFileLocationPath</p><p>.CACHE</p></td><td>To save GPS file in cache or download.</td></tr><tr><td><p>savePeriod</p><p>(Long)</p></td><td>10L</td><td>The period of time that a GPS data row is saved in CSV file.</td></tr><tr><td><p>saveInitialDelay</p><p>(Long)</p></td><td>0L</td><td>The initial delay to save GPS data.</td></tr><tr><td><p>saveDateTimeFormat</p><p>(String)</p></td><td><p>"yyyy-MM-dd</p><p>'T'HH-mm-ss-SSS'Z'"</p></td><td>The format to save date time.</td></tr></tbody></table>
+<table><thead><tr><th width="253.33333333333331">Options</th><th width="196">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>allow(Boolean)</td><td>false</td><td>To allow access to GPS setting.</td></tr><tr><td><p>mapBoxKey</p><p>(String)</p></td><td>_____</td><td>The key was obtained from Mapbox.</td></tr><tr><td>interval(Long)</td><td>1000L</td><td>A loop of time for getting location in 1 second.</td></tr><tr><td>maxWaitTime(Long)</td><td>1000L</td><td>Maximum amount of initial wait time. </td></tr><tr><td><p>withForegroundService</p><p>(Boolean)</p></td><td>true</td><td>To have foreground service or not.</td></tr><tr><td>saveCsvFile(Boolean)</td><td>false</td><td>To save CSV file or not.</td></tr><tr><td><p>fileLocation</p><p>(FileLocationPath)</p></td><td><p>FileLocationPath</p><p>.CACHE</p></td><td>To save GPS file in cache or download.</td></tr><tr><td><p>savePeriod</p><p>(Long)</p></td><td>10L</td><td>The period of time that a GPS data row is saved in CSV file.</td></tr><tr><td><p>saveInitialDelay</p><p>(Long)</p></td><td>0L</td><td>The initial delay to save GPS data.</td></tr><tr><td><p>saveDateTimeFormat</p><p>(String)</p></td><td><p>"yyyy-MM-dd</p><p>'T'HH-mm-ss-SSS'Z'"</p></td><td>The format to save date time.</td></tr></tbody></table>
 
 
 
