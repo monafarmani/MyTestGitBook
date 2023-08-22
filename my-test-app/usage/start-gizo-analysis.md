@@ -20,9 +20,9 @@ layout:
 
 ## Overview
 
-In this library, using artificial intelligence, driving behavior is analyzed, and a series of data is computed to reduce the risk of accidents and other driving problems. As a result, the possibility of smarter and safer driving is provided to users.
+In this library, the aim is to analyze driving behavior and compute a series of data by using artificial intelligence to reduce the risk of accidents and other driving problems. As a result, the possibility of smarter and safer driving is provided to users.
 
-###
+
 
 ### <mark style="color:purple;">Start Gizo Analysis</mark>
 
@@ -48,7 +48,7 @@ Based on the settings applied by the developer, a series of features will be add
 
 ### <mark style="color:purple;">Stop Gizo Analysis</mark>
 
-Whenever we no longer need the SDK, we should call the stop function to halt all ongoing operations within the library. These processes include video recording, GPS, IMU, analysis, and so on…&#x20;
+Whenever there is no longer a need for SDK, we should call the stop function to halt all ongoing operations within the library. These processes include video recording, GPS, IMU, analysis, and so on…&#x20;
 
 {% tabs %}
 {% tab title="Kotlin" %}
