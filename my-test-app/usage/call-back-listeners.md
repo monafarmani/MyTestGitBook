@@ -182,16 +182,16 @@ Gain these parameters with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onLinearAccelerationSensor={ accelerationSensorEvent->
+Gizo.app.gizoAnalysis.onLinearAccelerationSensor={ linearSensorEvent->
    
 }
 ```
 {% endtab %}
 {% endtabs %}
 
-The gizoAnalysis object is likely a component responsible for analyzing and processing data from the linear acceleration sensor. Assigning a lambda expression to the onLinearAccelerationSensor property lets the application respond to events triggered by the linear acceleration sensor..
+The gizoAnalysis object is likely a component responsible for analyzing and processing data from the linear acceleration sensor. Assigning a lambda expression to the onLinearAccelerationSensor property lets the application respond to events triggered by the linear acceleration sensor.
 
-The lambda expression uses accelerationSensorEvent as the input, which comes from the linear acceleration sensor. This event data typically includes information about the acceleration of the device along various axes, such as the X, Y, and Z axes.
+The lambda expression uses linearSensorEvent as the input, which comes from the linear acceleration sensor. This event data typically includes information about the acceleration of the device along various axes, such as the X, Y, and Z axes.
 
 Within this code block, you might find logic to handle the received acceleration data. For example, the application could analyze the acceleration values to detect specific motion patterns, such as shaking or sudden movements. The user interface could be updated to provide real-time feedback based on the acceleration values, such as displaying animations or triggering sound effects. Additionally, the acceleration data could be used to trigger specific behaviors or calculations within the application.
 
@@ -202,26 +202,32 @@ Within this code block, you might find logic to handle the received acceleration
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onAccelerationSensor= { sensorEvent->
+Gizo.app.gizoAnalysis.onAccelerationSensor= { accelerationSensorEvent->
   
 }
 ```
 {% endtab %}
 {% endtabs %}
 
+This code suggests that the `Gizo` namespace contains an object `gizoAnalysis` which has a property `onAccelerationSensor`. This property is being assigned a lambda expression or callback function.
 
+The lambda expression takes one parameter `accelerationSensorEvent`, which likely represents an event or data related to the acceleration sensor.
 
 
 
 {% tabs %}
 {% tab title="kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onAccelerationUncalibratedSensor= { sensorEvent->
+Gizo.app.gizoAnalysis.onAccelerationUncalibratedSensor= { uncalibratedSensorEvent->
   
 }
 ```
 {% endtab %}
 {% endtabs %}
+
+This code suggests that the `Gizo` namespace contains an object `gizoAnalysis` which has a property `onAccelerationUncalibratedSensor`. This property is being assigned a lambda expression or callback function.
+
+The lambda expression takes one parameter `uncalibratedSensorEvent`, which likely represents an event or data related to the uncalibrated acceleration sensor. The uncalibrated sensor data typically includes both raw and calibrated acceleration values.
 
 
 
@@ -273,6 +279,10 @@ Gizo.app.gizoAnalysis.onMagneticSensor={ magneticSensorEvent->
 {% endtab %}
 {% endtabs %}
 
+This code suggests that the `Gizo` namespace contains an object `gizoAnalysis` which has a property `onMagneticSensor`. This property is being assigned a lambda expression or callback function.
+
+The lambda expression takes one parameter `magneticSensorEvent`, which likely represents an event or data related to the magnetic sensor. The magnetic sensor data typically includes information about the magnetic field strength and direction.
+
 
 
 {% tabs %}
@@ -288,9 +298,9 @@ accelerationUncalibratedEvent, gyroscopeEvent, magneticEvent, gravityEvent ->
 
 The gizoAnalysis property is responsible for analyzing and processing data from various sensors, including the IMU sensor.
 
-The lambda expression assigned to the onImuSensor property takes three parameters: linearAccelerationEvent, gyroscopeEvent, and gravityEvent. These parameters represent the event data received from the linear acceleration sensor, gyroscope sensor, and gravity sensor, respectively.
+The lambda expression assigned to the onImuSensor property takes six parameters: accelerationEvent, linearAccelerationEvent, accelerationUncalibratedEvent, gyroscopeEvent, magneticEvent, and gravityEvent. These parameters represent the event data received from the acceleration sensor, linear acceleration sensor, acceleration uncalibrated sensor, gyroscope sensor, magnetic sensor, and gravity sensor, respectively.
 
-Within this code block, you might find logic to handle the received sensor data. For example, the application could combine linear acceleration, gyroscope, and gravity data to calculate various metrics related to the device’s motion, orientation, or position in three-dimensional space. This could be used to detect device tilt, rotation, or movements in different directions. The application could then respond accordingly, such as updating the user interface, triggering specific behaviors, or performing calculations based on the derived met.
+Within this code block, you might find logic to handle the received sensor data. For example, the application could combine different parameters' data to calculate various metrics related to the device’s motion, orientation, or position in three-dimensional space. This could be used to detect device tilt, rotation, or movements in different directions. The application could then respond accordingly, such as updating the user interface, triggering specific behaviors, or performing calculations based on the derived met.
 
 
 
