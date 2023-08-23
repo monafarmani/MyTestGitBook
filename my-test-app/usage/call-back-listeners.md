@@ -197,6 +197,34 @@ Within this code block, you might find logic to handle the received acceleration
 
 
 
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+Gizo.app.gizoAnalysis.onAccelerationSensor= { sensorEvent->
+  
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
+{% tabs %}
+{% tab title="kotlin" %}
+```kotlin
+Gizo.app.gizoAnalysis.onAccelerationUncalibratedSensor= { sensorEvent->
+  
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
@@ -230,6 +258,20 @@ The `gizoAnalysis` property is responsible for analyzing and processing data fro
 The lambda expression assigned to the `onGravitySensor` property takes a single parameter `gravitySensorEvent`, which represents the event data received from the gravity sensor.
 
 Within this code block, you might find logic to handle the received gravity sensor data. For example, the application could analyze the gravity data to determine the device's orientation or position relative to gravity. This could be used to detect tilts or changes in orientation, allowing the application to respond accordingly. The gravity sensor data could also be used to update the user interface, trigger specific behaviors, or perform calculations based on the device's orientation.
+
+
+
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+Gizo.app.gizoAnalysis.onMagneticSensor={ magneticSensorEvent->
+   
+}
+```
+{% endtab %}
+{% endtabs %}
 
 
 
