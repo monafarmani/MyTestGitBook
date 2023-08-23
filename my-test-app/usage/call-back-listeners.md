@@ -294,42 +294,6 @@ Within this code block, you might find logic to handle the received sensor data.
 
 
 
-
-
-{% tabs %}
-{% tab title="Kotlin" %}
-```
-Gizo.app.gizoAnalysis.onAccelerationSensor={ sensorEvent->
-   
-}
-```
-{% endtab %}
-{% endtabs %}
-
-
-
-{% tabs %}
-{% tab title="Kotlin" %}
-```
-Gizo.app.gizoAnalysis.onAccelerationUncalibratedSensor={ sensorEvent->
-   
-}
-```
-{% endtab %}
-{% endtabs %}
-
-
-
-{% tabs %}
-{% tab title="Kotlin" %}
-```
-Gizo.app.gizoAnalysis.onMagneticSensor={ magneticSensorEvent->
-   
-}
-```
-{% endtab %}
-{% endtabs %}
-
 ### <mark style="color:purple;">Video listener</mark>
 
 In mobile devices, the "video settings" typically refer to the configurable options and parameters that allow users to customize various aspects of video recording or playback. These settings can vary depending on the specific device, operating system, and camera capabilities.
