@@ -22,14 +22,14 @@ Welcome to Gizo SDK! This guide will help you get started with integrating and u
 
 ## Introduction
 
-Gizo SDK is a powerful and versatile library that provides a great analysis of the way people drive their cars. Gizo SDK allows precise control over driving, monitoring intelligence, and issuing warnings for risk of accidents…
+Gizo SDK is a powerful and versatile library that provides a great analysis of the way people drive their cars. Gizo SDK allows precise control over driving, monitoring intelligence, and issuing warnings for risk of accidents & other possible driving dangers.
 
 
 
 ## prerequisites
 
 * Install the latest version of the Android Studio.
-* Install Mapbox SDK for Android and get access token
+* Install Mapbox SDK for Android and get an access token
 
 Before you begin using Gizo SDK, make sure you have the following prerequisites installed and set up in your development environment:
 
