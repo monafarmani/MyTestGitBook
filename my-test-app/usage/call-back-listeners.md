@@ -59,7 +59,7 @@ In our SDK, we require accurate and efficient detection and localization of obje
 
 When Analysis gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="203">Value-Parameters</th><th width="145">Type</th><th>Description</th></tr></thead><tbody><tr><td>preview</td><td>Bitmap?</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>ttc</td><td>Float?</td><td>Time to collision.</td></tr><tr><td>ttcStatus</td><td>TTCAlert</td><td>It returns state <strong>collision</strong>, <strong>tailgating</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>frontObject</td><td>String</td><td>The distance to the front car.</td></tr><tr><td>speed</td><td>Float?</td><td>The speed of the car the user is driving in.</td></tr><tr><td>gpsTime</td><td>String</td><td>The current time.</td></tr></tbody></table>
+<table><thead><tr><th width="203">Value-Parameters</th><th width="145">Type</th><th>Description</th></tr></thead><tbody><tr><td>preview</td><td>Bitmap?</td><td>It outputs an image that includes object detection &#x26; road lines.</td></tr><tr><td>ttc</td><td>Float?</td><td>Time to collision.</td></tr><tr><td>ttcStatus</td><td>TTCAlert</td><td>It returns state <strong>collision</strong>, <strong>tailgating</strong>, and <strong>None</strong> based on the calculated formula in the TTC.</td></tr><tr><td>frontObject</td><td>String</td><td>The distance to the front object.</td></tr><tr><td>speed</td><td>Float?</td><td>The speed of the car the user is driving in.</td></tr><tr><td>gpsTime</td><td>String</td><td>The current time.</td></tr></tbody></table>
 
 
 
@@ -173,7 +173,7 @@ As previously mentioned, the IMU setting in Gizo SDK  allows developers to utili
 
 When IMU gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="238">Value-parameters</th><th width="152">Type</th><th>Description</th></tr></thead><tbody><tr><td>linearSensorEvent</td><td>SensorEvent?</td><td>includes information such as Linear Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>accelerationSensorEvent</td><td>SensorEvent?</td><td>includes information such as Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>uncalibratedSensorEvent</td><td></td><td>includes information such as Uncalibrated Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gyroscopeSensorEvent</td><td>SensorEvent?</td><td>includes information such as Angular velocity values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gravitySensorEvent</td><td>SensorEvent?</td><td>includes information such as Gravity values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>magneticSensorEvent</td><td>SensorEvent?</td><td>includes information such as Magnetic field values, timestamps &#x26; Accuracy, or precision.</td></tr></tbody></table>
+<table><thead><tr><th width="238">Value-parameters</th><th width="152">Type</th><th>Description</th></tr></thead><tbody><tr><td>linearSensorEvent</td><td>SensorEvent?</td><td>includes information such as Linear Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>accelerationSensorEvent</td><td>SensorEvent?</td><td>includes information such as Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>uncalibratedSensorEvent</td><td>SensorEvent?</td><td>includes information such as Uncalibrated Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gyroscopeSensorEvent</td><td>SensorEvent?</td><td>includes information such as Angular velocity values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gravitySensorEvent</td><td>SensorEvent?</td><td>includes information such as Gravity values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>magneticSensorEvent</td><td>SensorEvent?</td><td>includes information such as Magnetic field values, timestamps &#x26; Accuracy, or precision.</td></tr></tbody></table>
 
 
 
@@ -265,8 +265,6 @@ Within this code block, you might find logic to handle the received gravity sens
 
 
 
-
-
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
@@ -286,7 +284,7 @@ The lambda expression takes one parameter `magneticSensorEvent`, which likely re
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onImuSensor = { accelerationEvent,linearAccelerationEvent,
+Gizo.app.gizoAnalysis.onImuSensor = { accelerationEvent, linearAccelerationEvent,
 accelerationUncalibratedEvent, gyroscopeEvent, magneticEvent, gravityEvent ->
 
 }
@@ -296,7 +294,7 @@ accelerationUncalibratedEvent, gyroscopeEvent, magneticEvent, gravityEvent ->
 
 The gizoAnalysis property is responsible for analyzing and processing data from various sensors, including the IMU sensor.
 
-The lambda expression assigned to the onImuSensor property takes six parameters: accelerationEvent, linearAccelerationEvent, accelerationUncalibratedEvent, gyroscopeEvent, magneticEvent, and gravityEvent. These parameters represent the event data received from the acceleration sensor, linear acceleration sensor, acceleration uncalibrated sensor, gyroscope sensor, magnetic sensor, and gravity sensor, respectively.
+The lambda expression assigned to the onImuSensor property takes six parameters: accelerationEvent, linearAccelerationEvent, accelerationUncalibratedEvent, gyroscopeEvent, magneticEvent, and gravityEvent. These parameters represent the event data received from the acceleration sensor, linear acceleration sensor, uncalibrated acceleration sensor, gyroscope sensor, magnetic sensor, and gravity sensor, respectively.
 
 Within this code block, you might find logic to handle the received sensor data. For example, the application could combine different parameters' data to calculate various metrics related to the device’s motion, orientation, or position in three-dimensional space. This could be used to detect device tilt, rotation, or movements in different directions. The application could then respond accordingly, such as updating the user interface, triggering specific behaviors, or performing calculations based on the derived met.
 
@@ -399,7 +397,7 @@ Gain the parameter with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.checkGravityAlignment { isAlign ->
+Gizo.app.gizoAnalysis.onGravityAlignmentChange{ isAlign ->
 }
 ```
 {% endtab %}
