@@ -217,7 +217,7 @@ Within this code block, you might find logic to handle the received gyroscope da
 
 {% tabs %}
 {% tab title="Kotlin" %}
-```
+```kotlin
 Gizo.app.gizoAnalysis.onGravitySensor={ gravitySensorEvent->
    
 }
@@ -235,8 +235,9 @@ Within this code block, you might find logic to handle the received gravity sens
 
 {% tabs %}
 {% tab title="Kotlin" %}
-```
-Gizo.app.gizoAnalysis.onImuSensor = { linearAccelerationEvent, gyroscopeEvent, gravityEvent ->
+```kotlin
+Gizo.app.gizoAnalysis.onImuSensor = { accelerationEvent,linearAccelerationEvent,
+accelerationUncalibratedEvent, gyroscopeEvent, magneticEvent, gravityEvent ->
 
 }
 ```
@@ -250,6 +251,42 @@ The lambda expression assigned to the onImuSensor property takes three parameter
 Within this code block, you might find logic to handle the received sensor data. For example, the application could combine linear acceleration, gyroscope, and gravity data to calculate various metrics related to the device’s motion, orientation, or position in three-dimensional space. This could be used to detect device tilt, rotation, or movements in different directions. The application could then respond accordingly, such as updating the user interface, triggering specific behaviors, or performing calculations based on the derived met.
 
 
+
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```
+Gizo.app.gizoAnalysis.onAccelerationSensor={ sensorEvent->
+   
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```
+Gizo.app.gizoAnalysis.onAccelerationUncalibratedSensor={ sensorEvent->
+   
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```
+Gizo.app.gizoAnalysis.onMagneticSensor={ magneticSensorEvent->
+   
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ### <mark style="color:purple;">Video listener</mark>
 
