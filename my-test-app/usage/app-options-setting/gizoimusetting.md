@@ -72,6 +72,7 @@ This code suggests that the `GizoAppOptions` class specifies various configurati
 * **Linear acceleration sensor:** It is part of the device's sensor array and is used to measure the linear acceleration of the device, excluding the influence of gravity.
 * **Magnetic sensor:** It is a sensor that measures the strength and direction of the magnetic field in its vicinity. It is typically used to detect the presence of a magnetic field and determine its orientation.
 * **Gyroscope sensor:** It is part of the device's sensor array and is used to measure the device's angular velocity or rotational motion. The gyroscope provides information about the device's orientation and rotation rate.
+* **Gravity sensor:** It refers to an accelerometer sensor that provides measurements of both linear acceleration and the force of gravity acting on the device. It combines the data from the accelerometer sensor with information from other sensors such as the gyroscope and magnetometer to estimate the device's orientation in relation to the Earth's gravitational field.
 
 
 
