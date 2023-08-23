@@ -173,7 +173,7 @@ As previously mentioned, the IMU setting in Gizo SDK  allows developers to utili
 
 When IMU gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="238">Value-parameters</th><th width="152">Type</th><th>Description</th></tr></thead><tbody><tr><td>accelerationSensorEvent</td><td>SensorEvent?</td><td>includes information such as Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gyroscopeSensorEvent</td><td>SensorEvent?</td><td>includes information such as Angular velocity values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gravitySensorEvent</td><td>SensorEvent?</td><td>includes information such as Gravity values, timestamps &#x26; Accuracy, or precision.</td></tr></tbody></table>
+<table><thead><tr><th width="238">Value-parameters</th><th width="152">Type</th><th>Description</th></tr></thead><tbody><tr><td>linearSensorEvent</td><td>SensorEvent?</td><td>includes information such as Linear Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>accelerationSensorEvent</td><td>SensorEvent?</td><td>includes information such as Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>uncalibratedSensorEvent</td><td></td><td>includes information such as Uncalibrated Acceleration values, Timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gyroscopeSensorEvent</td><td>SensorEvent?</td><td>includes information such as Angular velocity values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>gravitySensorEvent</td><td>SensorEvent?</td><td>includes information such as Gravity values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td>magneticSensorEvent</td><td>SensorEvent?</td><td>includes information such as Magnetic field values, timestamps &#x26; Accuracy, or precision.</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
 
 
@@ -194,8 +194,6 @@ The gizoAnalysis object is likely a component responsible for analyzing and proc
 The lambda expression uses linearSensorEvent as the input, which comes from the linear acceleration sensor. This event data typically includes information about the acceleration of the device along various axes, such as the X, Y, and Z axes.
 
 Within this code block, you might find logic to handle the received acceleration data. For example, the application could analyze the acceleration values to detect specific motion patterns, such as shaking or sudden movements. The user interface could be updated to provide real-time feedback based on the acceleration values, such as displaying animations or triggering sound effects. Additionally, the acceleration data could be used to trigger specific behaviors or calculations within the application.
-
-
 
 
 
