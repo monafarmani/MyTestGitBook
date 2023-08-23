@@ -89,7 +89,7 @@ class Application : Application() {
 {% endtab %}
 {% endtabs %}
 
-The `GizoAnalysisSettings` builder sets the analysis-related properties such as:
+The `GizoAnalysisSettings` builder sets the analysis-related properties such as
 
 * <mark style="color:blue;">`allowAnalysis`</mark>`(true)`: Enabling the analysis feature.
 * <mark style="color:blue;">`modelName`</mark>`("arti_sense.data")`: Providing the name of the model to be used for analysis.
@@ -115,7 +115,7 @@ Finally, the `build()` method is called on the `GizoAppOptions.Builder()` instan
 
 &#x20;Here are the available options that can be set in analysisSetting in the Application class:
 
-<table><thead><tr><th width="240.33333333333331">Options</th><th width="207">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>allowAnalysis(Boolean)</td><td>false</td><td><p>To allow to use it or not.</p><p> </p></td></tr><tr><td>modelName(String)</td><td>""</td><td>A name that corresponds to this model's name.</td></tr><tr><td><p>loadDelegate</p><p>(AnalysisDelegateType)</p></td><td><p>AnalysisDelegateType</p><p>.Auto</p></td><td>To specify the processing method on the model e.g. CPU, GPU, NNAPI</td></tr><tr><td><p>collisionThreshold</p><p>(Float or ThresholdType)</p></td><td>0.5f</td><td>The number that is used in the TTC calculations collision.</td></tr><tr><td><p>tailgatingThreshold</p><p>(Float or ThresholdType)</p></td><td>1.0f</td><td>The number that is used in the TTC calculations tailgating.</td></tr><tr><td>saveTtcCsvFile(Boolean)</td><td>false</td><td>Should the file of TTC be saved in CSV format or not.</td></tr><tr><td><p>ttcFileLocation</p><p>(GizoFileLocationPath)</p></td><td><p>GizoFileLocationPath</p><p>.CACHE</p></td><td>Where the file should be saved, in the cache or download.</td></tr><tr><td><p>ttcDataTimerPeriod</p><p>(Long)</p></td><td>30L</td><td>To specify in what period of time interval the data should be saved and sent.</td></tr><tr><td><p>ttcDataTimerInitialDelay</p><p>(Long)</p></td><td>0L</td><td>To specify the initial amount of timer.</td></tr><tr><td><p>saveMatrixFile</p><p>(Boolean)</p></td><td>false</td><td>Should it save the matrix file that is created based on the camera resolution or not?</td></tr><tr><td><p>matrixFileLocation</p><p>(GizoFileLocationPath)</p></td><td><p>GizoFileLocationPath</p><p>.CACHE</p></td><td>Where to save matrix file.</td></tr></tbody></table>
+<table><thead><tr><th width="240.33333333333331">Options</th><th width="207">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>allowAnalysis(Boolean)</td><td>false</td><td><p>To allow to use it or not.</p><p> </p></td></tr><tr><td>modelName(String)</td><td>""</td><td>A name that corresponds to this model's name.</td></tr><tr><td><p>loadDelegate</p><p>(AnalysisDelegateType)</p></td><td><p>AnalysisDelegateType</p><p>.Auto</p></td><td>To specify the processing method on the model e.g. CPU, GPU, NNAPI.</td></tr><tr><td><p>collisionThreshold</p><p>(Float or ThresholdType)</p></td><td>0.5f</td><td>The number that is used in the TTC calculations collision.</td></tr><tr><td><p>tailgatingThreshold</p><p>(Float or ThresholdType)</p></td><td>1.0f</td><td>The number that is used in the TTC calculations tailgating.</td></tr><tr><td>saveTtcCsvFile(Boolean)</td><td>false</td><td>Should the file of TTC be saved in CSV format or not.</td></tr><tr><td><p>ttcFileLocation</p><p>(GizoFileLocationPath)</p></td><td><p>GizoFileLocationPath</p><p>.CACHE</p></td><td>Where the file should be saved, in the cache or download.</td></tr><tr><td><p>ttcDataTimerPeriod</p><p>(Long)</p></td><td>30L</td><td>To specify in what period of time interval the data should be saved and sent.</td></tr><tr><td><p>ttcDataTimerInitialDelay</p><p>(Long)</p></td><td>0L</td><td>To specify the initial amount of timer.</td></tr><tr><td><p>saveMatrixFile</p><p>(Boolean)</p></td><td>false</td><td>Should it save the matrix file that is created based on the camera resolution or not?</td></tr><tr><td><p>matrixFileLocation</p><p>(GizoFileLocationPath)</p></td><td><p>GizoFileLocationPath</p><p>.CACHE</p></td><td>Where to save matrix file.</td></tr></tbody></table>
 
 
 
@@ -123,7 +123,7 @@ Finally, the `build()` method is called on the `GizoAppOptions.Builder()` instan
 
 Loading a model in Android Studio allows the application to utilize the trained model's intelligence and perform complex tasks that go beyond traditional programming capabilities. By incorporating machine learning models into Android applications, developers can provide intelligent, data-driven features and functionalities to their users.
 
-Add these lines of code in Application class to load the model and receive the listener for different status of loading, such as LOADING, LOADED, FAILED, NOT\_LOADED
+Add these lines of code in the Application class to load the model and receive the listener for different stats of loading, such as LOADING, LOADED, FAILED, NOT\_LOADED.
 
 {% tabs %}
 {% tab title="Kotlin" %}
