@@ -26,6 +26,20 @@ Callback listeners allow you to register a listener object that will be notified
 
 
 
+### <mark style="color:purple;">Load Model listener</mark>
+
+Add these lines of code in the Application class to load the model and receive the listener for different stats of loading,  such as LOADING, LOADED, FAILED, NOT\_LOADED.
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+  Gizo.app.setLoadModelObserver { status ->
+            
+        }
+```
+{% endtab %}
+{% endtabs %}
+
 ### <mark style="color:purple;">Session Status listener</mark>
 
 As previously stated, based on the settings we have applied, some files related to video, analysis, GPS, and IMU are saved.

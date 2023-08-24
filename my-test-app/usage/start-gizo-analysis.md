@@ -55,8 +55,6 @@ Loading a model allows the application to utilize the trained model's intelligen
 
 Add these lines of code in the Application class to load the model and receive the listener for different stats of loading, but the state of **LOADED** is essential for using Gizo Analysis completely.
 
-&#x20;such as LOADING, LOADED, FAILED, NOT\_LOADED.
-
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
