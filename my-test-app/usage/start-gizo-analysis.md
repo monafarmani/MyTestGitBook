@@ -26,11 +26,11 @@ In this library, the aim is to analyze driving behavior and compute a series of 
 
 There are some steps that must be taken to use Gizo Analysis
 
-### <mark style="color:purple;">Step 1: Setting</mark>
+### <mark style="color:blue;">Step 1: Setting</mark>
 
+First, there is a need to customize some behavior and functionality of our library by implementing some lines of code in [Gizo Analysis Setting](app-options-setting/gizoanalysissettings.md).
 
-
-### <mark style="color:purple;">Step 1: Adding model</mark>
+### <mark style="color:blue;">Step 2: Adding model</mark>
 
 The model should be added to the assets of the app module.
 
