@@ -40,7 +40,7 @@ Authentication Bearer Token
 
 <mark style="color:red;">**Note:**</mark> email can be an empty text. If not, it must be sent in the proper format of email.
 
-**birthDate:** The `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-dd", which indicates the date and time in ISO 8601 format. e.g. **"1999-08-02"**
+**birthDate:** the `birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-dd", which indicates the date and time in ISO 8601 format. e.g. **"1999-08-02"**
 
 **gender:** gender of the user which is Int. Here, 0 is used for females, 1 for males, and 2 for unspecified, e.g. **1**
 
