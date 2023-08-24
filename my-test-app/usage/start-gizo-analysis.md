@@ -22,8 +22,6 @@ layout:
 
 In this library, the aim is to analyze driving behavior and compute a series of data by using artificial intelligence to reduce the risk of accidents and other driving problems. As a result, the possibility of smarter and safer driving is provided to users.
 
-
-
 There are some steps that must be taken to use Gizo Analysis
 
 ### <mark style="color:blue;">Step 1: Setting</mark>
@@ -55,7 +53,9 @@ Download the model from this link:&#x20;
 
 Loading a model allows the application to utilize the trained model's intelligence and perform complex tasks that go beyond traditional programming capabilities. By incorporating machine learning models into Android applications, developers can provide intelligent, data-driven features and functionalities to their users.
 
-Add these lines of code in the Application class to load the model and receive the listener for different stats of loading, such as LOADING, LOADED, FAILED, NOT\_LOADED.
+Add these lines of code in the Application class to load the model and receive the listener for different stats of loading, but the state of **LOADED** is essential for using Gizo Analysis completely.
+
+&#x20;such as LOADING, LOADED, FAILED, NOT\_LOADED.
 
 {% tabs %}
 {% tab title="Kotlin" %}
