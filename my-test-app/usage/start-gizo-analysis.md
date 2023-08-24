@@ -24,6 +24,65 @@ In this library, the aim is to analyze driving behavior and compute a series of 
 
 
 
+
+
+### <mark style="color:purple;">Step 1: Adding model</mark>
+
+The model should be added to the assets of the app module.
+
+Download the model from this link:&#x20;
+
+
+
+### <mark style="color:purple;">Step 3: Loading model</mark>
+
+Loading a model allows the application to utilize the trained model's intelligence and perform complex tasks that go beyond traditional programming capabilities. By incorporating machine learning models into Android applications, developers can provide intelligent, data-driven features and functionalities to their users.
+
+Add these lines of code in the Application class to load the model and receive the listener for different stats of loading, such as LOADING, LOADED, FAILED, NOT\_LOADED.
+
+{% tabs %}
+{% tab title="Kotlin" %}
+```kotlin
+class Application : Application() {
+    override fun onCreate() {
+        super.onCreate()
+
+        Gizo.initialize(
+            this,
+            GizoApp.GizoAppOptions.Builder().build()
+            .analysisSetting(GizoAnalysisSettings.Builder()
+                    .allowAnalysis(true)
+                    .modelName("arti_sense.data")
+                    .loadDelegate(AnalysisDelegateType.Auto)
+                    .collisionThreshold(0.5f)
+                    .tailgatingThreshold(1.0f)
+                    .saveTtcCsvFile(true)
+                    .ttcFileLocation(FileLocationPath.CACHE)
+                    .saveDataTimerPeriod(30L)
+                    .saveDataTimerInitialDelay(0L)
+                    .saveMatrixFile(true)
+                    .matrixFileLocation(FileLocationPath.CACHE)
+                    .build())
+        )
+        Gizo.app.setLoadModelObserver { status ->
+            
+        }
+
+        Gizo.app.loadModel()
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+<mark style="color:red;">**Note:**</mark> After these settings are done, a series of callbacks are triggered so that the corresponding output can be observed.
+
+<mark style="color:red;">**Note:**</mark> To enable GizoAnalysisSettings, it is essential to activate [GPS Setting](app-options-setting/gizogpssetting.md).&#x20;
+
+
+
+
+
 ### <mark style="color:purple;">Start Gizo Analysis</mark>
 
 To start using the SDK, we need to start Gizo Analysis. For this reason, we need a lifecycle like an activity or a fragment and implement some lines of code in the Activity.
