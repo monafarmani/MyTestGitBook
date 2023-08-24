@@ -34,15 +34,15 @@ Authentication Bearer Token
 
 <mark style="color:orange;">**Request Body Parameters**</mark>
 
-**firstName :** the `firstName` property represents the person's first name of an emergency contact. It is expected to be a string value, e.g. **"Sarah"**
+**firstName:** the `firstName` property represents the person's first name of an emergency contact. It is expected to be a string value, e.g. **"Sarah"**
 
-**lastName :** the `lastName` property represents the person's last name of an emergency contact. It is also expected to be a string value, e.g. **"Williams"**
+**lastName:** the `lastName` property represents the person's last name of an emergency contact. It is also expected to be a string value, e.g. **"Williams"**
 
-**phoneNumber :** the `phoneNumber` property represents the person's phone number of an emergency contact. It is expected to be a string value, e.g. **"+49\_01734807508"**
+**phoneNumber:** the `phoneNumber` property represents the person's phone number of an emergency contact. It is expected to be a string value, e.g. **"+49\_01734807508"**
 
-**email :** the `email` property represents the person's email address of an emergency contact. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
+**email:** the `email` property represents the person's email address of an emergency contact. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
 
-<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
+<mark style="color:red;">**Note:**</mark> email can be an empty text. if not, it must be sent in the proper format of email.
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -66,15 +66,15 @@ Authentication Bearer Token
 
 The provided endpoint response contains several properties including
 
-**firstName :** the `firstName` property represents the person's first name. It is expected to be a string value, e.g. **"Sarah"**
+**firstName:** the `firstName` property represents the person's first name. It is expected to be a string value, e.g. **"Sarah"**
 
-**lastName :** the `lastName` property represents the person's last name. It is also expected to be a string value, e.g. **"Williams"**
+**lastName:** the `lastName` property represents the person's last name. It is also expected to be a string value, e.g. **"Williams"**
 
-**phoneNumber :** the `phoneNumber` property represents the person's phone number. It is expected to be a string value, e.g. **"+49\_01734807508"**
+**phoneNumber:** the `phoneNumber` property represents the person's phone number. It is expected to be a string value, e.g. **"+49\_01734807508"**
 
-**email :** the `email` property represents the person's email address. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
+**email:** the `email` property represents the person's email address. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
 
-<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
+<mark style="color:red;">**Note:**</mark> email can be an empty text. if not, it must be sent in the proper format of email.
 
 
 
