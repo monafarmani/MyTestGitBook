@@ -32,7 +32,7 @@ Loading a model allows the application to utilize the trained model's intelligen
 
 When the Load Model gets activated, this value parameter can be checked out:
 
-<table><thead><tr><th width="211">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>status</td><td>Boolean</td><td>To check whether the camera is recording or not.</td></tr></tbody></table>
+<table><thead><tr><th width="193">Value-parameters</th><th width="172">Type</th><th>Description</th></tr></thead><tbody><tr><td>status</td><td>InterpreterStatus</td><td>To check different stats of loading,  such as LOADING, LOADED, FAILED, NOT_LOADED.</td></tr></tbody></table>
 
 
 
@@ -48,9 +48,11 @@ Add these lines of code in the Application class to load the model and receive t
 {% endtab %}
 {% endtabs %}
 
-an observer is a design pattern that allows an object (the observer) to monitor changes or events in another object (the subject). In this case, it appears that the `setLoadModelObserver` method is used to set an observer function or callback for monitoring the status of a model loading process in the Gizo library.
+An observer is a design pattern that allows an object (the observer) to monitor changes or events in another object (the subject). In this case, it appears that the `setLoadModelObserver` method is used to set an observer function or callback for monitoring the status of a model loading process in the Gizo library.
 
 The code snippet you provided shows an anonymous function being passed as the argument to `setLoadModelObserver`. The function takes a single parameter named `status`, which likely represents the current status of the model loading process.
+
+
 
 ### <mark style="color:purple;">Session Status listener</mark>
 
