@@ -61,28 +61,6 @@ Add these lines of code in the Application class to load the model and receive t
 class Application : Application() {
     override fun onCreate() {
         super.onCreate()
-
-        Gizo.initialize(
-            this,
-            GizoApp.GizoAppOptions.Builder().build()
-            .analysisSetting(GizoAnalysisSettings.Builder()
-                    .allowAnalysis(true)
-                    .modelName("arti_sense.data")
-                    .loadDelegate(AnalysisDelegateType.Auto)
-                    .collisionThreshold(0.5f)
-                    .tailgatingThreshold(1.0f)
-                    .saveTtcCsvFile(true)
-                    .ttcFileLocation(FileLocationPath.CACHE)
-                    .saveDataTimerPeriod(30L)
-                    .saveDataTimerInitialDelay(0L)
-                    .saveMatrixFile(true)
-                    .matrixFileLocation(FileLocationPath.CACHE)
-                    .build())
-        )
-        Gizo.app.setLoadModelObserver { status ->
-            
-        }
-
         Gizo.app.loadModel()
     }
 }
@@ -91,10 +69,6 @@ class Application : Application() {
 {% endtabs %}
 
 <mark style="color:red;">**Note:**</mark> After these settings are done, a series of callbacks are triggered so that the corresponding output can be observed.
-
-<mark style="color:red;">**Note:**</mark> To enable GizoAnalysisSettings, it is essential to activate [GPS Setting](app-options-setting/gizogpssetting.md).&#x20;
-
-
 
 
 

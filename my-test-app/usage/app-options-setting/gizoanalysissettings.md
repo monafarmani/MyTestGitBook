@@ -20,16 +20,6 @@ layout:
 
 ## Overview
 
-
-
-
-
-###
-
-
-
-### <mark style="color:purple;">Step 2: Add Gizo Analysis Settings</mark>
-
 Gizo Analysis setting is used to customize some behavior and functionality of our library including specifying the processing method on the model, the distance from the windshield to the hood of the car, the initial amount of timer, time to collision number (TTC), where to save the file, what period interval the data should be saved or sent, and where to save matrix file.
 
 To do this task, add these lines of code in the Application class to set the Gizo Analysis Settings:
@@ -75,6 +65,10 @@ class Application : Application() {
 ```
 {% endtab %}
 {% endtabs %}
+
+<mark style="color:red;">**Note:**</mark> To enable GizoAnalysisSettings, it is essential to activate [GPS Setting](gizogpssetting.md).&#x20;
+
+
 
 The `GizoAnalysisSettings` builder sets the analysis-related properties such as
 
