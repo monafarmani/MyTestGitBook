@@ -140,7 +140,7 @@ The provided endpoint response contains several properties including
 
 **carName:** the `carName` property represents the name or identifier of the car. It is expected to be a string value, e.g. **"Benz"**.
 
-**carModel :** this property represents the model of the car. It is expected to be a string value, e.g. **"C200"**.
+**carModel:** this property represents the model of the car. It is expected to be a string value, e.g. **"C200"**.
 
 **license:** the `license` property represents the license plate number or identifier of the car. It is expected to be a string value, e.g. **"RAKL 8136"**.
 
