@@ -28,6 +28,14 @@ Callback listeners allow you to register a listener object that will be notified
 
 ### <mark style="color:purple;">Load Model listener</mark>
 
+Loading a model allows the application to utilize the trained model's intelligence and perform complex tasks that go beyond traditional programming capabilities. By incorporating machine learning models into Android applications, developers can provide intelligent, data-driven features and functionalities to their users. When the model is loaded a listener is triggered to check the stats of loading the model.
+
+When the Load Model gets activated, this value parameter can be checked out:
+
+<table><thead><tr><th width="211">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>status</td><td>Boolean</td><td>To check whether the camera is recording or not.</td></tr></tbody></table>
+
+
+
 Add these lines of code in the Application class to load the model and receive the listener for different stats of loading,  such as LOADING, LOADED, FAILED, NOT\_LOADED.
 
 {% tabs %}
@@ -40,13 +48,17 @@ Add these lines of code in the Application class to load the model and receive t
 {% endtab %}
 {% endtabs %}
 
+an observer is a design pattern that allows an object (the observer) to monitor changes or events in another object (the subject). In this case, it appears that the `setLoadModelObserver` method is used to set an observer function or callback for monitoring the status of a model loading process in the Gizo library.
+
+The code snippet you provided shows an anonymous function being passed as the argument to `setLoadModelObserver`. The function takes a single parameter named `status`, which likely represents the current status of the model loading process.
+
 ### <mark style="color:purple;">Session Status listener</mark>
 
 As previously stated, based on the settings we have applied, some files related to video, analysis, GPS, and IMU are saved.
 
 When the Start Session gets activated, these value parameters can be checked out:
 
-<table><thead><tr><th width="213">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not.</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not.</td></tr></tbody></table>
+<table><thead><tr><th width="211">Value-parameters</th><th width="127">Type</th><th>Description</th></tr></thead><tbody><tr><td>inProgress</td><td>Boolean</td><td>To check whether the camera is recording or not.</td></tr><tr><td>previewAttached</td><td>Boolean</td><td>To check whether the preview is attached or not.</td></tr></tbody></table>
 
 
 
