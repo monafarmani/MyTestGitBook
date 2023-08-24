@@ -34,7 +34,7 @@ Authentication Bearer Token
 
 The provided endpoint response contains a property which is : &#x20;
 
-**tripId :** The tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**
+**tripId:** The tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**
 
 
 
@@ -52,19 +52,19 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**ItemId :**
+**ItemId:**
 
-**chunkCount :**
+**chunkCount:**
 
-**FileType :**
+**FileType:**
 
-**FileExtension :**
+**FileExtension:**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a property which is :&#x20;
 
-**fileManagerId :** The fileManagerId property represents an identifier or reference to a file manager. It is expected to be a numeric value.
+**fileManagerId:** The fileManagerId property represents an identifier or reference to a file manager. It is expected to be a numeric value.
 
 
 
@@ -82,23 +82,23 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**FileId :**
+**FileId:**
 
-**FileChunkId :**
+**FileChunkId:**
 
-**FileType :**
+**FileType:**
 
-**FileChunk :**
+**FileChunk:**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of car model properties
 
-**id :** The id property represents an identifier or reference associated with the process. In this case, the value is 0, indicating that either an ID has not been assigned yet or the process has not been initiated.
+**id:** The id property represents an identifier or reference associated with the process. In this case, the value is 0, indicating that either an ID has not been assigned yet or the process has not been initiated.
 
-**mergeStatus :** The mergeStatus property indicates the status of a merge operation. When set to true, it suggests that the merge process has been successfully completed.
+**mergeStatus:** The mergeStatus property indicates the status of a merge operation. When set to true, it suggests that the merge process has been successfully completed.
 
-**uploadPercent :** The uploadPercent property represents the progress or percentage of an upload process. The value of 0 indicates that the upload process has not yet started or is in its initial stage.
+**uploadPercent:** The uploadPercent property represents the progress or percentage of an upload process. The value of 0 indicates that the upload process has not yet started or is in its initial stage.
 
 
 
@@ -116,7 +116,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**ItemId :**
+**ItemId:**
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -136,23 +136,23 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**TripId :**
+**TripId:**
 
-**TripFileType :**
+**TripFileType:**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of car model properties
 
-**fileChunkIds :** The fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process. In this case, there is one element in the array with a value of 0, indicating that there is one file chunk associated with the upload.
+**fileChunkIds:** The fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process. In this case, there is one element in the array with a value of 0, indicating that there is one file chunk associated with the upload.
 
-**chunkSize :** The chunkSize property represents the size of each file chunk in bytes. The value of 0 in this case suggests that either the chunk size has not been determined or is not applicable for the specific upload process.
+**chunkSize:** The chunkSize property represents the size of each file chunk in bytes. The value of 0 in this case suggests that either the chunk size has not been determined or is not applicable for the specific upload process.
 
-**fileId :** The fileId property is the identifier or reference for the uploaded file. The value of 0 indicates that either an ID has not been assigned yet or the file has not been uploaded.
+**fileId:** The fileId property is the identifier or reference for the uploaded file. The value of 0 indicates that either an ID has not been assigned yet or the file has not been uploaded.
 
-**isUploaded :** The isUploaded property is a boolean value that indicates whether the file has been successfully uploaded. In this case, the value is true, suggesting that the upload process has been completed successfully.
+**isUploaded:** The isUploaded property is a boolean value that indicates whether the file has been successfully uploaded. In this case, the value is true, suggesting that the upload process has been completed successfully.
 
-**uploadPercent :** The uploadPercent property represents the progress or percentage of the upload process. The value of 0 indicates that the upload process has not yet started or is in its initial stage.
+**uploadPercent:** The uploadPercent property represents the progress or percentage of the upload process. The value of 0 indicates that the upload process has not yet started or is in its initial stage.
 
 ### <mark style="color:green;">Get Files Of Completed Status</mark>
 
@@ -168,15 +168,15 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**tripId :**
+**tripId:**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of car model properties
 
-**isCompleted :** The isCompleted property is a boolean value that indicates whether the process or operation has been completed. In this case, the value is true, suggesting that the process has been successfully completed.
+**isCompleted:** The isCompleted property is a boolean value that indicates whether the process or operation has been completed. In this case, the value is true, suggesting that the process has been successfully completed.
 
-**message :** The message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
+**message:** The message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
 
 
 
@@ -194,41 +194,41 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Query Parameters</mark>
 
-**keyword :**&#x20;
+**keyword:**&#x20;
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of car model properties
 
-**id :** This property likely represents the ID of the object or item. It is expected to be a numeric value (`0` in this case).
+**id:** This property likely represents the ID of the object or item. It is expected to be a numeric value (`0` in this case).
 
-**score :** The `score` property likely represents a score or rating associated with the object. It is expected to be a numeric value (`0` in this case).
+**score:** The `score` property likely represents a score or rating associated with the object. It is expected to be a numeric value (`0` in this case).
 
-**isCompleted :** The `isCompleted` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the object or associated task is completed.
+**isCompleted:** The `isCompleted` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the object or associated task is completed.
 
-**createDate :** This property represents the date and time when the object or item was created. In the provided response, it is formatted as "2023-08-15T11:12:36.799Z", indicating the date and time in ISO 8601 format with UTC (Coordinated Universal Time).
+**createDate:** This property represents the date and time when the object or item was created. In the provided response, it is formatted as "2023-08-15T11:12:36.799Z", indicating the date and time in ISO 8601 format with UTC (Coordinated Universal Time).
 
-**originAddress :** The `originAddress` property likely represents the address of the origin location. It is expected to be a string value.
+**originAddress:** The `originAddress` property likely represents the address of the origin location. It is expected to be a string value.
 
-**originPostalCode :** This property represents the postal code associated with the origin location. It is expected to be a string value.
+**originPostalCode:** This property represents the postal code associated with the origin location. It is expected to be a string value.
 
-**originLocality :** The `originLocality` property represents the locality or city of the origin location. It is expected to be a string value.
+**originLocality:** The `originLocality` property represents the locality or city of the origin location. It is expected to be a string value.
 
-**originplace :** This property likely represents the name or identifier of the origin place. It is expected to be a string value.
+**originplace:** This property likely represents the name or identifier of the origin place. It is expected to be a string value.
 
-**originRegion :** The `originRegion` property represents the region or state of the origin location. It is expected to be a string value.
+**originRegion:** The `originRegion` property represents the region or state of the origin location. It is expected to be a string value.
 
-**destinationaddress :** The `destinationAddress` property represents the address of the destination location. It is expected to be a string value.
+**destinationaddress:** The `destinationAddress` property represents the address of the destination location. It is expected to be a string value.
 
-**destinationPostalCode :** This property represents the postal code associated with the destination location. It is expected to be a string value.
+**destinationPostalCode:** This property represents the postal code associated with the destination location. It is expected to be a string value.
 
-**destinationLocality :** The `destinationLocality` property represents the locality or city of the destination location. It is expected to be a string value.
+**destinationLocality:** The `destinationLocality` property represents the locality or city of the destination location. It is expected to be a string value.
 
-**destinationPlace :** This property likely represents the name or identifier of the destination place. It is expected to be a string value.
+**destinationPlace:** This property likely represents the name or identifier of the destination place. It is expected to be a string value.
 
-**destinationRegion :** The `destinationRegion` property represents the region or state of the destination location. It is expected to be a string value.
+**destinationRegion:** The `destinationRegion` property represents the region or state of the destination location. It is expected to be a string value.
 
-**startdatetime :** The `startDateTime` property represents the date and time when the object or item's activity or event starts. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC.
+**startdatetime:** The `startDateTime` property represents the date and time when the object or item's activity or event starts. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC.
 
 **endDateTime:** This property represents the date and time when the object or item's activity or event ends. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC.
 
@@ -250,7 +250,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Path Parameters</mark>
 
-**id :**&#x20;
+**id:**&#x20;
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -274,7 +274,7 @@ The provided endpoint response contains a list of car model properties
 
 **`id`:** This property likely represents the ID of the event or task. It is expected to be a numeric value (`0` in this case).
 
-**`createDate`:** This property represents the date and time when the event or task was created. It is formatted as "2023-08-15T11:12:36.801Z", indicating the date and time in ISO 8601 format with UTC (Coordinated Universal Time).
+**`createDate:`** This property represents the date and time when the event or task was created. It is formatted as "2023-08-15T11:12:36.801Z", indicating the date and time in ISO 8601 format with UTC (Coordinated Universal Time).
 
 **`startDateTime`:** The `startDateTime` property represents the date and time when the event or task starts. It is formatted as "2023-08-15T11:12:36.801Z" in ISO 8601 format with UTC.
 
