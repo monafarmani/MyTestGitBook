@@ -72,7 +72,7 @@ The provided endpoint response contains several properties, including
 
 **birthDate:** ThebirthDate property represents the user’s birth date and time. In the provided response, it is formatted as “yyyy-MM-ddTHH:mm:ss”, which indicates the date and time in ISO 8601 format, e.g. **“1999-08-02T00:00:00”**
 
-**gender:** The gender property represents the user’s gender. The specific mapping of numeric values to genders may vary depending on the application or system’s implementation. Here, 0 is used for females,1for males, and 2 for unspecified, e.g. **1**
+**gender:** The gender property represents the user’s gender. The specific mapping of numeric values to genders may vary depending on the application or system’s implementation. Here, 0 is used for females, 1 for males, and 2 for unspecified, e.g. **1**
 
 **isInitialized:** The isInitialized property is a Boolean value (true or false). It shows whether the user uses the app for the first time or not, e.g. **true**.
 
