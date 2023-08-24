@@ -24,6 +24,10 @@ In this library, the aim is to analyze driving behavior and compute a series of 
 
 
 
+There are some steps that must be taken to use Gizo Analysis
+
+### <mark style="color:purple;">Step 1: Setting</mark>
+
 
 
 ### <mark style="color:purple;">Step 1: Adding model</mark>
