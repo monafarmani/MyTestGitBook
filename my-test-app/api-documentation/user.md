@@ -116,7 +116,7 @@ Note: email can be an empty text. If not, it must be sent in the proper format o
 
 The endpoint is designed to handle requests for updating the initial information or settings associated with a user's profile. It allows users to modify their initial profile details or configuration.
 
-<mark style="color:red;">**Note :**</mark> Initial is called after [user's profile data](user.md#profile) &[ user car's data](car.md#car-model) get completed in first time use.
+<mark style="color:red;">**Note:**</mark> Initial is called after the [user's profile data](user.md#profile) &[ user car's data](car.md#car-model) get completed in first-time use.
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/api/v1/user/initial" method="patch" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
@@ -128,7 +128,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that getting initial information from user is completed.
+If it's true, it means that getting initial information from the user is completed.
 
 
 
@@ -146,24 +146,24 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several properties including&#x20;
+The provided endpoint response contains several properties, including&#x20;
 
-**username :** This property likely represents the user phone number. It is expected to be a string value, e.g. **"+49\_01747707607"**
+**username:** this property likely represents the user's phone number. It is expected to be a string value, e.g. **"+49\_01747707607"**
 
-**firstName :** This property represents the user's first name. It is expected to be a string value, e.g.**"David"**
+**firstName:** this property represents the user's first name. It is expected to be a string value, e.g.**"David"**
 
-**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value, e.g. **"Smith"**
+**lastName:** the `lastName` property represents the user's last name. It is also expected to be a string value, e.g. **"Smith"**
 
-**email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
+**email:** this property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
 
-<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
+<mark style="color:red;">**Note:**</mark> email can be an empty text. if not, it must be sent in the proper format of email.
 
-**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
+**phonenumber:** the `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
 
-**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL, e.g. **"ProfilePic/93/ae316a8c-78e3-4427-9f6c-63a0d37d1d0d.jpg"**
+**profileImagePath:** this property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL, e.g. **"ProfilePic/93/ae316a8c-78e3-4427-9f6c-63a0d37d1d0d.jpg"**
 
-**birthDate :** The`birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-ddTHH:mm:ss", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02T00:00:00"**
+**birthDate:** the birthdate property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-ddTHH:mm:ss", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02T00:00:00"**
 
-**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified, e.g. **1**
+**gender:** the `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here, 0 is used for females, 1 for males, and 2 for unspecified, e.g. **1**
 
-**isInitialized :** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not, e.g. **true**
+**isInitialized:** the `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not, e.g. **true**.
