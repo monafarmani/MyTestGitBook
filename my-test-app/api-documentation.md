@@ -30,19 +30,19 @@ Our API documentation is generated using **Swagger**, an open-source framework t
 
 Here are the list of all the available endpoints or routes provided by the API
 
-### [Authentication](api-documentation/authentication.md)
+#### [Authentication](api-documentation/authentication.md)
 
-### [User](api-documentation/user.md)
+#### [User](api-documentation/user.md)
 
-### [Car](api-documentation/car.md)
+#### [Car](api-documentation/car.md)
 
-### [Trip](api-documentation/trip.md)
+#### [Trip](api-documentation/trip.md)
 
-### [Emergency Contact](api-documentation/emergency-contact.md)
+#### [Emergency Contact](api-documentation/emergency-contact.md)
 
-### [Settings](api-documentation/settings.md)
+#### [Settings](api-documentation/settings.md)
 
-##
+
 
 ## Errors
 
