@@ -28,13 +28,13 @@ The endpoint allows users to submit identity-related information or credentials 
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username :** the phone number of the user and It is expected to be a string value. e.g. **"+49\_01747707607"**
+**username:** the phone number of the user which is expected to be a string value. e.g. **"+49\_01747707607"**
 
 #### <mark style="color:orange;">**Response**</mark>
 
 It returns a Boolean, and if it's true it could indicate that the user is authenticated, then a message would be sent for verification.
 
-<mark style="color:red;">**Note :**</mark> If the telephone number has been previously registered, it uses the corresponding data otherwise, it adds a new user.
+<mark style="color:red;">**Note:**</mark> If the telephone number has been previously registered, it uses the corresponding data otherwise, it adds a new user.
 
 
 
@@ -48,32 +48,32 @@ The endpoint allows users to submit data or credentials for verification purpose
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**username :** the phone number of the user that used in [Check Identity](authentication.md#api-v1-user-checkidentity) and It is expected to be a string value, e.g. **"+49\_01747707607"**
+**username:** the phone number of the user that is used in Check Identity and It is expected to be a string value, e.g. **"+49\_01747707607"**
 
-**verifyCode :**  the 5 number code which is sent through messages and It is expected to be a string value, e.g. **"12345"**
+**verifyCode:**  the 5-number code which is sent through messages and is expected to be a string value, e.g. **"12345"**
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains several properties including&#x20;
+The provided endpoint response contains several properties, including
 
-**username :** This property likely represents the user phone number. It is expected to be a string value, e.g. **"+49\_01747707607"**
+**username:** This property likely represents the user’s phone number. It is expected to be a string value, e.g. **“+49\_01747707607”**
 
-**firstName :** This property represents the user's first name. It is expected to be a string value, e.g.**"David"**
+**firstName:** This property represents the user’s first name. It is expected to be a string value, e.g. **“David”**
 
-**lastName :** The `lastName` property represents the user's last name. It is also expected to be a string value, e.g. **"Smith"**
+**lastName:** The lastName property represents the user’s last name. It is also expected to be a string value, e.g. **“Smith”**
 
-**email :** This property represents the user's email address. It is expected to be a string value, e.g. **"DavidSmith@gmail.com "**
+**email:** This property represents the user’s email address. It is expected to be a string value, e.g. **“DavidSmith@gmail.com “**
 
-<mark style="color:red;">**Note :**</mark> email can be an empty text. if not, it must be sent by proper format of email.
+<mark style="color:red;">**Note:**</mark> email can be an empty text. If not, it must be sent in the proper format of email.
 
-**phonenumber :** The `phoneNumber` property represents the user's phone number. It is also expected to be a string value, e.g. **"+49\_01747707607"**
+**phonenumber:** The phoneNumber property represents the user’s phone number. It is also expected to be a string value, e.g. **“+49\_01747707607”**
 
-**profileImagePath :** This property represents the path or location of the user's profile image. It is expected to be a string value that specifies the image file's location or URL, e.g. **"ProfilePic/93/ae316a8c-78e3-4427-9f6c-63a0d37d1d0d.jpg"**
+**profileImagePath:** This property represents the path or location of the user’s profile image. It is expected to be a string value that specifies the image file’s location or URL, e.g. **“ProfilePic/93/ae316a8c-78e3-4427-9f6c-63a0d37d1d0d.jpg”**
 
-**birthDate :** The`birthDate` property represents the user's birth date and time. In the provided response, it is formatted as "yyyy-MM-ddTHH:mm:ss", which indicates the date and time in ISO 8601 format, e.g. **"1999-08-02T00:00:00"**
+**birthDate:** ThebirthDate property represents the user’s birth date and time. In the provided response, it is formatted as “yyyy-MM-ddTHH:mm:ss”, which indicates the date and time in ISO 8601 format, e.g. **“1999-08-02T00:00:00”**
 
-**gender :** The `gender` property represents the user's gender. The specific mapping of numeric values to genders may vary depending on the application or system's implementation. Here 0 is used for female,`1`for male and 2 for unspecified, e.g. **1**
+**gender:** The gender property represents the user’s gender. The specific mapping of numeric values to genders may vary depending on the application or system’s implementation. Here, 0 is used for females,1for males, and 2 for unspecified, e.g. **1**
 
-**isInitialized :** The `isInitialized` property is a Boolean value (`true` or `false`). It shows whether the user uses the app for the first time or not, e.g. **true**
+**isInitialized:** The isInitialized property is a Boolean value (true or false). It shows whether the user uses the app for the first time or not, e.g. **true**.
 
-**token :** The `token` property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
+**token:** The token property typically represents an authentication token or access token associated with the user session. It is commonly used for subsequent API requests to authenticate and authorize the user.
