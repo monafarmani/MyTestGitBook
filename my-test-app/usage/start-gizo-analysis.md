@@ -32,13 +32,26 @@ First, there is a need to customize some behavior and functionality of our libra
 
 ### <mark style="color:blue;">Step 2: Adding model</mark>
 
+In our SDK, we require accurate and efficient detection and localization of objects in images and video streams and also accurate and efficient estimation of the depth or distance of objects in a scene.
+
+Object detection and depth estimation are crucial technologies in Android development that empower applications to perceive and understand their surroundings. By leveraging these capabilities, developers can enable their apps to identify objects within images or video streams and estimate the relative distances between objects in a scene.
+
+\
+**Object detection** plays a vital role in various Android applications, enabling tasks such as object recognition, tracking, and augmented reality
+
+**Depth estimation** enables Android applications to perceive the relative distances between objects in a scene. This capability is valuable for tasks like depth-based segmentation, virtual reality, or 3D reconstruction.
+
+Object detection and depth estimation can be implemented using machine learning models, such as those built with TensorFlow, and deployed using the TensorFlow Lite library.&#x20;
+
+
+
 The model should be added to the assets of the app module.
 
 Download the model from this link:&#x20;
 
 
 
-### <mark style="color:purple;">Step 3: Loading model</mark>
+### <mark style="color:blue;">Step 3: Loading model</mark>
 
 Loading a model allows the application to utilize the trained model's intelligence and perform complex tasks that go beyond traditional programming capabilities. By incorporating machine learning models into Android applications, developers can provide intelligent, data-driven features and functionalities to their users.
 
