@@ -228,21 +228,21 @@ The provided endpoint response contains a list of car model properties
 
 **originPostalCode:** this property represents the postal code associated with the origin location. It is expected to be a string value, e.g. **"52070"**.
 
-**originLocality:** the originLocality property represents the locality or city of the origin location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
+**originLocality:** the originLocality property represents the locality or city of the origin location. It is expected to be a string value, e.g. **"Kalkofen"**.
 
-**originplace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value, e.g. **"Jülicher Straße"**.
+**originplace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value, e.g. **"Aachen"**.
 
-**originRegion:** the originRegion property represents the region or state of the origin location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
+**originRegion:** the originRegion property represents the region or state of the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia"**.
 
-**destinationaddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
+**destinationaddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**.
 
-**destinationPostalCode:** this property represents the postal code associated with the destination location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
+**destinationPostalCode:** this property represents the postal code associated with the destination location. It is expected to be a string value, e.g. **"52072"**.
 
-**destinationLocality:** the destinationLocality property represents the locality or city of the destination location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
+**destinationLocality:** the destinationLocality property represents the locality or city of the destination location. It is expected to be a string value, e.g. **"Ponttor"**.
 
-**destinationPlace:** this property likely represents the name or identifier of the destination place. It is expected to be a string value, e.g. **"Jülicher Straße"**.
+**destinationPlace:** this property likely represents the name or identifier of the destination place. It is expected to be a string value, e.g. **"Aachen"**.
 
-**destinationRegion:** the destinationRegion property represents the region or state of the destination location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
+**destinationRegion:** the destinationRegion property represents the region or state of the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia, Aachen, Pontto**r**"**.
 
 **startDatetime:** the startDatetime property represents the date and time when the object or item's activity or event starts. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC, e.g. **"Jülicher Straße"**.
 
