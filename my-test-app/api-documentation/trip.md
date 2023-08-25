@@ -234,7 +234,9 @@ The provided endpoint response contains a list of car model properties
 
 **originRegion:** the originRegion property represents the region or state of the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia"**.
 
-**destinationaddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**.
+**origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"**North Rhine-Westphalia, Aachen, Kalkofen**"**.
+
+**destinationaddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Roermonder Straße"**.
 
 **destinationPostalCode:** this property represents the postal code associated with the destination location. It is expected to be a string value, e.g. **"52072"**.
 
@@ -242,9 +244,11 @@ The provided endpoint response contains a list of car model properties
 
 **destinationPlace:** this property likely represents the name or identifier of the destination place. It is expected to be a string value, e.g. **"Aachen"**.
 
-**destinationRegion:** the destinationRegion property represents the region or state of the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia, Aachen, Pontto**r**"**.
+**destinationRegion:** the destinationRegion property represents the region or state of the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia"**.
 
-**startDatetime:** the startDatetime property represents the date and time when the object or item's activity or event starts. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC, e.g. **"Jülicher Straße"**.
+**destination:** the destination property represents the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia, Aachen, Ponttor"**.
+
+**startDatetime:** the startDatetime property represents the date and time when a trip starts. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC, e.g. **"Jülicher Straße"**.
 
 **endDateTime:** this property represents the date and time when the object or item's activity or event ends. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC, e.g. **"Jülicher Straße"**.
 
