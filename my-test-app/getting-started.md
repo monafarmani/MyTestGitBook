@@ -26,7 +26,7 @@ Gizo SDK is a powerful and versatile library that provides a great analysis of t
 
 
 
-## prerequisites
+## Prerequisites
 
 * Install the latest version of the Android Studio.
 * Install Mapbox SDK for Android and get an access token
@@ -70,7 +70,7 @@ Some key aspects of the `settings.gradle` file include Project Structure, Module
 {% tab title="Groovy" %}
 ```kotlin
 dependencies {
-    implementation 'com.github.monafarmani:new:0.0.12'
+    implementation 'com.github.artificient-ai:gizo-android-sdk:1.0.0-alpha01'
 }
 ```
 {% endtab %}
@@ -78,7 +78,7 @@ dependencies {
 {% tab title="Kts" %}
 ```kotlin
 dependencies {
-    implementation ("com.github.monafarmani:new:0.0.12")
+    implementation ("com.github.artificient-ai:gizo-android-sdk:1.0.0-alpha01")
 }
 ```
 {% endtab %}
@@ -137,7 +137,7 @@ Locate the toolbar at the top of the Android Studio window. There, you should se
 
 ## Using the SDK in your Android Application
 
-### &#x20;<mark style="color:purple;">Initialize the SDK</mark>
+### <mark style="color:purple;">Initialize the SDK</mark>
 
 To initialize the SDK, you will need to create a new instance of the Application class in your app's module:
 

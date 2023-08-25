@@ -16,15 +16,13 @@ layout:
     visible: true
 ---
 
-# 📋 . Overview
+# 📋 Overview
 
 My Test library is a controlling driving library for Android.
 
 
 
-My Test library is an Android library that does amazing things. It is designed to help users  to be more careful on how to drive their cars and if any risk is felt while driving, it informs users of a possible error by giving warnings.
-
-
+Gizo SDK library is an Android library that does amazing things. It is designed to help users to be more careful on how to drive their cars and if any risk is felt while driving, it informs users of a possible error by giving warnings.
 
 <div>
 
@@ -39,8 +37,6 @@ My Test library is an Android library that does amazing things. It is designed t
 <figure><img src="../.gitbook/assets/Screenshot_2023-07-25-16-33-56-025_de.artificient.gizo_pixel_quite_black_portrait.png" alt="" width="375"><figcaption></figcaption></figure>
 
 </div>
-
-
 
 ## Features
 
