@@ -62,13 +62,13 @@ For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type 
 
 **FileExtension:** It specifies the type of file extension, and it is expected to be an Integer value.&#x20;
 
-For example, FileExtension.VIDEO\_MP4 will return **1**, FileExtension.VIDEO\_MKV will return **2**, FileExtension.TEXT\_CSV will return **3**, and FileExtension.TEXT\_TXT will return **4**.
+For example, FileExtension.VIDEO\_MP4 will return **1**, FileExtension.TEXT\_CSV will return **3**, and FileExtension.TEXT\_TXT will return **4**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a property which is :&#x20;
 
-**fileManagerId:** the fileManagerId property represents an identifier or reference to a file manager. It is expected to be a numeric value.
+**fileManagerId:** the fileManagerId property represents an identifier or reference to a file manager which is going to be used in [Upload Chunks](trip.md#upload-chunks). It is expected to be a numeric value, e.g. **1002**.
 
 
 
@@ -86,13 +86,21 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**FileId:** this property represents the identifier of the file and is set to 0. It is expected to be a numeric value, e.g. **1002**
+These parameters should be sent in multipart/form-data format
 
-**FileChunkId:** this property represents the identifier of a file chunk and is also set to 0. It is expected to be a numeric value, e.g. **1002**
+**FileId:** the fileId property represents an identifier or reference to a file manager. It is expected to be a numeric value, e.g. **1002**.
 
-&#x20;**FileType:** this property represents the type of the file and is set to 0. It is expected to be a numeric value, e.g. **1002**
+**FileChunkId:** this property represents the identifier of a file chunk's. It is expected to be a numeric value, e.g. **2**
 
-**FileChunk:** this property represents the content of a file chunk and is set to the string value "string". It is expected to be a numeric value, e.g. **1002**
+&#x20;**FileType:** It specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
+
+For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
+
+**FileChunk:** this property represents the content of a file chunk, and It is expected to be a file value.
+
+<mark style="color:red;">**Note:**</mark> the type content for HttpHeaders can be either ContntType.VIDEO\_MP4 or ContntType.TEXT\_CSV.&#x20;
+
+
 
 #### <mark style="color:orange;">**Response**</mark>
 
