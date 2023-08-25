@@ -34,9 +34,9 @@ Authentication Bearer Token
 
 
 
-**question :** The question property represents a string or text that represents a question being posed.
+**question:** the question property represents a string or text that represents a question being posed.
 
-**answer :** The answer property represents a string or text that provides the corresponding answer to the question.&#x20;
+**answer:** the answer property represents a string or text that provides the corresponding answer to the question.&#x20;
 
 
 
@@ -56,13 +56,13 @@ Authentication Bearer Token
 
 
 
-**aspectRatio :** The aspectRatio property represents a string value that describes the aspect ratio of a visual element. Aspect ratio is the proportional relationship between the width and height of an object or display. The specific value of "string" is a placeholder, and in practice, it would typically provide a specific aspect ratio value such as "16:9" or "4:3".
+**aspectRatio:** the aspectRatio property represents a string value that describes the aspect ratio of a visual element. Aspect ratio is the proportional relationship between the width and height of an object or display. The specific value of "string" is a placeholder, and in practice, it would typically provide a specific aspect ratio value such as "16:9" or "4:3".
 
-**chunkSize :** The chunkSize property represents a numerical value that indicates the size or length of chunks or segments. The unit of measurement for this value would depend on the specific context and application.
+**chunkSize:** the chunkSize property represents a numerical value that indicates the size or length of chunks or segments. The unit of measurement for this value would depend on the specific context and application.
 
-**lastGpsRecords :** The lastGpsRecords property represents a numerical value that indicates the number of recent GPS records or data points. It suggests how many GPS records are included or considered in the response.
+**lastGpsRecords:** the lastGpsRecords property represents a numerical value that indicates the number of recent GPS records or data points. It suggests how many GPS records are included or considered in the response.
 
-**toleranceInXAxis, toleranceInYAxis, toleranceInZAxis :** These properties represent numerical values that indicate tolerances or acceptable ranges along the X, Y, and Z axes, respectively. The specific context or application will determine the meaning and unit of measurement for these tolerance values.
+**toleranceInXAxis, toleranceInYAxis, toleranceInZAxis:** these properties represent numerical values that indicate tolerances or acceptable ranges along the X, Y, and Z axes, respectively. The specific context or application will determine the meaning and unit of measurement for these tolerance values.
 
 ### <mark style="color:green;">Geo Code</mark>
 
