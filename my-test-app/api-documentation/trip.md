@@ -214,7 +214,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties
+The provided endpoint response contains an array of a list of car model properties including&#x20;
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -248,18 +248,11 @@ The provided endpoint response contains a list of car model properties
 
 **destination:** the destination property represents the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia, Aachen, Ponttor"**.
 
-**startDatetime:** the startDatetime property represents the date and time when a trip starts. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g.&#x20;
+**startDatetime:** the startDatetime property represents the date and time when a trip starts. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:45.282"**.
 
-```
-"2023-07-25T15:41:45.282"
-"2023-07-25T15:41:57.481"
-"00:00:12.1990000"
- 
-```
+**endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**endDateTime:** this property represents the date and time when the object or item's activity or event ends. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC, e.g. **"Jülicher Straße"**.
-
-**duration:** the duration property is an object that contains sub-properties representing the duration of the object or item. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case).
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**&#x20;
 
 
 
