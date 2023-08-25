@@ -43,7 +43,7 @@ Add these lines of code in the Application class to load the model and receive t
 ```kotlin
   Gizo.app.setLoadModelObserver { status ->
             
-        }
+  }
 ```
 {% endtab %}
 {% endtabs %}
@@ -68,10 +68,10 @@ Gain these parameters with the codes below in Preview
 
 {% tabs %}
 {% tab title="Kotlin" %}
-```kts
-Gizo.app.gizoAnalysis.onSessionStatus = { inProgress, previewAttached ->
-}
-```
+<pre class="language-kts"><code class="lang-kts">Gizo.app.gizoAnalysis.onSessionStatus= { inProgress, previewAttached ->
+<strong>
+</strong><strong>}
+</strong></code></pre>
 {% endtab %}
 {% endtabs %}
 
@@ -96,7 +96,7 @@ Gain these parameters with the codes below in Preview:
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onAnalysisResult = { preview, ttc, ttcStatus,
+Gizo.app.gizoAnalysis.onAnalysisResult= { preview, ttc, ttcStatus,
 frontObject, speed, gpsTime ->
  
 }
@@ -162,7 +162,7 @@ Gain these parameters with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onLocationChange = { location, isGpsOn ->
+Gizo.app.gizoAnalysis.onLocationChange= { location, isGpsOn ->
    
 }
 ```
@@ -180,7 +180,7 @@ Within this code block, you might find logic to handle the updated location. For
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
-Gizo.app.gizoAnalysis.onSpeedChange = { speedLimitKph, speedKph ->
+Gizo.app.gizoAnalysis.onSpeedChange= { speedLimitKph, speedKph ->
     
 }
 ```
@@ -210,7 +210,7 @@ Gain these parameters with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onLinearAccelerationSensor={ linearSensorEvent->
+Gizo.app.gizoAnalysis.onLinearAccelerationSensor= { linearSensorEvent->
    
 }
 ```
@@ -260,7 +260,7 @@ The lambda expression takes one parameter `uncalibratedSensorEvent`, which likel
 {% tabs %}
 {% tab title="Kotlin" %}
 ```
-Gizo.app.gizoAnalysis.onGyroscopeSensor={ gyroscopeSensorEvent->
+Gizo.app.gizoAnalysis.onGyroscopeSensor= { gyroscopeSensorEvent->
   
 }
 ```
@@ -278,7 +278,7 @@ Within this code block, you might find logic to handle the received gyroscope da
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onGravitySensor={ gravitySensorEvent->
+Gizo.app.gizoAnalysis.onGravitySensor= { gravitySensorEvent->
    
 }
 ```
@@ -296,7 +296,7 @@ Within this code block, you might find logic to handle the received gravity sens
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onMagneticSensor={ magneticSensorEvent->
+Gizo.app.gizoAnalysis.onMagneticSensor= { magneticSensorEvent->
    
 }
 ```
@@ -312,7 +312,7 @@ The lambda expression takes one parameter `magneticSensorEvent`, which likely re
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
-Gizo.app.gizoAnalysis.onImuSensor = { accelerationEvent, linearAccelerationEvent,
+Gizo.app.gizoAnalysis.onImuSensor= { accelerationEvent, linearAccelerationEvent,
 accelerationUncalibratedEvent, gyroscopeEvent, magneticEvent, gravityEvent ->
 
 }
@@ -395,7 +395,7 @@ Gain this parameter with the codes below in Preview
 {% tabs %}
 {% tab title="Kotlin" %}
 ```kotlin
- Gizo.app.gizoAnalysis.onBatteryStatusChange = { status ->
+ Gizo.app.gizoAnalysis.onBatteryStatusChange= { status ->
  
  }
 ```
@@ -416,7 +416,7 @@ Screen orientation refers to the orientation of the device's screen, which can b
 
 When orientation gets activated, these value parameter can be checked out:
 
-<table><thead><tr><th width="238">Value-parameters</th><th width="152">Type</th><th>Description</th></tr></thead><tbody><tr><td>isAlign</td><td>Boolean</td><td>Whether the mobile device is in a landscape orientation or not.</td></tr></tbody></table>
+<table><thead><tr><th width="191">Value-parameters</th><th width="116">Type</th><th>Description</th></tr></thead><tbody><tr><td>isAlign</td><td>Boolean</td><td>Whether the mobile device is in a landscape orientation or not.</td></tr></tbody></table>
 
 
 
@@ -424,10 +424,10 @@ Gain the parameter with the codes below in Preview
 
 {% tabs %}
 {% tab title="Kotlin" %}
-```kotlin
-Gizo.app.gizoAnalysis.onGravityAlignmentChange{ isAlign ->
-}
-```
+<pre class="language-kotlin"><code class="lang-kotlin">Gizo.app.gizoAnalysis.onGravityAlignmentChange { isAlign ->
+<strong>
+</strong><strong>}
+</strong></code></pre>
 {% endtab %}
 {% endtabs %}
 
