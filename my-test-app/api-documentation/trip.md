@@ -34,7 +34,7 @@ Authentication Bearer Token
 
 The provided endpoint response contains a property which is : &#x20;
 
-**tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**
+**tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
 
 
@@ -52,15 +52,15 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**ItemId:**
+**ItemId:** the itemId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-**chunkCount:** the chunk count represents the total number of the smaller chunks that make up the entire file , and It is expected to be an Integer value, e.g. **10**
+**chunkCount:** the chunk count represents the total number of the smaller chunks that make up the entire file, and it is expected to be an Integer value, e.g. **10**.
 
-**FileType:** It specifies the type of uploading file , and It is expected to be an Integer value.&#x20;
+**FileType:** It specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
 
 For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
 
-**FileExtension:** It specifies the type of file extension , and It is expected to be an Integer value.&#x20;
+**FileExtension:** It specifies the type of file extension, and it is expected to be an Integer value.&#x20;
 
 For example, FileExtension.VIDEO\_MP4 will return **1**, FileExtension.VIDEO\_MKV will return **2**, FileExtension.TEXT\_CSV will return **3**, and FileExtension.TEXT\_TXT will return **4**.
 
