@@ -32,15 +32,15 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**UserTripReportType :**
+**UserTripReportType:**
 
 #### <mark style="color:orange;">**Response**</mark>
 
-**date :** The date property represents a specific date and time. The value of "2023-08-15T11:12:36.801Z" indicates a timestamp in UTC format, representing the date and time when the associated event or data was recorded.
+**date:** the date property represents a specific date and time. The value of "2023-08-15T11:12:36.801Z" indicates a timestamp in UTC format, representing the date and time when the associated event or data was recorded.
 
-**score :** The score property represents a numerical score associated with a particular event or data. The value 0 indicates the score achieved for the event or data.
+**score:** the score property represents a numerical score associated with a particular event or data. The value 0 indicates the score achieved for the event or data.
 
-**label :** The label property represents a string or text label associated with the event or data. The value "string" is a placeholder, and in practice, it would typically provide a descriptive label or category related to the event or data.
+**label:** the label property represents a string or text label associated with the event or data. The value "string" is a placeholder, and in practice, it would typically provide a descriptive label or category related to the event or data.
 
 
 
@@ -58,7 +58,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-**averageScore :** The averageScore property represents the average score associated with a specific context or set of data. In this case, the value is 0, which suggests that the average score is zero.
+**averageScore:** the averageScore property represents the average score associated with a specific context or set of data. In this case, the value is 0, which suggests that the average score is zero.
 
 
 
@@ -76,14 +76,14 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**TripReportType :**
+**TripReportType:**
 
 #### <mark style="color:orange;">**Response**</mark>
 
-**title :** The title property represents a string or text that serves as a title or heading. It typically describes or identifies a specific item or category.
+**title:** the title property represents a string or text that serves as a title or heading. It typically describes or identifies a specific item or category.
 
-**subtitle :** The subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category.
+**subtitle:** the subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category.
 
-**score :** The score property represents a numerical score associated with the item or category being described. The value 0 indicates the score achieved for that specific item or category.
+**score :** the score property represents a numerical score associated with the item or category being described. The value 0 indicates the score achieved for that specific item or category.
 
-**difference :** The difference property represents a numerical value indicating the difference or change related to the score. It provides information about how the score has changed compared to a previous value or reference
+**difference:** the difference property represents a numerical value indicating the difference or change related to the score. It provides information about how the score has changed compared to a previous value or reference
