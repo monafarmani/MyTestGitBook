@@ -54,11 +54,15 @@ Authentication Bearer Token
 
 **ItemId:**
 
-**chunkCount:**
+**chunkCount:** the chunk count represents the total number of the smaller chunks that make up the entire file , and It is expected to be an Integer value, e.g. **10**
 
-**FileType:**
+**FileType:** It specifies the type of uploading file , and It is expected to be an Integer value.&#x20;
 
-**FileExtension:**
+For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
+
+**FileExtension:** It specifies the type of file extension , and It is expected to be an Integer value.&#x20;
+
+For example, FileExtension.VIDEO\_MP4 will return **1**, FileExtension.VIDEO\_MKV will return **2**, FileExtension.TEXT\_CSV will return **3**, and FileExtension.TEXT\_TXT will return **4**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
