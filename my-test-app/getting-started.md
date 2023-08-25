@@ -151,7 +151,7 @@ class Application : Application() {
 
         Gizo.initialize(
             this,
-            GizoApp.GizoAppOptions.Builder().build()
+            GizoAppOptions.Builder().build()
         )
     }
 }
