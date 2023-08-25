@@ -184,13 +184,13 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**tripId:**
+**tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of car model properties
 
-**isCompleted:** the isCompleted property is a boolean value that indicates whether the process or operation has been completed. In this case, the value is true, suggesting that the process has been successfully completed.
+**isCompleted:** the isCompleted property is a Boolean value that indicates whether the process or operation has been completed, e.g. **true**.
 
 **message:** the message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
 
