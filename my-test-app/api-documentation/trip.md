@@ -184,7 +184,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
+**tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -216,39 +216,39 @@ Authentication Bearer Token
 
 The provided endpoint response contains a list of car model properties
 
-**id:** this property likely represents the ID of the object or item. It is expected to be a numeric value (`0` in this case).
+**id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-**score:** the `score` property likely represents a score or rating associated with the object. It is expected to be a numeric value (`0` in this case).
+**score:** the score property likely represents a score gotten from a trip, between 0 to 100. It is expected to be a numeric value, e.g. **70**.
 
-**isCompleted:** the `isCompleted` property is a boolean value (`true` or `false`). In the provided response, it is set to `true`. This property typically indicates whether the object or associated task is completed.
+**isCompleted:** the isCompleted property is a Boolean value (`true` or `false`). This property typically indicates whether uploading files is completed, e.g. **true**.
 
-**createDate:** this property represents the date and time when the object or item was created. In the provided response, it is formatted as "2023-08-15T11:12:36.799Z", indicating the date and time in ISO 8601 format with UTC (Coordinated Universal Time).
+**createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**
 
-**originAddress:** the `originAddress` property likely represents the address of the origin location. It is expected to be a string value.
+**originAddress:** the originAddress property likely represents the address of the origin location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
-**originPostalCode:** this property represents the postal code associated with the origin location. It is expected to be a string value.
+**originPostalCode:** this property represents the postal code associated with the origin location. It is expected to be a string value, e.g. **"52070"**.
 
-**originLocality:** the `originLocality` property represents the locality or city of the origin location. It is expected to be a string value.
+**originLocality:** the originLocality property represents the locality or city of the origin location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
-**originplace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value.
+**originplace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
-**originRegion:** the `originRegion` property represents the region or state of the origin location. It is expected to be a string value.
+**originRegion:** the originRegion property represents the region or state of the origin location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
-**destinationaddress:** the `destinationAddress` property represents the address of the destination location. It is expected to be a string value.
+**destinationaddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
-**destinationPostalCode:** this property represents the postal code associated with the destination location. It is expected to be a string value.
+**destinationPostalCode:** this property represents the postal code associated with the destination location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
-**destinationLocality:** the `destinationLocality` property represents the locality or city of the destination location. It is expected to be a string value.
+**destinationLocality:** the destinationLocality property represents the locality or city of the destination location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
-**destinationPlace:** this property likely represents the name or identifier of the destination place. It is expected to be a string value.
+**destinationPlace:** this property likely represents the name or identifier of the destination place. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
-**destinationRegion:** the `destinationRegion` property represents the region or state of the destination location. It is expected to be a string value.
+**destinationRegion:** the destinationRegion property represents the region or state of the destination location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
-**startdatetime:** the `startDateTime` property represents the date and time when the object or item's activity or event starts. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC.
+**startDatetime:** the startDatetime property represents the date and time when the object or item's activity or event starts. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC, e.g. **"Jülicher Straße"**.
 
-**endDateTime:** this property represents the date and time when the object or item's activity or event ends. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC.
+**endDateTime:** this property represents the date and time when the object or item's activity or event ends. It is formatted as "2023-08-15T11:12:36.799Z" in ISO 8601 format with UTC, e.g. **"Jülicher Straße"**.
 
-**duration:** the `duration` property is an object that contains sub-properties representing the duration of the object or item. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case).
+**duration:** the duration property is an object that contains sub-properties representing the duration of the object or item. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case).
 
 
 
@@ -266,7 +266,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Path Parameters</mark>
 
-**id:**&#x20;
+**id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
