@@ -92,7 +92,7 @@ These parameters should be sent in multipart/form-data format
 
 **FileChunkId:** this property represents the identifier of a file chunk's. It is expected to be a numeric value, e.g. **2**
 
-&#x20;**FileType:** It specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
+&#x20;**FileType:** it specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
 
 For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
 
@@ -150,23 +150,25 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**TripId:**
+**TripId:** the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-**TripFileType:**
+**TripFileType: i**t specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
+
+For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of car model properties
 
-**fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process. In this case, there is one element in the array with a value of 0, indicating that there is one file chunk associated with the upload.
+**fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**&#x20;
 
-**chunkSize:** the chunkSize property represents the size of each file chunk in bytes. The value of 0 in this case suggests that either the chunk size has not been determined or is not applicable for the specific upload process.
+**chunkSize:** the chunkSize property represents the size of each file chunk in bytes, and it is expected to be a numeric value, e.g. **10485760**.&#x20;
 
-**fileId:** the fileId property is the identifier or reference for the uploaded file. The value of 0 indicates that either an ID has not been assigned yet or the file has not been uploaded.
+**fileId:** the fileId property is the identifier or reference for the uploaded file, and it is expected to be a numeric value, e.g. **5596**.
 
-**isUploaded:** the isUploaded property is a boolean value that indicates whether the file has been successfully uploaded. In this case, the value is true, suggesting that the upload process has been completed successfully.
+**isUploaded:** the isUploaded property is a Boolean value that indicates whether the file has been successfully uploaded, e.g. **true**.
 
-**uploadPercent:** the uploadPercent property represents the progress or percentage of the upload process. The value of 0 indicates that the upload process has not yet started or is in its initial stage.
+**uploadPercent:** the uploadPercent property represents the progress or percentage of the upload process, and it is expected to be a numeric value, e.g. **30**.
 
 ### <mark style="color:green;">Get Files Of Completed Status</mark>
 
