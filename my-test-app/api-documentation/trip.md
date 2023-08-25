@@ -82,13 +82,13 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**FileId:**
+**FileId:** this property represents the identifier of the file and is set to 0. It is expected to be a numeric value, e.g. **1002**
 
-**FileChunkId:**
+**FileChunkId:** this property represents the identifier of a file chunk and is also set to 0. It is expected to be a numeric value, e.g. **1002**
 
-**FileType:**
+&#x20;**FileType:** this property represents the type of the file and is set to 0. It is expected to be a numeric value, e.g. **1002**
 
-**FileChunk:**
+**FileChunk:** this property represents the content of a file chunk and is set to the string value "string". It is expected to be a numeric value, e.g. **1002**
 
 #### <mark style="color:orange;">**Response**</mark>
 
