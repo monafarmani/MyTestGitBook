@@ -128,9 +128,11 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**ItemId:**
+**ItemId:** the itemId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
 #### <mark style="color:orange;">**Response**</mark>
+
+&#x20;When set to **true**, it suggests that the files upload process related to a trip has been successfully completed.
 
 
 
