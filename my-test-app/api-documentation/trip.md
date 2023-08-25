@@ -100,17 +100,17 @@ For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type 
 
 <mark style="color:red;">**Note:**</mark> the type content for HttpHeaders can be either ContntType.VIDEO\_MP4 or ContntType.TEXT\_CSV.&#x20;
 
-
+<mark style="color:red;">**Note:**</mark> the value for HttpHeaders in ContentDisposition should be "filename="${fileName}"".
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of car model properties
 
-**id:** the id property represents an identifier or reference associated with the process. In this case, the value is 0, indicating that either an ID has not been assigned yet or the process has not been initiated.
+**id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-**mergeStatus:** the mergeStatus property indicates the status of a merge operation. When set to true, it suggests that the merge process has been successfully completed.
+**mergeStatus:** the mergeStatus property indicates the status of a merge operation, and it is expected to be a Boolean value. When set to **true**, it suggests that the merge process has been successfully completed.
 
-**uploadPercent:** the uploadPercent property represents the progress or percentage of an upload process. The value of 0 indicates that the upload process has not yet started or is in its initial stage.
+**uploadPercent:** the uploadPercent property represents the progress or percentage of an upload process. It is expected to be a numeric value, e.g. **30**.
 
 
 
