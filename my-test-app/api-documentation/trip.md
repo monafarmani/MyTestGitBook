@@ -136,67 +136,7 @@ Authentication Bearer Token
 
 
 
-### <mark style="color:green;">Get File Chunk Status</mark>
-
-The endpoint is designed to handle requests for retrieving or fetching the status of file chunks related to a trip. It allows users to check the status of individual or multiple file chunks that make up a larger file associated with the trip.
-
-{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" expanded="true" %}
-[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Header Request Parameters</mark>
-
-Authentication Bearer Token
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-**TripId:** the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
-
-**TripFileType: i**t specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
-
-For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
-
-#### <mark style="color:orange;">**Response**</mark>
-
-The provided endpoint response contains a list of car model properties
-
-**fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**&#x20;
-
-**chunkSize:** the chunkSize property represents the size of each file chunk in bytes, and it is expected to be a numeric value, e.g. **10485760**.&#x20;
-
-**fileId:** the fileId property is the identifier or reference for the uploaded file, and it is expected to be a numeric value, e.g. **5596**.
-
-**isUploaded:** the isUploaded property is a Boolean value that indicates whether the file has been successfully uploaded, e.g. **true**.
-
-**uploadPercent:** the uploadPercent property represents the progress or percentage of the upload process, and it is expected to be a numeric value, e.g. **30**.
-
-### <mark style="color:green;">Get Files Of Completed Status</mark>
-
-The endpoint is designed to handle requests for retrieving or fetching the completion status of files related to a trip. It allows users to check whether the files associated with the trip have been completed or not.
-
-{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/filesCompletedStatus" method="get" expanded="true" %}
-[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Header Request Parameters</mark>
-
-Authentication Bearer Token
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-**tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
-
-#### <mark style="color:orange;">**Response**</mark>
-
-The provided endpoint response contains a list of car model properties
-
-**isCompleted:** the isCompleted property is a Boolean value that indicates whether the process or operation has been completed, e.g. **true**.
-
-**message:** the message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
-
-
-
-### <mark style="color:green;">**Get List Of Trips**</mark>&#x20;
+### <mark style="color:green;">Get List Of Trips</mark>
 
 The endpoint is designed to handle requests for retrieving or fetching information about trips or journeys. It allows users to access details related to various trips that may have been recorded or stored in the system.
 
@@ -210,7 +150,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Query Parameters</mark>
 
-**keyword:**&#x20;
+**keyword:** it's a query that is used to search data, and it is expected to be a string value.
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -254,6 +194,72 @@ The provided endpoint response contains an array of a list of car model properti
 
 **duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**&#x20;
 
+### <mark style="color:green;">Get File Chunk Status</mark>
+
+The endpoint is designed to handle requests for retrieving or fetching the status of file chunks related to a trip. It allows users to check the status of individual or multiple file chunks that make up a larger file associated with the trip.
+
+{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" expanded="true" %}
+[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**TripId:** the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
+
+**TripFileType: i**t specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
+
+For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
+
+#### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains a list of car model properties
+
+**fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**&#x20;
+
+**chunkSize:** the chunkSize property represents the size of each file chunk in bytes, and it is expected to be a numeric value, e.g. **10485760**.&#x20;
+
+**fileId:** the fileId property is the identifier or reference for the uploaded file, and it is expected to be a numeric value, e.g. **5596**.
+
+**isUploaded:** the isUploaded property is a Boolean value that indicates whether the file has been successfully uploaded, e.g. **true**.
+
+**uploadPercent:** the uploadPercent property represents the progress or percentage of the upload process, and it is expected to be a numeric value, e.g. **30**.
+
+
+
+### <mark style="color:green;">Get Files Of Completed Status</mark>
+
+The endpoint is designed to handle requests for retrieving or fetching the completion status of files related to a trip. It allows users to check whether the files associated with the trip have been completed or not.
+
+{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/filesCompletedStatus" method="get" expanded="true" %}
+[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
+
+#### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains a list of car model properties
+
+**isCompleted:** the isCompleted property is a Boolean value that indicates whether the process or operation has been completed, e.g. **true**.
+
+**message:** the message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
+
+
+
+###
+
+
+
 
 
 ### <mark style="color:green;">**Get Trip By Id**</mark>&#x20;
@@ -270,11 +276,49 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Path Parameters</mark>
 
-**id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
+**id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains a list of car model properties including&#x20;
 
+**id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
+
+**score:** the score property likely represents a score gotten from a trip, between 0 to 100. It is expected to be a numeric value, e.g. **70**.
+
+**isCompleted:** the isCompleted property is a Boolean value (`true` or `false`). This property typically indicates whether uploading files is completed, e.g. **true**.
+
+**originAddress:** the originAddress property likely represents the address of the origin location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
+
+**originPostalCode:** this property represents the postal code associated with the origin location. It is expected to be a string value, e.g. **"52070"**.
+
+**originLocality:** the originLocality property represents the locality or city of the origin location. It is expected to be a string value, e.g. **"Kalkofen"**.
+
+**originplace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value, e.g. **"Aachen"**.
+
+**originRegion:** the originRegion property represents the region or state of the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia"**.
+
+**origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"**North Rhine-Westphalia, Aachen, Kalkofen**"**.
+
+**destinationaddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Roermonder Straße"**.
+
+**destinationPostalCode:** this property represents the postal code associated with the destination location. It is expected to be a string value, e.g. **"52072"**.
+
+**destinationLocality:** the destinationLocality property represents the locality or city of the destination location. It is expected to be a string value, e.g. **"Ponttor"**.
+
+**destinationPlace:** this property likely represents the name or identifier of the destination place. It is expected to be a string value, e.g. **"Aachen"**.
+
+**destinationRegion:** the destinationRegion property represents the region or state of the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia"**.
+
+**destination:** the destination property represents the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia, Aachen, Ponttor"**.
+
+**startDatetime:** the startDatetime property represents the date and time when a trip starts. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:45.282"**.
+
+**endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
+
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**&#x20;
+
+**createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**
 
 ### <mark style="color:green;">**Get Last Trip**</mark>&#x20;
 
