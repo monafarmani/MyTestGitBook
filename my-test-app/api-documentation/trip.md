@@ -232,7 +232,7 @@ The provided endpoint response contains a list of car model properties including
 
 **originRegion:** the originRegion property represents the region or state of the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia"**.
 
-**origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"**North Rhine-Westphalia, Aachen, Kalkofen**"**.
+**origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**.
 
 **destinationaddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Roermonder Straße"**.
 
@@ -252,7 +252,7 @@ The provided endpoint response contains a list of car model properties including
 
 **duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**&#x20;
 
-**createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**
+**createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
 ### &#x20;
 
@@ -298,25 +298,25 @@ Authentication Bearer Token
 
 The provided endpoint response contains a list of car model properties
 
-**id:** this property likely represents the ID of the event or task. It is expected to be a numeric value (`0` in this case).
+**id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-**craeteDate:** this property represents the date and time when the event or task was created. It is formatted as "2023-08-15T11:12:36.801Z", indicating the date and time in ISO 8601 format with UTC (Coordinated Universal Time).
+**craeteDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
-**startDateTime:** the `startDateTime` property represents the date and time when the event or task starts. It is formatted as "2023-08-15T11:12:36.801Z" in ISO 8601 format with UTC.
+**startDateTime:** the startDatetime property represents the date and time when a trip starts. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:45.282"**.
 
-**endDateTime:** this property represents the date and time when the event or task ends. It is formatted as "2023-08-15T11:12:36.801Z" in ISO 8601 format with UTC.
+**endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:**  the `duration` property is an object that contains sub-properties representing the duration of the event or task. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case).
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**
 
-**origin:** the `origin` property represents the overall origin information. It is expected to be a string value.
+**origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**..
 
-**destination:** the `destination` property represents the overall destination information. It is expected to be a string value.
+**destination:** the destination property represents the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia, Aachen, Ponttor"**.
 
-**originPlace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value.
+**originPlace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value, e.g. **"Aachen"**.
 
-**destinationPlace:** this property likely represents the name or identifier of the destination place. It is expected to be a string value.
+**destinationPlace:** this property likely represents the name or identifier of the destination place. It is expected to be a string value, e.g. **"Aachen"**.
 
-**score:** the `score` property likely represents a score or rating associated with the event or task. It is expected to be a numeric value (`0` in this case).
+**score:** the score property likely represents a score gotten from a trip, between 0 to 100. It is expected to be a numeric value, e.g. **70**.
 
 **gpsInfo:** the `gpsInfo` property is an array containing GPS information. In the provided response, it contains a single object with the following GPS-related properties:
 
