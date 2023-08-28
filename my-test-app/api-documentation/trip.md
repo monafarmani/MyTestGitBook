@@ -194,72 +194,6 @@ The provided endpoint response contains an array of a list of car model properti
 
 **duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**&#x20;
 
-### <mark style="color:green;">Get File Chunk Status</mark>
-
-The endpoint is designed to handle requests for retrieving or fetching the status of file chunks related to a trip. It allows users to check the status of individual or multiple file chunks that make up a larger file associated with the trip.
-
-{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" expanded="true" %}
-[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Header Request Parameters</mark>
-
-Authentication Bearer Token
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-**TripId:** the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
-
-**TripFileType: i**t specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
-
-For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
-
-#### <mark style="color:orange;">**Response**</mark>
-
-The provided endpoint response contains a list of car model properties
-
-**fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**&#x20;
-
-**chunkSize:** the chunkSize property represents the size of each file chunk in bytes, and it is expected to be a numeric value, e.g. **10485760**.&#x20;
-
-**fileId:** the fileId property is the identifier or reference for the uploaded file, and it is expected to be a numeric value, e.g. **5596**.
-
-**isUploaded:** the isUploaded property is a Boolean value that indicates whether the file has been successfully uploaded, e.g. **true**.
-
-**uploadPercent:** the uploadPercent property represents the progress or percentage of the upload process, and it is expected to be a numeric value, e.g. **30**.
-
-
-
-### <mark style="color:green;">Get Files Of Completed Status</mark>
-
-The endpoint is designed to handle requests for retrieving or fetching the completion status of files related to a trip. It allows users to check whether the files associated with the trip have been completed or not.
-
-{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/filesCompletedStatus" method="get" expanded="true" %}
-[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Header Request Parameters</mark>
-
-Authentication Bearer Token
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-**tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
-
-#### <mark style="color:orange;">**Response**</mark>
-
-The provided endpoint response contains a list of car model properties
-
-**isCompleted:** the isCompleted property is a Boolean value that indicates whether the process or operation has been completed, e.g. **true**.
-
-**message:** the message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
-
-
-
-###
-
-
-
 
 
 ### <mark style="color:green;">**Get Trip By Id**</mark>&#x20;
@@ -320,7 +254,35 @@ The provided endpoint response contains a list of car model properties including
 
 **createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**
 
-### <mark style="color:green;">**Get Last Trip**</mark>&#x20;
+### &#x20;
+
+### <mark style="color:green;">Get Trip GPS By Id</mark>
+
+The endpoint is designed to handle requests for retrieving or fetching GPS data associated with a specific trip. It allows users to access the latitude and longitude coordinates or other relevant GPS information recorded during the trip.
+
+{% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/Trip/{id}/gps" method="get" expanded="true" %}
+[swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**id:**
+
+#### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains a list of car model properties
+
+**gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
+
+**events:** the events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates.
+
+
+
+### <mark style="color:green;">**Get Last Trip**</mark>
 
 The endpoint is designed to handle requests for retrieving or fetching the information of the last or most recent trip recorded in the system. It allows users to access details about the latest trip they have taken or the most recently recorded trip in the system.
 
@@ -386,6 +348,104 @@ The provided endpoint response contains a list of car model properties
 
 
 
+### <mark style="color:green;">Get File Chunk Status</mark>
+
+The endpoint is designed to handle requests for retrieving or fetching the status of file chunks related to a trip. It allows users to check the status of individual or multiple file chunks that make up a larger file associated with the trip.
+
+{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/fileChunkStatus" method="get" expanded="true" %}
+[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**TripId:** the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
+
+**TripFileType: i**t specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
+
+For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
+
+#### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains a list of car model properties
+
+**fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**&#x20;
+
+**chunkSize:** the chunkSize property represents the size of each file chunk in bytes, and it is expected to be a numeric value, e.g. **10485760**.&#x20;
+
+**fileId:** the fileId property is the identifier or reference for the uploaded file, and it is expected to be a numeric value, e.g. **5596**.
+
+**isUploaded:** the isUploaded property is a Boolean value that indicates whether the file has been successfully uploaded, e.g. **true**.
+
+**uploadPercent:** the uploadPercent property represents the progress or percentage of the upload process, and it is expected to be a numeric value, e.g. **30**.
+
+
+
+### <mark style="color:green;">Get Trip Event Stats By Id</mark>
+
+The endpoint is designed to handle requests for retrieving or fetching event statistics related to a specific trip. It allows users to access aggregated data or metrics about various events that occurred during the trip.
+
+{% swagger src="../../.gitbook/assets/swagger (3).json" path="/api/v4/Trip/{id}/eventStats" method="get" expanded="true" %}
+[swagger (3).json](<../../.gitbook/assets/swagger (3).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**id:**
+
+#### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains a list of car model properties
+
+**eventType:** the eventType property represents the type of event that occurred. The value 0 suggests that it is a specific type of event, and the exact meaning of this event would depend on the application or system's context.
+
+**score:** the score property represents a score associated with the event. The value 0 indicates the score achieved for the event.
+
+**scorePercentile:** the scorePercentile property represents the percentile rank of the score achieved for the event. The value 0 suggests that the score percentile is at the lowest rank.
+
+**events:** the events property is an array that contains objects representing specific events. Each event object includes properties such as time, value, latitude, longitude, and location. These properties provide details about the event's time, value, GPS coordinates, and location.
+
+**eventDetected:** the eventDetected property is an array that contains objects representing detected events. Each detected event object includes properties such as time, latitude, longitude, speedLimit, and yourSpeed. These properties provide details about the detected event's time, GPS coordinates, speed limit, and actual speed.
+
+**eventDetectedTailGating:** the eventDetectedTailGating property is an array that contains objects representing detected tailgating events. Each detected tailgating event object includes properties such as time, speedInKmph, ttc, and depth. These properties provide details about the detected tailgating event's time, speed in kilometers per hour, time-to-collision (TTC), and depth.
+
+**rideTimeEvent:** the rideTimeEvent property represents information related to ride time. It includes sub-properties such as totalTime and tripDistance. The totalTime property further includes sub-properties like hours, minutes, and seconds, representing the total time of the ride in hours, minutes, and seconds. The tripDistance property represents the distance covered during the ride.
+
+###
+
+### <mark style="color:green;">Get Files Of Completed Status</mark>
+
+The endpoint is designed to handle requests for retrieving or fetching the completion status of files related to a trip. It allows users to check whether the files associated with the trip have been completed or not.
+
+{% swagger src="../../.gitbook/assets/swagger (2).json" path="/api/v3/Trip/filesCompletedStatus" method="get" expanded="true" %}
+[swagger (2).json](<../../.gitbook/assets/swagger (2).json>)
+{% endswagger %}
+
+#### <mark style="color:orange;">Header Request Parameters</mark>
+
+Authentication Bearer Token
+
+#### <mark style="color:orange;">Request Body Parameters</mark>
+
+**tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
+
+#### <mark style="color:orange;">**Response**</mark>
+
+The provided endpoint response contains a list of car model properties
+
+**isCompleted:** the isCompleted property is a Boolean value that indicates whether the process or operation has been completed, e.g. **true**.
+
+**message:** the message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
+
+
+
 ### <mark style="color:green;">Get Total Carbon</mark>
 
 The endpoint is designed to handle requests for retrieving or fetching the total carbon emissions or carbon footprint of a trip or journey. It allows users to access information about the environmental impact in terms of carbon emissions resulting from a specific trip.
@@ -428,63 +488,5 @@ The provided endpoint response contains a list of car model properties
 
 
 
-### <mark style="color:green;">Get Trip GPS By Id</mark>
-
-The endpoint is designed to handle requests for retrieving or fetching GPS data associated with a specific trip. It allows users to access the latitude and longitude coordinates or other relevant GPS information recorded during the trip.
-
-{% swagger src="../../.gitbook/assets/swagger (1).json" path="/api/v2/Trip/{id}/gps" method="get" expanded="true" %}
-[swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Header Request Parameters</mark>
-
-Authentication Bearer Token
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-**id:**
-
-#### <mark style="color:orange;">**Response**</mark>
-
-The provided endpoint response contains a list of car model properties
-
-**gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
-
-**events:** the events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates
-
-
-
-### <mark style="color:green;">Get Trip Event Stats By Id</mark>
-
-The endpoint is designed to handle requests for retrieving or fetching event statistics related to a specific trip. It allows users to access aggregated data or metrics about various events that occurred during the trip.
-
-{% swagger src="../../.gitbook/assets/swagger (3).json" path="/api/v4/Trip/{id}/eventStats" method="get" expanded="true" %}
-[swagger (3).json](<../../.gitbook/assets/swagger (3).json>)
-{% endswagger %}
-
-#### <mark style="color:orange;">Header Request Parameters</mark>
-
-Authentication Bearer Token
-
-#### <mark style="color:orange;">Request Body Parameters</mark>
-
-**id:**
-
-#### <mark style="color:orange;">**Response**</mark>
-
-The provided endpoint response contains a list of car model properties
-
-**eventType:** the eventType property represents the type of event that occurred. The value 0 suggests that it is a specific type of event, and the exact meaning of this event would depend on the application or system's context.
-
-**score:** the score property represents a score associated with the event. The value 0 indicates the score achieved for the event.
-
-**scorePercentile:** the scorePercentile property represents the percentile rank of the score achieved for the event. The value 0 suggests that the score percentile is at the lowest rank.
-
-**events:** the events property is an array that contains objects representing specific events. Each event object includes properties such as time, value, latitude, longitude, and location. These properties provide details about the event's time, value, GPS coordinates, and location.
-
-**eventDetected:** the eventDetected property is an array that contains objects representing detected events. Each detected event object includes properties such as time, latitude, longitude, speedLimit, and yourSpeed. These properties provide details about the detected event's time, GPS coordinates, speed limit, and actual speed.
-
-**eventDetectedTailGating:** the eventDetectedTailGating property is an array that contains objects representing detected tailgating events. Each detected tailgating event object includes properties such as time, speedInKmph, ttc, and depth. These properties provide details about the detected tailgating event's time, speed in kilometers per hour, time-to-collision (TTC), and depth.
-
-**rideTimeEvent:** the rideTimeEvent property represents information related to ride time. It includes sub-properties such as totalTime and tripDistance. The totalTime property further includes sub-properties like hours, minutes, and seconds, representing the total time of the ride in hours, minutes, and seconds. The tripDistance property represents the distance covered during the ride.
+###
 
