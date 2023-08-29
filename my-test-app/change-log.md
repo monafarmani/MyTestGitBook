@@ -52,18 +52,15 @@ Update dependencies:
 
 ## <mark style="color:purple;">v0.1.0</mark>
 
-### <mark style="color:blue;">Features</mark> ✨ <mark style="color:blue;">And Improvements</mark> 🏁
+### <mark style="color:blue;">Features</mark> ✨
 
-* Introduce experimental `MapboxMapRecorder` allowing to record and replay custom scenarios.
-* New compose example `MulitDisplayActiviy` ported from XML test app.
-* Add Mapbox Privacy Policy to attribution links.
+* Introduce Gizo Analysis allowing to to gain some data based on the image caught from the camera, and Perform calculations based on data.
+* Introduce Gizo GPS allowing to provide location information to access location, speed limit, and speed.
+* Add Gizo IMU to utilize the sensors that make up the device's IMU. The IMU typically consists of the **accelerometer**, **gyroscope, gravity,** and **magnetic**.
+* Introduce Gizo video allowing utilization of video-related features.
+* Add Gizo battery to monitor and control the battery usage of their mobile devices.
+* Add Gizo orientation activating the gravity sensor.
 
 ### <mark style="color:blue;">Dependencies</mark>
 
-Update dependencies:
-
-| Dependency | Before        | After         |
-| ---------- | ------------- | ------------- |
-| NDK        | 21.4.7075529  | 23.2.8568313  |
-| gl-native  | 11.0.0-beta.2 | 11.0.0-beta.3 |
-| common     | 24.0.0-beta.2 | 24.0.0-beta.3 |
+<table><thead><tr><th width="300">Dependency</th><th width="187.33333333333331">Before</th><th>After</th></tr></thead><tbody><tr><td>CameraX</td><td>________</td><td>1.3.0-beta01</td></tr><tr><td>MapBox</td><td>________</td><td>10.10.0</td></tr><tr><td><p>Mapbox services</p><p>Mapbox core  </p><p>Mapbox geojson</p></td><td>________</td><td>6.9.0</td></tr><tr><td>annotation</td><td>________</td><td>1.5.0</td></tr><tr><td>Mapbox navigation</td><td>________</td><td>2.10.0</td></tr><tr><td>OpenCV</td><td>________</td><td>3.4.1</td></tr><tr><td><p>Tensorflow lite </p><p>Tensorflow lite gpu </p><p>Tensorflow lite gpu  api</p></td><td>________</td><td>2.11.0</td></tr><tr><td>Tensorflow lite support</td><td>________</td><td>0.4.3</td></tr></tbody></table>
