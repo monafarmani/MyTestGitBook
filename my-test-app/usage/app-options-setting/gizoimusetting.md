@@ -38,8 +38,6 @@ For this reason, add these lines of code in the Application class, onCreate func
           .saveCsvFile(true)
           .fileLocation(FileLocationPath.CACHE)
           .saveDataTimerPeriod(10L)
-          .saveDataTimerInitialDelay(0L)
-          .saveDataDateTimeFormat("yyyy-MM-dd'T'HH-mm-ss-SSS'Z'")
           .build()
   )
 ```
@@ -55,10 +53,6 @@ The `GizoImuSetting` builder sets the IMU-related properties such as
 * <mark style="color:blue;">`saveCsvFile`</mark>`(true)`: Indicating that the IMU data should be saved to a CSV file.
 * <mark style="color:blue;">`fileLocation`</mark>`(FileLocationPath.CACHE)`: Specifying the file location path for storing the IMU data CSV file (in this case, set to the cache directory).
 * <mark style="color:blue;">`saveDataTimerPeriod`</mark>`(10L)`: Setting the period of the IMU data timer to 10 milliseconds.
-* <mark style="color:blue;">`saveDataTimerInitialDelay`</mark>`(0L)`: Setting the initial delay of the IMU data timer to 0 milliseconds (no delay).
-* <mark style="color:blue;">`saveDataDateTimeFormat`</mark>`("yyyy-MM-dd'T'HH-mm-ss-SSS'Z'")`: Specifying the date and time format for saving the IMU data file.
-
-<mark style="color:red;">**Note:**</mark> saveDataDateTimeFormat will be changed if It's going to be used locally.&#x20;
 
 
 
@@ -68,15 +62,15 @@ This code suggests that the `GizoAppOptions` class specifies various configurati
 
 
 
-* &#x20;**Accelerometer:** It is a sensor commonly found in mobile devices that measures acceleration forces acting on the device in three dimensions: along the x-axis (horizontal), y-axis (vertical), and z-axis (perpendicular to the device's screen). It detects changes in velocity and movement, allowing the device to respond to various types of motion.
-* **Linear acceleration sensor:** It is part of the device's sensor array and is used to measure the linear acceleration of the device, excluding the influence of gravity.
-* **Magnetic sensor:** It is a sensor that measures the strength and direction of the magnetic field in its vicinity. It is typically used to detect the presence of a magnetic field and determine its orientation.
-* **Gyroscope sensor:** It is part of the device's sensor array and is used to measure the device's angular velocity or rotational motion. The gyroscope provides information about the device's orientation and rotation rate.
-* **Gravity sensor:** It refers to an accelerometer sensor that provides measurements of both linear acceleration and the force of gravity acting on the device. It combines the data from the accelerometer sensor with information from other sensors such as the gyroscope and magnetometer to estimate the device's orientation in relation to the Earth's gravitational field.
+* &#x20;<mark style="color:green;">**Accelerometer:**</mark> It is a sensor commonly found in mobile devices that measures acceleration forces acting on the device in three dimensions: along the x-axis (horizontal), y-axis (vertical), and z-axis (perpendicular to the device's screen). It detects changes in velocity and movement, allowing the device to respond to various types of motion.
+* <mark style="color:green;">**Linear acceleration sensor:**</mark> It is part of the device's sensor array and is used to measure the linear acceleration of the device, excluding the influence of gravity.
+* <mark style="color:green;">**Magnetic sensor:**</mark> It is a sensor that measures the strength and direction of the magnetic field in its vicinity. It is typically used to detect the presence of a magnetic field and determine its orientation.
+* <mark style="color:green;">**Gyroscope sensor:**</mark> It is part of the device's sensor array and is used to measure the device's angular velocity or rotational motion. The gyroscope provides information about the device's orientation and rotation rate.
+* <mark style="color:green;">**Gravity sensor:**</mark> It refers to an accelerometer sensor that provides measurements of both linear acceleration and the force of gravity acting on the device. It combines the data from the accelerometer sensor with information from other sensors such as the gyroscope and magnetometer to estimate the device's orientation in relation to the Earth's gravitational field.
 
 
 
 Here are the available options that can be set in imuSetting in the Application class:
 
-<table><thead><tr><th width="286.3333333333333">Options</th><th width="198">Default Value</th><th>Description</th></tr></thead><tbody><tr><td><p>allowAccelerationSensor</p><p>(Boolean)</p></td><td>false</td><td>To activate the acceleration sensor or not.</td></tr><tr><td><p>allowGyroscopeSensor</p><p>(Boolean)</p></td><td>false</td><td>To activate the gyroscope sensor or not.</td></tr><tr><td><p>allowMagneticSensor</p><p>(Boolean)</p></td><td>false</td><td>To activate the magnetic sensor or not.</td></tr><tr><td><p>allowGravitySensor</p><p>(Boolean)</p></td><td>false</td><td>To activate the gravity sensor or not.</td></tr><tr><td><p>saveCsvFile</p><p>(Boolean)</p></td><td>false</td><td>To save CSV file or not.</td></tr><tr><td><p>fileLocation</p><p>(FileLocationPath)</p></td><td><p>FileLocationPath</p><p>.CACHE</p></td><td>To save the IMU file in download or cache.</td></tr><tr><td>saveDataTimerPeriod(Long)</td><td>10L</td><td>The period of time that an IMU data row is saved in a CSV file.</td></tr><tr><td>saveDataTimerInitialDelay(Long)</td><td>0L</td><td>The initial delay to save IMU data.</td></tr><tr><td><p>saveDateDateTimeFormat</p><p>(String)</p></td><td><p>"yyyy-MM-dd</p><p>'T'HH-mm-ss-SSS'Z'"</p></td><td>The format to save date time.</td></tr></tbody></table>
+<table><thead><tr><th width="286.3333333333333">Options</th><th width="198">Default Value</th><th>Description</th></tr></thead><tbody><tr><td><p>allowAccelerationSensor</p><p>(Boolean)</p></td><td>false</td><td>To activate the acceleration sensor or not.</td></tr><tr><td><p>allowGyroscopeSensor</p><p>(Boolean)</p></td><td>false</td><td>To activate the gyroscope sensor or not.</td></tr><tr><td><p>allowMagneticSensor</p><p>(Boolean)</p></td><td>false</td><td>To activate the magnetic sensor or not.</td></tr><tr><td><p>allowGravitySensor</p><p>(Boolean)</p></td><td>false</td><td>To activate the gravity sensor or not.</td></tr><tr><td><p>saveCsvFile</p><p>(Boolean)</p></td><td>false</td><td>To save CSV file or not.</td></tr><tr><td><p>fileLocation</p><p>(FileLocationPath)</p></td><td><p>FileLocationPath</p><p>.CACHE</p></td><td>To save the IMU file in download or cache.</td></tr><tr><td>saveDataTimerPeriod(Long)</td><td>10L</td><td>The period of time that an IMU data row is saved in a CSV file.</td></tr></tbody></table>
 
