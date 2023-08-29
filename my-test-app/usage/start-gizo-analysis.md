@@ -28,7 +28,7 @@ There are some steps that must be taken to use Gizo Analysis
 
 First, there is a need to customize some behavior and functionality of our library by implementing some lines of code in [Gizo Analysis Setting](app-options-setting/gizoanalysissettings.md).
 
-### <mark style="color:blue;">Step 2: Adding model</mark>
+### <mark style="color:blue;">Step 2: Adding Model</mark>
 
 In our SDK, we require accurate and efficient detection and localization of objects in images and video streams and also accurate and efficient estimation of the depth or distance of objects in a scene.
 
@@ -47,13 +47,13 @@ The model should be added to the assets of the app module.
 
 Download the model from this link:&#x20;
 
+[https://artificient-ai.s3.eu-central-1.amazonaws.com/artisense\_encrypted.data](https://artificient-ai.s3.eu-central-1.amazonaws.com/artisense\_encrypted.data)
 
-
-### <mark style="color:blue;">Step 3: Loading model</mark>
+### <mark style="color:blue;">Step 3: Loading Model</mark>
 
 Loading a model allows the application to utilize the trained model's intelligence and perform complex tasks that go beyond traditional programming capabilities. By incorporating machine learning models into Android applications, developers can provide intelligent, data-driven features and functionalities to their users.
 
-Add these lines of code in the Application class to load the model and receive the listener for different stats of loading, but the state of **LOADED** is essential for using Gizo Analysis completely.
+Add these lines of code in the Application class to load the model and receive the [listener](broken-reference) for different stats of loading, but the state of **LOADED** is essential for using Gizo Analysis completely.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -108,13 +108,13 @@ Whenever there is no longer a need for SDK, we should call the stop function to 
 
 ###
 
-### <mark style="color:purple;">Start saving session</mark>
+### <mark style="color:purple;">Start Saving Session</mark>
 
 Based on the settings we have applied, some files related to video, analysis, GPS, and IMU are saved.
 
 Saving files in Android Studio has benefits like data persistence, offline accessibility, advanced analysis, sharing, backup, and tracking. It enhances the functionality, usability, and reliability of your app by ensuring the availability and integrity of important data.
 
-To start saving files using Gizo SDK, use the following code:
+To start saving files using Gizo SDK, use the following code, and receive the [listener](broken-reference) for session progress.
 
 {% tabs %}
 {% tab title="Kotlin" %}
@@ -125,7 +125,7 @@ To start saving files using Gizo SDK, use the following code:
 
 ###
 
-### <mark style="color:purple;">Stop saving session</mark>
+### <mark style="color:purple;">Stop Saving Session</mark>
 
 While saving files is an essential aspect of many applications, it’s important to consider the performance, battery, storage, security, and network implications associated with file-saving operations. By optimizing and managing file-saving processes, you can ensure a smooth user experience while efficiently utilizing system resources.
 
@@ -141,7 +141,7 @@ Gizo.app.gizoAnalysis.stopSavingSession()
 
 ###
 
-### <mark style="color:purple;">Attach preview to camera</mark>
+### <mark style="color:purple;">Attach Preview To Camera</mark>
 
 Preview View is a Custom View that displays the camera feed for CameraX’s Preview use case. This class manages the preview of Surface’s lifecycle. After either a TextureView or a SurfaceView is used internally to display the camera feed, necessary transformations are applied to display the preview correctly. These transformations include correcting aspect ratio, scale, and rotation.
 

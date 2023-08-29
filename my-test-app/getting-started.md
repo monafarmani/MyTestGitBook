@@ -29,7 +29,7 @@ Gizo SDK is a powerful and versatile library that provides a great analysis of t
 ## Prerequisites
 
 * Install the latest version of the Android Studio.
-* Install Mapbox SDK for Android and get an access token
+* Install Mapbox SDK for Android and get an[ access token](https://docs.mapbox.com/android/maps/guides/install/#configure-credentials).
 
 Before you begin using Gizo SDK, make sure you have the following prerequisites installed and set up in your development environment:
 
@@ -86,7 +86,7 @@ dependencies {
 
 In Android Studio, the `build.gradle` file is a configuration file that is used to define various settings and dependencies for your Android project. It is located in the root directory of your project and each module within the project.
 
-4. We need to implement settings for Mapbox because we use it in our library, so add the following lines to settings.gradle too:
+4. We need to implement settings for [Mapbox](https://docs.mapbox.com/android/maps/guides/install/#add-the-dependency) because we use it in our library, so add the following lines to settings.gradle too:
 
 {% tabs %}
 {% tab title="Groovy" %}
@@ -175,5 +175,5 @@ In the example above, we add some lines of code to AndroidManifest.xml as well.
 
 In the AndroidManifest.xml file, the `<application>` element is used to define the characteristics and configurations of your Android application. The `android:name` attribute within the `<application>` element specifies the name of the class that represents the application itself.
 
-<mark style="color:red;">**Note:**</mark> For using features of the SDK you need to add Model and required App Options Setting in the following steps.
+<mark style="color:red;">**Note:**</mark> For using features of the SDK you need to add [Model](broken-reference) and required [App Options](broken-reference) Setting in the following steps..
 
