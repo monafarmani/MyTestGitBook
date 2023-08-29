@@ -73,10 +73,10 @@ In the example above, we initialize the SDK instance as before and then create a
 
 
 
-* **GizoAnalysisSetting** allows developers to gain some data based on the image caught from the camera and get object detection & depth estimation.
-* **GizoImuSetting** allows developers to utilize the sensors that make up the device's IMU. The IMU typically consists of the **accelerometer**, **gyroscope, gravity,** and **magnetic**.
-* **GizoGpsSetting** provides instructions on enabling GPS, accessing location, speed limit, and speed.
-* **GizoVideoSetting** refers to the configuration and utilization of video-related features and components within an Android application. Video settings typically involve tasks, such as capturing video from the device’s camera, playing video files, or streaming video content.
-* **GizoBatterySetting** refers to the configuration and management options related to the device's battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile devices.
-* **GizoOrientationSetting** refers to checking the orientation of the device's screen, which should be in a proper position which is landscape (horizontal) with a 90 angle.
+* <mark style="color:green;">**GizoAnalysisSetting**</mark> allows developers to gain some data based on the image caught from the camera and get object detection & depth estimation.
+* <mark style="color:green;">**GizoImuSetting**</mark> allows developers to utilize the sensors that make up the device's IMU. The IMU typically consists of the **accelerometer**, **gyroscope, gravity,** and **magnetic**.
+* <mark style="color:green;">**GizoGpsSetting**</mark> provides instructions on enabling GPS, accessing location, speed limit, and speed.
+* <mark style="color:green;">**GizoVideoSetting**</mark> refers to the configuration and utilization of video-related features and components within an Android application. Video settings typically involve tasks, such as capturing video from the device’s camera, playing video files, or streaming video content.
+* <mark style="color:green;">**GizoBatterySetting**</mark> refers to the configuration and management options related to the device's battery usage and performance. These settings allow users to monitor and control the battery usage of their mobile devices.
+* <mark style="color:green;">**GizoOrientationSetting**</mark> refers to checking the orientation of the device's screen, which should be in a proper position which is landscape (horizontal) with a 90 angle.
 
