@@ -7,7 +7,7 @@ layout:
   title:
     visible: true
   description:
-    visible: true
+    visible: false
   tableOfContents:
     visible: true
   outline:
@@ -16,64 +16,54 @@ layout:
     visible: true
 ---
 
-# ✏ . Change Log
+# ✏ Change Log
 
-## 2.5.1
+## <mark style="color:purple;">v0.1.1</mark>
 
-* number one
-* number two
-* number three
+### <mark style="color:blue;">Breaking Changes</mark>  ⚠️
 
-## 2.5.0
+* Replace style related enum classes with regular classes.
+* Migrate from `android.app.AlertDialog` to `androidx.appcompat.app.AlertDialog` for attribution plugin.
+* Rename `MapboxMap.subscribeStyleImageUnused` to `MapboxMap.subscribeStyleImageRemoveUnused`.
 
-* number one
-* number two
-* number three
+### <mark style="color:blue;">Features</mark> ✨ <mark style="color:blue;">And Improvements</mark> 🏁
 
-## 2.4.1
+* Introduce experimental `MapboxMapRecorder` allowing to record and replay custom scenarios.
+* New compose example `MulitDisplayActiviy` ported from XML test app.
+* Add Mapbox Privacy Policy to attribution links.
 
-* number one
-* number two
-* number three
+### <mark style="color:blue;">Bug Fixes</mark> 🐞
 
-## 2.3.0
+* Fix the bug when anchor was not reset after gestures leading to an unexpected map camera animation result with incorrect `CameraState.center`.
+* Fix a rounding error when point lies at the edge of the screen by using `rountToInt` for limiting `MapboxMap.pixelsForCoordinates` to the bounds of MapView.
+* Fix the bug when `MapboxMap.getStyle` returned NULL if `MapboxMap.subscribeStyleLoaded` called before `MapboxMap.loadStyle`.
+* Fix NPE when animating edge insets types (e.g. map padding).
+* Reduce segment overlap in flood lighting to improve rendering performance.
+* Enable offline support for the Standard style.
+* Add wireframe rendering debug feature `MapDebugOptions.LAYERS3_DWIREFRAME` and `MapDebugOptions.LAYERS2_DWIREFRAME`.
 
-* number one
-* number two
-* number three
+### <mark style="color:blue;">Dependencies</mark>
 
-## 2.2.1
+Update dependencies:
 
-* number one
-* number two
-* number three
+<table><thead><tr><th width="254">Dependency</th><th width="236.33333333333331">Before</th><th>After</th></tr></thead><tbody><tr><td>NDK</td><td>21.4.7075529</td><td>23.2.8568313</td></tr><tr><td>gl-native</td><td>11.0.0-beta.2</td><td>11.0.0-beta.3</td></tr><tr><td>common</td><td>24.0.0-beta.2</td><td>24.0.0-beta.3</td></tr></tbody></table>
 
-## 2.2.0
+##
 
-* number one
-* number two
-* number three
+## <mark style="color:purple;">v0.1.0</mark>
 
-## 1.0.3
+### <mark style="color:blue;">Features</mark> ✨ <mark style="color:blue;">And Improvements</mark> 🏁
 
-* number one
-* number two
-* number three
+* Introduce experimental `MapboxMapRecorder` allowing to record and replay custom scenarios.
+* New compose example `MulitDisplayActiviy` ported from XML test app.
+* Add Mapbox Privacy Policy to attribution links.
 
-## 1.0.2
+### <mark style="color:blue;">Dependencies</mark>
 
-* number one
-* number two
-* number three
+Update dependencies:
 
-## 1.0.1
-
-* number one
-* number two
-* number three
-
-## 1.0.0
-
-* number one
-* number two
-* number three
+| Dependency | Before        | After         |
+| ---------- | ------------- | ------------- |
+| NDK        | 21.4.7075529  | 23.2.8568313  |
+| gl-native  | 11.0.0-beta.2 | 11.0.0-beta.3 |
+| common     | 24.0.0-beta.2 | 24.0.0-beta.3 |

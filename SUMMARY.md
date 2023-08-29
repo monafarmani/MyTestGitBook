@@ -24,7 +24,6 @@
     * [Settings](my-test-app/api-documentation/settings.md)
   * [✏ Change Log](my-test-app/change-log.md)
   * [⚙ Configuration](my-test-app/configuration.md)
-  * [⚠ Troubleshooting](my-test-app/troubleshooting.md)
   * [🤝 Contributing](my-test-app/contributing.md)
   * [📃 License](my-test-app/license.md)
   * [📞 Contact](my-test-app/contact.md)
