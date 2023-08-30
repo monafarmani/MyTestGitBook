@@ -42,7 +42,7 @@ To have access to video setting options, you need to add these lines of code in 
 
 The `GizoVideoSetting` builder sets the video-related properties such as `quality` (setting the video quality to the HD quality), and `fileLocation` (specifying the file location path for storing the video files, in this case, set to the cache directory).
 
-Finally, the `build()` method is called on the `GizoAppOptions.Builder()` instance to create a `GizoAppOptions` object with the configured video settings.
+Finally, the build`()` method is called on the GizoAppOptions.Builder() instance to create a `GizoAppOptions` object with the configured video settings.   &#x20;
 
 This code suggests that the `GizoAppOptions` class provides a way to specify various configuration options for the `Gizo` application, including video-related settings. The specific implementation and usage of `GizoAppOptions` would depend on the details of the `Gizo` application itself.
 

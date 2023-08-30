@@ -22,7 +22,7 @@ layout:
 
 API documentation serves as a reference guide for developers and users to understand how to interact with an API effectively. It provides detailed explanations, instructions, and examples on how to make API requests, handle responses, and utilize various features and functionalities.
 
-Our API documentation is generated using **Swagger**, an open-source framework that simplifies the process of designing, building, documenting, and consuming APIs (Application Programming Interfaces). It provides a set of tools and specifications that help developers describe, document, and visualize the structure and behavior of their APIs.
+The primary purposes of API documentation are understanding API capabilities, integration guidance, code examples, parameter definitions, error handling, versioning and deprecation**,** testing and debugging**,** and compliance and security.
 
 
 
