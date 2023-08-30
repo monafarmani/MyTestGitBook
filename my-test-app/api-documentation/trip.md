@@ -278,21 +278,16 @@ The provided endpoint response contains a list of car model properties
 
 **gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
-&#x20;    **gpsTime:** this key-value pair indicates the GPS time as a string value, e.g. **"2023-08-    29T21:06:47.002+00:00"**
-
-&#x20;    **latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g. **50.78181** &#x20;
-
-&#x20;    **longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g. **6.070963**
+* **gpsTime:** this key-value pair indicates the GPS time as a string value, e.g. **"2023-08-    29T21:06:47.002+00:00**".
+* &#x20;**latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g. **50.78181**. &#x20;
+* **longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g. **6.070963**.
 
 **events:** the events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, eventName,  latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates.
 
-&#x20;    **eventType:** this key-value pair represents the type of event as a numeric value, e.g. **0**
-
-&#x20;    **eventName:** this key-value pair represents the name or description of the event as a string                value, e.g. **"Harsh and sudden acceleration"** &#x20;
-
-&#x20;    **latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g. **50.76787**
-
-&#x20;    **longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g. **6.1042366**
+* **eventType:** this key-value pair represents the type of event as a numeric value, e.g. **0**.
+* **eventName:** this key-value pair represents the name or description of the event as a string                value, e.g. **"Harsh and sudden acceleration"**.
+* **latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g. **50.76787**.
+* **longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g. **6.1042366**.
 
 
 
@@ -322,7 +317,7 @@ The provided endpoint response contains a list of car model properties
 
 **duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**
 
-**origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**..
+**origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**.
 
 **destination:** the destination property represents the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia, Aachen, Ponttor"**.
 
@@ -332,33 +327,21 @@ The provided endpoint response contains a list of car model properties
 
 **score:** the score property likely represents a score gotten from a trip, between 0 to 100. It is expected to be a numeric value, e.g. **70**.
 
-**gpsInfo:** the `gpsInfo` property is an array containing GPS information. In the provided response, it contains a single object with the following GPS-related properties:
+**gpsInfo:** the gpsInfo property is an array containing GPS information. In the provided response, it contains a single object with the following GPS-related properties:
 
-**gpsTime:** the `gpsTime` property represents the date and time of the GPS information. It is formatted as "2023-08-15T11:12:36.801Z" in ISO 8601 format with UTC.
-
-**altitude:** the `altitude` property represents the altitude value. It is expected to be a numeric value (`0` in this case).
-
-**latitude:** the `latitude` property represents the latitude coordinate. It is expected to be a numeric value (`0` in this case).
-
-**longitude:** the `longitude` property represents the longitude coordinate. It is expected to be a numeric value (`0` in this case).
-
-**speed:** the `speed` property represents the speed value. It is expected to be a string value.
-
-**climb:**  the `climb` property represents the climb value. It is expected to be a string value.
-
-**course:** the `course` property represents the course value. It is expected to be a string value.
-
-**epx:** the `epx` property represents the estimated position error along the X-axis. It is expected to be a string value.
-
-**epy:** the `epy` property represents the estimated position error along the Y-axis. It is expected to be a string value.
-
-**epv:** the `epv` property represents the estimated position error vertically. It is expected to be a string value.
-
-**eps:** the `eps` property represents the estimated speed error. It is expected to be a string value.
-
-**epc:** the `epc` property represents the estimated climb error. It is expected to be a string value.
-
-**epd:** the `epd` property represents the estimated course error. It is expected to be a string value.
+* **gpsTime:** the gpsTime property represents the date and time of the GPS information. It is expected to be a string value, e.g. **"2023-08-29T20:54:56.833+00:00"**.
+* **altitude:** the altitude property represents the altitude value. It is expected to be a numeric value, e.g. **215.5**.
+* **latitude:** the latitude property represents the latitude coordinate. It is expected to be a numeric value, e.g. **50.767002**.
+* **longitude:** the longitude property represents the longitude coordinate. It is expected to be a numeric value, e.g. **6.1035986**.
+* **speed:** the speed property represents the speed value. It is expected to be a string value, e.g.&#x20;
+* **climb:**  the `climb` property represents the climb value. It is expected to be a string value.
+* **course:** the `course` property represents the course value. It is expected to be a string value.
+* **epx:** the `epx` property represents the estimated position error along the X-axis. It is expected to be a string value.
+* **epy:** the `epy` property represents the estimated position error along the Y-axis. It is expected to be a string value.
+* **epv:** the `epv` property represents the estimated position error vertically. It is expected to be a string value.
+* **eps:** the `eps` property represents the estimated speed error. It is expected to be a string value.
+* **epc:** the `epc` property represents the estimated climb error. It is expected to be a string value.
+* **epd:** the `epd` property represents the estimated course error. It is expected to be a string value.
 
 
 
