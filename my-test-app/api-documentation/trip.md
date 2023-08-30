@@ -278,7 +278,15 @@ The provided endpoint response contains a list of car model properties
 
 **gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
+**gpsTime:** this key-value pair indicates the GPS time as a string value, e.g.&#x20;
+
+**latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g.&#x20;
+
+**longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g.&#x20;
+
 **events:** the events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates.
+
+**eventType:** this key-value pair represents the type of event as a numeric value, e.g.&#x20;
 
 
 
