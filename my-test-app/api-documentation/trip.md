@@ -90,7 +90,7 @@ These parameters should be sent in multipart/form-data format
 
 **FileId:** the fileId property represents an identifier or reference to a file manager. It is expected to be a numeric value, e.g. **1002**.
 
-**FileChunkId:** this property represents the identifier of a file chunk's. It is expected to be a numeric value, e.g. **2**
+**FileChunkId:** this property represents the identifier of a file chunk's. It is expected to be a numeric value, e.g. **2**.
 
 &#x20;**FileType:** it specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
 
@@ -104,7 +104,7 @@ For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type 
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties
+The provided endpoint response contains a list of car model properties, including:&#x20;
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -278,15 +278,21 @@ The provided endpoint response contains a list of car model properties
 
 **gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
-**gpsTime:** this key-value pair indicates the GPS time as a string value, e.g.&#x20;
+&#x20;    **gpsTime:** this key-value pair indicates the GPS time as a string value, e.g. **"2023-08-    29T21:06:47.002+00:00"**
 
-**latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g.&#x20;
+&#x20;    **latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g. **50.78181** &#x20;
 
-**longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g.&#x20;
+&#x20;    **longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g. **6.070963**
 
-**events:** the events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates.
+**events:** the events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, eventName,  latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates.
 
-**eventType:** this key-value pair represents the type of event as a numeric value, e.g.&#x20;
+&#x20;    **eventType:** this key-value pair represents the type of event as a numeric value, e.g. **0**
+
+&#x20;    **eventName:** this key-value pair represents the name or description of the event as a string                value, e.g. **"Harsh and sudden acceleration"** &#x20;
+
+&#x20;    **latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g. **50.76787**
+
+&#x20;    **longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g. **6.1042366**
 
 
 
