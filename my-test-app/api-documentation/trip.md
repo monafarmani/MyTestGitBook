@@ -397,13 +397,11 @@ Authentication Bearer Token
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-(0), HarshBrake(1), (2), (3), (4), (5), (6)
-
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains an array of a list of event stats properties including
 
-**eventType:** the eventType property represents the type of event that occurred, and it is expected to be a numeric value, e.g. **3.** The value 0 suggests that it is a "Harsh Accel", 1 means "Harsh Brake", 2 means "Harsh Corner", 3 means "Speeding", 4 means "TailGating", 5 means "Violation Score", and 6 means "Vehicle Usage".&#x20;
+**eventType:** the eventType property represents the type of event that occurred, and it is expected to be a numeric value, e.g. **3**. The value 0 suggests that it is a "Harsh Accel", 1 means "Harsh Brake", 2 means "Harsh Corner", 3 means "Speeding", 4 means "TailGating", 5 means "Violation Score", and 6 means "Vehicle Usage".&#x20;
 
 **score:** the score property represents a score associated with the event. It is expected to be a numeric value, e.g. **19**.
 
@@ -411,7 +409,19 @@ The provided endpoint response contains an array of a list of event stats proper
 
 **events:** the events property is an array that contains objects representing specific events. Each event object includes properties such as time, value, latitude, longitude, and location. These properties provide details about the event's time, value, GPS coordinates, and location.
 
+* **time:** this key-value pair represents the time of the event, and it is expected to be a string value, e.g. **"2023-08-29T20:56:27.832Z".**
+* **value:** this key-value pair represents the value associated with the event, and it is expected to be a string value, e.g. **"0.28".**
+* **latitude:** this key-value pair represents the latitude coordinate, and it is expected to be a numeric value, e.g. **50.767002.**
+* **longitude:** this key-value pair represents the longitude coordinate, and it is expected to be a numeric value, e.g. **6.1035986.**
+* **location:** this key-value pair represents the location associated with the event, and it is expected to be a string value, e.g. **.**
+
 **eventDetected:** the eventDetected property is an array that contains objects representing detected events. Each detected event object includes properties such as time, latitude, longitude, speedLimit, and yourSpeed. These properties provide details about the detected event's time, GPS coordinates, speed limit, and actual speed.
+
+* **time:** this key-value pair represents the time of the event, and it is expected to be a string value, e.g. **"2023-08-29T20:56:27.832Z".**
+* **latitude:** this key-value pair represents the latitude coordinate, and it is expected to be a numeric value, e.g. **50.767002.**
+* **longitude:** this key-value pair represents the longitude coordinate, and it is expected to be a numeric value, e.g. **6.1035986.**
+* **speedLimit:** this key-value pair represents the speed limit associated with the event
+* **yourSpeed:** this key-value pair represents the speed at which the event was detected
 
 **eventDetectedTailGating:** the eventDetectedTailGating property is an array that contains objects representing detected tailgating events. Each detected tailgating event object includes properties such as time, speedInKmph, ttc, and depth. These properties provide details about the detected tailgating event's time, speed in kilometers per hour, time-to-collision (TTC), and depth.
 
