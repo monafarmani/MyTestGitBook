@@ -425,14 +425,22 @@ The provided endpoint response contains an array of a list of event stats proper
 
 **eventDetectedTailGating:** the eventDetectedTailGating property is an array that contains objects representing detected tailgating events. Each detected tailgating event object includes properties such as time, speedInKmph, ttc, and depth. These properties provide details about the detected tailgating event's time, speed in kilometers per hour, time-to-collision (TTC), and depth.
 
-* **time:**
-* **speedInKmph:**
-* **ttc:**
-* **depth:**
+* **time:** this key-value pair represents the time of the detected tailgating event, and it is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
+* **speedInKmph:** this key-value pair represents the speed at which the tailgating event was detected, measured in kilometers per hour. It is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
+* **ttc:** this key-value pair represents the Time to Collision (TTC) associated with the tailgating event. It is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
+* **depth:** this key-value pair represents the depth or severity of the tailgating event, and it is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
 
 **rideTimeEvent:** the rideTimeEvent property represents information related to ride time. It includes sub-properties such as totalTime and tripDistance. The totalTime property further includes sub-properties like hours, minutes, and seconds, representing the total time of the ride in hours, minutes, and seconds. The tripDistance property represents the distance covered during the ride.
 
-###
+* **totaltime:** This key-value pair represents the total time of the ride. Inside the "totalTime" object, there are three key-value pairs:&#x20;
+
+1. **hours:** this key-value pair represents the number of hours in the ride time.
+2. **minutes:** this key-value pair represents the number of minutes in the ride time.
+3. **seconds:** this key-value pair represents the number of seconds in the ride time.
+
+* **tripDistance:** this key-value pair represents the distance of the trip.
+
+
 
 ### <mark style="color:green;">Get Files Of Completed Status</mark>
 
