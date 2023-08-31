@@ -56,13 +56,13 @@ Authentication Bearer Token
 
 **chunkCount:** the chunk count represents the total number of the smaller chunks that make up the entire file, and it is expected to be a numeric value, e.g. **10**.
 
-**FileType:** It specifies the type of uploading file, and it is expected to be an numeric value.&#x20;
+**FileType:** it specifies the type of uploading file, and it is expected to be an numeric value, e.g. **0**.&#x20;
 
-For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
+<mark style="color:red;">**Note:**</mark> VIDEO will return **0**, IMU will return **1**, GPS will return **2**, TTC will return **4**, and MATRIX will return **5**.
 
-**FileExtension:** It specifies the type of file extension, and it is expected to be an numeric value.&#x20;
+**FileExtension:** it specifies the type of file extension, and it is expected to be an numeric value, e.g. **1**.&#x20;
 
-For example, FileExtension.VIDEO\_MP4 will return **1**, FileExtension.TEXT\_CSV will return **3**, and FileExtension.TEXT\_TXT will return **4**.
+<mark style="color:red;">**Note:**</mark> VIDEO\_MP4 will return **1**, TEXT\_CSV will return **3**, and TEXT\_TXT will return **4**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -92,9 +92,9 @@ These parameters should be sent in multi-part/form-data format.
 
 **FileChunkId:** this property represents the identifier of a file chunk. It is expected to be a numeric value, e.g. **2**.
 
-&#x20;**FileType:** it specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
+&#x20;**FileType:** it specifies the type of uploading file, and it is expected to be an numeric value, e.g. **0**.&#x20;
 
-For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
+<mark style="color:red;">**Note:**</mark> VIDEO will return **0**, IMU will return **1**, GPS will return **2**, TTC will return **4**, and MATRIX will return **5**.
 
 **FileChunk:** this property represents the content of a file chunk, and it is expected to be a file value.
 
@@ -152,6 +152,8 @@ Authentication Bearer Token
 
 **keyword:** it's a query that is used to search data, and it is expected to be a string value.
 
+<mark style="color:red;">**Note:**</mark> if the keyword is empty, it will return the whole related data.
+
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains an array of a list of trip properties, including :
@@ -174,7 +176,7 @@ The provided endpoint response contains an array of a list of trip properties, i
 
 **originRegion:** the originRegion property represents the region or state of the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia"**.
 
-**origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"**North Rhine-Westphalia, Aachen, Kalkofen**"**.
+**origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**.
 
 **destinationAddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Roermonder Straße"**.
 
@@ -250,7 +252,7 @@ The provided endpoint response contains a list of trip properties, including :
 
 **endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value, e.g. **"00:00:12.1990000"**&#x20;
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value, e.g. **"00:00:12.1990000"**.
 
 **createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
@@ -284,7 +286,9 @@ The provided endpoint response contains a list of GPS properties, including:
 
 **events:** the events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, eventName,  latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates.
 
-* **eventType:** this key-value pair represents the type of event as a numeric value, e.g. **0**.
+* **eventType:** this key-value pair represents the type of event as a numeric value, e.g. **0.**\
+  \
+  <mark style="color:red;">**Note:**</mark> the value 0 suggests that it is a "Harsh Accel", 1 means "Harsh Brake", 2 means "Harsh Corner", 3 means "Speeding", 4 means "TailGating", 5 means "Violation Score", and 6 means "Vehicle Usage".&#x20;
 * **eventName:** this key-value pair represents the name or description of the event as a string                value, e.g. **"Harsh and sudden acceleration"**.
 * **latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g. **50.76787**.
 * **longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g. **6.1042366**.
@@ -361,15 +365,15 @@ Authentication Bearer Token
 
 **TripId:** the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-**TripFileType:** it specifies the type of uploading file, and it is expected to be a numeric value.&#x20;
+**TripFileType:** it specifies the type of uploading file, and it is expected to be a numeric value, e.g. **1**.&#x20;
 
-For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
+<mark style="color:red;">**Note:**</mark> VIDEO will return **0**, IMU will return **1**, GPS will return **2**, TTC will return **4**, and MATRIX will return **5**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of file chunk status properties, including:
 
-**fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**&#x20;
+**fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**.
 
 **chunkSize:** the chunkSize property represents the size of each file chunk in bytes, and it is expected to be a numeric value, e.g. **10485760**.&#x20;
 
@@ -377,11 +381,11 @@ The provided endpoint response contains a list of file chunk status properties, 
 
 **isUploaded:** the isUploaded property is a Boolean value that indicates whether the file has been successfully uploaded, e.g. **true**.
 
-**uploadPercent:** the uploadPercent property represents the progress or percentage of the upload process, and it is expected to be a numeric value, e.g. **30**.
+**uploadPercent:** the uploadPercent property represents the progress or percentage of the upload process, and it is expected to be a numeric value, e.g. **100**.
 
 
 
-### <mark style="color:green;">Get Trip Event Stats By Id</mark>
+### <mark style="color:green;">Get Trip Event Stats By ID</mark>
 
 The endpoint is designed to handle requests for retrieving or fetching event statistics related to a specific trip. It allows users to access aggregated data or metrics about various events that occurred during the trip.
 
@@ -401,7 +405,11 @@ Authentication Bearer Token
 
 The provided endpoint response contains an array of a list of event states’ properties, including:
 
-**eventType:** the eventType property represents the type of event that occurred, and it is expected to be a numeric value, e.g. **3**. The value 0 suggests that it is a "Harsh Accel", 1 means "Harsh Brake", 2 means "Harsh Corner", 3 means "Speeding", 4 means "TailGating", 5 means "Violation Score", and 6 means "Vehicle Usage".&#x20;
+**eventType:** the eventType property represents the type of event that occurred, and it is expected to be a numeric value, e.g. **3**.&#x20;
+
+<mark style="color:red;">**Note:**</mark> The value 0 suggests that it is a "Harsh Accel", 1 means "Harsh Brake", 2 means "Harsh Corner", 3 means "Speeding", 4 means "TailGating", 5 means "Violation Score", and 6 means "Vehicle Usage".&#x20;
+
+**eventName:** this key-value pair represents the name or description of the event as a string value, e.g. **"Harsh and sudden acceleration"**.
 
 **score:** the score property represents a score associated with the event. It is expected to be a numeric value, e.g. **19**.
 
