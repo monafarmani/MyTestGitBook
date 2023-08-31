@@ -220,7 +220,7 @@ The provided endpoint response contains a list of trip properties including :
 
 **score:** the score property likely represents a score gotten from a trip, between 0 to 100. It is expected to be a numeric value, e.g. **70**.
 
-**isCompleted:** the isCompleted property is a Boolean value (`true` or `false`). This property typically indicates whether uploading files is completed, e.g. **true**.
+**isCompleted:** the isCompleted property is a Boolean value (true or false). This property typically indicates whether uploading files is completedor not, e.g. **true** means it's completed.
 
 **originAddress:** the originAddress property likely represents the address of the origin location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
@@ -228,13 +228,13 @@ The provided endpoint response contains a list of trip properties including :
 
 **originLocality:** the originLocality property represents the locality or city of the origin location. It is expected to be a string value, e.g. **"Kalkofen"**.
 
-**originplace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value, e.g. **"Aachen"**.
+**originPlace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value, e.g. **"Aachen"**.
 
 **originRegion:** the originRegion property represents the region or state of the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia"**.
 
 **origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**.
 
-**destinationaddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Roermonder Straße"**.
+**destinationAddress:** the destinationAddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Roermonder Straße"**.
 
 **destinationPostalCode:** this property represents the postal code associated with the destination location. It is expected to be a string value, e.g. **"52072"**.
 
@@ -250,7 +250,7 @@ The provided endpoint response contains a list of trip properties including :
 
 **endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**&#x20;
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value, e.g. **"00:00:12.1990000"**&#x20;
 
 **createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
@@ -274,7 +274,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of gps properties
+The provided endpoint response contains a list of GPS properties, including
 
 **gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
@@ -309,13 +309,13 @@ The provided endpoint response contains a list of last trip properties including
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-**craeteDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
+**craeteDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
 **startDateTime:** the startDatetime property represents the date and time when a trip starts. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:45.282"**.
 
 **endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value , e.g. **"00:00:12.1990000"**.
 
 **origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**.
 
