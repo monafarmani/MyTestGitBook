@@ -126,7 +126,7 @@ The endpoint is designed to handle requests for indicating the completion of a f
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
+#### <mark style="color:orange;">Request Query Parameters</mark>
 
 **ItemId:** the ItemId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -361,7 +361,7 @@ The endpoint is designed to handle requests for retrieving or fetching the statu
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
+#### <mark style="color:orange;">Request Query Parameters</mark>
 
 **TripId:** the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -409,6 +409,14 @@ The provided endpoint response contains an array of a list of event states’ pr
 
 <mark style="color:red;">**Note:**</mark> The value 0 suggests that it is a "Harsh Accel", 1 means "Harsh Brake", 2 means "Harsh Corner", 3 means "Speeding", 4 means "TailGating", 5 means "Violation Score", and 6 means "Vehicle Usage".&#x20;
 
+<mark style="color:red;">**Note:**</mark> if evetntType is "Speeding" or "TailGating", we just need to have events.value.
+
+If evetntType is "Harsh Accel", "Harsh Brake" or  "Harsh Corner", we just need to have events.time & events.location.
+
+If evetntType is "Vehicle Usage", we just need to have rideTimeEvent.
+
+If else, we just need to have events.time & events.value.
+
 **eventName:** this key-value pair represents the name or description of the event as a string value, e.g. **"Harsh and sudden acceleration"**.
 
 **score:** the score property represents a score associated with the event. It is expected to be a numeric value, e.g. **19**.
@@ -441,23 +449,17 @@ The provided endpoint response contains an array of a list of event states’ pr
 **rideTimeEvent:** the rideTimeEvent property represents information related to ride time. It includes sub-properties such as totalTime and tripDistance. The totalTime, nightTime and rushHour properties further include sub-properties like hours, minutes, and seconds. The tripDistance property represents the distance covered during the ride.
 
 * **totalTime:** This key-value pair represents the total time of the ride. Inside the "totalTime" object, there are three key-value pairs:&#x20;
-
-1. **hours:** this key-value pair represents the number of hours during the ride time. It is expected to be a numeric value, e.g. **0**.
-2. **minutes:** this key-value pair represents the number of minutes during the ride time. It is expected to be a numeric value, e.g. **11**.
-3. **seconds:** this key-value pair represents the number of seconds during the ride time. It is expected to be a numeric value, e.g. **50**.
-
+  * **hours:** this key-value pair represents the number of hours during the ride time. It is expected to be a numeric value, e.g. **0**.
+  * **minutes:** this key-value pair represents the number of minutes during the ride time. It is expected to be a numeric value, e.g. **11**.
+  * **seconds:** this key-value pair represents the number of seconds during the ride time. It is expected to be a numeric value, e.g. **50**.
 * **nightTime:** this key-value pair represents the total time of the ride at night. Inside the "nightTime" object, there are three key-value pairs:&#x20;
-
-1. **hours:** this key-value pair represents the number of hours during the ride time at night. It is expected to be a numeric value, e.g. **00**.
-2. **minutes:** this key-value pair represents the number of minutes during the ride time at night. It is expected to be a numeric value, e.g. **11**.
-3. **seconds:** this key-value pair represents the number of seconds during the ride time at night. It is expected to be a numeric value, e.g. **00**.
-
+  * **hours:** this key-value pair represents the number of hours during the ride time at night. It is expected to be a numeric value, e.g. **00**.
+  * **minutes:** this key-value pair represents the number of minutes during the ride time at night. It is expected to be a numeric value, e.g. **11**.
+  * **seconds:** this key-value pair represents the number of seconds during the ride time at night. It is expected to be a numeric value, e.g. **00**.
 * **rushHour:** this key-value pair represents an object that captures information about the rush hour duration during the ride. Inside the "rushHour" object, there are three key-value pairs:&#x20;
-
-1. **hours:** this key-value pair represents the number of hours spent during rush hour. It is expected to be a numeric value, e.g. **00**.
-2. **minutes:** this key-value pair represents the number of minutes spent during rush hour. It is expected to be a numeric value, e.g. **00**.
-3. **seconds:** this key-value pair represents the number of seconds spent during rush hour. It is expected to be a numeric value, e.g. **00**.
-
+  * **hours:** this key-value pair represents the number of hours spent during rush hour. It is expected to be a numeric value, e.g. **00**.
+  * **minutes:** this key-value pair represents the number of minutes spent during rush hour. It is expected to be a numeric value, e.g. **00**.
+  * **seconds:** this key-value pair represents the number of seconds spent during rush hour. It is expected to be a numeric value, e.g. **00**.
 * **tripDistance:** this key-value pair represents the distance of the trip. It is expected to be a string value, e.g. **"3.97 km"**.
 
 
@@ -474,7 +476,7 @@ The endpoint is designed to handle requests for retrieving or fetching the compl
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
+#### <mark style="color:orange;">Request Query Parameters</mark>
 
 **tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
