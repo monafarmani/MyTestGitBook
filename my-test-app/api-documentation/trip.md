@@ -32,7 +32,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a property which is : &#x20;
+The provided endpoint response contains a property which is: &#x20;
 
 **tripId:** the tripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -66,7 +66,7 @@ For example, FileExtension.VIDEO\_MP4 will return **1**, FileExtension.TEXT\_CSV
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a property which is :&#x20;
+The provided endpoint response contains a property which is:&#x20;
 
 **fileManagerId:** the fileManagerId property represents an identifier or reference to a file manager that is going to be used in [Upload Chunks](trip.md#upload-chunks). It is expected to be a numeric value, e.g. **1002**.
 
@@ -86,7 +86,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-These parameters should be sent in multi-part/form-data format
+These parameters should be sent in multi-part/form-data format.
 
 **FileId:** the fileId property represents an identifier or reference to a file manager. It is expected to be a numeric value, e.g. **1002**.
 
@@ -154,7 +154,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains an array of a list of trip properties including :
+The provided endpoint response contains an array of a list of trip properties, including :
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -214,7 +214,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of trip properties including :
+The provided endpoint response contains a list of trip properties, including :
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -274,11 +274,11 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of GPS properties, including :
+The provided endpoint response contains a list of GPS properties, including:
 
 **gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
-* **gpsTime:** this key-value pair indicates the GPS time as a string value, e.g. **"2023-08-    29T21:06:47.002+00:00**".
+* **gpsTime:** this key-value pair indicates the GPS time , which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS".  It's expected to be a string value, e.g. **"2023-08-    29T21:06:47.002+00:00**".
 * &#x20;**latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g. **50.78181**. &#x20;
 * **longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g. **6.070963**.
 
@@ -305,7 +305,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of last trip properties, including :
+The provided endpoint response contains a list of last trip properties, including:
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -329,7 +329,7 @@ The provided endpoint response contains a list of last trip properties, includin
 
 **gpsInfo:** the gpsInfo property is an array containing GPS information, which includes
 
-* **gpsTime:** the gpsTime property represents the date and time of the GPS information. It is expected to be a string value, e.g. **"2023-08-29T20:54:56.833+00:00"**.
+* **gpsTime:** the gpsTime property represents the date and time of the GPS information, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS". It is expected to be a string value, e.g. **"2023-08-29T20:54:56.833+00:00"**.
 * **altitude:** the altitude property represents the altitude value. It is expected to be a numeric value, e.g. **215.5**.
 * **latitude:** the latitude property represents the latitude coordinate. It is expected to be a numeric value, e.g. **50.767002**.
 * **longitude:** the longitude property represents the longitude coordinate. It is expected to be a numeric value, e.g. **6.1035986**.
@@ -367,7 +367,7 @@ For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type 
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of file chunk status properties, including
+The provided endpoint response contains a list of file chunk status properties, including:
 
 **fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**&#x20;
 
@@ -409,7 +409,7 @@ The provided endpoint response contains an array of a list of event states’ pr
 
 **events:** the events property is an array that contains objects representing specific events. Each event object includes properties such as time, value, latitude, longitude, and location. These properties provide details about the event's time, value, GPS coordinates, and location.
 
-* **time:** this key-value pair represents the time of the event, and it is expected to be a string value, e.g. **"2023-08-29T20:56:27.832Z".**
+* **time:** this key-value pair represents the time of the event, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS". It is expected to be a string value, e.g. **"2023-08-29T20:56:27.832Z".**
 * **value:** this key-value pair represents the value associated with the event, and it is expected to be a string value, e.g. **"0.28".**
 * **latitude:** this key-value pair represents the latitude coordinate. It is expected to be a numeric value, e.g. **50.76787.**
 * **longitude:** this key-value pair represents the longitude coordinate. It is expected to be a numeric value, e.g. **6.1035986.**
@@ -417,7 +417,7 @@ The provided endpoint response contains an array of a list of event states’ pr
 
 **eventDetected:** the eventDetected property is an array that contains objects representing detected events. Each detected event object includes properties such as time, latitude, longitude, speedLimit, and yourSpeed. These properties provide details about the detected event's time, GPS coordinates, speed limit, and actual speed.
 
-* **time:** this key-value pair represents the time of the event, and it is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
+* **time:** this key-value pair represents the time of the event, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS". It is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
 * **latitude:** this key-value pair represents the latitude coordinate and is expected to be a numeric value, e.g. **50.767002.**
 * **longitude:** this key-value pair represents the longitude coordinate and is expected to be a numeric value, e.g. **6.1042366.**
 * **speedLimit:** this key-value pair represents the speed limit associated with the event, and is expected to be a string value, e.g. **30**.
@@ -425,7 +425,7 @@ The provided endpoint response contains an array of a list of event states’ pr
 
 **eventDetectedTailGating:** the eventDetectedTailGating property is an array that contains objects representing detected tailgating events. Each detected tailgating event object includes properties such as time, speedInKmph, ttc, and depth. These properties provide details about the detected tailgating event's time, speed in kilometers per hour, time-to-collision (TTC), and depth.
 
-* **time:** this key-value pair represents the time of the detected tailgating event, and it is expected to be a string value, e.g. **"2023-08-29T20:59:08.978Z"**.
+* **time:** this key-value pair represents the time of the detected tailgating event which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS". It is expected to be a string value, e.g. **"2023-08-29T20:59:08.978Z"**.
 * **speedInKmph:** this key-value pair represents the speed at which the tailgating event was detected, measured in kilometers per hour. It is expected to be a string value, e.g. **37.75**.
 * **ttc:** this key-value pair represents the Time to Collision (TTC) associated with the tailgating event. It is expected to be a string value, e.g. **0.93**.
 * **depth:** this key-value pair represents the depth or severity of the tailgating event, and it is expected to be a string value, e.g. **8.75**.
@@ -518,7 +518,7 @@ The provided endpoint response contains a list of last trip carbon properties, i
 
 **carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is Kilogram. It is expected to be a numeric value, e.g. **0.72**.&#x20;
 
-**lastUpdate:** the lastUpdate property indicates the date and time when the carbon emission information was last updated. It is expected to be a string value, e.g. **"2023-08-29T20:54:56.836"**.&#x20;
+**lastUpdate:** the lastUpdate property indicates the date and time when the carbon emission information was last updated, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS" . It is expected to be a string value, e.g. **"2023-08-29T20:54:56.836"**.&#x20;
 
 
 
