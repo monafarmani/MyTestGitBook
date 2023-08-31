@@ -274,7 +274,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of GPS properties, including
+The provided endpoint response contains a list of GPS properties, including :
 
 **gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
@@ -305,7 +305,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of last trip properties including&#x20;
+The provided endpoint response contains a list of last trip properties, including :
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -315,7 +315,7 @@ The provided endpoint response contains a list of last trip properties including
 
 **endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value , e.g. **"00:00:12.1990000"**.
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value, e.g. **"00:00:12.1990000"**.
 
 **origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**.
 
@@ -325,9 +325,9 @@ The provided endpoint response contains a list of last trip properties including
 
 **destinationPlace:** this property likely represents the name or identifier of the destination place. It is expected to be a string value, e.g. **"Aachen"**.
 
-**score:** the score property likely represents a score gotten from a trip, between 0 to 100. It is expected to be a numeric value, e.g. **70**.
+**score:** the score property likely represents a score gotten from a trip that is between 0 to 100. It is expected to be a numeric value, e.g. **70**.
 
-**gpsInfo:** the gpsInfo property is an array containing GPS information. In the provided response, it contains a single object with the following GPS-related properties:
+**gpsInfo:** the gpsInfo property is an array containing GPS information, which includes
 
 * **gpsTime:** the gpsTime property represents the date and time of the GPS information. It is expected to be a string value, e.g. **"2023-08-29T20:54:56.833+00:00"**.
 * **altitude:** the altitude property represents the altitude value. It is expected to be a numeric value, e.g. **215.5**.
@@ -361,13 +361,13 @@ Authentication Bearer Token
 
 **TripId:** the TripId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-**TripFileType: i**t specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
+**TripFileType:** it specifies the type of uploading file, and it is expected to be a numeric value.&#x20;
 
 For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of file chunk status properties including
+The provided endpoint response contains a list of file chunk status properties, including
 
 **fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**&#x20;
 
@@ -399,7 +399,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains an array of a list of event stats properties including
+The provided endpoint response contains an array of a list of event states’ properties, including:
 
 **eventType:** the eventType property represents the type of event that occurred, and it is expected to be a numeric value, e.g. **3**. The value 0 suggests that it is a "Harsh Accel", 1 means "Harsh Brake", 2 means "Harsh Corner", 3 means "Speeding", 4 means "TailGating", 5 means "Violation Score", and 6 means "Vehicle Usage".&#x20;
 
@@ -411,8 +411,8 @@ The provided endpoint response contains an array of a list of event stats proper
 
 * **time:** this key-value pair represents the time of the event, and it is expected to be a string value, e.g. **"2023-08-29T20:56:27.832Z".**
 * **value:** this key-value pair represents the value associated with the event, and it is expected to be a string value, e.g. **"0.28".**
-* **latitude:** this key-value pair represents the latitude coordinate, and it is expected to be a numeric value, e.g. **50.76787.**
-* **longitude:** this key-value pair represents the longitude coordinate, and it is expected to be a numeric value, e.g. **6.1035986.**
+* **latitude:** this key-value pair represents the latitude coordinate. It is expected to be a numeric value, e.g. **50.76787.**
+* **longitude:** this key-value pair represents the longitude coordinate. It is expected to be a numeric value, e.g. **6.1035986.**
 * **location:** this key-value pair represents the location associated with the event, and it is expected to be a string value, e.g. **null**.
 
 **eventDetected:** the eventDetected property is an array that contains objects representing detected events. Each detected event object includes properties such as time, latitude, longitude, speedLimit, and yourSpeed. These properties provide details about the detected event's time, GPS coordinates, speed limit, and actual speed.
@@ -430,19 +430,19 @@ The provided endpoint response contains an array of a list of event stats proper
 * **ttc:** this key-value pair represents the Time to Collision (TTC) associated with the tailgating event. It is expected to be a string value, e.g. **0.93**.
 * **depth:** this key-value pair represents the depth or severity of the tailgating event, and it is expected to be a string value, e.g. **8.75**.
 
-**rideTimeEvent:** the rideTimeEvent property represents information related to ride time. It includes sub-properties such as totalTime and tripDistance. The totalTime property further includes sub-properties like hours, minutes, and seconds, representing the total time of the ride in hours, minutes, and seconds. The tripDistance property represents the distance covered during the ride.
+**rideTimeEvent:** the rideTimeEvent property represents information related to ride time. It includes sub-properties such as totalTime and tripDistance. The totalTime, nightTime and rushHour properties further include sub-properties like hours, minutes, and seconds. The tripDistance property represents the distance covered during the ride.
 
 * **totalTime:** This key-value pair represents the total time of the ride. Inside the "totalTime" object, there are three key-value pairs:&#x20;
 
-1. **hours:** this key-value pair represents the number of hours in the ride time. It is expected to be a numeric value, e.g. **0**.
-2. **minutes:** this key-value pair represents the number of minutes in the ride time. It is expected to be a numeric value, e.g. **11**.
-3. **seconds:** this key-value pair represents the number of seconds in the ride time. It is expected to be a numeric value, e.g. **50**.
+1. **hours:** this key-value pair represents the number of hours during the ride time. It is expected to be a numeric value, e.g. **0**.
+2. **minutes:** this key-value pair represents the number of minutes during the ride time. It is expected to be a numeric value, e.g. **11**.
+3. **seconds:** this key-value pair represents the number of seconds during the ride time. It is expected to be a numeric value, e.g. **50**.
 
-* **nightTime:** this key-value pair represents the total time of the ride at nights. Inside the "nightTime" object, there are three key-value pairs:&#x20;
+* **nightTime:** this key-value pair represents the total time of the ride at night. Inside the "nightTime" object, there are three key-value pairs:&#x20;
 
-1. **hours:** this key-value pair represents the number of hours in the ride time at nights. It is expected to be a numeric value, e.g. **00**.
-2. **minutes:** this key-value pair represents the number of minutes in the ride time at nights. It is expected to be a numeric value, e.g. **11**.
-3. **seconds:** this key-value pair represents the number of seconds in the ride time at nights. It is expected to be a numeric value, e.g. **00**.
+1. **hours:** this key-value pair represents the number of hours during the ride time at night. It is expected to be a numeric value, e.g. **00**.
+2. **minutes:** this key-value pair represents the number of minutes during the ride time at night. It is expected to be a numeric value, e.g. **11**.
+3. **seconds:** this key-value pair represents the number of seconds during the ride time at night. It is expected to be a numeric value, e.g. **00**.
 
 * **rushHour:** this key-value pair represents an object that captures information about the rush hour duration during the ride. Inside the "rushHour" object, there are three key-value pairs:&#x20;
 
@@ -450,7 +450,7 @@ The provided endpoint response contains an array of a list of event stats proper
 2. **minutes:** this key-value pair represents the number of minutes spent during rush hour. It is expected to be a numeric value, e.g. **00**.
 3. **seconds:** this key-value pair represents the number of seconds spent during rush hour. It is expected to be a numeric value, e.g. **00**.
 
-* **tripDistance:** this key-value pair represents the distance of the trip. It is expected to be a srting value, e.g. **"3.97 km"**.
+* **tripDistance:** this key-value pair represents the distance of the trip. It is expected to be a string value, e.g. **"3.97 km"**.
 
 
 
@@ -472,7 +472,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of files completed status properties including
+The provided endpoint response contains a list of properties for the files’ completed status, including:
 
 **isCompleted:** the isCompleted property is a Boolean value that indicates whether the process or operation has been completed, e.g. **true**.
 
@@ -494,9 +494,9 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties
+The provided endpoint response contains a list of total carbon property, which is:
 
-**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is KG. It is expected to be a numeric value, e.g. **68.42**.
+**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is Kilogram. It is expected to be a numeric value, e.g. **68.42**.
 
 
 
@@ -514,11 +514,11 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of last trip carbon properties including
+The provided endpoint response contains a list of last trip carbon properties, including:
 
-**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is KG. It is expected to be a numeric value, e.g. **0.72**.&#x20;
+**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is Kilogram. It is expected to be a numeric value, e.g. **0.72**.&#x20;
 
-**lastUpdate:** the lastUpdate property indicates the date and time when the carbon emission information was last updated. t is expected to be a string value, e.g. **"2023-08-29T20:54:56.836"**.&#x20;
+**lastUpdate:** the lastUpdate property indicates the date and time when the carbon emission information was last updated. It is expected to be a string value, e.g. **"2023-08-29T20:54:56.836"**.&#x20;
 
 
 
