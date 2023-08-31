@@ -36,11 +36,13 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-**date:** the date property represents a specific date and time. The value of "2023-08-15T11:12:36.801Z" indicates a timestamp in UTC format, representing the date and time when the associated event or data was recorded.
+The provided endpoint response contains a list of report properties, including:&#x20;
 
-**score:** the score property represents a numerical score associated with a particular event or data. The value 0 indicates the score achieved for the event or data.
+**date:** the date property represents a specific date and time, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
-**label:** the label property represents a string or text label associated with the event or data. The value "string" is a placeholder, and in practice, it would typically provide a descriptive label or category related to the event or data.
+**score:** the score property represents a numerical score associated with a particular event or data, e.g. **20**.
+
+**label:** the label property represents a string or text label associated with the event or data. It is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
 
 
@@ -58,7 +60,9 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-**averageScore:** the averageScore property represents the average score associated with a specific context or set of data. In this case, the value is 0, which suggests that the average score is zero.
+The provided endpoint response contains a list of report property, which is:&#x20;
+
+**averageScore:** the averageScore property represents the average score associated with a specific context or set of data. It is expected to be a numeric value, e.g. **50**.
 
 
 
@@ -80,9 +84,11 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-**title:** the title property represents a string or text that serves as a title or heading. It typically describes or identifies a specific item or category.
+The provided endpoint response contains an array of a list of event stats properties, including:&#x20;
 
-**subtitle:** the subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category.
+**title:** the title property represents a string or text that serves as a title or heading. It typically describes or identifies a specific item or category, e.g.&#x20;
+
+**subtitle:** the subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category, e.g.&#x20;
 
 **score :** the score property represents a numerical score associated with the item or category being described. The value 0 indicates the score achieved for that specific item or category.
 

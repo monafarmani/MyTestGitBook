@@ -162,7 +162,7 @@ The provided endpoint response contains an array of a list of trip properties, i
 
 **isCompleted:** the isCompleted property is a Boolean value (true or false). This property typically indicates whether uploading files is completed or not, e.g. **true** means it's completed.
 
-**createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
+**createDate:** this property represents the date and time when a trip was created, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
 **originAddress:** the originAddress property likely represents the address of the origin location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
