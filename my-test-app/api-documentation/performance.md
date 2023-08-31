@@ -90,6 +90,6 @@ The provided endpoint response contains an array of a list of event stats proper
 
 **subtitle:** the subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category, e.g.&#x20;
 
-**score :** the score property represents a numerical score associated with the item or category being described. The value 0 indicates the score achieved for that specific item or category.
+**score :** the score property represents a numerical score associated with the item or category being described, e.g.**20**.
 
-**difference:** the difference property represents a numerical value indicating the difference or change related to the score. It provides information about how the score has changed compared to a previous value or reference
+**difference:** the difference property represents a numerical value indicating the difference or change related to the score. It provides information about how the score has changed compared to a previous value or reference, e.g. **20**.
