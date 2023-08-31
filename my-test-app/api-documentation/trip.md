@@ -425,20 +425,32 @@ The provided endpoint response contains an array of a list of event stats proper
 
 **eventDetectedTailGating:** the eventDetectedTailGating property is an array that contains objects representing detected tailgating events. Each detected tailgating event object includes properties such as time, speedInKmph, ttc, and depth. These properties provide details about the detected tailgating event's time, speed in kilometers per hour, time-to-collision (TTC), and depth.
 
-* **time:** this key-value pair represents the time of the detected tailgating event, and it is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
-* **speedInKmph:** this key-value pair represents the speed at which the tailgating event was detected, measured in kilometers per hour. It is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
-* **ttc:** this key-value pair represents the Time to Collision (TTC) associated with the tailgating event. It is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
-* **depth:** this key-value pair represents the depth or severity of the tailgating event, and it is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
+* **time:** this key-value pair represents the time of the detected tailgating event, and it is expected to be a string value, e.g. **"2023-08-29T20:59:08.978Z"**.
+* **speedInKmph:** this key-value pair represents the speed at which the tailgating event was detected, measured in kilometers per hour. It is expected to be a string value, e.g. **37.75**.
+* **ttc:** this key-value pair represents the Time to Collision (TTC) associated with the tailgating event. It is expected to be a string value, e.g. **0.93**.
+* **depth:** this key-value pair represents the depth or severity of the tailgating event, and it is expected to be a string value, e.g. **8.75**.
 
 **rideTimeEvent:** the rideTimeEvent property represents information related to ride time. It includes sub-properties such as totalTime and tripDistance. The totalTime property further includes sub-properties like hours, minutes, and seconds, representing the total time of the ride in hours, minutes, and seconds. The tripDistance property represents the distance covered during the ride.
 
-* **totaltime:** This key-value pair represents the total time of the ride. Inside the "totalTime" object, there are three key-value pairs:&#x20;
+* **totalTime:** This key-value pair represents the total time of the ride. Inside the "totalTime" object, there are three key-value pairs:&#x20;
 
-1. **hours:** this key-value pair represents the number of hours in the ride time.
-2. **minutes:** this key-value pair represents the number of minutes in the ride time.
-3. **seconds:** this key-value pair represents the number of seconds in the ride time.
+1. **hours:** this key-value pair represents the number of hours in the ride time. It is expected to be a numeric value, e.g. **0**.
+2. **minutes:** this key-value pair represents the number of minutes in the ride time. It is expected to be a numeric value, e.g. **11**.
+3. **seconds:** this key-value pair represents the number of seconds in the ride time. It is expected to be a numeric value, e.g. **50**.
 
-* **tripDistance:** this key-value pair represents the distance of the trip.
+* **nightTime:** this key-value pair represents the total time of the ride at nights. Inside the "nightTime" object, there are three key-value pairs:&#x20;
+
+1. **hours:** this key-value pair represents the number of hours in the ride time at nights. It is expected to be a numeric value, e.g. **00**.
+2. **minutes:** this key-value pair represents the number of minutes in the ride time at nights. It is expected to be a numeric value, e.g. **11**.
+3. **seconds:** this key-value pair represents the number of seconds in the ride time at nights. It is expected to be a numeric value, e.g. **00**.
+
+* **rushHour:** this key-value pair represents an object that captures information about the rush hour duration during the ride. Inside the "rushHour" object, there are three key-value pairs:&#x20;
+
+1. **hours:** this key-value pair represents the number of hours spent during rush hour. It is expected to be a numeric value, e.g. **00**.
+2. **minutes:** this key-value pair represents the number of minutes spent during rush hour. It is expected to be a numeric value, e.g. **00**.
+3. **seconds:** this key-value pair represents the number of seconds spent during rush hour. It is expected to be a numeric value, e.g. **00**.
+
+* **tripDistance:** this key-value pair represents the distance of the trip. It is expected to be a srting value, e.g. **"3.97 km"**.
 
 
 
@@ -460,11 +472,11 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties
+The provided endpoint response contains a list of files completed status properties including
 
 **isCompleted:** the isCompleted property is a Boolean value that indicates whether the process or operation has been completed, e.g. **true**.
 
-**message:** the message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure.
+**message:** the message property provides a string value that typically includes additional information or a status message related to the completion of the process. The actual value of the string would depend on the specific implementation or context of the endpoint. It may contain details about the completed process, any relevant information or instructions, or an indication of success or failure. It is expected to be a string value.
 
 
 
@@ -484,7 +496,7 @@ Authentication Bearer Token
 
 The provided endpoint response contains a list of car model properties
 
-**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation. In this case, the value is 0, which suggests that there are no carbon emissions associated with the specific context being referred to.
+**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation.&#x20;
 
 
 
