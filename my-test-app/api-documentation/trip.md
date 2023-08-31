@@ -496,7 +496,7 @@ Authentication Bearer Token
 
 The provided endpoint response contains a list of car model properties
 
-**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation.&#x20;
+**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is KG. It is expected to be a numeric value, e.g. **68.42**.
 
 
 
@@ -514,11 +514,11 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties
+The provided endpoint response contains a list of last trip carbon properties including
 
-**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation. In this case, the value is 0, which suggests that there are no carbon emissions associated with the specific context being referred to.
+**carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is KG. It is expected to be a numeric value, e.g. **0.72**.&#x20;
 
-**lastUpdate:** the lastUpdate property indicates the date and time when the carbon emission information was last updated. The value of "2023-08-15T11:12:36.801Z" represents the specific timestamp in UTC format.
+**lastUpdate:** the lastUpdate property indicates the date and time when the carbon emission information was last updated. t is expected to be a string value, e.g. **"2023-08-29T20:54:56.836"**.&#x20;
 
 
 
