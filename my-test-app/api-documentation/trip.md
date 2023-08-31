@@ -54,13 +54,13 @@ Authentication Bearer Token
 
 **ItemId:** the itemId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
-**chunkCount:** the chunk count represents the total number of the smaller chunks that make up the entire file, and it is expected to be an Integer value, e.g. **10**.
+**chunkCount:** the chunk count represents the total number of the smaller chunks that make up the entire file, and it is expected to be a numeric value, e.g. **10**.
 
-**FileType:** It specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
+**FileType:** It specifies the type of uploading file, and it is expected to be an numeric value.&#x20;
 
 For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
 
-**FileExtension:** It specifies the type of file extension, and it is expected to be an Integer value.&#x20;
+**FileExtension:** It specifies the type of file extension, and it is expected to be an numeric value.&#x20;
 
 For example, FileExtension.VIDEO\_MP4 will return **1**, FileExtension.TEXT\_CSV will return **3**, and FileExtension.TEXT\_TXT will return **4**.
 
@@ -68,7 +68,7 @@ For example, FileExtension.VIDEO\_MP4 will return **1**, FileExtension.TEXT\_CSV
 
 The provided endpoint response contains a property which is :&#x20;
 
-**fileManagerId:** the fileManagerId property represents an identifier or reference to a file manager which is going to be used in [Upload Chunks](trip.md#upload-chunks). It is expected to be a numeric value, e.g. **1002**.
+**fileManagerId:** the fileManagerId property represents an identifier or reference to a file manager that is going to be used in [Upload Chunks](trip.md#upload-chunks). It is expected to be a numeric value, e.g. **1002**.
 
 
 
@@ -86,17 +86,17 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-These parameters should be sent in multipart/form-data format
+These parameters should be sent in multi-part/form-data format
 
 **FileId:** the fileId property represents an identifier or reference to a file manager. It is expected to be a numeric value, e.g. **1002**.
 
-**FileChunkId:** this property represents the identifier of a file chunk's. It is expected to be a numeric value, e.g. **2**.
+**FileChunkId:** this property represents the identifier of a file chunk. It is expected to be a numeric value, e.g. **2**.
 
 &#x20;**FileType:** it specifies the type of uploading file, and it is expected to be an Integer value.&#x20;
 
 For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type will return **2**, TTC.type will return **4**, and MATRIX.type will return **5**.
 
-**FileChunk:** this property represents the content of a file chunk, and It is expected to be a file value.
+**FileChunk:** this property represents the content of a file chunk, and it is expected to be a file value.
 
 <mark style="color:red;">**Note:**</mark> the type content for HttpHeaders can be either ContntType.VIDEO\_MP4 or ContntType.TEXT\_CSV.&#x20;
 
@@ -128,11 +128,11 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**ItemId:** the itemId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
+**ItemId:** the ItemId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
-&#x20;When set to **true**, it suggests that the files upload process related to a trip has been successfully completed.
+When set to **true**, it suggests that the file upload process related to a trip has been successfully completed.
 
 
 
@@ -160,9 +160,9 @@ The provided endpoint response contains an array of a list of trip properties in
 
 **score:** the score property likely represents a score gotten from a trip, between 0 to 100. It is expected to be a numeric value, e.g. **70**.
 
-**isCompleted:** the isCompleted property is a Boolean value (`true` or `false`). This property typically indicates whether uploading files is completed, e.g. **true**.
+**isCompleted:** the isCompleted property is a Boolean value (true or false). This property typically indicates whether uploading files is completed or not, e.g. **true** means it's completed.
 
-**createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**
+**createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
 **originAddress:** the originAddress property likely represents the address of the origin location. It is expected to be a string value, e.g. **"Jülicher Straße"**.
 
@@ -170,13 +170,13 @@ The provided endpoint response contains an array of a list of trip properties in
 
 **originLocality:** the originLocality property represents the locality or city of the origin location. It is expected to be a string value, e.g. **"Kalkofen"**.
 
-**originplace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value, e.g. **"Aachen"**.
+**originPlace:** this property likely represents the name or identifier of the origin place. It is expected to be a string value, e.g. **"Aachen"**.
 
 **originRegion:** the originRegion property represents the region or state of the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia"**.
 
 **origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"**North Rhine-Westphalia, Aachen, Kalkofen**"**.
 
-**destinationaddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Roermonder Straße"**.
+**destinationAddress:** the destinationaddress property represents the address of the destination location. It is expected to be a string value, e.g. **"Roermonder Straße"**.
 
 **destinationPostalCode:** this property represents the postal code associated with the destination location. It is expected to be a string value, e.g. **"52072"**.
 
@@ -188,15 +188,15 @@ The provided endpoint response contains an array of a list of trip properties in
 
 **destination:** the destination property represents the destination location. It is expected to be a string value, e.g. **"North Rhine Westphalia, Aachen, Ponttor"**.
 
-**startDatetime:** the startDatetime property represents the date and time when a trip starts. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:45.282"**.
+**startDatetime:** the startDatetime property represents the date and time when a trip starts. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and is expected to be a string value, e.g. **"2023-07-25T15:41:45.282"**.
 
-**endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
+**endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include `ticks`, `days`, `hours`, `milliseconds`, `minutes`, and `seconds`. Each sub-property is expected to be a numeric value (`0` in this case), e.g. **"00:00:12.1990000"**&#x20;
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value, e.g. **"00:00:12.1990000"**.
 
 
 
-### <mark style="color:green;">**Get Trip By Id**</mark>&#x20;
+### <mark style="color:green;">**Get Trip By ID**</mark>&#x20;
 
 The endpoint is designed to handle requests for retrieving or fetching information about a specific trip or journey based on its unique identifier. It allows users to access detailed information about a particular trip.
 
