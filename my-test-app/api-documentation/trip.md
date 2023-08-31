@@ -104,7 +104,7 @@ For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type 
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties, including:&#x20;
+The provided endpoint response contains a list of upload chunks properties, including:&#x20;
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -154,7 +154,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains an array of a list of car model properties including&#x20;
+The provided endpoint response contains an array of a list of trip properties including :
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -214,7 +214,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties including&#x20;
+The provided endpoint response contains a list of trip properties including :
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -274,7 +274,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties
+The provided endpoint response contains a list of gps properties
 
 **gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
@@ -305,7 +305,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties
+The provided endpoint response contains a list of last trip properties including&#x20;
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -333,15 +333,15 @@ The provided endpoint response contains a list of car model properties
 * **altitude:** the altitude property represents the altitude value. It is expected to be a numeric value, e.g. **215.5**.
 * **latitude:** the latitude property represents the latitude coordinate. It is expected to be a numeric value, e.g. **50.767002**.
 * **longitude:** the longitude property represents the longitude coordinate. It is expected to be a numeric value, e.g. **6.1035986**.
-* **speed:** the speed property represents the speed value. It is expected to be a string value, e.g.&#x20;
-* **climb:**  the `climb` property represents the climb value. It is expected to be a string value.
-* **course:** the `course` property represents the course value. It is expected to be a string value.
-* **epx:** the `epx` property represents the estimated position error along the X-axis. It is expected to be a string value.
-* **epy:** the `epy` property represents the estimated position error along the Y-axis. It is expected to be a string value.
-* **epv:** the `epv` property represents the estimated position error vertically. It is expected to be a string value.
-* **eps:** the `eps` property represents the estimated speed error. It is expected to be a string value.
-* **epc:** the `epc` property represents the estimated climb error. It is expected to be a string value.
-* **epd:** the `epd` property represents the estimated course error. It is expected to be a string value.
+* **speed:** the speed property represents the speed value. It is expected to be a string value, e.g. **38**.&#x20;
+* **climb:**  the climb property represents the climb value. It is expected to be a string value, e.g. **0.0**.
+* **course:** the course property represents the course value. It is expected to be a string value, e.g. **280.8201**.
+* **epx:** the epx property represents the estimated position error along the X-axis. It is expected to be a string value, e.g. **N/A**.
+* **epy:** the epy property represents the estimated position error along the Y-axis. It is expected to be a string value, e.g. **N/A**.
+* **epv:** the epv property represents the estimated position error vertically. It is expected to be a string value, e.g. **N/A**.
+* **eps:** the eps property represents the estimated speed error. It is expected to be a string value, e.g. **N/A**.
+* **epc:** the epc property represents the estimated climb error. It is expected to be a string value, e.g. **N/A**.
+* **epd:** the epd property represents the estimated course error. It is expected to be a string value, e.g. **N/A**.
 
 
 
@@ -367,7 +367,7 @@ For example, VIDEO.type will return **0**, IMU.type will return **1**, GPS.type 
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties
+The provided endpoint response contains a list of file chunk status properties including
 
 **fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**&#x20;
 
@@ -395,17 +395,19 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Body Parameters</mark>
 
-**id:**
+**id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
+
+(0), HarshBrake(1), (2), (3), (4), (5), (6)
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties
+The provided endpoint response contains an array of a list of event stats properties including
 
-**eventType:** the eventType property represents the type of event that occurred. The value 0 suggests that it is a specific type of event, and the exact meaning of this event would depend on the application or system's context.
+**eventType:** the eventType property represents the type of event that occurred, and it is expected to be a numeric value, e.g. **3.** The value 0 suggests that it is a "Harsh Accel", 1 means "Harsh Brake", 2 means "Harsh Corner", 3 means "Speeding", 4 means "TailGating", 5 means "Violation Score", and 6 means "Vehicle Usage".&#x20;
 
-**score:** the score property represents a score associated with the event. The value 0 indicates the score achieved for the event.
+**score:** the score property represents a score associated with the event. It is expected to be a numeric value, e.g. **19**.
 
-**scorePercentile:** the scorePercentile property represents the percentile rank of the score achieved for the event. The value 0 suggests that the score percentile is at the lowest rank.
+**scorePercentile:** the scorePercentile property represents the percentile rank of the score achieved for the event.  It is expected to be a numeric value, e.g. **95**.
 
 **events:** the events property is an array that contains objects representing specific events. Each event object includes properties such as time, value, latitude, longitude, and location. These properties provide details about the event's time, value, GPS coordinates, and location.
 
