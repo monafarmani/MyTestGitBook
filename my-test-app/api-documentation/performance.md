@@ -46,7 +46,7 @@ The provided endpoint response contains a list of report properties, including&#
 
 **label:** the label property represents a string or text label associated with the trip. It is expected to be a string value, e.g. **"Tue"**.
 
-Note: the label is determined based on the type of report. If the report type is DAILY, the label is the days of the week. If it's WEEKLY, the label is the weeks of the month. If it's MONTHLY, the label is the months of the year. If else, the label is the number of the year. &#x20;
+<mark style="color:red;">**Note:**</mark> the label is determined based on the type of report. If the report type is DAILY, the label is the days of the week. For WEEKLY, it's the weeks of the month. For MONTHLY, it's the months of the year, and for YEARLY, it's the number of the year. &#x20;
 
 
 
@@ -66,7 +66,7 @@ Authentication Bearer Token
 
 The provided endpoint response contains a list of report property, which is:&#x20;
 
-**averageScore:** the averageScore property represents the average score obtained from the total trips of the user. It is expected to be a numeric value, e.g. **95**.
+**averageScore:** the averageScore property represents the average score gained from the total trips of the user. It is expected to be a numeric value, e.g. **95**.
 
 
 
