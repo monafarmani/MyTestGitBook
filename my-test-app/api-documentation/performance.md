@@ -32,17 +32,21 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Query Parameters</mark>
 
-**UserTripReportType:**
+**UserTripReportType:** it specifies the type of report scores, and is expected to be a numeric value, e.g. **1**.
+
+<mark style="color:red;">**Note:**</mark>** ** the report type of  DAILY will return **1**, WEEKLY will return **2**, MONTHLY will return **3**, and YEARLY will return **5**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of report properties, including:&#x20;
+The provided endpoint response contains a list of report properties, including&#x20;
 
-**date:** the date property represents a specific date and time, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
+**date:** the date property represents a specific date and time of the report, which is formatted as "yyyy-MM-dd'T'HH:mm:ss", and it is expected to be a string value, e.g. **"2023-08-29T00:00:00+00:00"**.
 
-**score:** the score property represents a numerical score associated with a particular event or data, e.g. **20**.
+**score:** the score property represents a numerical score associated with the scores of all of the user's trips during the specific time, e.g. **91.5**.
 
-**label:** the label property represents a string or text label associated with the event or data. It is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
+**label:** the label property represents a string or text label associated with the trip. It is expected to be a string value, e.g. **"Tue"**.
+
+Note: the label is determined based on the type of report. If the report type is DAILY, the label is the days of the week. If it's WEEKLY, the label is the weeks of the month. If it's MONTHLY, the label is the months of the year. If else, the label is the number of the year. &#x20;
 
 
 
@@ -62,7 +66,7 @@ Authentication Bearer Token
 
 The provided endpoint response contains a list of report property, which is:&#x20;
 
-**averageScore:** the averageScore property represents the average score associated with a specific context or set of data. It is expected to be a numeric value, e.g. **50**.
+**averageScore:** the averageScore property represents the average score obtained from the total trips of the user. It is expected to be a numeric value, e.g. **95**.
 
 
 
