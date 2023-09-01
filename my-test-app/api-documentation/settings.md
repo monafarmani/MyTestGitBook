@@ -34,9 +34,9 @@ Authentication Bearer Token
 
 The provided endpoint response contains an array of agreements properties' list, including &#x20;
 
-**question:** the question property represents a string or text that represents a question of the app's agreement being posed, e.g.&#x20;
+**question:** the question property represents a string or text that represents a question of the app's agreement being posed, e.g. **"APPLICABLE LAW"**.
 
-**answer:** the answer property represents a string or text that provides the corresponding answer to the question, e.g.&#x20;
+**answer:** the answer property represents a string or text that provides the corresponding answer to the question, e.g. **"This License Agreement is governed by the German Basic Law excluding its conflicts of law rules."**.
 
 
 
@@ -56,23 +56,25 @@ Authentication Bearer Token
 
 The provided endpoint response contains a list of privacy policy properties, including&#x20;
 
-**lastUpdate :** the lastUpdate property represents a specific date and time when the information or data was last updated, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
+**lastUpdate :** the lastUpdate property represents a specific date and time when the information or data was last updated, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-03-13T12:15:11.6972145"**.
 
 **privacyPolicies :** the privacyPolicies property represents an array of objects that contain information about privacy policies. In this case, there is a single object within the array.
 
 Within the privacyPolicies object:
 
-**id :** the id property represents a numerical identifier associated with a privacy policy entry, e.g.
+**id :** the id property represents a numerical identifier associated with a privacy policy entry, e.g. **36**.
 
-**question :** the question property represents a string or text that serves as a question related to privacy policies, e.g.
+**question :** the question property represents a string or text that serves as a question related to privacy policies, e.g. **"Changes to Privacy Policy"**.
 
-**answer :** the answer property represents a string or text that provides the corresponding answer to the privacy policy question, e.g.
+**answer :** the answer property represents a string or text that provides the corresponding answer to the privacy policy question, e.g. **"We may revise this Privacy Policy from time to time in our sole discretion. If there are any material changes to this Privacy Policy, we will notify you as required by applicable law. You understand and agree that you will be deemed to have accepted the updated Privacy Policy if you continue to use the App after the new Privacy Policy takes effect."**.
 
-**order :** the order property represents a numerical value indicating the order or sequence of the privacy policy entry, e.g.
+**order :** the order property represents a numerical value indicating the order or sequence of the privacy policy entry, e.g. **7**.
 
-**createDate :** the createDate property represents a specific date and time when the privacy policy entry was created, e.g.
+**createDate :** the createDate property represents a specific date and time when the privacy policy entry was created, e.g. **"2023-03-13T12:21:28.239462"**.
 
-**modifyDate :** the modifyDate property represents a specific date and time when the privacy policy entry was last modified, e.g.
+**modifyDate :** the modifyDate property represents a specific date and time when the privacy policy entry was last modified, e.g. **null**.
+
+**getMaxDate:** the getMaxDate property represents the maximum date and time for the privacy policy, e.g. **"2023-03-13T12:21:28.239462"**.
 
 
 
@@ -92,9 +94,9 @@ Authentication Bearer Token
 
 The provided endpoint response contains an array of terms & conditions properties' list, including&#x20;
 
-**question :** The question property represents a string or text that serves as a questionof terms & conditions, e.g.&#x20;
+**question:** The question property represents a string or text that serves as a question of terms & conditions, e.g. **"Payment"**.
 
-**answer :** The answer property represents a string or text that provides the corresponding answer to the question, e.g.&#x20;
+**answer:** The answer property represents a string or text that provides the corresponding answer to the question, e.g. **"The App is provided to you free of charge and you will not be charged for installing the App.\r\nGIZO charges insurance companies service fees for providing safety functions, driving data collection and analysis services."**.
 
 
 
