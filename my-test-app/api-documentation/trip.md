@@ -50,7 +50,7 @@ The endpoint is designed to handle requests for initiating the start of a file u
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
+#### <mark style="color:orange;">Request Query Parameters</mark>
 
 **ItemId:** the itemId property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 

@@ -30,7 +30,7 @@ The endpoint is designed to handle requests for generating a report of trips or 
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
+#### <mark style="color:orange;">Request Query Parameters</mark>
 
 **UserTripReportType:**
 
@@ -78,7 +78,7 @@ The endpoint is designed to handle requests for retrieving event statistics with
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
+#### <mark style="color:orange;">Request Query Parameters</mark>
 
 **TripReportType:**
 
