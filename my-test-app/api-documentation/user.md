@@ -128,7 +128,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that getting initial information from the user is completed.
+If it's **true**, it means that getting initial information from the user is completed.
 
 
 

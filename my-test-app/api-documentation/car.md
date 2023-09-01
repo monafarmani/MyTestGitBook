@@ -48,7 +48,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that the car model is added.
+If it's **true**, it means that the car model is added.
 
 
 
@@ -70,7 +70,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that the car model is selected.
+If it's **true**, it means that the car model is selected.
 
 
 
@@ -88,7 +88,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of car model properties, including :
+The provided endpoint response contains an array of  several properties, including
 
 **id:** this property likely represents the ID of the car. It is expected to be a numeric value, e.g. **2256**.
 
@@ -172,4 +172,4 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that the car is deleted.
+If it's **true**, it means that the car is deleted.
