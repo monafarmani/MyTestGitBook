@@ -32,7 +32,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains an array of agreements properties' list, including &#x20;
+The provided endpoint response contains an array of several properties, including&#x20;
 
 **question:** the question property represents a string or text that represents a question of the app's agreement being posed, e.g. **"APPLICABLE LAW"**.
 
@@ -54,7 +54,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of privacy policy properties, including&#x20;
+The provided endpoint response contains several properties, including&#x20;
 
 **lastUpdate :** the lastUpdate property represents a specific date and time when the information or data was last updated, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-03-13T12:15:11.6972145"**.
 
@@ -92,7 +92,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains an array of terms & conditions properties' list, including&#x20;
+The provided endpoint response contains an array of several properties, including&#x20;
 
 **question:** The question property represents a string or text that serves as a question of terms & conditions, e.g. **"Payment"**.
 
@@ -114,7 +114,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of config properties, including &#x20;
+The provided endpoint response contains several properties, including &#x20;
 
 **aspectRatio:** the aspectRatio property represents a string value that describes the aspect ratio of a visual element, e.g. **"16:9"** or **"4:3"**. Aspect ratio is the proportional relationship between the width and height of an object or display.  .
 
@@ -150,7 +150,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of Geo Code properties, including&#x20;
+The provided endpoint response contains several properties, including
 
 **origin:** The origin property represents a string value that describes the origin address or location, e.g. **"Burtscheid, Aachen, North Rhine-Westphalia"**.&#x20;
 
