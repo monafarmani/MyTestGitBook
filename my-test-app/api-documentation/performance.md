@@ -34,7 +34,7 @@ Authentication Bearer Token
 
 **UserTripReportType:** it specifies the type of report scores, and is expected to be a numeric value, e.g. **1**.
 
-<mark style="color:red;">**Note:**</mark>** ** the report type of  DAILY will return **1**, WEEKLY will return **2**, MONTHLY will return **3**, and YEARLY will return **5**.
+<mark style="color:red;">**Note:**</mark>** ** the report type of DAILY will return **1**, WEEKLY will return **2**, MONTHLY will return **3**, and YEARLY will return **5**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -86,7 +86,7 @@ Authentication Bearer Token
 
 **TripReportType:** it specifies the type of report scores, and is expected to be a numeric value, e.g. **1**.
 
-<mark style="color:red;">**Note:**</mark>** ** the report type of  DAILY will return **1**, WEEKLY will return **2**, MONTHLY will return **3**, and YEARLY will return **5**.
+<mark style="color:red;">**Note:**</mark>** ** the report type of DAILY will return **1**, WEEKLY will return **2**, MONTHLY will return **3**, and YEARLY will return **5**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -94,8 +94,8 @@ The provided endpoint response contains an array of several properties, includin
 
 **title:** the title property represents a string or text that serves as a title or heading. It typically describes or identifies an event's stats.
 
-**subtitle:** the subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category..&#x20;
+**subtitle:** the subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category.&#x20;
 
-**score :** the score property represents a numerical score associated with the item or category being described, e.g.**20**.
+**score :** the score property represents a numerical score associated with the item or category being described, e.g. **20**.
 
 **difference:** the difference property represents a numerical value indicating the difference or change related to the score. It provides information about how the score has changed compared to a previous value or reference, e.g. **20**.
