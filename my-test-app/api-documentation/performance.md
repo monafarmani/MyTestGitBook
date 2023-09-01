@@ -84,7 +84,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains an array of event stats properties' list, including :&#x20;
+The provided endpoint response contains an array of event stats properties' list, including &#x20;
 
 **title:** the title property represents a string or text that serves as a title or heading. It typically describes or identifies a specific item or category, e.g.&#x20;
 

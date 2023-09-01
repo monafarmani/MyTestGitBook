@@ -32,11 +32,11 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains an array of agreements properties' list, including &#x20;
 
+**question:** the question property represents a string or text that represents a question being posed, e.g.&#x20;
 
-**question:** the question property represents a string or text that represents a question being posed.
-
-**answer:** the answer property represents a string or text that provides the corresponding answer to the question.&#x20;
+**answer:** the answer property represents a string or text that provides the corresponding answer to the question, e.g.&#x20;
 
 
 
@@ -54,15 +54,15 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains a list of config properties, including &#x20;
 
+**aspectRatio:** the aspectRatio property represents a string value that describes the aspect ratio of a visual element. Aspect ratio is the proportional relationship between the width and height of an object or display. The specific value of "string" is a placeholder, and in practice, it would typically provide a specific aspect ratio value such as **"16:9"** or **"4:3"**.
 
-**aspectRatio:** the aspectRatio property represents a string value that describes the aspect ratio of a visual element. Aspect ratio is the proportional relationship between the width and height of an object or display. The specific value of "string" is a placeholder, and in practice, it would typically provide a specific aspect ratio value such as "16:9" or "4:3".
+**chunkSize:** the chunkSize property represents a numerical value that indicates the size or length of chunks or segments, e.g.  . The unit of measurement for this value is  .
 
-**chunkSize:** the chunkSize property represents a numerical value that indicates the size or length of chunks or segments. The unit of measurement for this value would depend on the specific context and application.
+**lastGpsRecords:** the lastGpsRecords property represents a numerical value that indicates the number of recent GPS records or data points. It suggests how many GPS records are included or considered in the response, e.g.&#x20;
 
-**lastGpsRecords:** the lastGpsRecords property represents a numerical value that indicates the number of recent GPS records or data points. It suggests how many GPS records are included or considered in the response.
-
-**toleranceInXAxis, toleranceInYAxis, toleranceInZAxis:** these properties represent numerical values that indicate tolerances or acceptable ranges along the X, Y, and Z axes, respectively. The specific context or application will determine the meaning and unit of measurement for these tolerance values.
+**toleranceInXAxis, toleranceInYAxis, toleranceInZAxis:** these properties represent numerical values that indicate tolerances or acceptable ranges along the X, Y, and Z axes, respectively, e.g. . The unit of measurement for these tolerance values are&#x20;
 
 ### <mark style="color:green;">Geo Code</mark>
 
@@ -76,7 +76,7 @@ The endpoint is designed to handle requests for geocoding addresses or place nam
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
+#### <mark style="color:orange;">Request Query Parameters</mark>
 
 **OriginLatitude :**
 
@@ -88,15 +88,15 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains a list of Geo Code properties, including&#x20;
 
+**origin:** The origin property represents a string value that describes the origin location, e.g.&#x20;
 
-**origin :** The origin property represents a string value that describes the origin of something. It could refer to the starting point or location of a journey, transportation route, or any other context where a point of origin is relevant. The specific value of "string" is a placeholder, and in practice, it would typically provide a specific origin description or identifier.
+**originPlace:** The originPlace property represents a string value that provides additional information about the origin. It could refer to the name, address, or any other relevant details related to the origin location or place, e.g.
 
-**originPlace :** The originPlace property represents a string value that provides additional information about the origin. It could refer to the name, address, or any other relevant details related to the origin location or place.
+**destination:** The destination property represents a string value that describes the destination location, e.g.&#x20;
 
-**destination :** The destination property represents a string value that describes the destination of something. It could refer to the endpoint or target location of a journey, transportation route, or any other context where a destination point is relevant. The specific value of "string" is a placeholder, and in practice, it would typically provide a specific destination description or identifier.
-
-**destinationPlace :** The destinationPlace property represents a string value that provides additional information about the destination. It could refer to the name, address, or any other relevant details related to the destination location or place.
+**destinationPlace:** The destinationPlace property represents a string value that provides additional information about the destination. It could refer to the name, address, or any other relevant details related to the destination location or place, e.g.
 
 
 
@@ -114,9 +114,9 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains a list of privacy policy properties, including&#x20;
 
-
-**lastUpdate :** The lastUpdate property represents a specific date and time when the information or data was last updated. The value of "2023-08-15T11:12:36.799Z" indicates a timestamp in UTC format, representing the date and time of the last update.
+**lastUpdate :** The lastUpdate property represents a specific date and time when the information or data was last updated. .
 
 **privacyPolicies :** The privacyPolicies property represents an array of objects that contain information about privacy policies. In this case, there is a single object within the array.
 
