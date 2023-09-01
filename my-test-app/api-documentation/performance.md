@@ -38,7 +38,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of report properties, including&#x20;
+The provided endpoint response contains an array of several properties, including
 
 **date:** the date property represents a specific date and time of the report, which is formatted as "yyyy-MM-dd'T'HH:mm:ss", and it is expected to be a string value, e.g. **"2023-08-29T00:00:00+00:00"**.
 
@@ -64,7 +64,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of report property, which is:&#x20;
+The provided endpoint response contains a property, which is
 
 **averageScore:** the averageScore property represents the average score gained from the total trips of the user. It is expected to be a numeric value, e.g. **95**.
 
@@ -90,7 +90,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains an array of event stats properties' list, including &#x20;
+The provided endpoint response contains an array of several properties, including
 
 **title:** the title property represents a string or text that serves as a title or heading. It typically describes or identifies an event's stats.
 
