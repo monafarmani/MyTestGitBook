@@ -84,15 +84,17 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Query Parameters</mark>
 
-**TripReportType:**
+**TripReportType:** it specifies the type of report scores, and is expected to be a numeric value, e.g. **1**.
+
+<mark style="color:red;">**Note:**</mark>** ** the report type of  DAILY will return **1**, WEEKLY will return **2**, MONTHLY will return **3**, and YEARLY will return **5**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains an array of event stats properties' list, including &#x20;
 
-**title:** the title property represents a string or text that serves as a title or heading. It typically describes or identifies a specific item or category, e.g.&#x20;
+**title:** the title property represents a string or text that serves as a title or heading. It typically describes or identifies an event's stats.
 
-**subtitle:** the subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category, e.g.&#x20;
+**subtitle:** the subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category..&#x20;
 
 **score :** the score property represents a numerical score associated with the item or category being described, e.g.**20**.
 
