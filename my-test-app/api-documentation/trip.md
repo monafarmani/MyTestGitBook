@@ -104,7 +104,7 @@ These parameters should be sent in multi-part/form-data format.
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of upload chunks properties, including:&#x20;
+The provided endpoint response contains several properties, including&#x20;
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -156,7 +156,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains an array of a list of trip properties, including :
+The provided endpoint response contains an array of several properties, including
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -216,7 +216,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of trip properties, including :
+The provided endpoint response contains several properties, including
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -276,7 +276,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of GPS properties, including:
+The provided endpoint response contains several properties, including
 
 **gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
@@ -309,7 +309,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of last trip properties, including:
+The provided endpoint response contains several properties, including
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -371,7 +371,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of file chunk status properties, including:
+The provided endpoint response contains several properties, including
 
 **fileChunkIds:** the fileChunkIds property is an array that contains the identifiers or references for the file chunks associated with the upload process, and it is expected to be a list of numeric values, e.g. **\[0, 1, 2]**.
 
@@ -403,7 +403,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains an array of a list of event states’ properties, including:
+The provided endpoint response contains an array of several properties, including
 
 **eventType:** the eventType property represents the type of event that occurred, and it is expected to be a numeric value, e.g. **3**.&#x20;
 
@@ -482,7 +482,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of properties for the files’ completed status, including:
+The provided endpoint response contains several properties, including
 
 **isCompleted:** the isCompleted property is a Boolean value that indicates whether the process or operation has been completed, e.g. **true**.
 
@@ -504,7 +504,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of total carbon property, which is:
+The provided endpoint response contains a property, which is
 
 **carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is Kilogram. It is expected to be a numeric value, e.g. **68.42**.
 
@@ -524,7 +524,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-The provided endpoint response contains a list of last trip carbon properties, including:
+The provided endpoint response contains several properties, including
 
 **carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is Kilogram. It is expected to be a numeric value, e.g. **0.72**.&#x20;
 
