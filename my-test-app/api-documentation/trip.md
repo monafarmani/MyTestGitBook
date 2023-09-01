@@ -529,8 +529,3 @@ The provided endpoint response contains a list of last trip carbon properties, i
 **carbon:** the carbon property represents the amount of carbon emissions associated with a particular process, activity, or calculation, and the unit of measurement is Kilogram. It is expected to be a numeric value, e.g. **0.72**.&#x20;
 
 **lastUpdate:** the lastUpdate property indicates the date and time when the carbon emission information was last updated, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS" . It is expected to be a string value, e.g. **"2023-08-29T20:54:56.836"**.&#x20;
-
-
-
-###
-
