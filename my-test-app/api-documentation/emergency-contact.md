@@ -46,7 +46,7 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that emergency contact information is updated.
+If it's **true**, it means that emergency contact information is updated.
 
 
 
@@ -92,4 +92,4 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
-If it's true, it means that an accident is reported and a message would be sent to the [emergency contact](emergency-contact.md#user-emergency-contact).
+If it's **true**, it means that an accident is reported and a message would be sent to the [emergency contact](emergency-contact.md#user-emergency-contact).
