@@ -116,23 +116,23 @@ Authentication Bearer Token
 
 The provided endpoint response contains a list of privacy policy properties, including&#x20;
 
-**lastUpdate :** The lastUpdate property represents a specific date and time when the information or data was last updated. .
+**lastUpdate :** the lastUpdate property represents a specific date and time when the information or data was last updated, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
-**privacyPolicies :** The privacyPolicies property represents an array of objects that contain information about privacy policies. In this case, there is a single object within the array.
+**privacyPolicies :** the privacyPolicies property represents an array of objects that contain information about privacy policies. In this case, there is a single object within the array.
 
 Within the privacyPolicies object:
 
-**id :** The id property represents a numerical identifier associated with a privacy policy entry.
+**id :** the id property represents a numerical identifier associated with a privacy policy entry, e.g.
 
-**question :** The question property represents a string or text that serves as a question related to privacy policies.
+**question :** the question property represents a string or text that serves as a question related to privacy policies, e.g.
 
-**answer :** The answer property represents a string or text that provides the corresponding answer to the privacy policy question.
+**answer :** the answer property represents a string or text that provides the corresponding answer to the privacy policy question, e.g.
 
-**order :** The order property represents a numerical value indicating the order or sequence of the privacy policy entry.
+**order :** the order property represents a numerical value indicating the order or sequence of the privacy policy entry, e.g.
 
-**createDate :** The createDate property represents a specific date and time when the privacy policy entry was created.
+**createDate :** the createDate property represents a specific date and time when the privacy policy entry was created, e.g.
 
-**modifyDate :** The modifyDate property represents a specific date and time when the privacy policy entry was last modified.
+**modifyDate :** the modifyDate property represents a specific date and time when the privacy policy entry was last modified, e.g.
 
 
 
@@ -150,8 +150,8 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">**Response**</mark>
 
+The provided endpoint response contains an array of terms & conditions properties' list, including&#x20;
 
+**question :** The question property represents a string or text that serves as a questionof terms & conditions, e.g.&#x20;
 
-**question :** The question property represents a string or text that serves as a question. The value of "string" is a placeholder and would typically be replaced with an actual question.
-
-**answer :** The answer property represents a string or text that provides the corresponding answer to the question. The value of "string" is a placeholder and would typically be replaced with an actual answer.&#x20;
+**answer :** The answer property represents a string or text that provides the corresponding answer to the question, e.g.&#x20;
