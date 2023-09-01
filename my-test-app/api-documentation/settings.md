@@ -118,11 +118,11 @@ The provided endpoint response contains several properties, including &#x20;
 
 **aspectRatio:** the aspectRatio property represents a string value that describes the aspect ratio of a visual element, e.g. **"16:9"** or **"4:3"**. Aspect ratio is the proportional relationship between the width and height of an object or display.  .
 
-**chunkSize:** the chunkSize property represents a numerical value that indicates the size or length of chunks or segments, e.g. **10485760**. The unit of measurement for this value is  .
+**chunkSize:** the chunkSize property represents a numerical value that indicates the size or length of chunks or segments, e.g. **10485760**. The unit of measurement for this value is byte.
 
 **lastGpsRecords:** the lastGpsRecords property represents a numerical value that indicates the number of recent GPS records or data points. It suggests how many GPS records are included or considered in the response, e.g. **100**.
 
-**toleranceInXAxis, toleranceInYAxis, toleranceInZAxis:** these properties represent numerical values that indicate tolerances or acceptable ranges along the X, Y, and Z axes, respectively, e.g. **01**, **0.05**, **0.1,** respectively. The unit of measurement for these tolerance values are&#x20;
+**toleranceInXAxis, toleranceInYAxis, toleranceInZAxis:** these properties represent numerical values that indicate tolerances or acceptable ranges along the X, Y, and Z axes, respectively, e.g. **01**, **0.05**, **0.1,** respectively.&#x20;
 
 
 
