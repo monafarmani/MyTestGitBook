@@ -140,22 +140,22 @@ Authentication Bearer Token
 
 #### <mark style="color:orange;">Request Query Parameters</mark>
 
-**OriginLatitude :**
+**OriginLatitude:** the latitude of the trip's origin location. It's expected to be a numeric value, e.g**. 50.767002**.
 
-**OriginLongitude :**
+**OriginLongitude:** the longitude of the trip's origin location. It's expected to be a numeric value, e.g**. 6.1035986**.
 
-**DestinationLatitude :**
+**DestinationLatitude:** the latitude of the trip's destination location. It's expected to be a numeric value, e.g**. 50.782578**.
 
-**DestinationLongitude :**
+**DestinationLongitude:** the longitude of the trip's destination location. It's expected to be a numeric value, e.g**. 6.0769243**.
 
 #### <mark style="color:orange;">**Response**</mark>
 
 The provided endpoint response contains a list of Geo Code properties, including&#x20;
 
-**origin:** The origin property represents a string value that describes the origin location, e.g.&#x20;
+**origin:** The origin property represents a string value that describes the origin address or location, e.g. **"Burtscheid, Aachen, North Rhine-Westphalia"**.&#x20;
 
-**originPlace:** The originPlace property represents a string value that provides additional information about the origin. It could refer to the name, address, or any other relevant details related to the origin location or place, e.g.
+**originPlace:** The originPlace property represents a string value that provides additional information about the origin, e.g. **"Aachen"**.
 
-**destination:** The destination property represents a string value that describes the destination location, e.g.&#x20;
+**destination:** The destination property represents a string value that describes the destination address or location, e.g. **"Ponttor, Aachen, North Rhine-Westphalia"**. &#x20;
 
-**destinationPlace:** The destinationPlace property represents a string value that provides additional information about the destination. It could refer to the name, address, or any other relevant details related to the destination location or place, e.g.
+**destinationPlace:** The destinationPlace property represents a string value that provides additional information about the destination, e.g. **"Aachen"**.
