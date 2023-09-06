@@ -56,16 +56,16 @@ Authentication Bearer Token
 
 The provided endpoint response contains several properties, including&#x20;
 
-**lastUpdate :** the lastUpdate property represents a specific date and time when the information or data was last updated, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-03-13T12:15:11.6972145"**.
+**lastUpdate:** the lastUpdate property represents a specific date and time when the information or data was last updated, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-03-13T12:15:11.6972145"**.
 
-**privacyPolicies :** the privacyPolicies property represents an array of objects that contain information about privacy policies, including
+**privacyPolicies:** the privacyPolicies property represents an array of objects that contain information about privacy policies, including
 
-* **id :** the id property represents a numerical identifier associated with a privacy policy entry, e.g. **36**.
-* **question :** the question property represents a string or text that serves as a question related to privacy policies, e.g. **"Changes to Privacy Policy"**.
-* **answer :** the answer property represents a string or text that provides the corresponding answer to the privacy policy question, e.g. **"We may revise this Privacy Policy from time to time in our sole discretion. If there are any material changes to this Privacy Policy, we will notify you as required by applicable law. You understand and agree that you will be deemed to have accepted the updated Privacy Policy if you continue to use the App after the new Privacy Policy takes effect."**.
-* **order :** the order property represents a numerical value indicating the order or sequence of the privacy policy entry, e.g. **7**.
-* **createDate :** the createDate property represents a specific date and time when the privacy policy entry was created, e.g. **"2023-03-13T12:21:28.239462"**.
-* **modifyDate :** the modifyDate property represents a specific date and time when the privacy policy entry was last modified, e.g. **null**.
+* **id:** the id property represents a numerical identifier associated with a privacy policy entry, e.g. **36**.
+* **question:** the question property represents a string or text that serves as a question related to privacy policies, e.g. **"Changes to Privacy Policy"**.
+* **answer:** the answer property represents a string or text that provides the corresponding answer to the privacy policy question, e.g. **"We may revise this Privacy Policy from time to time in our sole discretion. If there are any material changes to this Privacy Policy, we will notify you as required by applicable law. You understand and agree that you will be deemed to have accepted the updated Privacy Policy if you continue to use the App after the new Privacy Policy takes effect."**.
+* **order:** the order property represents a numerical value indicating the order or sequence of the privacy policy entry, e.g. **7**.
+* **createDate:** the createDate property represents a specific date and time when the privacy policy entry was created, e.g. **"2023-03-13T12:21:28.239462"**.
+* **modifyDate:** the modifyDate property represents a specific date and time when the privacy policy entry was last modified, e.g. **null**.
 * **getMaxDate:** the getMaxDate property represents the maximum date and time for the privacy policy, e.g. **"2023-03-13T12:21:28.239462"**.
 
 
