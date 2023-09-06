@@ -194,7 +194,7 @@ The provided endpoint response contains an array of several properties, includin
 
 **endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value, e.g. **"00:00:12.1990000"**.
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include **ticks**, **days**, **hours**, **milliseconds**, **minutes**, and **seconds**, that each of them is expected to be a numeric value. An example for duration can be **"00:00:12.1990000"**.
 
 
 
@@ -210,7 +210,7 @@ The endpoint is designed to handle requests for retrieving or fetching informati
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Path Parameters</mark>
+#### <mark style="color:orange;">Request Parameters</mark>
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -252,7 +252,7 @@ The provided endpoint response contains several properties, including
 
 **endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value, e.g. **"00:00:12.1990000"**.
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include **ticks**, **days**, **hours**, **milliseconds**, **minutes**, and **seconds**, that each of them is expected to be a numeric value. An example for duration can be **"00:00:12.1990000"**.
 
 **createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
@@ -278,13 +278,13 @@ Authentication Bearer Token
 
 The provided endpoint response contains several properties, including
 
-**gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as gpsTime, latitude, and longitude. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
+**gpsDetail:** the gpsDetail property is an array that contains objects representing GPS information. Each object within the array includes properties such as **gpsTime**, **latitude**, and **longitude**. These properties provide details about the GPS coordinates and the timestamp when the GPS information was recorded.
 
 * **gpsTime:** this key-value pair indicates the GPS time , which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS".  It's expected to be a string value, e.g. **"2023-08-    29T21:06:47.002+00:00**".
 * &#x20;**latitude:** this key-value pair represents the latitude coordinate as a numeric value, e.g. **50.78181**. &#x20;
 * **longitude:** this key-value pair represents the longitude coordinate as a numeric value, e.g. **6.070963**.
 
-**events:** the events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as eventType, eventName,  latitude, and longitude. These properties provide details about the event type and its associated GPS coordinates.
+**events:** the events property is an array that contains objects representing events associated with the GPS data. Each object within the array includes properties such as **eventType**, **eventName**,  **latitude**, and **longitude**. These properties provide details about the event type and its associated GPS coordinates.
 
 * **eventType:** this key-value pair represents the type of event as a numeric value, e.g. **0.**\
   \
@@ -319,7 +319,7 @@ The provided endpoint response contains several properties, including
 
 **endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include ticks, days, hours, milliseconds, minutes, and seconds. Each sub-property is expected to be a numeric value, e.g. **"00:00:12.1990000"**.
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include **ticks**, **days**, **hours**, **milliseconds**, **minutes**, and **seconds**, that each of them is expected to be a numeric value. An example for duration can be **"00:00:12.1990000"**.
 
 **origin:** the origin property represents the origin location. It is expected to be a string value, e.g. **"North Rhine-Westphalia, Aachen, Kalkofen"**.
 
@@ -397,7 +397,7 @@ The endpoint is designed to handle requests for retrieving or fetching event sta
 
 Authentication Bearer Token
 
-#### <mark style="color:orange;">Request Body Parameters</mark>
+#### <mark style="color:orange;">Request Parameters</mark>
 
 **id:** the id property represents an identifier or reference to a trip. It is expected to be a numeric value, e.g. **1002**.
 
@@ -423,7 +423,7 @@ If else, we just need to have events.time & events.value.
 
 **scorePercentile:** the scorePercentile property represents the percentile rank of the score achieved for the event.  It is expected to be a numeric value, e.g. **95**.
 
-**events:** the events property is an array that contains objects representing specific events. Each event object includes properties such as time, value, latitude, longitude, and location. These properties provide details about the event's time, value, GPS coordinates, and location.
+**events:** the events property is an array that contains objects representing specific events. Each event object includes properties such as **time**, **value**, **latitude**, **longitude**, and **location**. These properties provide details about the event's time, value, GPS coordinates, and location.
 
 * **time:** this key-value pair represents the time of the event, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS". It is expected to be a string value, e.g. **"2023-08-29T20:56:27.832Z".**
 * **value:** this key-value pair represents the value associated with the event, and it is expected to be a string value, e.g. **"0.28".**
@@ -431,7 +431,7 @@ If else, we just need to have events.time & events.value.
 * **longitude:** this key-value pair represents the longitude coordinate. It is expected to be a numeric value, e.g. **6.1035986.**
 * **location:** this key-value pair represents the location associated with the event, and it is expected to be a string value, e.g. **null**.
 
-**eventDetected:** the eventDetected property is an array that contains objects representing detected events. Each detected event object includes properties such as time, latitude, longitude, speedLimit, and yourSpeed. These properties provide details about the detected event's time, GPS coordinates, speed limit, and actual speed.
+**eventDetected:** the eventDetected property is an array that contains objects representing detected events. Each detected event object includes properties such as **time**, **latitude**, **longitude**, **speedLimit**, and **yourSpeed**. These properties provide details about the detected event's time, GPS coordinates, speed limit, and actual speed.
 
 * **time:** this key-value pair represents the time of the event, which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS". It is expected to be a string value, e.g. **"2023-08-29T20:56:01.256Z"**.
 * **latitude:** this key-value pair represents the latitude coordinate and is expected to be a numeric value, e.g. **50.767002.**
@@ -439,14 +439,14 @@ If else, we just need to have events.time & events.value.
 * **speedLimit:** this key-value pair represents the speed limit associated with the event, and is expected to be a string value, e.g. **30**.
 * **yourSpeed:** this key-value pair represents the speed at which the event was detected, and is expected to be a string value, e.g. **31**.
 
-**eventDetectedTailGating:** the eventDetectedTailGating property is an array that contains objects representing detected tailgating events. Each detected tailgating event object includes properties such as time, speedInKmph, ttc, and depth. These properties provide details about the detected tailgating event's time, speed in kilometers per hour, time-to-collision (TTC), and depth.
+**eventDetectedTailGating:** the eventDetectedTailGating property is an array that contains objects representing detected tailgating events. Each detected tailgating event object includes properties such as **time**, **speedInKmph**, **ttc**, and **depth**. These properties provide details about the detected tailgating event's time, speed in kilometers per hour, time-to-collision (TTC), and depth.
 
 * **time:** this key-value pair represents the time of the detected tailgating event which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS". It is expected to be a string value, e.g. **"2023-08-29T20:59:08.978Z"**.
 * **speedInKmph:** this key-value pair represents the speed at which the tailgating event was detected, measured in kilometers per hour. It is expected to be a string value, e.g. **37.75**.
 * **ttc:** this key-value pair represents the Time to Collision (TTC) associated with the tailgating event. It is expected to be a string value, e.g. **0.93**.
 * **depth:** this key-value pair represents the depth or severity of the tailgating event, and it is expected to be a string value, e.g. **8.75**.
 
-**rideTimeEvent:** the rideTimeEvent property represents information related to ride time. It includes sub-properties such as totalTime and tripDistance. The totalTime, nightTime and rushHour properties further include sub-properties like hours, minutes, and seconds. The tripDistance property represents the distance covered during the ride.
+**rideTimeEvent:** the rideTimeEvent property represents information related to ride time. It includes sub-properties such as **totalTime**, **nightTime**, **rushHour**, and **tripDistance**. The totalTime, nightTime and rushHour properties further include sub-properties like **hours**, **minutes**, and **seconds**. The tripDistance property represents the distance covered during the ride.
 
 * **totalTime:** This key-value pair represents the total time of the ride. Inside the "totalTime" object, there are three key-value pairs:&#x20;
   * **hours:** this key-value pair represents the number of hours during the ride time. It is expected to be a numeric value, e.g. **0**.

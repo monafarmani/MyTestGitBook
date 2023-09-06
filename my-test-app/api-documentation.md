@@ -56,20 +56,3 @@ In case of errors, the API may return the following HTTP status codes along with
 * 401 Unauthorized: Missing or invalid API key.
 * 404 Not Found: The requested resource does not exist.
 * 500 Internal Server Error: An unexpected error occurred on the server.
-
-
-
-## Rate Limiting
-
-The API enforces rate limiting to ensure fair usage. Each API key is limited to 100 requests per minute. If the rate limit is exceeded, a response with status code 429 "Too Many Requests" will be returned.
-
-
-
-## Support
-
-For any questions or assistance regarding the Android Project API, please contact our support team at [support@example.com](mailto:support@example.com).
-
-
-
-
-
