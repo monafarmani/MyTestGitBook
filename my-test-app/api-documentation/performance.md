@@ -42,7 +42,7 @@ The provided endpoint response contains an array of several properties, includin
 
 **date:** the date property represents a specific date and time of the report, which is formatted as "yyyy-MM-dd'T'HH:mm:ss", and it is expected to be a string value, e.g. **"2023-08-29T00:00:00+00:00"**.
 
-**score:** the score property represents a numerical score associated with the scores of all of the user's trips during the specific time, e.g. **91.5**.
+**score:** the score property represents a numerical score associated with the scores of all the user’s trips during the specific time, e.g. **91.5**.
 
 **label:** the label property represents a string or text label associated with the trip. It is expected to be a string value, e.g. **"Tue"**.
 
@@ -96,6 +96,6 @@ The provided endpoint response contains an array of several properties, includin
 
 **subtitle:** the subtitle property represents a string or text that serves as a subtitle or secondary information related to the title. It provides additional details or context about the item or category.&#x20;
 
-**score :** the score property represents a numerical score associated with the item or category being described, e.g. **20**.
+**score:** the score property represents a numerical score associated with the item or category being described, e.g. **20**.
 
 **difference:** the difference property represents a numerical value indicating the difference or change related to the score. It provides information about how the score has changed compared to a previous value or reference, e.g. **20**.
