@@ -194,7 +194,7 @@ The provided endpoint response contains an array of several properties, includin
 
 **endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include **ticks**, **days**, **hours**, **milliseconds**, **minutes**, and **seconds**, that each of them is expected to be a numeric value. An example for duration can be **"00:00:12.1990000"**.
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include **ticks**, **days**, **hours**, **milliseconds**, **minutes**, and **seconds**, that each of them is expected to be a numeric value. An example of duration can be **"00:00:12.1990000"**.
 
 
 
@@ -252,7 +252,7 @@ The provided endpoint response contains several properties, including
 
 **endDateTime:** this property represents the date and time when a trip ends. It is formatted as ""yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T15:41:57.481"**.
 
-**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include **ticks**, **days**, **hours**, **milliseconds**, **minutes**, and **seconds**, that each of them is expected to be a numeric value. An example for duration can be **"00:00:12.1990000"**.
+**duration:** the duration property is an object that contains sub-properties representing the duration of the trip. These sub-properties include **ticks**, **days**, **hours**, **milliseconds**, **minutes**, and **seconds**, that each of them is expected to be a numeric value. An example of duration can be **"00:00:12.1990000"**.
 
 **createDate:** this property represents the date and time when a trip was created which is formatted as "yyyy-MM-dd'T'HH:mm:ss.SSS", and it is expected to be a string value, e.g. **"2023-07-25T12:12:09.2115705"**.
 
