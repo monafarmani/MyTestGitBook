@@ -42,7 +42,7 @@ Authentication Bearer Token
 
 **email:** the `email` property represents the person's email address of an emergency contact. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
 
-<mark style="color:red;">**Note:**</mark> email can be an empty text. if not, it must be sent in the proper format of email.
+<mark style="color:red;">**Note:**</mark> email can be an empty text. If not, it must be sent in the proper format of email.
 
 #### <mark style="color:orange;">**Response**</mark>
 
@@ -74,7 +74,7 @@ The provided endpoint response contains several properties including
 
 **email:** the `email` property represents the person's email address. It is also expected to be a string value, e.g. **"sarahwilliams@gmail.com"**
 
-<mark style="color:red;">**Note:**</mark> email can be an empty text. if not, it must be sent in the proper format of email.
+<mark style="color:red;">**Note:**</mark> email can be an empty text. If not, it must be sent in the proper format of email.
 
 
 
