@@ -24,7 +24,7 @@ The "Upload Trip" functionality allows users to upload trip data to our API, ena
 
 For uploading trips, it is necessary to take some steps in order. These steps are listed below respectively.
 
-Every trip creates a folder in which various files are stored, like <mark style="color:red;">**video.mp4**</mark>, <mark style="color:red;">**imu.csv**</mark>, <mark style="color:red;">**gps.csv**</mark>, <mark style="color:red;">**ttc.csv**</mark>, <mark style="color:red;">**matrix.txt**</mark>. Besides, we need to create another file under the name of <mark style="color:red;">**trip.txt**</mark> which includes trip data like "tripId = 0", and "isCompleted = false" to check whether the trip was uploaded.
+Every trip creates a folder in which various files are stored, like <mark style="color:red;">**video.mp4**</mark>, <mark style="color:red;">**imu.csv**</mark>, <mark style="color:red;">**gps.csv**</mark>, <mark style="color:red;">**ttc.csv**</mark>, <mark style="color:red;">**matrix.txt**</mark>. Besides, we need to create another file named <mark style="color:red;">**trip.txt**</mark> which includes trip data like "tripId = 0", and "isCompleted = false" to check whether the trip was uploaded.
 
 <mark style="color:red;">**Note:**</mark> We are going to deal with the files that have not been uploaded yet.
 
