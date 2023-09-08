@@ -22,6 +22,7 @@
     * [Trip](my-test-app/api-documentation/trip.md)
     * [Performance](my-test-app/api-documentation/performance.md)
     * [Settings](my-test-app/api-documentation/settings.md)
+    * [Upload Trip](my-test-app/api-documentation/upload-trip.md)
   * [✏ Change Log](my-test-app/change-log.md)
   * [⚙ Configuration](my-test-app/configuration.md)
   * [🤝 Contributing](my-test-app/contributing.md)
