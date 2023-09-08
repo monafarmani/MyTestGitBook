@@ -22,9 +22,9 @@ layout:
 
 The "Upload Trip" functionality allows users to upload trip data to our API, enabling them to store and process their travel-related information. This feature is essential for users who need to securely transmit their trip details and leverage our API's capabilities for further analysis and processing.
 
-For uploading trips, it is necessary to take some steps in order. These steps are listed below respectively.
+For uploading trips, it is necessary to take some steps in order. These steps are listed below, respectively.
 
-Every trip creates a folder in which various files are stored, like <mark style="color:red;">**video.mp4**</mark>, <mark style="color:red;">**imu.csv**</mark>, <mark style="color:red;">**gps.csv**</mark>, <mark style="color:red;">**ttc.csv**</mark>, <mark style="color:red;">**matrix.txt**</mark>. Besides, we need to create another file named <mark style="color:red;">**trip.txt**</mark> which includes trip data like "tripId = 0", and "isCompleted = false" to check whether the trip was uploaded.
+Every trip creates a folder in which various files are stored, like <mark style="color:red;">**video.mp4**</mark>, <mark style="color:red;">**imu.csv**</mark>, <mark style="color:red;">**gps.csv**</mark>, <mark style="color:red;">**ttc.csv**</mark>, and <mark style="color:red;">**matrix.txt**</mark>. Besides, we need to create another file named <mark style="color:red;">**trip.txt**</mark> which includes trip data like "tripId = 0", and "isCompleted = false" to check whether the trip was uploaded.
 
 <mark style="color:red;">**Note:**</mark> We are going to deal with the files that have not been uploaded yet.
 
@@ -34,7 +34,7 @@ All the files mentioned above must be uploaded for recording the trip. For this 
 
 <mark style="color:purple;">**Step 1:**</mark> If the "isCompleted" property is **false**, it means either no files were uploaded or some files were uploaded, but the uploading process wasn't completed. If no files were uploaded, and the **tripId** property inside the <mark style="color:red;">**trip.txt**</mark> equals **0**, we need to send a request to the API to [create a trip](upload-trip.md#create-trip) and update **tripId** in <mark style="color:red;">**trip.txt**</mark>. If else, the next steps must be taken.
 
-<mark style="color:purple;">**Step 2:**</mark> For all the files we have in the folder, we should check whether each one has been uploaded or not. For this purpose and avoiding reuploading the files, we request the API to get [the status of file chunks](upload-trip.md#get-file-chunk-status) and study the **fileId** (**fileManagerId**) of the desired file. The null fileId property indicates that the fileManagerId has not been created yet.
+<mark style="color:purple;">**Step 2:**</mark> For all the files we have in the folder, we should check whether each one has been uploaded or not. For this purpose and to avoid re-uploading the files, we request the API to get [the status of file chunks](upload-trip.md#get-file-chunk-status) and study the **fileId** (**fileManagerId**) of the desired file. The null fileId property indicates that the fileManagerId has not been created yet.
 
 <mark style="color:red;">**Note:**</mark> These properties can be used in step 4 for sending the chunked files later.
 
@@ -43,11 +43,11 @@ All the files mentioned above must be uploaded for recording the trip. For this 
 
 <mark style="color:purple;">**Step 3:**</mark> In case of receiving a null value for **fileId**, we will send a request to the API to [start uploading](upload-trip.md#upload-start), in which we will give the specifications of the desired file and receive the **fileManagerId**.&#x20;
 
-<mark style="color:purple;">**Step 4:**</mark> After getting the fileManagerId property, send the uploaded files in chunks through the [upload chunks](upload-trip.md#upload-chunks) endpoint and check the Response of the API. If the mergeStatus property is **true**, it means all the chunks are sent and merged on the server properly.
+<mark style="color:purple;">**Step 4:**</mark> After getting the fileManagerId property, send the uploaded files in chunks through the [upload chunks](upload-trip.md#upload-chunks) endpoint and check the response of the API. If the mergeStatus property is **true**, it means all the chunks are sent and merged on the server properly.
 
-<mark style="color:red;">**Note:**</mark> The indexes should be sent through the upload chunks endpoint that do not exist in fileChunkIds list.
+<mark style="color:red;">**Note:**</mark> The indexes should be sent through the upload chunks endpoint that do not exist in the fileChunkIds list.
 
-<mark style="color:purple;">**Step 5:**</mark> To make sure that all the files have been uploaded, we send a request to the API to check the [completion of a trip's file upload process](upload-trip.md#complete-uploading), and receive a Boolean Response, which **true** means it's uploaded completely. Here, update the isCompleted property of <mark style="color:red;">**trip.txt**</mark> to **true** too.
+<mark style="color:purple;">**Step 5:**</mark> To make sure that all the files have been uploaded, we send a request to the API to check the [completion of a trip's file upload process](upload-trip.md#complete-uploading), and receive a Boolean response, which **true** means it's uploaded completely. Here, update the isCompleted property of <mark style="color:red;">**trip.txt**</mark> to **true** too.
 
 
 
